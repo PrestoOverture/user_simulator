@@ -1,0 +1,675 @@
+[
+  {
+    "dataset": "outputs/extended",
+    "generations": [
+      {
+        "request_id": "9150:1",
+        "dialogue_id": 9150,
+        "turn": 1,
+        "text": "你好，我买的这件衣服尺码不太合适，感觉有点困扰。请问可以换货吗？",
+        "status": "ok",
+        "prompt_sha256": "575be4c5e95051e4ca285ea0a7da664fef1e511ded5e23f6f23e40260a32ab97"
+      },
+      {
+        "request_id": "9150:4",
+        "dialogue_id": 9150,
+        "turn": 4,
+        "text": "那这个咋办，我手用的好累啊。",
+        "status": "ok",
+        "prompt_sha256": "2ae0bb162137944557d1d5a6afbe76d744f45613c1296b3ee73a7c98687ba785"
+      },
+      {
+        "request_id": "9150:6",
+        "dialogue_id": 9150,
+        "turn": 6,
+        "text": "那我退货再重新下单可以吗？",
+        "status": "ok",
+        "prompt_sha256": "892536268c1db30a295374c1aa7975e129f5dff1f157e83fc22a9871b9ef0f65"
+      },
+      {
+        "request_id": "9150:5",
+        "dialogue_id": 9150,
+        "turn": 5,
+        "text": "原来我买错了，是我要镜面版的，这个也退不了，包装被我扔了？",
+        "status": "ok",
+        "prompt_sha256": "1d1e7364933556612a598da21061503f39a42a721834a6d366301c7b53443aae"
+      },
+      {
+        "request_id": "9150:2",
+        "dialogue_id": 9150,
+        "turn": 2,
+        "text": "你好，我刚在这家店买了这双鞋，但是尺码有点小，穿着有点挤脚，能帮我换大一码吗？",
+        "status": "ok",
+        "prompt_sha256": "1e55ee18a7264b40cf76ec6692c7c2d5e9ad7b436cd77488fa90ce8a36cb8625"
+      },
+      {
+        "request_id": "9150:8",
+        "dialogue_id": 9150,
+        "turn": 8,
+        "text": "哦，那还好。",
+        "status": "ok",
+        "prompt_sha256": "47e8dc5239118e5558c913cd81d1ffbecb381c278175a6bf1cb085986f5c042f"
+      },
+      {
+        "request_id": "9150:3",
+        "dialogue_id": 9150,
+        "turn": 3,
+        "text": "可是它按键也比较费劲，按下去感觉硬硬的，反应也有点延迟，这样使用起来真的很不方便呢，可以退货重新购买吗？",
+        "status": "ok",
+        "prompt_sha256": "2a327c633efea51020a8904c5d3ccef5aeb514a0afe8aca08b3153394b570554"
+      },
+      {
+        "request_id": "9150:7",
+        "dialogue_id": 9150,
+        "turn": 7,
+        "text": "那退货的话 ， 是不是还得我自己去邮局寄啊 ， 还是会有快递上门来收呀 ？",
+        "status": "ok",
+        "prompt_sha256": "3a87dcc0114047d68dcc02c79e04deb4136678e4526eb19fb69b1b254b475bd4"
+      },
+      {
+        "request_id": "9150:9",
+        "dialogue_id": 9150,
+        "turn": 9,
+        "text": "请问这个退货的运费要多少呢？",
+        "status": "ok",
+        "prompt_sha256": "fdc587a393f5698254f7c79cc3d28a82b22c92b6336e60e8ebb02ebe55e37d4e"
+      },
+      {
+        "request_id": "9150:10",
+        "dialogue_id": 9150,
+        "turn": 10,
+        "text": "有线跟无线按键力度是一样的么",
+        "status": "ok",
+        "prompt_sha256": "9c7a23aa9d0715bae9cc99362e9588f9bcf76ed0e8b085ac11df9bda78ccfda0"
+      },
+      {
+        "request_id": "9150:12",
+        "dialogue_id": 9150,
+        "turn": 12,
+        "text": "这样啊，那退货运费有点贵啊。",
+        "status": "ok",
+        "prompt_sha256": "af250dc928feea2155c5d7c125b35365dfe8061d5ad5802e4a44fa53d174f1f8"
+      },
+      {
+        "request_id": "9150:11",
+        "dialogue_id": 9150,
+        "turn": 11,
+        "text": "那左键和右键的力度差别大不大？如果差别大的话，我还真得适应适应。",
+        "status": "ok",
+        "prompt_sha256": "cafd97ae04104175bb6df52f618e9cec7249954cae9745520f3954142266ae9c"
+      },
+      {
+        "request_id": "9150:13",
+        "dialogue_id": 9150,
+        "turn": 13,
+        "text": "哦，那我先用一段时间试试看，实在不行再退货吧。不过我退货后还需要对订单评价吗？",
+        "status": "ok",
+        "prompt_sha256": "d92be2c3be95f25c069d3dd5c019587ea34d69a0ca05292ac61e0e964f2c6fa6"
+      },
+      {
+        "request_id": "9150:14",
+        "dialogue_id": 9150,
+        "turn": 14,
+        "text": "行，那我不评了，等退货弄完了我再重新下单个狂蛇的。",
+        "status": "ok",
+        "prompt_sha256": "28717c08e6eeaa9bc090bf574783a0b665da71652a9adabbfc0378869747b110"
+      },
+      {
+        "request_id": "9150:15",
+        "dialogue_id": 9150,
+        "turn": 15,
+        "text": "好的，那我再去看看其他款式的鼠标，谢谢推荐。",
+        "status": "ok",
+        "prompt_sha256": "5a99eddc836d3e40707c7b0200309aaf7568cd1cd088be3d50e62962788d2d52"
+      },
+      {
+        "request_id": "3278:3",
+        "dialogue_id": 3278,
+        "turn": 3,
+        "text": "你看了申请退款的信息没？那个快递面单是不是就是快递单号啊？我是不是得拍个照片给你？",
+        "status": "ok",
+        "prompt_sha256": "4363d0bd7321c3cf4fcbcec736a916afa8d09ad73d10ef516f63ab465f88355a"
+      },
+      {
+        "request_id": "3278:5",
+        "dialogue_id": 3278,
+        "turn": 5,
+        "text": "对，照片我都上传了，面单就是快递单号吗？要不要我拍照发给你？卖家补偿了一部分运费，剩下的你们平台能不能帮我补一下？我在哪里查看申请进度啊？",
+        "status": "ok",
+        "prompt_sha256": "89693010bf2f1fd1e7e9514d93a664bd5e71c2ff1518cc322ef5499a57b2701d"
+      },
+      {
+        "request_id": "3278:2",
+        "dialogue_id": 3278,
+        "turn": 2,
+        "text": "是这样的，我之前因为商品质量问题，不是换了一次，还退了一次货吗，那个退款我是已经收到了的，但后面寄回去的运费商家就一直是没理我的状态，你可以帮我处理下吗？",
+        "status": "ok",
+        "prompt_sha256": "f6e6e3be872123ab0ae5747141953a5ad1aa6a77ebedb76932aa13b8986e217c"
+      },
+      {
+        "request_id": "3278:4",
+        "dialogue_id": 3278,
+        "turn": 4,
+        "text": "我查了下退款已经到账了，但我那两次寄回去的运费商家还一分钱没给我呢，这次能不能麻烦你们平台帮我把剩下那部分运费也补偿一下？",
+        "status": "ok",
+        "prompt_sha256": "e79b9568e2b757f8a5188b643a0e715fe2d0f830c4a9f43ea5002b017f837ccc"
+      },
+      {
+        "request_id": "3278:6",
+        "dialogue_id": 3278,
+        "turn": 6,
+        "text": "快递面单就是快递单号吗？还是说要拍照面单给你们？我看商家补偿了一部分运费，剩下的运费平台能不能帮我补上？",
+        "status": "ok",
+        "prompt_sha256": "135b182f9687a0298e4fa1266269f5badd3064317baaecca4c609bec62940b96"
+      },
+      {
+        "request_id": "3278:8",
+        "dialogue_id": 3278,
+        "turn": 8,
+        "text": "那你们直接帮我申请补偿不就行了，还要快递面单干嘛？",
+        "status": "ok",
+        "prompt_sha256": "e8e1a32a49ff89755c5eddd07e3c6c731d8db9af4887f45e5a35efd498d5bfc6"
+      },
+      {
+        "request_id": "3278:7",
+        "dialogue_id": 3278,
+        "turn": 7,
+        "text": "我想问一下快递面单是不是就是快递单号啊？我需要拍照给你们吗？之前商家只补偿了我一部分运费，剩下的运费你们平台能不能帮我补一下？那个申请进度我要在哪里看啊？是在余额里查吗？",
+        "status": "ok",
+        "prompt_sha256": "fd3b8a72da7585085a475a46cc364075512efbb91a4dc728442a1f414cad2b73"
+      },
+      {
+        "request_id": "3278:9",
+        "dialogue_id": 3278,
+        "turn": 9,
+        "text": "照片我怎么发给你呢？你加我微信，我把照片发给你吧。",
+        "status": "ok",
+        "prompt_sha256": "33d20be791c23e5fa07044b67c554969e232e8af37fcb17ae41755457be25491"
+      },
+      {
+        "request_id": "3278:1",
+        "dialogue_id": 3278,
+        "turn": 1,
+        "text": "您好，我是之前在你们这儿买了东西因为质量问题退货退款的，退款我是收到了，但是运费商家一直也没给个准信儿。我想问问，那个快递面单是不是就是快递单号啊？我用不用再拍个面单的照片？商家之前说补偿一部分运费，剩下的你们平台能不能给补偿一下？还有我这个运费申请的进度，是在余额那里看吗？",
+        "status": "ok",
+        "prompt_sha256": "38df28914b8cc8b1efb53d73798422491137c4c43703bc11e33ccd57b1a99346"
+      },
+      {
+        "request_id": "3278:13",
+        "dialogue_id": 3278,
+        "turn": 13,
+        "text": "我想问一下，申请进度要在哪里查看呢？",
+        "status": "ok",
+        "prompt_sha256": "74e52747e0e24fd93e8b949f86a9b892bd26b6b5204282b8a4b8f436766ab3ae"
+      },
+      {
+        "request_id": "3278:10",
+        "dialogue_id": 3278,
+        "turn": 10,
+        "text": "那麻烦你们直接处理一下吧，快递面单照片我马上发给你们。我不想再拖了，挺着急的。",
+        "status": "ok",
+        "prompt_sha256": "6617cd41e92ec502ec3237bd9c0bfb4d0eaea871905e7966428f6c3bcef6e17f"
+      },
+      {
+        "request_id": "3278:11",
+        "dialogue_id": 3278,
+        "turn": 11,
+        "text": "你们申请的运费什么时候可以到账，我在哪里可以查到？",
+        "status": "ok",
+        "prompt_sha256": "235745ee073534bb3d7e502d131d38641bceaad21b1b3bf17fce7aeb32ad4354"
+      },
+      {
+        "request_id": "3278:14",
+        "dialogue_id": 3278,
+        "turn": 14,
+        "text": "好的，那我需要提供其他资料吗，还是只是等短信通知就可以了？",
+        "status": "ok",
+        "prompt_sha256": "b9669cfddee5a427462090a99ed60eba909a94f969232a56e8eb563f5a8e9ff7"
+      },
+      {
+        "request_id": "3278:15",
+        "dialogue_id": 3278,
+        "turn": 15,
+        "text": "好的，谢谢你。\n麻烦尽快处理一下，谢谢。",
+        "status": "ok",
+        "prompt_sha256": "6cc17c4d62167ef431c808abae791d2150b8b880661c5bec2b05fb8e56ed1a6d"
+      },
+      {
+        "request_id": "3278:12",
+        "dialogue_id": 3278,
+        "turn": 12,
+        "text": "好的，我现在去拍个照片。",
+        "status": "ok",
+        "prompt_sha256": "5042dbf849d86cf898edad3c71bacaea0f35f4016a8cfba0f283b07619782242"
+      },
+      {
+        "request_id": "1538:1",
+        "dialogue_id": 1538,
+        "turn": 1,
+        "text": "啊？什么叫还没收到就掉了？不是已经下单了吗，怎么又少了啊？",
+        "status": "ok",
+        "prompt_sha256": "35b25f9f0b8781c5d353e10eae738b3ba5ca19a3b85bcced55ddf3cc4475f80e"
+      },
+      {
+        "request_id": "1538:2",
+        "dialogue_id": 1538,
+        "turn": 2,
+        "text": "我电视还没收到怎么就掉了100块钱？我再下单后直接少了100。我想问一下到时候我要付多少钱啊？",
+        "status": "ok",
+        "prompt_sha256": "9354c7617747312dc543522fefa7b652ad51d90c180e009c8ed37155a6d99675"
+      },
+      {
+        "request_id": "1538:3",
+        "dialogue_id": 1538,
+        "turn": 3,
+        "text": "我再下单后少了 [数字] 呢，那到时付多少钱？",
+        "status": "ok",
+        "prompt_sha256": "b7b22af9a410934d724e8c39d9cecb4760b2aa1ad01617c83d0400aae1fefa92"
+      },
+      {
+        "request_id": "1538:7",
+        "dialogue_id": 1538,
+        "turn": 7,
+        "text": "那现在我要付多少钱？",
+        "status": "ok",
+        "prompt_sha256": "4a4cca556075b0ab50444ac01fd1461f0f88821b9171078971be17e09ede6697"
+      },
+      {
+        "request_id": "1538:5",
+        "dialogue_id": 1538,
+        "turn": 5,
+        "text": "我这个订单只需付[数字]就可以了是吧",
+        "status": "ok",
+        "prompt_sha256": "003250ca28de0c1c0ade76ace4dce1e51ee9ce251628db691334c693c99d8947"
+      },
+      {
+        "request_id": "1538:6",
+        "dialogue_id": 1538,
+        "turn": 6,
+        "text": "刚刚我再下单后少了 [数字]  元， 请问我要付多少钱？",
+        "status": "ok",
+        "prompt_sha256": "a9a930a508cd4e48eba9e92cf9b1e6c07a34f995a0948f320094cb3e7df7f138"
+      },
+      {
+        "request_id": "1538:4",
+        "dialogue_id": 1538,
+        "turn": 4,
+        "text": "我已经重新下了一单，但是价格还是比原来少了 [数字] 元，到时我到底要付多少钱？",
+        "status": "ok",
+        "prompt_sha256": "175e23f65fd8349da6ecefe31caeb2a22443b68a9efd6f34bde9c5fcd1893798"
+      }
+    ],
+    "requests": [
+      {
+        "request_id": "9150:1",
+        "attempt": 1,
+        "input_tokens": 112,
+        "output_tokens": 22,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 1.5022592910099775
+      },
+      {
+        "request_id": "9150:4",
+        "attempt": 1,
+        "input_tokens": 241,
+        "output_tokens": 12,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 2.0183404999552295
+      },
+      {
+        "request_id": "9150:6",
+        "attempt": 1,
+        "input_tokens": 359,
+        "output_tokens": 9,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 1.501422500004992
+      },
+      {
+        "request_id": "9150:5",
+        "attempt": 1,
+        "input_tokens": 333,
+        "output_tokens": 23,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 2.266008708975278
+      },
+      {
+        "request_id": "9150:2",
+        "attempt": 1,
+        "input_tokens": 145,
+        "output_tokens": 30,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 2.6614033749792725
+      },
+      {
+        "request_id": "9150:8",
+        "attempt": 1,
+        "input_tokens": 517,
+        "output_tokens": 6,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 1.5704494999954477
+      },
+      {
+        "request_id": "9150:3",
+        "attempt": 1,
+        "input_tokens": 211,
+        "output_tokens": 32,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 3.329977999906987
+      },
+      {
+        "request_id": "9150:7",
+        "attempt": 1,
+        "input_tokens": 488,
+        "output_tokens": 26,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 2.5070254580350593
+      },
+      {
+        "request_id": "9150:9",
+        "attempt": 1,
+        "input_tokens": 530,
+        "output_tokens": 10,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 2.2103312499821186
+      },
+      {
+        "request_id": "9150:10",
+        "attempt": 1,
+        "input_tokens": 564,
+        "output_tokens": 9,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 1.694421207997948
+      },
+      {
+        "request_id": "9150:12",
+        "attempt": 1,
+        "input_tokens": 622,
+        "output_tokens": 11,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 1.53445300005842
+      },
+      {
+        "request_id": "9150:11",
+        "attempt": 1,
+        "input_tokens": 611,
+        "output_tokens": 23,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 2.103752374998294
+      },
+      {
+        "request_id": "9150:13",
+        "attempt": 1,
+        "input_tokens": 645,
+        "output_tokens": 22,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 2.1544412500225008
+      },
+      {
+        "request_id": "9150:14",
+        "attempt": 1,
+        "input_tokens": 680,
+        "output_tokens": 20,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 1.9687044579768553
+      },
+      {
+        "request_id": "9150:15",
+        "attempt": 1,
+        "input_tokens": 707,
+        "output_tokens": 14,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 1.6029685409739614
+      },
+      {
+        "request_id": "3278:3",
+        "attempt": 1,
+        "input_tokens": 223,
+        "output_tokens": 27,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 2.1387849169550464
+      },
+      {
+        "request_id": "3278:5",
+        "attempt": 1,
+        "input_tokens": 276,
+        "output_tokens": 43,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 2.4930350829381496
+      },
+      {
+        "request_id": "3278:2",
+        "attempt": 1,
+        "input_tokens": 150,
+        "output_tokens": 46,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 3.068928041961044
+      },
+      {
+        "request_id": "3278:4",
+        "attempt": 1,
+        "input_tokens": 257,
+        "output_tokens": 39,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 2.938115708064288
+      },
+      {
+        "request_id": "3278:6",
+        "attempt": 1,
+        "input_tokens": 309,
+        "output_tokens": 32,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 2.000162999960594
+      },
+      {
+        "request_id": "3278:8",
+        "attempt": 1,
+        "input_tokens": 359,
+        "output_tokens": 16,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 1.5881152920192108
+      },
+      {
+        "request_id": "3278:7",
+        "attempt": 1,
+        "input_tokens": 332,
+        "output_tokens": 49,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 2.400920792017132
+      },
+      {
+        "request_id": "3278:9",
+        "attempt": 1,
+        "input_tokens": 375,
+        "output_tokens": 18,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 1.5832301669288427
+      },
+      {
+        "request_id": "3278:1",
+        "attempt": 1,
+        "input_tokens": 133,
+        "output_tokens": 80,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 4.011752750026062
+      },
+      {
+        "request_id": "3278:13",
+        "attempt": 1,
+        "input_tokens": 490,
+        "output_tokens": 10,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 1.5468843330163509
+      },
+      {
+        "request_id": "3278:10",
+        "attempt": 1,
+        "input_tokens": 416,
+        "output_tokens": 26,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 1.897418792010285
+      },
+      {
+        "request_id": "3278:11",
+        "attempt": 1,
+        "input_tokens": 429,
+        "output_tokens": 14,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 1.9466807499993593
+      },
+      {
+        "request_id": "3278:14",
+        "attempt": 1,
+        "input_tokens": 514,
+        "output_tokens": 17,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 1.890567958005704
+      },
+      {
+        "request_id": "3278:15",
+        "attempt": 1,
+        "input_tokens": 530,
+        "output_tokens": 13,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 1.7333815840538591
+      },
+      {
+        "request_id": "3278:12",
+        "attempt": 1,
+        "input_tokens": 462,
+        "output_tokens": 9,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 5.683266000007279
+      },
+      {
+        "request_id": "1538:1",
+        "attempt": 1,
+        "input_tokens": 97,
+        "output_tokens": 19,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 1.6217096670297906
+      },
+      {
+        "request_id": "1538:2",
+        "attempt": 1,
+        "input_tokens": 123,
+        "output_tokens": 29,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 1.84602829196956
+      },
+      {
+        "request_id": "1538:3",
+        "attempt": 1,
+        "input_tokens": 171,
+        "output_tokens": 17,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 1.4448015830712393
+      },
+      {
+        "request_id": "1538:7",
+        "attempt": 1,
+        "input_tokens": 346,
+        "output_tokens": 7,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 1.237535082967952
+      },
+      {
+        "request_id": "1538:5",
+        "attempt": 1,
+        "input_tokens": 294,
+        "output_tokens": 10,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 1.6357962499605492
+      },
+      {
+        "request_id": "1538:6",
+        "attempt": 1,
+        "input_tokens": 307,
+        "output_tokens": 19,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 1.6787323749158531
+      },
+      {
+        "request_id": "1538:4",
+        "attempt": 1,
+        "input_tokens": 247,
+        "output_tokens": 27,
+        "http_status": 200,
+        "status": "ok",
+        "usage_known": true,
+        "elapsed_seconds": 2.0023286250652745
+      }
+    ]
+  }
+]

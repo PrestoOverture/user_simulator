@@ -18,6 +18,10 @@ def measure(text, previous, first, messages, source="simulator"):
                   first_char_count=count if first else '',
                   first_identifier=int('[订单编号]' in s or '[数字]' in s or (source == 'simulator' and bool(re.search(r'\d{6,}', text)))) if first else '')
     for name in ('politeness', 'escalation', 'refusal', 'urgency', 'correction'):
-        result[name] = int(any(k in s for k in KEYWORDS[name]))
+        candidate = s
+        if name == 'politeness':
+            for excluded in KEYWORDS.get('politeness_exclude', []):
+                candidate = candidate.replace(excluded, '')
+        result[name] = int(any(k in candidate for k in KEYWORDS[name]))
     result['correction'] |= int(bool(re.search(KEYWORDS['correction_regex'], s)))
     return result

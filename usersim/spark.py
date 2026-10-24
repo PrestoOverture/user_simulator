@@ -12,10 +12,6 @@ URL = 'https://maas-api.cn-huabei-1.xf-yun.com/v2/chat/completions'
 def api_key():
     key = os.environ.get('SPARK_API_KEY')
     if not key:
-        for line in Path('.env').read_text().splitlines():
-            if line.startswith('SPARK_API_KEY='):
-                key = line.split('=', 1)[1].strip().strip('\"\'')
-    if not key:
         raise RuntimeError('SPARK_API_KEY missing')
     return key
 

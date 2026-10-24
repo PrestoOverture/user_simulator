@@ -53,7 +53,7 @@ async def main(args):
     for row in chosen:
         for t,turn in enumerate(user_turns(row),1):
             jobs.append((row,t,turn,f"{row['DialogueID']}:{t}"))
-    client=Spark(out,args.concurrency)
+    client = None if args.refresh_only else Spark(out,args.concurrency)
     async def generate(row,t,turn,rid):
         messages = prompt(row,turn)
         fingerprint = hashlib.sha256(json.dumps(messages,ensure_ascii=False).encode()).hexdigest()
@@ -69,7 +69,12 @@ async def main(args):
             f.write(json.dumps(item,ensure_ascii=False)+'\n')
         if len(completed)%50==0:
             print(f'completed {len(completed)}/{len(jobs)}',flush=True)
-    tasks=[asyncio.create_task(generate(*job)) for job in jobs]
+    if args.refresh_only:
+        for row, t, turn, rid in jobs:
+            fingerprint = hashlib.sha256(json.dumps(prompt(row, turn), ensure_ascii=False).encode()).hexdigest()
+            if rid not in completed or completed[rid].get('prompt_sha256') != fingerprint:
+                raise ValueError(f'{rid}: missing or stale generation; rerun affected turns first')
+    tasks=[] if args.refresh_only else [asyncio.create_task(generate(*job)) for job in jobs]
     try:
         await asyncio.gather(*tasks)
     except Exception:
@@ -79,7 +84,8 @@ async def main(args):
         (out/'STOPPED.md').write_text('Spark exhausted retries; pipeline stopped. See request_usage.jsonl. No model fallback.\n')
         raise
     finally:
-        await client.close()
+        if client is not None:
+            await client.close()
     pairs=[]; metrics=[]; moderated=[]
     for row in chosen:
         previous={'human':[],'simulator':[]}
@@ -116,7 +122,7 @@ async def main(args):
                moderated_count=len(moderated),moderated_dialogue_ids=sorted({r['dialogue_id'] for r in moderated}),
                moderated_ratio=len(moderated)/len(jobs),planned_user_turns=len(jobs),
                usage_unknown_requests=sum(not r.get('usage_known',False) for r in replay_records),dialogues=len(chosen),
-               user_turns=len(pairs),elapsed_seconds=time.monotonic()-start,
+               user_turns=len(pairs),elapsed_seconds=(json.loads((out/'token_usage.json').read_text())['elapsed_seconds'] if args.refresh_only else time.monotonic()-start),
                request_elapsed_seconds=sum(r['elapsed_seconds'] for r in replay_records),
                check_usage=dict(request_count=len(checks),input_tokens=sum(r['input_tokens'] for r in checks),output_tokens=sum(r['output_tokens'] for r in checks)),
                full_projection=dict(formula='known sample replay tokens / planned sample user turns (including moderated) * population user turns; unknown rejected usage excluded',
@@ -133,4 +139,5 @@ if __name__=='__main__':
     parser.add_argument('--n',type=int,required=True); parser.add_argument('--seed',type=int,required=True)
     parser.add_argument('--out',required=True); parser.add_argument('--exclude'); parser.add_argument('--baseline')
     parser.add_argument('--concurrency',type=int,default=4)
+    parser.add_argument('--refresh-only',action='store_true',help='Validate cached prompts and rebuild metrics/reports without API calls')
     asyncio.run(main(parser.parse_args()))

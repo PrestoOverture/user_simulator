@@ -59,7 +59,7 @@ def write_reports(out, metrics, pairs, usage, baseline=None):
     lines += ['', '## 4. 规则未覆盖的阅读观察', '',
               '关键词和长度没有衡量回复是否承接客服问题、是否编造订单细节、是否过早重述目标。下列为人工阅读入口，具体观察在本报告的人工阅读补充中记录；不能用规则差异替代语义判断。', '',
               '## 5. 关键词误判', '',
-              '“请”可能命中“申请”，“麻烦”可能表示嫌麻烦而非礼貌；“我要退款”是诉求，不一定拒绝已给方案；“不是…是”可能是解释而非自我更正；重复追问规则也可能命中重复“好的/谢谢”。关键词只做字面匹配，不等于行为真值。具体命中抽查见人工阅读补充。', '',
+              '本次独立审查已去除“申请”对礼貌的触发，收窄升级、拒绝和自我更正规则，将普通询时与催促分开。规则修订及680条固定种子命中/未命中逐条判断见 outputs/review.md 和 outputs/review_evidence/keyword_samples.json。“不要”仍可能只是任务参数；“麻烦”仍可能是陈述不便，催促词也可能用于顾客自己的行动。重复“好的/谢谢”可能触发重复追问。字面命中不等于行为真值。', '',
               '## 6. token用量、全量推算与额度', '',
               f"本次重放输入 {usage['input_tokens']:,}，输出 {usage['output_tokens']:,}，合计 {usage['total_tokens']:,} token；HTTP尝试 {usage['request_count']}，成功生成 {usage['successful_requests']}；墙钟耗时 {usage['elapsed_seconds']:.2f} 秒。",
               f"按已知token总量除以计划轮次（含moderated）再乘全量用户轮次推算：全CSDS（含非用户角色，纯体量外推） {usage['full_projection']['all_csds_tokens']:,} token；仅 QRole=用户 {usage['full_projection']['user_role_tokens']:,} token。公式与分母见 token_usage.json。未观测的其他角色、长对话与样本分布可能不同，此为线性外推。",

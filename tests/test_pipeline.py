@@ -69,7 +69,7 @@ def test_spark_payload_usage_and_retry(tmp_path,monkeypatch):
         await client.close()
     asyncio.run(run())
     assert len(calls)==2
-    assert all(p['thinking']=={'type':'disabled'} and p['model']=='spark-x2.6' and 'temperature' not in p for p in calls)
+    assert all(p['thinking']=={'type':'disabled'} and p['model']=='spark-x2.6' and p['stream'] is False and 'temperature' not in p and 'max_tokens' not in p for p in calls)
     records=[json.loads(s) for s in (tmp_path/'request_usage.jsonl').read_text().splitlines()]
     assert records[0]['http_status']==429
     assert records[1]['input_tokens']==10
@@ -170,3 +170,63 @@ def test_independent_leakage_audit_rejects_contamination():
             audit_turn(row, 5, polluted, polluted_hash)
     with pytest.raises(ValueError, match='fingerprint'):
         audit_turn(row, 5, messages, 'altered')
+
+
+def test_review_keyword_false_positives_and_clear_signals():
+    def metrics(text):
+        return measure(text, [], False, 1)
+    assert metrics('我可以申请退款吗')['politeness'] == 0
+    assert metrics('你好，可以申请退款吗')['politeness'] == 1
+    assert metrics('我们公司的客户经理是谁')['escalation'] == 0
+    assert metrics('我给领导汇报一下')['escalation'] == 0
+    assert metrics('刚给了差评可以修改吗')['escalation'] == 0
+    assert metrics('把你们主管叫来，我要投诉')['escalation'] == 1
+    assert metrics('保修多久，什么时候发货，到底什么问题')['urgency'] == 0
+    assert metrics('请加急，帮我催一下，尽快处理')['urgency'] == 1
+    assert metrics('软件还是不行，我要退款')['refusal'] == 0
+    assert metrics('我不接受这个方案')['refusal'] == 1
+    assert metrics('是不是发错了，东西不对，我是说这个型号')['correction'] == 0
+    assert metrics('我刚才说错了，是另一个订单')['correction'] == 1
+
+
+def test_spark_credentials_only_from_environment(monkeypatch):
+    from usersim.spark import api_key
+    monkeypatch.delenv('SPARK_API_KEY', raising=False)
+    with pytest.raises(RuntimeError, match='SPARK_API_KEY missing'):
+        api_key()
+
+
+def test_review_summary_overrides_preserve_questions_without_execution():
+    from usersim.csds import load
+    rows = {r['DialogueID']: r for r in load()}
+    expected = {1538: ('应付多少钱', '再下单'), 9150: ('是否需要评价', '已申请退货'),
+                3278: ('剩余运费', '商家补偿一部分运费')}
+    for identifier, (request, outcome) in expected.items():
+        goal, _ = clean_summary(rows[identifier]['UserSumm'], identifier)
+        assert request in goal
+        assert outcome not in goal
+    assert '退款已收到' in clean_summary(rows[3278]['UserSumm'], 3278)[0]
+
+
+def test_leakage_cli_nonzero_for_contaminated_fingerprints(tmp_path):
+    import hashlib
+    import subprocess
+    import sys
+    from pathlib import Path
+    from usersim.csds import load
+    root = Path(__file__).resolve().parents[1]
+    identifier = 5134
+    raw = next(r for r in load() if r['DialogueID'] == identifier)
+    generations = [json.loads(line) for line in (root/'outputs/generations.jsonl').read_text().splitlines()]
+    selected = [g for g in generations if g['dialogue_id'] == identifier]
+    (tmp_path/'sampled_ids.json').write_text(json.dumps(dict(ids=[identifier])))
+    for contamination in ('客服：未来客服内容', '顾客：模拟器历史污染'):
+        copied = [dict(g) for g in selected]
+        messages = prompt(raw, user_turns(raw)[0])
+        messages[1]['content'] += '\n' + contamination
+        copied[0]['prompt_sha256'] = hashlib.sha256(json.dumps(messages, ensure_ascii=False).encode()).hexdigest()
+        (tmp_path/'generations.jsonl').write_text('\n'.join(json.dumps(g) for g in copied))
+        result = subprocess.run([sys.executable, str(root/'scripts/audit_leakage.py'), str(tmp_path)],
+                                cwd=root, capture_output=True, text=True)
+        assert result.returncode != 0
+        assert 'FAIL:' in result.stderr and 'fingerprint mismatch' in result.stderr

@@ -1,0 +1,37 @@
+{"request_id": "9150:6", "dialogue_id": 9150, "turn": 6, "text": "那我换一个不就行了，或者我退货重新下单？", "status": "ok", "prompt_sha256": "f6c25cca2de743b51e8efe0cdf636216b3361ff85b872a76ba3d56498e1bcbc7"}
+{"request_id": "9150:1", "dialogue_id": 9150, "turn": 1, "text": "好的。那商品尺码按键有点不太灵敏，按下去反馈不明显，这个会影响换货吗？", "status": "ok", "prompt_sha256": "16da234d3a15bbf351486509366eafcc31cc23c0901dc3841bbe5abb7ec6bbb4"}
+{"request_id": "9150:5", "dialogue_id": 9150, "turn": 5, "text": "那这款是不是非镜面版的啊？能给我换成镜面版的吗？还是说我只能退货再重新下单了？", "status": "ok", "prompt_sha256": "ec660dd864587d46c96cba5e4b6cae393f7acb20fc0b2b037f32a3f9f23796dc"}
+{"request_id": "9150:4", "dialogue_id": 9150, "turn": 4, "text": "那这个太大了，用起来不舒服。能换小一号的吗？或者退货重新下单？", "status": "ok", "prompt_sha256": "7e46b7c71db1c2b36d276cfe0b6940b7fe5015568e76e23d9190bacbc2869161"}
+{"request_id": "9150:7", "dialogue_id": 9150, "turn": 7, "text": "那退货的话需不需要评价订单啊？", "status": "ok", "prompt_sha256": "0e9fe21bc1cc67a26ed5b5f35f972aa26f9e3e240b33d2be72b604fda9d96e66"}
+{"request_id": "9150:8", "dialogue_id": 9150, "turn": 8, "text": "那我试试退货重新买个白色的吧。还有退货的时候需要评价订单吗？", "status": "ok", "prompt_sha256": "e5d7dcd692a1a814efb898f02fa1763c5cd9bd8a073e046ec45d61db4ee8cafa"}
+{"request_id": "9150:2", "dialogue_id": 9150, "turn": 2, "text": "你好，我刚在这家店买了这双鞋，但是尺码不合适，有点挤脚，能帮我换一下吗？", "status": "ok", "prompt_sha256": "155be5ca1f31ae1005dc71b25e2531e1e68cebbd9a9d7a7a26c0ba26c868fcb9"}
+{"request_id": "9150:3", "dialogue_id": 9150, "turn": 3, "text": "那我申请售后可以直接换小一点的型号吗？还是得退货重新下单？另外退货的话，需要先评价订单吗？", "status": "ok", "prompt_sha256": "32e266b97d2dad8788c7cc049212aa9d9eaac170cacbad7dcbb2ec464d622745"}
+{"request_id": "9150:9", "dialogue_id": 9150, "turn": 9, "text": "还有个问题，退货的话，需要评价订单吗？", "status": "ok", "prompt_sha256": "82ea290515c806549156bc356bb418a7d7b37b563f63756ce0fc0c7e93c454f1"}
+{"request_id": "9150:10", "dialogue_id": 9150, "turn": 10, "text": "我要退货，那需要评价订单吗？", "status": "ok", "prompt_sha256": "32eac242b8edfd3cc14c77afeb94e8899915623e075f629c1ef12c45403cf4f1"}
+{"request_id": "9150:12", "dialogue_id": 9150, "turn": 12, "text": "好的，那我退货的时候需要评价订单吗？", "status": "ok", "prompt_sha256": "4f8e6b8721865d7db678a8fb34496db60e4a1652abacda0b0bcf1cd3a8a483a0"}
+{"request_id": "9150:13", "dialogue_id": 9150, "turn": 13, "text": "那行，我先申请退货吧。退货需要评价订单吗？", "status": "ok", "prompt_sha256": "8225015733834e55123b6d9e4a4543ad8b7280d204809519b3e95902b7a29fd1"}
+{"request_id": "9150:11", "dialogue_id": 9150, "turn": 11, "text": "这样啊，那我估计要换一个了，这个用着实在不太舒服。\n对了，退货的话需要先评价订单吗？", "status": "ok", "prompt_sha256": "44f97624e25469c46bc6c3823032a11111bbfae5b40fac0d92ac018d66a7392a"}
+{"request_id": "9150:14", "dialogue_id": 9150, "turn": 14, "text": "哦，不需要评价的话那我就先不评价啦，谢谢你的解答呀。", "status": "ok", "prompt_sha256": "d73997532123fc95dc67be9a085d0c97b7436a02692b0bb21a2ec980a63d263e"}
+{"request_id": "9150:15", "dialogue_id": 9150, "turn": 15, "text": "好的，有其他合适的鼠标推荐吗？比如罗技的。", "status": "ok", "prompt_sha256": "461a234e49431bc01d9f2c8af710e36512c717f96343fc6f059bdd5b729c31ba"}
+{"request_id": "3278:2", "dialogue_id": 3278, "turn": 2, "text": "我刚收到退款，但我把东西寄回去的运费商家一直不处理，能帮我解决吗？", "status": "ok", "prompt_sha256": "e79eb1d18c30e99895bf8dc957059f40c3fffa967a4500668944abfd55b3a1d5"}
+{"request_id": "3278:5", "dialogue_id": 3278, "turn": 5, "text": "我发照片了的，卖家没处理，还想问下快递面单就是快递单号吗？需要我把面单拍照发给你们看吗？还有，能不能帮我查下余额里申请的进度啊？", "status": "ok", "prompt_sha256": "f28e29fb35039307ad2b50e1a12b39142814e9eecd6d3da776e0f7701f1ff14d"}
+{"request_id": "3278:4", "dialogue_id": 3278, "turn": 4, "text": "还有我现在申请进度在哪里看 是余额查询吗", "status": "ok", "prompt_sha256": "e07425bcb2672344d3d629aea569f118187d1f114d8cdd0c64e3e801b3b9172a"}
+{"request_id": "3278:3", "dialogue_id": 3278, "turn": 3, "text": "我这边先核实下运费情况哦～对了，你说的快递面单是指快递单号还是快递面单上的信息呢？我需要拍面单吗？\n\n还有啊，这运费商家一直没赔，能不能麻烦平台帮我处理一下，补偿剩下的运费呀？\n\n另外就是，我是不是能在余额里查看申请进度呢？", "status": "ok", "prompt_sha256": "af77117a4a91dc95d1d79878654a3bf589805e254b4c49f0e7019116d75ad548"}
+{"request_id": "3278:6", "dialogue_id": 3278, "turn": 6, "text": "这个快递面单就是那个快递单号吗？我是不是直接拍个面单的照片就行了？", "status": "ok", "prompt_sha256": "ff71a5b6038271ed1f010a180d2a69e86d6de4f389cadd0c9e45e07a6b6c918f"}
+{"request_id": "3278:8", "dialogue_id": 3278, "turn": 8, "text": "是不是要把面单拍照给你啊？", "status": "ok", "prompt_sha256": "c3cbb7a944dd8f246689d62e4e694ced57328b2bca5938a01ceca7ba861f2124"}
+{"request_id": "3278:7", "dialogue_id": 3278, "turn": 7, "text": "快递面单就是快递单号吗？是要我拍张照片发过去吗？还有，我的余额查询里能看到申请进度吗？", "status": "ok", "prompt_sha256": "761c9bf1b47a72a437db8d5c8008bd228fba884975d3527b72dbc73bb93db5e6"}
+{"request_id": "3278:9", "dialogue_id": 3278, "turn": 9, "text": "那我发给你，然后运费什么时候能处理好，能快点吗？", "status": "ok", "prompt_sha256": "feae5023414f4a625a213e65b2df0de3f0abef5a86c78698c86904e008e0db12"}
+{"request_id": "3278:13", "dialogue_id": 3278, "turn": 13, "text": "我想确认下，我申请进度是到哪一步了呢？可以在余额里面查到吗？", "status": "ok", "prompt_sha256": "31cc97a9602e03a08daeb414c2ff16a4142427b1a208b816f6ff9f65967802a8"}
+{"request_id": "3278:11", "dialogue_id": 3278, "turn": 11, "text": "好的，非常感谢！\n申请进度是在余额里查询吗？", "status": "ok", "prompt_sha256": "3d9139ed49bd1f12e5d99400478c985ffb113f2d759d65ee10c3dcd4ba1e006d"}
+{"request_id": "3278:10", "dialogue_id": 3278, "turn": 10, "text": "是的。\n麻烦快点处理，我在哪里查询申请进度？", "status": "ok", "prompt_sha256": "e1469658a7da48a08be31e9b85b2b2549f9b87f4ac52173d59698b936cacdcd6"}
+{"request_id": "3278:1", "dialogue_id": 3278, "turn": 1, "text": "那我再确认一下哈，您的意思就是我只要拍个快递面单给您就行，不用再额外去拍那个快递单号的照片了对吧？\n还有我刚才看那个余额查询，我的申请进度怎么没变呀？是要在那个地方看吗？", "status": "ok", "prompt_sha256": "fe6ac2e2db601029ed8f18b7f0265229a2ca600475c40ee6e6676d94142c39cf"}
+{"request_id": "3278:12", "dialogue_id": 3278, "turn": 12, "text": "申请进度是在余额查询吗", "status": "ok", "prompt_sha256": "8f7b5efc9822cd2f4dfa1d0965812397e4bb1d1064656174845f0d1e88e75931"}
+{"request_id": "3278:15", "dialogue_id": 3278, "turn": 15, "text": "那我大概什么时候可以收到短信啊？", "status": "ok", "prompt_sha256": "79f491140ef824f692e2f1dea9d79a9813329b7774b9d02c44b696f3f1c2396d"}
+{"request_id": "3278:14", "dialogue_id": 3278, "turn": 14, "text": "好的，谢谢！我稍等看看短信。如果没收到，我再找你可以吗？", "status": "ok", "prompt_sha256": "ff978cf521f78dab38fe6676e2ac6e943778f3067cdd15bc8bf4800debcb3183"}
+{"request_id": "1538:1", "dialogue_id": 1538, "turn": 1, "text": "不是说还没收到货就降了[数字]块钱吗？那我现在到底该付多少钱啊？", "status": "ok", "prompt_sha256": "479ced2bfc857094bbce774c7fd141c85a32339cfea4bcf3e0c52eb8345b51e1"}
+{"request_id": "1538:3", "dialogue_id": 1538, "turn": 3, "text": "我现在应该付多少钱呀？", "status": "ok", "prompt_sha256": "2d3e8e0bafeb4c94506c63da9920c3c4c1645ae47205b79e5b2fcd77211c5348"}
+{"request_id": "1538:7", "dialogue_id": 1538, "turn": 7, "text": "好的，那我需要补差价吗？", "status": "ok", "prompt_sha256": "67d4ed963f02f8160c2c72dc957811ec1b5f10f3f5d95a9c45d1190cff0392e5"}
+{"request_id": "1538:2", "dialogue_id": 1538, "turn": 2, "text": "我刚看你们这个电视又降价了，我这还没收到货就掉了200块啊！我现在应该是付多少钱？", "status": "ok", "prompt_sha256": "ed83f31dd57e12c443dd176672c3c13f670f7a6b77853ffedee606fc8bce60a5"}
+{"request_id": "1538:5", "dialogue_id": 1538, "turn": 5, "text": "你好，那我的电视降价后应付多少钱啊？", "status": "ok", "prompt_sha256": "467a99f675968e092949b7e8a0d6ac462f0c1bbc16d6dd5554e9cdf4d353de30"}
+{"request_id": "1538:6", "dialogue_id": 1538, "turn": 6, "text": "请问我重新提交订单后，您能帮我核实并处理这 [数字] 元的差价吗？", "status": "ok", "prompt_sha256": "ccd9d4c6f29b74b32df5514c7577cffd6325fb30425daf292cbe996b512a971c"}
+{"request_id": "1538:4", "dialogue_id": 1538, "turn": 4, "text": "就是说我重新下单，然后告诉你新的单号，你帮我退差价是吗？", "status": "ok", "prompt_sha256": "63430c27c6d0f4a67ecbd716c0474de0b27541e94de613aaae064b0a882f0aad"}
