@@ -19,20 +19,29 @@
 
 | 角色 | 模型 | 状态 |
 |---|---|---|
-| 模拟器（主力） | 讯飞星辰 Spark 2.6 | 已定。10 亿 token 免费额度；有效期、速率限制、研究用途许可待第 0 步确认 |
+| 模拟器（主力） | 讯飞星辰 Spark X2.6（模型 ID `spark-x2.6`） | 已定。10 亿 token 免费额度；用户已确认条款，不再查（2026-10-25） |
 | 对比模型（一两个低价模型，小样本） | **待定**（[roadmap.md](roadmap.md) D3） | Gemini 报告提到的候选（**未核实**）：DeepSeek-V3.2、Qwen3.5、GPT-4o-mini |
 | 参照模型 | MIMESIS-4B / 9B（Meta 开源） | **待定**（[roadmap.md](roadmap.md) D4） |
 | 判断模型 | **待定**（[roadmap.md](roadmap.md) D5） | 输入文件未给出候选 |
 
 **调用参数：**
 - temperature 使用官方默认值，并记录。
-- 试跑 token 上限 200 万。接近上限时的处理见 [roadmap.md](roadmap.md) 4.1。
+- thinking 关闭（ADR-012）。
+- token 不设上限（用户 2026-10-25 取消了任务规格中的 200 万上限）。
 
 **MIMESIS 的 Gemini 描述（全部未核实）：** arXiv 2610.09484；权重在 Hugging Face `phanviethoang1512/MIMESIS-9B` 与 `MIMESIS-4B`；基于 Qwen3.5-9B / 4B 微调；Apache-2.0 许可；代码 `github.com/VietHoang1512/mimesis`。
 
 ## 3. Spark 接口
 
-- 地址、鉴权方式、参数名：**待第 0 步确认**。以讯飞官方文档为准，不凭记忆编写。
+已于 2026-10-25 对照官方文档确认，并实测调用成功（HTTP 200）。
+
+- **文档：** [API 接入](https://maas.xfyun.cn/doc/guide/1、快速开始/1.1%20API接入.html)、[Chat 接口](https://maas.xfyun.cn/doc/guide/3、API%20接口/3.1%20星火模型%20API/3.1.1%20Chat.html)。
+- **地址：** `https://maas-api.cn-huabei-1.xf-yun.com/v2/chat/completions`（OpenAI 兼容；SDK 的 `base_url` 为 `.../v2`）。
+- **鉴权：** `Authorization: Bearer $SPARK_API_KEY`。
+- **模型：** `spark-x2.6`。
+- **关闭思考：** 请求体加 `"thinking": {"type": "disabled"}`。默认值是 `enabled`；还可取 `auto`。
+- **用量字段：** `usage.prompt_tokens`、`completion_tokens`、`total_tokens`；思考模式下另有 `reasoning_tokens`。`max_tokens` 包含推理 token。
+- **实测：** 开启思考时一句话回复用了 381 个 completion token、约 7 秒；关闭后约 1–3 秒。
 - 第 0 步结果写入 `outputs/spark_check.md`。
 
 ## 4. 数据源
@@ -41,7 +50,7 @@
 
 | 名称 | 内容 | 获取方式 | 用途 | 核实状态 |
 |---|---|---|---|---|
-| CSDS | 京东售后客服真实对话，带人工标注的用户诉求摘要 | GitHub `xiaolinAndy/CSDS`，README 中有百度网盘和 Google Drive 链接 | 第一阶段主数据 | 未核实（试跑第 1 步核实） |
+| CSDS | 京东售后客服真实对话，带人工标注的用户诉求摘要 | GitHub `xiaolinAndy/CSDS` 的 Google Drive 链接（`gdown --folder`）；已下载到 `data/raw/csds/CSDS/` | 第一阶段主数据 | 已下载（2026-10-25）：train 9,101 / val 800 / test 800 段，71MB；字段含 `Dialogue`、`UserSumm`、`AgentSumm`、`FinalSumm`、`QA`。内部格式待第 1 步检查 |
 | MobileCS | 中国移动客服通话转录，含 Turnback（改口）标注 | GitHub `SereTOD/SereTOD2022` | 第一阶段辅助 | 未核实 |
 | ECD | 淘宝客服对话，约 100 万对 | GitHub `cooelf/DeepUtteranceAggregation` | 第一阶段辅助 | 未核实 |
 | JDDC | 京东客服对话，100 万+ | 需要申请；官方入口可能已不可用 | 备用 | 未核实 |
@@ -67,7 +76,7 @@
 
 - 只用环境变量。
 - 不写进代码，不写进日志。
-- 环境变量名称：**待定**（取决于第 0 步确认的 Spark 鉴权方式）。
+- Spark：`SPARK_API_KEY`，放在项目根目录 `.env`（已在 `.gitignore` 中）。
 
 ---
 

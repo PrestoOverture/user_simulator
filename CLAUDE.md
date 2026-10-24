@@ -20,11 +20,17 @@
 
 通过 `/codex:c2c-workflow`（codex MCP）合作。完整格式以该 prompt 为准。流程：
 
-1. 写 Goal Contract，给用户看并获得批准，再交给 Codex。
+1. 写 Goal Contract，直接交给 Codex，不需要用户先看（用户 2026-10-25 授权）。
 2. `codex_estimate` → `codex_implement`；用 `codex_status` 跟进并向用户报告进度。
 3. 用 `codex_result` 取回产出。**自己重新运行每一条验证命令**，不只信 handoff。
 4. 不通过时，用 `codex_rework` 发 Delta Contract。
 5. Codex 任务本身失败（报错、0 token、没有 handoff）时，报告用户并等待。除非用户明确要求，不自己接手实现。
+
+派活方式（用户 2026-10-25 指示）：
+- 发大任务，不要一次只发一个小任务。能并行的拆成几个互不碰同一批文件的合同，同时发出。
+- Spark token 不设上限，放手用。
+- 一直往前推进，只在必须由用户决定时停下（roadmap 第 3 节决策点）。
+- Codex 模型：gpt-6.1-sol，reasoning effort low。
 
 Goal Contract 中要写明：
 - 目标、产出文件、验证方法。
