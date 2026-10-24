@@ -153,3 +153,20 @@ def test_output_verifier_preserves_csv_line_endings(tmp_path):
     target = tmp_path/'side_by_side.csv'
     write_csv(target, rows)
     assert read_csv(target) == rows
+
+
+def test_independent_leakage_audit_rejects_contamination():
+    import hashlib
+    from scripts.audit_leakage import audit_turn
+    row = dict(dialogue(), DialogueID=-1)
+    messages = prompt(row, {'start': 5})
+    digest = hashlib.sha256(json.dumps(messages, ensure_ascii=False).encode()).hexdigest()
+    audit_turn(row, 5, messages, digest)
+    for contamination in ('客服：唯一消息6专属', '顾客：模拟器独有输出'):
+        polluted = [dict(m) for m in messages]
+        polluted[1]['content'] += '\n' + contamination
+        polluted_hash = hashlib.sha256(json.dumps(polluted, ensure_ascii=False).encode()).hexdigest()
+        with pytest.raises(ValueError, match='contamination'):
+            audit_turn(row, 5, polluted, polluted_hash)
+    with pytest.raises(ValueError, match='fingerprint'):
+        audit_turn(row, 5, messages, 'altered')
