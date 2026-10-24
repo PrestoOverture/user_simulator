@@ -17,13 +17,19 @@ def read_jsonl(path):
     return [json.loads(s) for s in path.read_text().splitlines()]
 
 
-def evaluate(rows, generations):
+def common_valid(conditions):
+    """Request IDs successful in every condition, never a union."""
+    return set.intersection(*({k for k, g in gens.items() if g["status"] == "ok"}
+                              for gens in conditions.values()))
+
+
+def evaluate(rows, generations, valid=None):
     metrics = []
     for row in rows:
         previous = dict(human=[], simulator=[])
         for t, turn in enumerate(user_turns(row), 1):
             item = generations[f"{row['DialogueID']}:{t}"]
-            if item['status'] == 'moderated':
+            if item['status'] == 'moderated' or (valid is not None and item['request_id'] not in valid):
                 continue
             for source, text, count in [('human', '\n'.join(turn['messages']), len(turn['messages'])),
                                         ('simulator', item['text'], len([s for s in item['text'].splitlines() if s.strip()]))]:
@@ -106,12 +112,16 @@ def check(root, n=500):
             assert (folder/'prompt_template.md').read_text()==anchor_template()
         conditions[name]=(metrics,gens)
         facts.append(f"{name}: planned={len(expected)}, paired={len(valid)}, moderated={len(expected)-len(valid)}, empty={empty} ({empty/len(valid):.4%})")
+    common = common_valid({name: gens for name, (_, gens) in conditions.items()})
+    conditions = {name: (evaluate(rows, gens, common), gens)
+                  for name, (_, gens) in conditions.items()}
+    facts.append(f'三条件共同有效轮次={len(common)}；共同有效对话={len({g["dialogue_id"] for g in conditions["baseline"][1].values() if g["request_id"] in common})}')
     keys = ranked(means(conditions['baseline'][0]))
     def mean(name,source,key):
         values=[float(m[key]) for m in conditions[name][0] if m['source']==source and m[key]!='']
         return sum(values)/len(values)
-    report=['# 原话约束探索性预跑', '', f'{n}段基线的同批轮次；非正式实验。各条件按自身 moderated 轮次配对剔除。全部指标用当前 usersim.metrics.measure 重算；不修改基线文件。', '', *facts, '',
-            '差距为 |模拟器均值−真人均值|；缩小比例为 (基线差距−该条件差距)/基线差距，负值表示差距扩大；基线差距为0时记 NA。沿用基线报告的相对绝对差距 |模拟器−真人|/|真人| 降序；真人为0时仅排序分母用1e-12，二者均0排在末尾。各条件真人均值因审核剔除可能不同。', '',
+    report=['# 原话约束探索性预跑', '', f'{n}段基线的同批轮次；非正式实验。三条件比较仅使用共同有效轮次交集；以下各条件 paired 为交集前账目。全部指标用当前 usersim.metrics.measure 重算；不修改基线文件。', '', *facts, '',
+            '差距为 |模拟器均值−真人均值|；缩小比例为 (基线差距−该条件差距)/基线差距，负值表示差距扩大；基线差距为0时记 NA。沿用基线报告的相对绝对差距 |模拟器−真人|/|真人| 降序；真人为0时仅排序分母用1e-12，二者均0排在末尾。各条件真人均值使用同一交集。', '',
             '|指标|基线真人|基线模拟器|C1真人|C1模拟器|C1差距缩小|C2真人|C2模拟器|C2差距缩小|',
             '|---|---:|---:|---:|---:|---:|---:|---:|---:|']
     for key in keys:
@@ -121,7 +131,7 @@ def check(root, n=500):
             h,s=mean(c,'human',key),mean(c,'simulator',key)
             cells += [f'{h:.6f}',f'{s:.6f}',f'{(base-abs(s-h))/base:.2%}' if base else 'NA']
         report.append('| '+' | '.join(cells)+' |')
-    report += ['', '短句等二值指标为比例；首轮指标仅计首轮。重复追问按各条件剔除审核轮次后的历史计算。未知 token 消耗不计入已知总量，详见各条件 token_usage.json。示例按固定种子、每段5条；下列并排例子为按基线顺序的前三个共同有效轮次，不按效果筛选。']
+    report += ['', '短句等二值指标为比例；首轮指标仅计首轮。重复追问按共同有效轮次历史重算。未知 token 消耗不计入已知总量，详见各条件 token_usage.json。示例按固定种子、每段5条；下列并排例子为按基线顺序的前三个共同有效轮次，不按效果筛选。']
     common=[k for k in expected if all(gens[k]['status']=='ok' for _,gens in conditions.values())]
     ordered=[f"{r['DialogueID']}:{t}" for r in rows for t in range(1,len(user_turns(r))+1) if f"{r['DialogueID']}:{t}" in common][:3]
     def cell(s):

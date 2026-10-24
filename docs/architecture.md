@@ -111,7 +111,32 @@
 
 ## 项目结构
 
-待试跑后填写。
+试跑后（2026-10-25）的结构。数据集适配和指标是分开的，第一阶段换数据集或第二阶段换 WildChat 时，只需新增一个适配模块（ADR-005）。
+
+```
+usersim/            可复用的核心库
+  csds.py           CSDS 适配：读取、合并用户轮次（ADR-010）、摘要清洗（ADR-009/015）、抽样
+  replay.py         逐轮重放的 prompt：只取第 t 轮之前的真实前缀，去分词空格（ADR-001/014）
+  spark.py          Spark 客户端：并发、退避重试、10013 记为 moderated（ADR-012/013），逐请求记 token
+  metrics.py        规则指标（关键词在 config/keywords.json）
+  report.py         汇总表和 report.md
+  anchors.py        修正方法：真实原话示例池与抽取（ADR-007，探索性）
+config/
+  keywords.json           关键词规则（已经过审查修订）
+  summary_overrides.json  逐段摘要清洗覆盖
+  summary_reviews.json    逐段摘要核对记录
+scripts/
+  run_pilot.py            入口：--n --seed --out；支持断点续跑和 --refresh-only（不调 API，只重算）
+  run_correction_pilot.py 修正方法预跑（C1 随机原话 / C2 同类原话）
+  check_outputs.py, check_correction_pilot.py, audit_leakage.py   输出校验与泄漏审计
+  build_d1_brief.py       D1 证据材料（配对 bootstrap）
+  其余                    审查与敏感性分析的一次性脚本
+tests/              pytest
+outputs/            试跑 20 段；extended/ 500 段；correction_pilot/；archive/v1_segmented/ 首版
+data/raw/           原始数据（不进 git）
+```
+
+依赖：`httpx`、`pytest`（`requirements.txt`）。虚拟环境 `.venv` 用 Python 3.12 建。
 
 ---
 

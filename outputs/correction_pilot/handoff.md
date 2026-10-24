@@ -1,27 +1,30 @@
 ### Changed Files
-- usersim/anchors.py — 固定种子抽取train用户原话，排除520段评估对话及目标轮次同文；记录C2补齐，复用原prompt。
-- scripts/run_correction_pilot.py — 复用run_pilot逐轮生成C1/C2，支持缓存恢复与无API重算；仅写correction_pilot目录。
-- scripts/check_correction_pilot.py — 重建示例与prompt、核对全部轮次/配对CSV/指标/审核计数，空输出≥2%非0；同份指标代码重算三条件并生成报告。
-- tests/test_anchors.py — 全500段示例池隔离、同文排除、C2 intent、补齐记录和prompt后缀不变测试。
-- outputs/correction_pilot/smoke/ — 3段双条件生成与完整校验，均24轮，无审核拒绝/空输出。
-- outputs/correction_pilot/protected_sha256.json — 全量运行期间受保护文件的哈希核对清单。
+- scripts/build_d1_brief.py — 从已有指标、生成与审查表生成11项指标的D1证据；标准库，2000次对话配对bootstrap，种子20261025。
+- outputs/d1_brief.md — 500段真人均值/出现对话与轮次、带95%区间差距、双侧关键词误判/漏判、三条件区间、20/500方向与总表。
+- scripts/check_correction_pilot.py — 保留各条件独立账目校验；三条件报告改为共同有效轮次交集，并在交集历史上重算重复指标。
+- outputs/correction_pilot/report.md — 全量500段三条件报告，统一4705轮；替换此前按各条件自身有效集计算的报告。
+- tests/test_d1_brief.py — 构造基线与C1审核集合不同的三轮数据，验证交集与交集历史重算。
+- outputs/correction_pilot/handoff.md — 替换过时的“生成中”交接，记录全量验证与D1交付。
 
 ### Validation
-- `.venv/bin/python -m pytest -q` — 18 passed in 25.24s，退出0。
-- `.venv/bin/python -m compileall -q usersim scripts tests` — 退出0；项目无额外build/typecheck声明。
-- 环境变量载入后 `.venv/bin/python scripts/run_correction_pilot.py --n 3 --out outputs/correction_pilot/smoke` — 退出0，C1/C2各24轮，8312/7710已知token。
-- `.venv/bin/python scripts/check_correction_pilot.py outputs/correction_pilot/smoke --n 3` — 退出0，三条件各24个有效配对，空输出0。
-- 临时复制小批输出并篡改C2 intent后运行同一校验命令 — 非0退出；未修改生产输出。
-- `.venv/bin/python scripts/run_correction_pilot.py --n 500` — 正在运行，exec session 11884；最后已确认C1至少200/4710。应继续轮询该session，不因观察超时重启。当前进程启动早于入口末尾自动校验的代码更新，完成后须手动运行全量校验脚本。
+- `.venv/bin/python scripts/build_d1_brief.py` — 退出0，11 metrics；common turns=4705；bootstrap=2000，seed=20261025。连续运行两次后用`cmp`比较，逐字节相同。
+- `.venv/bin/python -m pytest -q` — 19 passed，退出0，含不同moderated集合交集测试。
+- `.venv/bin/python scripts/check_correction_pilot.py` — 退出0；计划各4710轮，baseline/C1/C2各自有效4705/4706/4705轮，moderated为5/4/5；空输出均0；共同有效4705轮、500段。已验证全量anchors、prompt指纹、配对CSV、指标、token账目。
+- `.venv/bin/python scripts/check_outputs.py outputs outputs/extended` — 退出0；20/500段，有效201/4705轮；九项产物、样本隔离、轮次、文本/指标、token及报告结构通过。
+- `.venv/bin/python -m compileall -q usersim scripts tests` — 退出0。项目无额外声明的build/typecheck命令。
+- 按`outputs/correction_pilot/protected_sha256.json`逐项SHA256核对 — 107个文件，差异0；`git status --short`仅包含本次交付文件。
 
 ### Success Conditions
-- [x] pytest通过，含评估池隔离、目标同文排除、C2 intent及有记录补齐。
-- [ ] 全量C1/C2与基线配对轮次一致（moderated除外）、空输出<2%：生成中，尚未核验。
-- [ ] 全量report.md含三条件均值与差距缩小比例：小批报告已生成；全量待生成后运行`.venv/bin/python scripts/check_correction_pilot.py`。
+- [x] D1脚本退出0、重新生成简报，两次运行逐字节相同。
+- [x] pytest通过，构造不同moderated集合时三条件仅使用交集，并验证排除轮次不进入重复指标历史。
+- [x] correction pilot与20/500基线输出校验均退出0。
+- [x] 简报覆盖metrics_summary全部11项，每项含真人均值/出现对话与轮次、差距95%区间、双侧误判/漏判或“无”、C1/C2区间及20/500方向。
+- [x] 修正预跑全量有效轮次/空输出检查完成；报告三条件均值与差距缩小比例使用同一交集；handoff已补齐。
 
 ### Risks & Deviations
-- 任务未完成，尚未声明成功；保持目标active，下一轮继续轮询session 11884。
-- 既有工作树含前序审查的基线/config修改，本任务未改写这些文件。最终应核对protected_sha256.json和做仅内存凭证扫描。
-- 报告按基线绝对差距降序，明确披露单位与公式；每条件取同样的前三个共同有效轮次作并排例子，不按效果筛选。
-- C2池不足5条时才随机补齐并逐条记录fallback；当前小批没有补齐。
-- 无新增研究决定；未修改docs/，未git commit。建议Claude在最终证据齐全后更新进展记录。
+- PRD未给“足够常见/差距明显”数值阈值；总表提供数字、置信区间是否含零及方向，“是否同时满足”交用户判定，不设研究阈值、不推荐指标。
+- 连发条数为均值型指标，出现计数明确按条数>0；字数按字数>0；未将指标改为“连发≥2”。
+- 旧规则误判/漏判与修正规则同冻结样本复核分别列出；后者分母仍为旧分层，不解释成当前规则独立准确率。bootstrap不包含测量误差或审核选择偏差。
+- 基线与修正预跑当前交集恰为基线有效集4705轮；C1独有有效轮次不进入比较。重复追问按交集重算；不改写任何既有生成或指标文件。
+- 本次无模型API调用、无新依赖、无git commit；未修改docs/、misc/、CLAUDE.md、AGENTS.md、data/、outputs/archive/。
+- 建议Claude在docs进展中记录D1证据路径、交集口径与阈值待定；本次未直接修改docs。无未完成验证。
