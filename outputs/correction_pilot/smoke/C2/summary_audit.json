@@ -1,0 +1,46 @@
+[
+  {
+    "dialogue_id": 1610,
+    "original": [
+      "用户询问京东是否只有阿尔法电子面单魔板。",
+      "用户询问达不到快递标准是否能发。"
+    ],
+    "rule_goal": "用户询问京东是否只有阿尔法电子面单魔板。用户询问达不到快递标准是否能发",
+    "goal": "用户询问京东是否只有阿尔法电子面单魔板。用户询问达不到快递标准是否能发",
+    "removed": [],
+    "override": false,
+    "reviewed": true,
+    "reviewer": "Codex manual reading; no model API",
+    "review_note": "已逐条阅读：保留用户诉求、询问及咨询前问题背景，未见需删除的已完成解决结果。"
+  },
+  {
+    "dialogue_id": 6114,
+    "original": [
+      "用户询问苹果手机颜色选错了可否帮忙改一下。",
+      "用户询问怎么退货。",
+      "用户询问是否是全额退款。",
+      "用户询问还有碎屏险，是两个都退吗。"
+    ],
+    "rule_goal": "用户询问苹果手机颜色选错了可否帮忙改一下。用户询问怎么退货。用户询问是否是全额退款。用户询问还有碎屏险。是两个都退吗",
+    "goal": "用户询问苹果手机颜色选错了可否帮忙改一下。用户询问怎么退货。用户询问是否是全额退款。用户询问还有碎屏险。是两个都退吗",
+    "removed": [],
+    "override": false,
+    "reviewed": true,
+    "reviewer": "Codex manual reading; no model API",
+    "review_note": "已逐条阅读：保留用户诉求、询问及咨询前问题背景，未见需删除的已完成解决结果。"
+  },
+  {
+    "dialogue_id": 4970,
+    "original": [
+      "用户表示收到货物缺少遥控器和说明书。",
+      "用户询问怎样跟进和联系。"
+    ],
+    "rule_goal": "用户表示收到货物缺少遥控器和说明书。用户询问怎样跟进和联系",
+    "goal": "用户表示收到货物缺少遥控器和说明书。用户询问怎样跟进和联系",
+    "removed": [],
+    "override": false,
+    "reviewed": true,
+    "reviewer": "Codex manual reading; no model API",
+    "review_note": "已逐条阅读：保留用户诉求、询问及咨询前问题背景，未见需删除的已完成解决结果。"
+  }
+]
