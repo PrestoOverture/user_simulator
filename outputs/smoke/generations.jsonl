@@ -1,0 +1,24 @@
+{"request_id": "5134:3", "dialogue_id": 5134, "turn": 3, "text": "那这个价格保护的时长是多久啊？\n还有我要什么时候可以申请这个价保呢？", "status": "ok", "prompt_sha256": "f75535e52ba458115cdeb6960eb3bda87317a9a3b654a52ca133df38caee1574"}
+{"request_id": "5134:4", "dialogue_id": 5134, "turn": 4, "text": "那价格保护的时长一般是多久啊？还有啥时候能申请？", "status": "ok", "prompt_sha256": "f1e97ac1c812f5549cc9b1799e0cf807f0bca49ff5a3a7884979668c834899e4"}
+{"request_id": "5134:2", "dialogue_id": 5134, "turn": 2, "text": "我前几天买的这个商品，现在降价了，请问价格保护怎么操作啊？\n还有价格保护的期限是多久？什么时候可以申请？", "status": "ok", "prompt_sha256": "7dfaea71283a4f96684327a63dc8a33ebe712cf408cfda987145917747844678"}
+{"request_id": "5134:1", "dialogue_id": 5134, "turn": 1, "text": "您好，我想咨询一下，我刚买的这个电饭煲昨天看好像降了50块钱，这个价格保护具体是怎么操作的呀？是要我自己在订单里点申请，还是你们后台会自己处理？", "status": "ok", "prompt_sha256": "c16d247fcb8bb2634f5186656357d6680ac604588e9b8ec97241a2a7a624e139"}
+{"request_id": "5134:6", "dialogue_id": 5134, "turn": 6, "text": "也就是说，我只要在这段时间内发现价格降了，就可以找你们退差价是吗？", "status": "ok", "prompt_sha256": "c113e8d870077290b696c791395c850fe5c24fe2a64c201a41236b2e8bdc9bbc"}
+{"request_id": "5134:5", "dialogue_id": 5134, "turn": 5, "text": "那价保要多长时间内申请啊？还有什么时候买的商品可以申请价保？", "status": "ok", "prompt_sha256": "5b6470847cc50ac63dc06d1a9520f39dce035c3bd9244381050270a70f8f5c87"}
+{"request_id": "5134:7", "dialogue_id": 5134, "turn": 7, "text": "收到货后，价保可以维持多少天？", "status": "ok", "prompt_sha256": "2487f2a55de5a7194d207a785899dff6f99608f6eca377757fde69ad8c1ede8d"}
+{"request_id": "5134:8", "dialogue_id": 5134, "turn": 8, "text": "好的，懂了。  \n谢谢你的帮助。  \n那么我收到货后可以在手机端申请价格保护吗？", "status": "ok", "prompt_sha256": "7b0d7c0db5113ecd7c19f966edb4602f9210efe98dc417db3c07e6d373147d5f"}
+{"request_id": "5134:9", "dialogue_id": 5134, "turn": 9, "text": "那个价保申请万一失败了怎么办？", "status": "ok", "prompt_sha256": "f0af852211847780b8cd9e0d2c5930805d2b782257e80030d7a6c7f0adbf8986"}
+{"request_id": "3910:1", "dialogue_id": 3910, "turn": 1, "text": "那这款耳机平时打电话能听清吗？在地铁里打电话会不会听不清对方说话？", "status": "ok", "prompt_sha256": "8131775ac4daeb28c15eee7243e9f07b0dfd31a1bbba515b74a05859bc879ad3"}
+{"request_id": "3910:3", "dialogue_id": 3910, "turn": 3, "text": "我刚看了你发的那个链接，那个运动耳机有什么功能可以选吗？", "status": "ok", "prompt_sha256": "0de8370227c91814d4909d54e64fa1f614d88086da79c6a1f60ca6bf1c07187a"}
+{"request_id": "3910:2", "dialogue_id": 3910, "turn": 2, "text": "我看你们这运动耳机的介绍，功能好像挺多的，都有啥功能可以选呀？有几款啊？另外，你推荐的这款音质咋样啊？隔音效果一般不？", "status": "ok", "prompt_sha256": "023e32007afb64c92159834933c5ebf032a46bf999718ab26ba1a8f3904ac755"}
+{"request_id": "3910:4", "dialogue_id": 3910, "turn": 4, "text": "降噪功能好点的，还要防汗的，有几种款式可以选择吗？", "status": "ok", "prompt_sha256": "12955990722124d87765e5445b943962f49b89f2c8adab6c4a05875af721c06c"}
+{"request_id": "3910:6", "dialogue_id": 3910, "turn": 6, "text": "这款音质如何？隔音效果一般吗？", "status": "ok", "prompt_sha256": "dfd2cb1d7772eef5c8ae67026e04a5cac341fd66dd2e37b413108da6cbc17599"}
+{"request_id": "3910:5", "dialogue_id": 3910, "turn": 5, "text": "好的，那听起来不错。你们这里有几款运动耳机可以选择？", "status": "ok", "prompt_sha256": "374e92bcad786f9758fecd23d18ca4998411dbba25e96eff00434de0029bccc7"}
+{"request_id": "3910:7", "dialogue_id": 3910, "turn": 7, "text": "这款耳机音质怎么样？隔音效果一般吗？", "status": "ok", "prompt_sha256": "079a1256e1e79d583b797726003386192cb686f91adedac5a53aac026c947504"}
+{"request_id": "3910:8", "dialogue_id": 3910, "turn": 8, "text": "这款耳机的音质怎么样？隔音效果还行吗？", "status": "ok", "prompt_sha256": "c929ce7d8d53a1ae75ac2475907e7da735b6a676f01f4d2805d61c69e87c14fc"}
+{"request_id": "10062:3", "dialogue_id": 10062, "turn": 3, "text": "我买一个压缩软件，但是安装以后总是闪退。", "status": "ok", "prompt_sha256": "0e1cdf487f87cf7d46156be0b27f5317b7eb80d8b01925e303d022dc3dd7fc6b"}
+{"request_id": "10062:2", "dialogue_id": 10062, "turn": 2, "text": "你们这软件我根本不知道怎么用，说明也看不懂，太复杂了，快帮我找个人来教教我吧！", "status": "ok", "prompt_sha256": "43e675115292c71e44f3dc8e1426836767d4ff7d55366bcfe1c0db2705baa08e"}
+{"request_id": "10062:4", "dialogue_id": 10062, "turn": 4, "text": "好的，麻烦你了。", "status": "ok", "prompt_sha256": "d7fe4f6bccfb1654c7d8fb74e9660c89d3ca8702a6b3e4de1819b9be76c6ee0f"}
+{"request_id": "10062:1", "dialogue_id": 10062, "turn": 1, "text": "客服您好，我昨天在你们这买了个 office 软件，但我不知道咋把它装到电脑上，能教教我吗？", "status": "ok", "prompt_sha256": "f7a66f42817ab4a4874caa1c861ce2897a19551cad97d5f286cdd73f1f4cead4"}
+{"request_id": "10062:5", "dialogue_id": 10062, "turn": 5, "text": "喂，是供应商吗？\n我是在京东上买了你们软件的顾客，你们能教教我怎么用吗？", "status": "ok", "prompt_sha256": "c90110847e432138654ef7f5edbf4e7e658f925c0a93207e8df86f394ed6aca5"}
+{"request_id": "10062:6", "dialogue_id": 10062, "turn": 6, "text": "那你们不管了是吗？", "status": "ok", "prompt_sha256": "fb90c3c34fa88f645592bad862add27d7ab0a74dbdeb597315075f4895e2bae7"}
+{"request_id": "10062:7", "dialogue_id": 10062, "turn": 7, "text": "如果电话没人接怎么办？", "status": "ok", "prompt_sha256": "9700ace39cfef43385af03b3241a93255d1bafaf45a3d6c3ff66104315598fd4"}

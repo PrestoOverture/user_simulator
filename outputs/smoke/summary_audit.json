@@ -1,0 +1,44 @@
+[
+  {
+    "dialogue_id": 5134,
+    "original": [
+      "用户询问怎么操作价格保护。",
+      "用户询问价保时长为多少以及什么时候可以申请价保。"
+    ],
+    "rule_goal": "用户询问怎么操作价格保护。用户询问价保时长为多少以及什么时候可以申请价保",
+    "goal": "用户询问怎么操作价格保护。用户询问价保时长为多少以及什么时候可以申请价保",
+    "removed": [],
+    "override": false,
+    "reviewed": true,
+    "reviewer": "Codex manual reading; no model API",
+    "review_note": "已逐条阅读：保留用户诉求、询问及咨询前问题背景，未见需删除的已完成解决结果。"
+  },
+  {
+    "dialogue_id": 3910,
+    "original": [
+      "用户想买个运动耳机，询问有什么功能可以选择。",
+      "用户询问有几款。",
+      "用户询问客服推荐的这款音质如何，是否一般隔音。"
+    ],
+    "rule_goal": "用户想买个运动耳机。询问有什么功能可以选择。用户询问有几款。用户询问客服推荐的这款音质如何。是否一般隔音",
+    "goal": "用户想买个运动耳机。询问有什么功能可以选择。用户询问有几款。用户询问客服推荐的这款音质如何。是否一般隔音",
+    "removed": [],
+    "override": false,
+    "reviewed": true,
+    "reviewer": "Codex manual reading; no model API",
+    "review_note": "已逐条阅读：保留用户诉求、询问及咨询前问题背景，未见需删除的已完成解决结果。"
+  },
+  {
+    "dialogue_id": 10062,
+    "original": [
+      "用户购买的软件不会用。"
+    ],
+    "rule_goal": "用户购买的软件不会用",
+    "goal": "用户购买的软件不会用",
+    "removed": [],
+    "override": false,
+    "reviewed": true,
+    "reviewer": "Codex manual reading; no model API",
+    "review_note": "已逐条阅读：保留用户诉求、询问及咨询前问题背景，未见需删除的已完成解决结果。"
+  }
+]

@@ -1,0 +1,283 @@
+[
+  {
+    "dialogue_id": 5134,
+    "original": [
+      "用户询问怎么操作价格保护。",
+      "用户询问价保时长为多少以及什么时候可以申请价保。"
+    ],
+    "rule_goal": "用户询问怎么操作价格保护。用户询问价保时长为多少以及什么时候可以申请价保",
+    "goal": "用户询问怎么操作价格保护。用户询问价保时长为多少以及什么时候可以申请价保",
+    "removed": [],
+    "override": false,
+    "reviewed": true,
+    "reviewer": "Codex manual reading; no model API",
+    "review_note": "已逐条阅读：保留用户诉求、询问及咨询前问题背景，未见需删除的已完成解决结果。"
+  },
+  {
+    "dialogue_id": 3910,
+    "original": [
+      "用户想买个运动耳机，询问有什么功能可以选择。",
+      "用户询问有几款。",
+      "用户询问客服推荐的这款音质如何，是否一般隔音。"
+    ],
+    "rule_goal": "用户想买个运动耳机。询问有什么功能可以选择。用户询问有几款。用户询问客服推荐的这款音质如何。是否一般隔音",
+    "goal": "用户想买个运动耳机。询问有什么功能可以选择。用户询问有几款。用户询问客服推荐的这款音质如何。是否一般隔音",
+    "removed": [],
+    "override": false,
+    "reviewed": true,
+    "reviewer": "Codex manual reading; no model API",
+    "review_note": "已逐条阅读：保留用户诉求、询问及咨询前问题背景，未见需删除的已完成解决结果。"
+  },
+  {
+    "dialogue_id": 10062,
+    "original": [
+      "用户购买的软件不会用。"
+    ],
+    "rule_goal": "用户购买的软件不会用",
+    "goal": "用户购买的软件不会用",
+    "removed": [],
+    "override": false,
+    "reviewed": true,
+    "reviewer": "Codex manual reading; no model API",
+    "review_note": "已逐条阅读：保留用户诉求、询问及咨询前问题背景，未见需删除的已完成解决结果。"
+  },
+  {
+    "dialogue_id": 10083,
+    "original": [
+      "用户询问订单情况。",
+      "用户询问审核是否通过。"
+    ],
+    "rule_goal": "用户询问订单情况。用户询问审核是否通过",
+    "goal": "用户询问订单情况。用户询问审核是否通过",
+    "removed": [],
+    "override": false,
+    "reviewed": true,
+    "reviewer": "Codex manual reading; no model API",
+    "review_note": "已逐条阅读：保留用户诉求、询问及咨询前问题背景，未见需删除的已完成解决结果。"
+  },
+  {
+    "dialogue_id": 8562,
+    "original": [
+      "用户不常在家，希望十三号冰箱送达。",
+      "用户告知配送点离收货地址距离很近，希望十三号送达。",
+      "用户询问是否为成都仓库进行发货。"
+    ],
+    "rule_goal": "用户不常在家。希望十三号冰箱送达。用户告知配送点离收货地址距离很近。希望十三号送达。用户询问是否为成都仓库进行发货",
+    "goal": "用户不常在家。希望十三号冰箱送达。用户告知配送点离收货地址距离很近。希望十三号送达。用户询问是否为成都仓库进行发货",
+    "removed": [],
+    "override": false,
+    "reviewed": true,
+    "reviewer": "Codex manual reading; no model API",
+    "review_note": "已逐条阅读：保留用户诉求、询问及咨询前问题背景，未见需删除的已完成解决结果。"
+  },
+  {
+    "dialogue_id": 8396,
+    "original": [
+      "用户询问商品发票信息选错之后是否可以修改。"
+    ],
+    "rule_goal": "用户询问商品发票信息选错之后是否可以修改",
+    "goal": "用户询问商品发票信息选错之后是否可以修改",
+    "removed": [],
+    "override": false,
+    "reviewed": true,
+    "reviewer": "Codex manual reading; no model API",
+    "review_note": "已逐条阅读：保留用户诉求、询问及咨询前问题背景，未见需删除的已完成解决结果。"
+  },
+  {
+    "dialogue_id": 1479,
+    "original": [
+      "用户表示酸辣粉和劲仔小鱼有收到，面粉没见到，让客服催一下，并表示酸辣粉和米线是单独装在一个箱子里的。[姓名]小鱼是装在一个袋子里的，都是分开的。询问什么情况。"
+    ],
+    "rule_goal": "用户表示酸辣粉和劲仔小鱼有收到。面粉没见到。让客服催一下。并表示酸辣粉和米线是单独装在一个箱子里的。[姓名]小鱼是装在一个袋子里的。都是分开的。询问什么情况",
+    "goal": "用户表示酸辣粉和劲仔小鱼有收到。面粉没见到。让客服催一下。并表示酸辣粉和米线是单独装在一个箱子里的。[姓名]小鱼是装在一个袋子里的。都是分开的。询问什么情况",
+    "removed": [],
+    "override": false,
+    "reviewed": true,
+    "reviewer": "Codex manual reading; no model API",
+    "review_note": "已逐条阅读：保留用户诉求、询问及咨询前问题背景，未见需删除的已完成解决结果。"
+  },
+  {
+    "dialogue_id": 4950,
+    "original": [
+      "用户询问这款电脑是否能货到付款。",
+      "用户询问这款电脑硬盘是多少G的，是否是只有固态硬盘。"
+    ],
+    "rule_goal": "用户询问这款电脑是否能货到付款。用户询问这款电脑硬盘是多少G的。是否是只有固态硬盘",
+    "goal": "用户询问这款电脑是否能货到付款。用户询问这款电脑硬盘是多少G的。是否是只有固态硬盘",
+    "removed": [],
+    "override": false,
+    "reviewed": true,
+    "reviewer": "Codex manual reading; no model API",
+    "review_note": "已逐条阅读：保留用户诉求、询问及咨询前问题背景，未见需删除的已完成解决结果。"
+  },
+  {
+    "dialogue_id": 8042,
+    "original": [
+      "用户询问因退件物流太慢导致无法退款。",
+      "用户询问商家大概多久能收到退件。"
+    ],
+    "rule_goal": "用户询问因退件物流太慢导致无法退款。用户询问商家大概多久能收到退件",
+    "goal": "用户询问因退件物流太慢导致无法退款。用户询问商家大概多久能收到退件",
+    "removed": [],
+    "override": false,
+    "reviewed": true,
+    "reviewer": "Codex manual reading; no model API",
+    "review_note": "已逐条阅读：保留用户诉求、询问及咨询前问题背景，未见需删除的已完成解决结果。"
+  },
+  {
+    "dialogue_id": 7637,
+    "original": [
+      "用户咨询是否需要回收产品拿去评估。",
+      "用户询问检测完毕后怎么操作。",
+      "用户询问财务返款方式。"
+    ],
+    "rule_goal": "用户咨询是否需要回收产品拿去评估。用户询问检测完毕后怎么操作。用户询问财务返款方式",
+    "goal": "用户咨询是否需要回收产品拿去评估。用户询问检测完毕后怎么操作。用户询问财务返款方式",
+    "removed": [],
+    "override": false,
+    "reviewed": true,
+    "reviewer": "Codex manual reading; no model API",
+    "review_note": "已逐条阅读：保留用户诉求、询问及咨询前问题背景，未见需删除的已完成解决结果。"
+  },
+  {
+    "dialogue_id": 10049,
+    "original": [
+      "用户询问订单地址填错是否可以拒收或者转寄，最后请客服帮助取消订单。"
+    ],
+    "rule_goal": "用户询问订单地址填错是否可以拒收或者转寄。最后请客服帮助取消订单",
+    "goal": "用户询问订单地址填错是否可以拒收或者转寄。最后请客服帮助取消订单",
+    "removed": [],
+    "override": false,
+    "reviewed": true,
+    "reviewer": "Codex manual reading; no model API",
+    "review_note": "“最后请客服帮助取消订单”仍是诉求，去掉笼统“最后”触发词后保留。"
+  },
+  {
+    "dialogue_id": 9069,
+    "original": [
+      "用户询问能否退掉自动续费的京东plus会员并退款。"
+    ],
+    "rule_goal": "用户询问能否退掉自动续费的京东plus会员并退款",
+    "goal": "用户询问能否退掉自动续费的京东plus会员并退款",
+    "removed": [],
+    "override": false,
+    "reviewed": true,
+    "reviewer": "Codex manual reading; no model API",
+    "review_note": "已逐条阅读：保留用户诉求、询问及咨询前问题背景，未见需删除的已完成解决结果。"
+  },
+  {
+    "dialogue_id": 7028,
+    "original": [
+      "用户询问联动促销的订单能否取消其中一个。",
+      "用户询问是否可以单独退货。"
+    ],
+    "rule_goal": "用户询问联动促销的订单能否取消其中一个。用户询问是否可以单独退货",
+    "goal": "用户询问联动促销的订单能否取消其中一个。用户询问是否可以单独退货",
+    "removed": [],
+    "override": false,
+    "reviewed": true,
+    "reviewer": "Codex manual reading; no model API",
+    "review_note": "已逐条阅读：保留用户诉求、询问及咨询前问题背景，未见需删除的已完成解决结果。"
+  },
+  {
+    "dialogue_id": 10611,
+    "original": [
+      "用户希望快速换货。"
+    ],
+    "rule_goal": "用户希望快速换货",
+    "goal": "用户希望快速换货",
+    "removed": [],
+    "override": false,
+    "reviewed": true,
+    "reviewer": "Codex manual reading; no model API",
+    "review_note": "已逐条阅读：保留用户诉求、询问及咨询前问题背景，未见需删除的已完成解决结果。"
+  },
+  {
+    "dialogue_id": 9347,
+    "original": [
+      "用户询问开通京东会员是不是可以领爱奇艺会员。",
+      "用户询问有没有什么条件。",
+      "用户询问是不是可以直接领。",
+      "用户询问订单商品一直不出来。"
+    ],
+    "rule_goal": "用户询问开通京东会员是不是可以领爱奇艺会员。用户询问有没有什么条件。用户询问是不是可以直接领。用户询问订单商品一直不出来",
+    "goal": "用户询问开通京东会员是不是可以领爱奇艺会员。用户询问有没有什么条件。用户询问是不是可以直接领。用户询问订单商品一直不出来",
+    "removed": [],
+    "override": false,
+    "reviewed": true,
+    "reviewer": "Codex manual reading; no model API",
+    "review_note": "已逐条阅读：保留用户诉求、询问及咨询前问题背景，未见需删除的已完成解决结果。"
+  },
+  {
+    "dialogue_id": 346,
+    "original": [
+      "用户询问如何报销安装费。"
+    ],
+    "rule_goal": "用户询问如何报销安装费",
+    "goal": "用户询问如何报销安装费",
+    "removed": [],
+    "override": false,
+    "reviewed": true,
+    "reviewer": "Codex manual reading; no model API",
+    "review_note": "已逐条阅读：保留用户诉求、询问及咨询前问题背景，未见需删除的已完成解决结果。"
+  },
+  {
+    "dialogue_id": 8833,
+    "original": [
+      "用户咨询回收订单，最晚去门店交货的时间。",
+      "用户咨询过了最晚提交时间，订单是否自动失效。",
+      "用户咨询如果订单失效，券是否会返还。"
+    ],
+    "rule_goal": "用户咨询回收订单。最晚去门店交货的时间。用户咨询过了最晚提交时间。订单是否自动失效。用户咨询如果订单失效。券是否会返还",
+    "goal": "用户咨询回收订单。最晚去门店交货的时间。用户咨询过了最晚提交时间。订单是否自动失效。用户咨询如果订单失效。券是否会返还",
+    "removed": [],
+    "override": false,
+    "reviewed": true,
+    "reviewer": "Codex manual reading; no model API",
+    "review_note": "已逐条阅读：保留用户诉求、询问及咨询前问题背景，未见需删除的已完成解决结果。"
+  },
+  {
+    "dialogue_id": 321,
+    "original": [
+      "用户询问快递丢了该如何处理。"
+    ],
+    "rule_goal": "用户询问快递丢了该如何处理",
+    "goal": "用户询问快递丢了该如何处理",
+    "removed": [],
+    "override": false,
+    "reviewed": true,
+    "reviewer": "Codex manual reading; no model API",
+    "review_note": "已逐条阅读：保留用户诉求、询问及咨询前问题背景，未见需删除的已完成解决结果。"
+  },
+  {
+    "dialogue_id": 8887,
+    "original": [
+      "用户询问长沙上门收件电话。",
+      "用户询问是否有站点联系方式。",
+      "用户询问快递费用是否需要和快递员结算，是否是自动结算。"
+    ],
+    "rule_goal": "用户询问长沙上门收件电话。用户询问是否有站点联系方式。用户询问快递费用是否需要和快递员结算。是否是自动结算",
+    "goal": "用户询问长沙上门收件电话。用户询问是否有站点联系方式。用户询问快递费用是否需要和快递员结算。是否是自动结算",
+    "removed": [],
+    "override": false,
+    "reviewed": true,
+    "reviewer": "Codex manual reading; no model API",
+    "review_note": "已逐条阅读：保留用户诉求、询问及咨询前问题背景，未见需删除的已完成解决结果。"
+  },
+  {
+    "dialogue_id": 1906,
+    "original": [
+      "用户反映货未收到，显示已签收。",
+      "用户询问怎样解决。",
+      "用户询问配送员是否为京东。",
+      "用户要求电话联系。"
+    ],
+    "rule_goal": "用户反映货未收到。显示已签收。用户询问怎样解决。用户询问配送员是否为京东。用户要求电话联系",
+    "goal": "用户反映货未收到。显示已签收。用户询问怎样解决。用户询问配送员是否为京东。用户要求电话联系",
+    "removed": [],
+    "override": false,
+    "reviewed": true,
+    "reviewer": "Codex manual reading; no model API",
+    "review_note": "已逐条阅读：保留用户诉求、询问及咨询前问题背景，未见需删除的已完成解决结果。"
+  }
+]

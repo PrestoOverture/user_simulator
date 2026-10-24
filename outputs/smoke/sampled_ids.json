@@ -1,0 +1,16 @@
+{
+  "seed": 20261025,
+  "ids": [
+    5134,
+    3910,
+    10062
+  ],
+  "n": 3,
+  "excluded_ids": [],
+  "preferred_range": [
+    6,
+    30
+  ],
+  "role": "用户",
+  "user_turns": 24
+}

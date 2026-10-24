@@ -51,9 +51,9 @@
 | 名称 | 内容 | 获取方式 | 用途 | 核实状态 |
 |---|---|---|---|---|
 | CSDS | 京东售后客服真实对话，带人工标注的用户诉求摘要 | GitHub `xiaolinAndy/CSDS` 的 Google Drive 链接（`gdown --folder`）；已下载到 `data/raw/csds/CSDS/` | 第一阶段主数据 | 已下载（2026-10-25）：train 9,101 / val 800 / test 800 段，71MB；字段含 `Dialogue`、`UserSumm`、`AgentSumm`、`FinalSumm`、`QA`。内部格式待第 1 步检查 |
-| MobileCS | 中国移动客服通话转录，含 Turnback（改口）标注 | GitHub `SereTOD/SereTOD2022` | 第一阶段辅助 | 未核实 |
-| ECD | 淘宝客服对话，约 100 万对 | GitHub `cooelf/DeepUtteranceAggregation` | 第一阶段辅助 | 未核实 |
-| JDDC | 京东客服对话，100 万+ | 需要申请；官方入口可能已不可用 | 备用 | 未核实 |
+| MobileCS | 中国移动客服通话转录，含 Turnback（改口）标注 | GitHub `SereTOD/SereTOD2022` | 第一阶段辅助 | 已核实（2026-10-25）：全量需注册、组织者审核、签数据使用协议；只取得公开的 10 段示例（`data/raw/mobilecs/`）。无用户摘要、无解决标注、无 LICENSE。是否申请：**待定**（你决定）。详见 `outputs/data_format_notes_mobilecs.md` |
+| ECD | 淘宝客服对话，约 100 万对 | GitHub `cooelf/DeepUtteranceAggregation` → Google Drive ZIP | 第一阶段辅助 | 已下载（2026-10-25）：303MB，`data/raw/ecd/`。**是响应选择格式**（label + 上下文 + 候选回复），无说话人标注、无对话 ID、无摘要、无 LICENSE，不能直接用于逐轮重放的配对比较。详见 `outputs/data_format_notes_ecd.md` |
+| JDDC | 京东客服对话，100 万+ | 原官网已失效；JDDC 2.1 需填表并用机构邮箱申请 | 备用 | 已核实（2026-10-25）：无免申请入口。另有第三方衍生子集（DialogueCSE 仓库，自称 Apache-2.0），未下载 |
 | WildChat-4.8M（英文子集） | 真实用户与 ChatGPT 的对话，含 hashed_ip、header、时间戳 | Hugging Face `allenai/WildChat-4.8M` | 第二阶段 | 未核实 |
 | WildChat 中文部分 | 真实中国用户面对 AI 的对话 | 同上 | 第一阶段交叉对照（[roadmap.md](roadmap.md) 风险 1）。是否使用：**待定** | 未核实 |
 | MIMESIS-4B/9B | Meta 开源的专用用户模拟器 | Hugging Face，见第 2 节 | 第一阶段参照模型 | 未核实 |
