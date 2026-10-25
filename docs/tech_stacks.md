@@ -29,7 +29,7 @@
 - **凭证：** `SANDBOX_API_KEY`；地址为 `SANDBOX_BASE_URL` 加 `/v1`（OpenAI 兼容，`/v1/chat/completions`）。
 - **可用模型：** `deepseek-v4.1-flash`、`gemini-3.8-flash`、`glm-5.3-flash`。
 - **规则（用户要求）：** 这三个模型按量付费。只在需要它们的地方用（对比模拟器、判断模型），拿到需要的答案后回到 Spark。`SPARK_API_KEY` 只能调 Spark，不能调讯飞平台上的其他模型（那些不免费）。
-- **推理模式实测：** `deepseek-v4.1-flash` 默认不推理。`gemini-3.8-flash` 和 `glm-5.3-flash` 默认推理，每次约多 60–120 个 token；试过 `reasoning_effort: "none"`（Gemini）和 `thinking: {"type": "disabled"}`（GLM）都关不掉。正确的关闭参数待查，查的时候不要靠反复试调。
+- **推理模式实测：** `deepseek-v4.1-flash` 默认不推理。`gemini-3.8-flash` 和 `glm-5.3-flash` 默认推理，每次约多 60–120 个 token；按网关文档（https://ai.sandboxai.top/docs ，new-api 网关）和各家常见写法逐一试过，均关不掉：Gemini 的 `reasoning_effort` 为 `none`/`minimal`、`google.thinking_config.thinking_budget: 0`；GLM 的 `thinking: {"type": "disabled"}`、`enable_thinking: false`。网关文档中的 `-nothinking`/`-thinking-{budget}` 模型名后缀，本网关未开启（返回 model_not_available）；`/v1/models` 中也没有不推理的版本（2026-10-25）。结论：用 Gemini 当判断模型时，接受每次约 100 个推理 token 的成本，不再试调。
 - **计划分工（用户 2026-10-25）：** DeepSeek 做对比模拟器（D3）；Gemini Flash 做判断模型（D5），不用 GPT，因为 1,386 条标准集是 Codex（GPT 系）判的；GLM 备用。
 
 **调用参数：**
