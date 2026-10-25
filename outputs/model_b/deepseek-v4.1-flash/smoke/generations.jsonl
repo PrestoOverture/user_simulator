@@ -1,0 +1,24 @@
+{"request_id": "1610:1", "dialogue_id": 1610, "turn": 1, "text": "请问京东是不是只有阿尔法电子面单魔板啊？  \n另外要是达不到快递标准的话还能发吗？", "status": "ok", "prompt_sha256": "7bf8b67939776a89d6f793ca8b9c4e5e0fbe27f021d498b0885e66e27eb55169"}
+{"request_id": "1610:3", "dialogue_id": 1610, "turn": 3, "text": "那达不到快递标准的话还能正常发货吗", "status": "ok", "prompt_sha256": "3a19b5f1be58f0650314e84b5e7c6c2b7cf87fcb19ac7aab19296e8b313fcd18"}
+{"request_id": "1610:4", "dialogue_id": 1610, "turn": 4, "text": "那如果我用的不是你们这个模板，快递那边说没有三段码和水印不给发，这算谁的问题啊  \n是不是只要在京东发货就必须用阿尔法的面单模板，别的软件设置了也不行？", "status": "ok", "prompt_sha256": "a489951eed7176b59ae0289bf34db6569cf2e5466b5dd6592b43a45254fa965e"}
+{"request_id": "1610:2", "dialogue_id": 1610, "turn": 2, "text": "哦哦，我明白你说的完善，但我是想问是不是京东只支持阿尔法这一种电子面单模板呀，还有别的模板可以选吗", "status": "ok", "prompt_sha256": "d4eddad4788899cfb51230c85a3872247da01bdd5ea4f5f439710f2687fae9e0"}
+{"request_id": "1610:5", "dialogue_id": 1610, "turn": 5, "text": "行吧，那我先这样用着\n不过反应的时候能不能帮我问问，达不到快递标准这种情况到底能不能发啊", "status": "ok", "prompt_sha256": "dd6c904c4f9d42afb347c04cb1faa5455179afaea9c732aa3d3641824424fbcb"}
+{"request_id": "1610:8", "dialogue_id": 1610, "turn": 8, "text": "好的那我先不发了 等你们完善了再说吧", "status": "ok", "prompt_sha256": "b4220b7c9d87d013f3f7c3076fddd192847d61e266f8ceec2c0b29dfdd0eae67"}
+{"request_id": "1610:6", "dialogue_id": 1610, "turn": 6, "text": "嗯嗯 那就麻烦你反馈一下了  \n主要是快递那边说没三段码和水印就达不到标准 发不了  \n希望能尽快完善吧 不然我们打单挺麻烦的", "status": "ok", "prompt_sha256": "6a8e4369d520dd908e77dc5dd2f6d7f1c8f5ee1d8ae724efd406e3a534c924ce"}
+{"request_id": "1610:7", "dialogue_id": 1610, "turn": 7, "text": "行那我明白了 先这样吧", "status": "ok", "prompt_sha256": "bf36f8368d1aff4677ab4e2fd52f945430f660f642f382f6faad9b9c008f96b5"}
+{"request_id": "6114:2", "dialogue_id": 6114, "turn": 2, "text": "那我不要这个颜色，怎么退货啊？", "status": "ok", "prompt_sha256": "0de3d9b68b3943659b54455d9ba64d9c1f795abf46b011e968d64ef08b75f29d"}
+{"request_id": "6114:3", "dialogue_id": 6114, "turn": 3, "text": "那退了是全款退吗  \n还有我买的那个碎屏险  \n两个都退吗", "status": "ok", "prompt_sha256": "4e3238850b8ad71ec68959b66d7e79a03b52ed4ca843b08e6de20399fc6772c5"}
+{"request_id": "6114:1", "dialogue_id": 6114, "turn": 1, "text": "你好，我刚刚下单买了个苹果手机，颜色选错了，能帮忙改一下吗？", "status": "ok", "prompt_sha256": "810193997af311744fe1a71b8c15664b43953222569b3013f56c75b743311346"}
+{"request_id": "6114:4", "dialogue_id": 6114, "turn": 4, "text": "那碎屏险呢？也是全额退吗？  \n两个都退还是只退手机啊？", "status": "ok", "prompt_sha256": "276799155d0daf3dab89c5af5dd07989a2f5cffdae13b237b03064abb148f545"}
+{"request_id": "6114:5", "dialogue_id": 6114, "turn": 5, "text": "[订单号]\n另外我还买了碎屏险，这俩是都退吗？", "status": "ok", "prompt_sha256": "599c604702bedfa8c1e0612d19100e18fa0a82aa137242cfcab286a7b8d599c5"}
+{"request_id": "6114:6", "dialogue_id": 6114, "turn": 6, "text": "那碎屏险也一起退吗？", "status": "ok", "prompt_sha256": "9adf241cb6dbfeaa13299f89e0c3f770e183760c7f767641b96a019823d102b2"}
+{"request_id": "6114:7", "dialogue_id": 6114, "turn": 7, "text": "那我这两个都退，是分开退还是能一起退啊？", "status": "ok", "prompt_sha256": "83aaf4c8274d438bcd829afd5997f6b2cab9a4a4fd10e661cc9600b92b2114cf"}
+{"request_id": "6114:8", "dialogue_id": 6114, "turn": 8, "text": "那我这两个都退吗？", "status": "ok", "prompt_sha256": "27ed4214274c92f4b19cfb53e24c969f954b55671a7b192be7dde80be102ab1e"}
+{"request_id": "6114:9", "dialogue_id": 6114, "turn": 9, "text": "好的，那就都退了吧，麻烦帮我处理一下。", "status": "ok", "prompt_sha256": "c7b56d504b1f9bc57c914f647e0ecadc735d5a29063a86b1aa784e3fd0ed4df2"}
+{"request_id": "4970:1", "dialogue_id": 4970, "turn": 1, "text": "我收到货了，但是里面没有遥控器和说明书，这怎么办啊？", "status": "ok", "prompt_sha256": "ae5db50b0529549839f4f7a66d3ca3fa21e5b56ec12a4f9c811f890ad602cdb4"}
+{"request_id": "4970:3", "dialogue_id": 4970, "turn": 3, "text": "那现在少的东西怎么补给我呀\n大概多久能寄过来呢", "status": "ok", "prompt_sha256": "a729f62b3e43b8e102b001f1f78592607091735e85cede329e069f1579cceb6b"}
+{"request_id": "4970:2", "dialogue_id": 4970, "turn": 2, "text": "订单号是 123456789  \n就是刚收到的电视，箱子里翻遍了都没有遥控器和说明书  \n这种一般怎么补发啊？", "status": "ok", "prompt_sha256": "27d7f5ece8bb824c4128dbdc4495041c1e0711c4db073a7f5d4b8b3fcade7917"}
+{"request_id": "4970:4", "dialogue_id": 4970, "turn": 4, "text": "好的，麻烦升级处理吧  \n那大概多久能有回复呢？", "status": "ok", "prompt_sha256": "8128e21880432acde3ab383f1653a5a4488271b88a820809dca51d0dc6070c57"}
+{"request_id": "4970:5", "dialogue_id": 4970, "turn": 5, "text": "好的，那专员大概多久联系我呀  \n我需要准备什么资料吗", "status": "ok", "prompt_sha256": "152ff9db7f655c165984d5a206ac24663f6e322ff61421122f11676c68dad299"}
+{"request_id": "4970:6", "dialogue_id": 4970, "turn": 6, "text": "好的，那我明天等你们电话是吧？", "status": "ok", "prompt_sha256": "f0e152e84843b79fffe9556ebb3e6b1b8e6142e87ea9c1392316120d2a27d186"}
+{"request_id": "4970:7", "dialogue_id": 4970, "turn": 7, "text": "好的，我的电话是[数字]，名字是[姓名]\n麻烦您帮我备注一下，谢谢", "status": "ok", "prompt_sha256": "693ee8e7e02413ba3ec51b6964db887c941729215f8f6a15e00fc65c050b1c1b"}

@@ -1,0 +1,4 @@
+{"request_id": "5900:10", "dialogue_id": 5900, "turn": 10, "text": "好吧，那我等专员联系吧，谢谢。", "status": "ok", "prompt_sha256": "3bac0b444fff73017d8bb20a98a4e395d8ac4c9eb1ff76855b850832b8cc488b"}
+{"request_id": "2257:3", "dialogue_id": 2257, "turn": 3, "text": "那音乐支持蓝牙发射吗？", "status": "ok", "prompt_sha256": "49df12bce6c38f79723cb80d4c9c1b206571ffae473ce370fa863406a31be92f"}
+{"request_id": "5836:3", "dialogue_id": 5836, "turn": 3, "text": "那能不能告诉我附近的自提点在哪呀？", "status": "ok", "prompt_sha256": "b42cd17f5a4d2d8515dedd90b1f3522060c261c2b348ee9a796f2518560556e5"}
+{"request_id": "2257:6", "dialogue_id": 2257, "turn": 6, "text": "S8的有后摄吗？", "status": "ok", "prompt_sha256": "887fe8ad813b3598d04ecd0eb603e16dc7f8d4475b4a8ef7d9461fa318691508"}

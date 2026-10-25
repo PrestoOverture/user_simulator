@@ -1,0 +1,37 @@
+{
+  "model": "deepseek-v4.1-flash",
+  "provider": "sandbox",
+  "thinking": {
+    "type": "disabled"
+  },
+  "temperature": "omitted; provider default",
+  "reasoning_tokens": 0,
+  "input_tokens": 5034,
+  "output_tokens": 434,
+  "total_tokens": 5468,
+  "request_count": 24,
+  "successful_requests": 24,
+  "moderated_count": 0,
+  "moderated_dialogue_ids": [],
+  "moderated_ratio": 0.0,
+  "planned_user_turns": 24,
+  "usage_unknown_requests": 0,
+  "dialogues": 3,
+  "user_turns": 24,
+  "elapsed_seconds": 15.985543707967736,
+  "request_elapsed_seconds": 56.959654166945256,
+  "check_usage": {
+    "request_count": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "full_projection": {
+    "formula": "known sample replay tokens / planned sample user turns (including moderated) * population user turns; unknown rejected usage excluded",
+    "sample_tokens": 5468,
+    "sample_user_turns": 24,
+    "all_csds_user_turns": 87830,
+    "user_role_user_turns": 81959,
+    "all_csds_tokens": 20010602,
+    "user_role_tokens": 18672992
+  }
+}

@@ -76,4 +76,9 @@ def write_reports(out, metrics, pairs, usage, baseline=None):
         lines.append('\n前三项相对差距排序：20段 '+ '、'.join(LABELS[k] for k in ranked(old)[:3])+'；500段 '+'、'.join(LABELS[k] for k in ranking[:3])+'。稀疏规则的分母和命中数见第2问，是否选定核心指标仍待 Claude/用户决定。')
     if (out/'review_notes.md').exists():
         lines += ['', (out/'review_notes.md').read_text()]
+    if usage.get('provider', 'spark') != 'spark':
+        lines = [line.replace('Spark输出', '模拟器输出').replace('真人值/Spark值', '真人值/模拟器值') for line in lines]
+        lines = [line for line in lines if not line.startswith('用户提供总额度10亿token')]
+        lines.insert(2, f"provider={usage['provider']}；model={usage['model']}；thinking={usage['thinking']}；推理 token={usage.get('reasoning_tokens', 0)}。")
+        lines = [line.replace('HTTP400且10013不重试，真人和模拟器配对两侧均剔除；', '本 provider 不使用 Spark 10013 审核剔除规则；') for line in lines]
     (out/'report.md').write_text('\n'.join(lines)+'\n')

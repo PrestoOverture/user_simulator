@@ -32,14 +32,24 @@ async def main(args):
     out=Path(args.out); out.mkdir(parents=True, exist_ok=True)
     rows=load()
     excluded=json.loads(Path(args.exclude).read_text())['ids'] if args.exclude else []
-    chosen=sample(rows,args.n,args.seed,excluded)
+    if args.ids_from:
+        ids=json.loads(Path(args.ids_from).read_text())['ids'][:args.n]
+        by_id={r['DialogueID']:r for r in rows}
+        chosen=[by_id[i] for i in ids]
+        if len(chosen) != args.n:
+            raise ValueError('Insufficient source IDs')
+    else:
+        chosen=sample(rows,args.n,args.seed,excluded)
     manifest=dict(seed=args.seed, ids=[r['DialogueID'] for r in chosen], n=args.n,
                   excluded_ids=excluded, preferred_range=[6,30], role='用户',
                   user_turns=sum(len(user_turns(r)) for r in chosen))
+    if args.provider != 'spark':
+        manifest.update(provider=args.provider, model=args.model)
     if (out/'sampled_ids.json').exists() and json.loads((out/'sampled_ids.json').read_text()) != manifest:
         raise ValueError('Existing manifest differs; use a different output directory')
     dump(out/'sampled_ids.json',manifest)
-    (out/'prompt_template.md').write_text(template())
+    sandbox_thinking = {'type': 'disabled'} if args.provider == 'sandbox' and (args.model or '').startswith('deepseek') else 'omitted'
+    (out/'prompt_template.md').write_text(template() if args.provider == 'spark' else template().split('模型 spark-x2.6')[0] + f'模型 {args.model}；provider=sandbox；thinking={json.dumps(sandbox_thinking, ensure_ascii=False)}；不传 temperature、max_tokens；stream=false。\n')
     if out.resolve()!=Path('outputs').resolve():
         for name in ['spark_check.md','data_format_notes.md']:
             shutil.copyfile(Path('outputs')/name,out/name)
@@ -53,7 +63,7 @@ async def main(args):
     for row in chosen:
         for t,turn in enumerate(user_turns(row),1):
             jobs.append((row,t,turn,f"{row['DialogueID']}:{t}"))
-    client = None if args.refresh_only else Spark(out,args.concurrency)
+    client = None if args.refresh_only else Spark(out,args.concurrency,provider=args.provider,model=args.model)
     async def generate(row,t,turn,rid):
         messages = prompt(row,turn)
         fingerprint = hashlib.sha256(json.dumps(messages,ensure_ascii=False).encode()).hexdigest()
@@ -116,7 +126,8 @@ async def main(args):
     total=inp+output
     all_turns=sum(len(user_turns(r)) for r in rows)
     user_count=sum(len(user_turns(r)) for r in rows if r['QRole']=='用户')
-    usage=dict(model='spark-x2.6',thinking={'type':'disabled'},temperature='omitted; official default 1',
+    usage=dict(model=args.model or 'spark-x2.6',provider=args.provider,thinking={'type':'disabled'} if args.provider=='spark' else sandbox_thinking,temperature='omitted; official default 1' if args.provider=='spark' else 'omitted; provider default',
+               reasoning_tokens=sum(r.get('reasoning_tokens',0) for r in replay_records),
                input_tokens=inp,output_tokens=output,total_tokens=total,request_count=len(replay_records),
                successful_requests=sum(r['status']=='ok' for r in replay_records),
                moderated_count=len(moderated),moderated_dialogue_ids=sorted({r['dialogue_id'] for r in moderated}),
@@ -136,6 +147,9 @@ async def main(args):
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser()
+    parser.add_argument('--provider',choices=['spark','sandbox'],default='spark')
+    parser.add_argument('--model')
+    parser.add_argument('--ids-from',help='Use first n IDs in manifest order')
     parser.add_argument('--n',type=int,required=True); parser.add_argument('--seed',type=int,required=True)
     parser.add_argument('--out',required=True); parser.add_argument('--exclude'); parser.add_argument('--baseline')
     parser.add_argument('--concurrency',type=int,default=4)

@@ -1,0 +1,150 @@
+{
+  "seed": 20261025,
+  "replicates": 2000,
+  "results": {
+    "behavioral/s1": {
+      "human_hits": 3,
+      "simulator_hits": 0,
+      "denominator": 4,
+      "gap": -0.75,
+      "low": -1.0,
+      "high": -0.5
+    },
+    "behavioral/s2": {
+      "human_hits": 3,
+      "simulator_hits": 1,
+      "denominator": 4,
+      "gap": -0.5,
+      "low": -1.0,
+      "high": 0.0
+    },
+    "behavioral/s3": {
+      "human_hits": 3,
+      "simulator_hits": 1,
+      "denominator": 4,
+      "gap": -0.5,
+      "low": -1.0,
+      "high": 0.0
+    },
+    "acceptance/s1": {
+      "human_hits": 2,
+      "simulator_hits": 0,
+      "denominator": 4,
+      "gap": -0.5,
+      "low": -1.0,
+      "high": 0.0
+    },
+    "acceptance/s2": {
+      "human_hits": 2,
+      "simulator_hits": 1,
+      "denominator": 4,
+      "gap": -0.25,
+      "low": -0.5,
+      "high": 0.0
+    },
+    "acceptance/s3": {
+      "human_hits": 2,
+      "simulator_hits": 0,
+      "denominator": 4,
+      "gap": -0.5,
+      "low": -1.0,
+      "high": 0.0
+    },
+    "alternative/s1": {
+      "human_hits": 0,
+      "simulator_hits": 0,
+      "denominator": 4,
+      "gap": 0.0,
+      "low": 0.0,
+      "high": 0.0
+    },
+    "alternative/s2": {
+      "human_hits": 0,
+      "simulator_hits": 0,
+      "denominator": 4,
+      "gap": 0.0,
+      "low": 0.0,
+      "high": 0.0
+    },
+    "alternative/s3": {
+      "human_hits": 0,
+      "simulator_hits": 0,
+      "denominator": 4,
+      "gap": 0.0,
+      "low": 0.0,
+      "high": 0.0
+    },
+    "short/s1": {
+      "human_hits": 2,
+      "simulator_hits": 0,
+      "denominator": 4,
+      "gap": -0.5,
+      "low": -1.0,
+      "high": 0.0
+    },
+    "short/s2": {
+      "human_hits": 2,
+      "simulator_hits": 0,
+      "denominator": 4,
+      "gap": -0.5,
+      "low": -1.0,
+      "high": 0.0
+    },
+    "short/s3": {
+      "human_hits": 2,
+      "simulator_hits": 1,
+      "denominator": 4,
+      "gap": -0.25,
+      "low": -1.0,
+      "high": 1.0
+    },
+    "emotion/s1": {
+      "human_hits": 1,
+      "simulator_hits": 1,
+      "denominator": 4,
+      "gap": 0.0,
+      "low": 0.0,
+      "high": 0.0
+    },
+    "emotion/s2": {
+      "human_hits": 1,
+      "simulator_hits": 0,
+      "denominator": 4,
+      "gap": -0.25,
+      "low": -1.0,
+      "high": 0.0
+    },
+    "emotion/s3": {
+      "human_hits": 1,
+      "simulator_hits": 0,
+      "denominator": 4,
+      "gap": -0.25,
+      "low": -1.0,
+      "high": 0.0
+    },
+    "exclamation/s1": {
+      "human_hits": 0,
+      "simulator_hits": 1,
+      "denominator": 4,
+      "gap": 0.25,
+      "low": 0.0,
+      "high": 1.0
+    },
+    "exclamation/s2": {
+      "human_hits": 0,
+      "simulator_hits": 0,
+      "denominator": 4,
+      "gap": 0.0,
+      "low": 0.0,
+      "high": 0.0
+    },
+    "exclamation/s3": {
+      "human_hits": 0,
+      "simulator_hits": 0,
+      "denominator": 4,
+      "gap": 0.0,
+      "low": 0.0,
+      "high": 0.0
+    }
+  }
+}

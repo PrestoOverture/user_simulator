@@ -1,0 +1,17 @@
+{
+  "ids": [
+    5900,
+    5836,
+    2257
+  ],
+  "request_ids": [
+    "5900:10",
+    "5836:3",
+    "2257:3",
+    "2257:6"
+  ],
+  "setting": "s1",
+  "selection": "CSDS load order; QRole=用户; negative_agent existing rule",
+  "provider": "spark",
+  "model": "spark-x2.6"
+}

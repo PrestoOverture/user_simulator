@@ -1,0 +1,4 @@
+{"request_id": "5900:10", "dialogue_id": 5900, "turn": 10, "text": "那就不能先买东西了？真的很急啊！", "status": "ok", "prompt_sha256": "8bc4cc2a12957a995c02b66e06a3ea686d5001806c0f06c6a4a70c7210b06be7"}
+{"request_id": "2257:3", "dialogue_id": 2257, "turn": 3, "text": "那音乐能蓝牙发射吗？", "status": "ok", "prompt_sha256": "b81cf3fe33f96091aee9d85feb9edb046f60e541d8b7a5faebaf605647813e58"}
+{"request_id": "5836:3", "dialogue_id": 5836, "turn": 3, "text": "哦，那好吧。不过我还想了解一下，有没有别的自提点？离我近点的。", "status": "ok", "prompt_sha256": "9e5f2963fbd1000ea7f724d21d4293625bd8821585b4daa4e20f69c96428ba4f"}
+{"request_id": "2257:6", "dialogue_id": 2257, "turn": 6, "text": "S85有没有后摄？我看你这个后视镜套装更便宜啊。", "status": "ok", "prompt_sha256": "621bfa998535b4568f8f9ca5beee4bc60ab2d3ff078b809e7d532e7e07ef42fd"}

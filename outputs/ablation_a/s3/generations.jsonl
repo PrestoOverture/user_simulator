@@ -1,0 +1,4 @@
+{"request_id": "5900:10", "dialogue_id": 5900, "turn": 10, "text": "那就等等吧", "status": "ok", "prompt_sha256": "9ae884eb41e6d2bbab48d972cd51cdab46b461b8c6146a7c24039024f288d046"}
+{"request_id": "2257:6", "dialogue_id": 2257, "turn": 6, "text": "那这个不实用了", "status": "ok", "prompt_sha256": "9cb43889e90e83eddd82c7415aa0df9d0cd90d613b4b8d0c71c338f5eb36038d"}
+{"request_id": "5836:3", "dialogue_id": 5836, "turn": 3, "text": "啊，这样啊，那我还能怎么拿到货呢？还有没有其他办法可以快点收到？", "status": "ok", "prompt_sha256": "ed93e9fd34db6b25e795f9ca0b91b165b652b46c0ba6b40114e73b411eb85b35"}
+{"request_id": "2257:3", "dialogue_id": 2257, "turn": 3, "text": "那可以加装吗？", "status": "ok", "prompt_sha256": "fcf2fbc64a507b0d8ae4eec6d1907eda13c2e6d94d87503bad2e05a9131967c9"}
