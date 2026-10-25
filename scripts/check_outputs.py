@@ -19,7 +19,7 @@ def read_csv(path):
         return list(csv.DictReader(stream))
 
 
-def check(out,n,raw):
+def check(out,n,raw,model="spark-x2.6"):
     out=Path(out)
     for name in FILES:
         assert (out/name).is_file() and (out/name).stat().st_size>0,f'{out/name}: missing or empty'
@@ -27,7 +27,10 @@ def check(out,n,raw):
     assert isinstance(manifest['seed'],int),'seed missing/invalid'
     ids=manifest['ids']
     assert len(ids)==len(set(ids))==n,f'{out}: ID count'
-    assert [r['DialogueID'] for r in sample(list(raw.values()),n,manifest['seed'],manifest.get('excluded_ids',[]))]==ids,'sample reproducibility'
+    sampling_manifest=manifest
+    if model == 'deepseek-v4.1-flash':
+        sampling_manifest=json.loads((Path(__file__).resolve().parents[1]/'outputs/extended/sampled_ids.json').read_text())
+    assert [r['DialogueID'] for r in sample(list(raw.values()),n,sampling_manifest['seed'],sampling_manifest.get('excluded_ids',[]))]==ids,'sample reproducibility'
     expected={(i,t) for i in ids for t in range(1,len(user_turns(raw[i]))+1)}
     records=[json.loads(s) for s in (out/'request_usage.jsonl').read_text().splitlines()]
     records=[r for r in records if not r['request_id'].startswith('check-')]
@@ -78,7 +81,12 @@ def check(out,n,raw):
     usage=json.loads((out/'token_usage.json').read_text())
     for name in ['input_tokens','output_tokens','request_count','elapsed_seconds','full_projection']:
         assert usage[name],f'usage {name} missing/zero'
-    assert usage['model']=='spark-x2.6' and usage['thinking']=={'type':'disabled'}
+    assert usage['model']==model and usage['thinking']=={'type':'disabled'}
+    if model == 'deepseek-v4.1-flash':
+        assert usage['provider']=='sandbox' and not moderated_keys, 'DeepSeek provider/moderation'
+        assert all(p['simulator'].strip() for p in pairs), 'empty DeepSeek output'
+        baseline=json.loads((Path(__file__).resolve().parents[1]/'outputs/extended/sampled_ids.json').read_text())
+        assert ids==baseline['ids'], 'DeepSeek/Spark dialogue batch mismatch'
     assert len(records)==usage['request_count'], 'request count'
     assert usage['successful_requests']==len(expected), 'success count'
     assert usage['moderated_count']==len(moderated_keys), 'moderated count'
@@ -109,15 +117,22 @@ def check(out,n,raw):
             assert g['text']==bykey[g['dialogue_id'],g['turn']]['simulator'], 'generation text mismatch'
     report=(out/'report.md').read_text()
     assert all(f'## {i}.' in report for i in range(1,7)),'six report answers'
-    if n==500:
+    if n==500 and model=="spark-x2.6":
         assert '20段与500段对比' in report,'missing comparison'
     print(f'{out}: OK; dialogues={n}, user_turns={len(expected)}, empty={sum(not p["simulator"].strip() for p in pairs)}')
     return set(ids),manifest['seed']
 
 
 def main(paths):
-    assert len(paths)==2,'Provide outputs and outputs/extended'
+    assert len(paths) in (1,2),'Provide one output directory, or outputs and outputs/extended'
     raw={r['DialogueID']:r for r in load()}
+    if len(paths)==1:
+        out=Path(paths[0])
+        manifest=json.loads((out/'sampled_ids.json').read_text())
+        model=json.loads((out/'token_usage.json').read_text())['model']
+        assert model in ('spark-x2.6','deepseek-v4.1-flash'), 'unsupported model'
+        check(out,len(manifest['ids']),raw,model)
+        return
     a,seed_a=check(paths[0],20,raw); b,seed_b=check(paths[1],500,raw)
     assert not a & b,'overlapping samples'
     assert seed_a!=seed_b,'seeds must differ'
