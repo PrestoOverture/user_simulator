@@ -33,13 +33,13 @@ def frozen():
     return json.loads((OUT/'standard_set.json').read_text())['items']
 
 
-def cached(path):
+def cached(path, *, allow_request_errors=False):
     rows = [json.loads(line) for line in path.read_text().splitlines()] if path.exists() else []
     dispatch = Counter((r['id'], r['attempt']) for r in rows if r['event'] == 'dispatch')
     responses = [r for r in rows if r['event'] == 'response']
     if dispatch != Counter((r['id'], r['attempt']) for r in responses):
         raise RuntimeError('Unresolved dispatch; do not resend automatically')
-    if any(r['status'] == 'request_error' and (r.get('error_type') != 'ReadTimeout' or r['attempt'] == 2) for r in responses):
+    if not allow_request_errors and any(r['status'] == 'request_error' and (r.get('error_type') != 'ReadTimeout' or r['attempt'] == 2) for r in responses):
         raise RuntimeError('Request error in cache; stop for review')
     if any(n != 1 for n in dispatch.values()):
         raise RuntimeError('Duplicate request')

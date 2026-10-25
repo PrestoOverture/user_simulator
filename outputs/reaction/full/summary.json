@@ -1,0 +1,83 @@
+{
+  "statistics": {
+    "continue": {
+      "groups": {
+        "negative": {
+          "human": 0.588,
+          "simulator": 0.8373333333333334,
+          "gap": 0.24933333333333332,
+          "n": 1500,
+          "interval": [
+            0.22259566396217684,
+            0.2783792417164979
+          ]
+        },
+        "nonnegative": {
+          "human": 0.4703135423615744,
+          "simulator": 0.742494996664443,
+          "gap": 0.27218145430286855,
+          "n": 1499,
+          "interval": [
+            0.24336556383970176,
+            0.3018367687236253
+          ]
+        }
+      },
+      "interaction": -0.02284812096953523,
+      "interval": [
+        -0.062459411810584224,
+        0.01943689348417918
+      ],
+      "bootstrap_valid": [
+        2000,
+        2000
+      ],
+      "interaction_valid": 2000
+    },
+    "emotion": {
+      "groups": {
+        "negative": {
+          "human": 0.17133333333333334,
+          "simulator": 0.25133333333333335,
+          "gap": 0.08,
+          "n": 1500,
+          "interval": [
+            0.05590021275640005,
+            0.10530420903459557
+          ]
+        },
+        "nonnegative": {
+          "human": 0.10206804536357572,
+          "simulator": 0.13742494996664442,
+          "gap": 0.035356904603068715,
+          "n": 1499,
+          "interval": [
+            0.016565169423022306,
+            0.0543563892405187
+          ]
+        }
+      },
+      "interaction": 0.04464309539693129,
+      "interval": [
+        0.013378294228023441,
+        0.07598215384837229
+      ],
+      "bootstrap_valid": [
+        2000,
+        2000
+      ],
+      "interaction_valid": 2000
+    },
+    "decision": "用普遍定义"
+  },
+  "usage": {
+    "prompt_tokens": 4758229,
+    "completion_tokens": 835090,
+    "total_tokens": 5593319,
+    "reasoning_tokens": 778323
+  },
+  "skipped": {
+    "moderated": 1,
+    "unjudged_or_parse_error": 0
+  }
+}

@@ -163,8 +163,8 @@ def test_timeout_resume_is_one_necessary_retry(monkeypatch,tmp_path):
     c=Judge(path,transport=httpx.MockTransport(handle))
     item=dict(id='x',goal='',history=[],previous_agent='',text='')
     try:
-        with pytest.raises(RuntimeError):
-            c.evaluate('fixed',item)
+        monkeypatch.setattr('usersim.judge.time.sleep',lambda seconds: None)
+        assert c.evaluate('fixed',item)==dict(topic='close',emotion=False)
         rows=cached(path)
         assert rows[0]['usage'] is None
         assert c.evaluate('fixed',item,rows)==dict(topic='close',emotion=False)
@@ -172,3 +172,110 @@ def test_timeout_resume_is_one_necessary_retry(monkeypatch,tmp_path):
         assert len(cached(path))==2
     finally:
         c.close()
+
+
+def response_rows(path):
+    return [r for r in map(json.loads,path.read_text().splitlines()) if r['event']=='response']
+
+
+@pytest.mark.parametrize('failure',[504,503,'timeout'])
+def test_transient_retry_exhaustion_and_next_item(monkeypatch,tmp_path,failure):
+    monkeypatch.setenv('SANDBOX_API_KEY','mock-secret')
+    monkeypatch.setenv('SANDBOX_BASE_URL','https://mock.invalid')
+    sleeps=[]
+    monkeypatch.setattr('usersim.judge.time.sleep',sleeps.append)
+    calls=[]
+    def handle(request):
+        calls.append(json.loads(request.content))
+        if len(calls)<=3:
+            if failure=='timeout':
+                raise httpx.ReadTimeout('timeout',request=request)
+            return httpx.Response(failure)
+        return httpx.Response(200,json=dict(choices=[dict(message=dict(content='{"topic":"close","emotion":false}'))],usage=dict(prompt_tokens=1,completion_tokens=1,total_tokens=2)))
+    path=tmp_path/'cache.jsonl'
+    c=Judge(path,transport=httpx.MockTransport(handle))
+    item=dict(id='failed',goal='',history=[],previous_agent='',text='')
+    try:
+        assert c.evaluate('fixed',item) is None
+        rows=response_rows(path)
+        assert [r['attempt'] for r in rows]==[1,2,3]
+        assert all(r['status']=='request_error' and r['usage'] is None for r in rows)
+        assert sleeps==[1,2]
+        assert calls[0]==calls[1]==calls[2]
+        all_rows=list(map(json.loads,path.read_text().splitlines()))
+        assert c.evaluate('fixed',item,all_rows) is None
+        assert len(calls)==3
+        assert c.evaluate('fixed',dict(item,id='next'))==dict(topic='close',emotion=False)
+    finally:
+        c.close()
+
+
+def test_resume_existing_dispatch_and_504_response(monkeypatch,tmp_path):
+    monkeypatch.setenv('SANDBOX_API_KEY','mock-secret')
+    monkeypatch.setenv('SANDBOX_BASE_URL','https://mock.invalid')
+    path=tmp_path/'cache.jsonl'
+    previous=[dict(id='simulator:7918:4',attempt=1,event='dispatch'),
+              dict(id='simulator:7918:4',attempt=1,event='response',status='request_error',http_status=504,error_type='HTTPStatusError',usage=None)]
+    original=''.join(json.dumps(r)+'\n' for r in previous)
+    path.write_text(original)
+    calls=[]
+    def handle(request):
+        calls.append(request)
+        return httpx.Response(200,json=dict(choices=[dict(message=dict(content='{"topic":"close","emotion":false}'))],usage=dict(prompt_tokens=1,completion_tokens=1,total_tokens=2)))
+    c=Judge(path,transport=httpx.MockTransport(handle))
+    try:
+        item=dict(id='simulator:7918:4',goal='',history=[],previous_agent='',text='')
+        assert c.evaluate('fixed',item,previous)==dict(topic='close',emotion=False)
+        assert response_rows(path)[-1]['attempt']==2
+        assert path.read_text().startswith(original)
+        assert c.evaluate('fixed',item,list(map(json.loads,path.read_text().splitlines())))==dict(topic='close',emotion=False)
+        assert len(calls)==1
+    finally:
+        c.close()
+
+
+@pytest.mark.parametrize('failure',[400,401,429,'usage'])
+def test_nonretryable_errors_stop(monkeypatch,tmp_path,failure):
+    monkeypatch.setenv('SANDBOX_API_KEY','mock-secret')
+    monkeypatch.setenv('SANDBOX_BASE_URL','https://mock.invalid')
+    def no_sleep(seconds):
+        raise AssertionError('unexpected retry')
+    monkeypatch.setattr('usersim.judge.time.sleep',no_sleep)
+    calls=[]
+    def handle(request):
+        calls.append(request)
+        return httpx.Response(200,json=dict(choices=[dict(message=dict(content='{"topic":"close","emotion":false}'))])) if failure=='usage' else httpx.Response(failure)
+    path=tmp_path/'cache.jsonl'
+    c=Judge(path,transport=httpx.MockTransport(handle))
+    try:
+        with pytest.raises(RuntimeError):
+            c.evaluate('fixed',dict(id='x',goal='',history=[],previous_agent='',text=''))
+        assert len(calls)==1
+        assert response_rows(path)[0]['status']=='request_error'
+    finally:
+        c.close()
+
+
+def test_superseded_attempt_offset_and_dispatch_fingerprint(monkeypatch,tmp_path):
+    from usersim.judge import input_sha256
+    monkeypatch.setenv('SANDBOX_API_KEY','mock-secret')
+    monkeypatch.setenv('SANDBOX_BASE_URL','https://mock.invalid')
+    calls=[]
+    def handle(request):
+        calls.append(request)
+        return httpx.Response(200,json=dict(choices=[dict(message=dict(content='{"topic":"close","emotion":false}'))],usage=dict(prompt_tokens=1,completion_tokens=1,total_tokens=2)))
+    path=tmp_path/'cache.jsonl'
+    old=[dict(id='x',attempt=1,event='dispatch'),dict(id='x',attempt=1,event='response',status='ok',prediction=dict(topic='continue',emotion=False))]
+    original=''.join(json.dumps(r)+'\n' for r in old)
+    path.write_text(original)
+    item=dict(id='x',goal='',history=[],previous_agent='',text='new')
+    client=Judge(path,transport=httpx.MockTransport(handle))
+    try:
+        client.evaluate('fixed',item,[],attempt_offset=1)
+    finally:
+        client.close()
+    assert path.read_text().startswith(original)
+    rows=list(map(json.loads,path.read_text().splitlines()))
+    assert rows[-2]['attempt']==2 and rows[-2]['input_sha256']==input_sha256('fixed',item)
+    assert rows[-2]['input_sha256']!=input_sha256('changed prompt',item)
+    assert len(calls)==1

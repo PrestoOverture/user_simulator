@@ -19,6 +19,12 @@ def read_csv(path):
         return list(csv.DictReader(stream))
 
 
+def check_summary_audits(audits, ids, raw):
+    assert len(audits)==len(ids), 'summary audit count'
+    assert audits==[summary_audit(raw[i], allow_unreviewed=audit.get('reviewed') is False)
+                    for i,audit in zip(ids,audits)], 'summary audit mismatch'
+
+
 def check(out,n,raw,model="spark-x2.6"):
     out=Path(out)
     for name in FILES:
@@ -105,7 +111,8 @@ def check(out,n,raw,model="spark-x2.6"):
     assert projection['user_role_tokens']==round(usage['total_tokens']/len(planned)*users_count)
     assert usage['user_turns']==len(expected)
     assert not (out/'STOPPED.md').exists(), 'stopped run'
-    assert json.loads((out/'summary_audit.json').read_text())==[summary_audit(raw[i]) for i in ids], 'summary audit mismatch'
+    audits=json.loads((out/'summary_audit.json').read_text())
+    check_summary_audits(audits, ids, raw)
     generations=[json.loads(s) for s in (out/'generations.jsonl').read_text().splitlines()]
     assert len(generations)==len(planned), 'generation count'
     for g in generations:

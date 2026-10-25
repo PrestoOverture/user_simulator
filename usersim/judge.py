@@ -1,7 +1,9 @@
 """Sandbox Gemini judge with strict ADR-016 JSON and one parse retry."""
 import json
+import hashlib
 import os
 import threading
+import time
 from pathlib import Path
 import httpx
 
@@ -31,6 +33,10 @@ def messages(prompt, item):
             dict(role='user', content=json.dumps(view, ensure_ascii=False))]
 
 
+def input_sha256(prompt, item):
+    return hashlib.sha256(json.dumps(messages(prompt, item), ensure_ascii=False, sort_keys=True).encode()).hexdigest()
+
+
 class Judge:
     def __init__(self, cache, transport=None):
         self.lock = threading.Lock()
@@ -51,15 +57,17 @@ class Judge:
                 f.flush()
                 os.fsync(f.fileno())
 
-    def evaluate(self, prompt, item, previous=()):
-        attempts = [r for r in previous if r['id'] == item['id']]
+    def evaluate(self, prompt, item, previous=(), *, attempt_offset=0):
+        attempts = [r for r in previous if r['id'] == item['id'] and r.get('event') == 'response']
         for old in attempts:
             if old['status'] == 'ok':
                 return old['prediction']
-        if len(attempts) == 2:
+        parse_errors = sum(r['status'] == 'parse_error' for r in attempts)
+        if len(attempts) >= 3 or parse_errors >= 2:
             return None
-        for attempt in range(len(attempts)+1, 3):
-            self.record(dict(id=item['id'], attempt=attempt, event='dispatch', model=MODEL, provider=PROVIDER))
+        for number in range(len(attempts)+1, 4):
+            attempt = attempt_offset + number
+            self.record(dict(id=item['id'], attempt=attempt, event='dispatch', model=MODEL, provider=PROVIDER, input_sha256=input_sha256(prompt, item)))
             row = dict(id=item['id'], attempt=attempt, event='response', model=MODEL,
                        provider=PROVIDER, temperature='official default (omitted)', usage=None)
             try:
@@ -77,6 +85,10 @@ class Judge:
                     row['status'] = 'parse_error'
                 else:
                     row['status'] = 'ok'
+            except (httpx.TimeoutException, httpx.HTTPStatusError) as exc:
+                row.update(status='request_error', error_type=type(exc).__name__)
+                if not (isinstance(exc, httpx.TimeoutException) or 500 <= exc.response.status_code < 600):
+                    raise RuntimeError('Judge request failed; non-retryable error, stop') from None
             except Exception as exc:
                 row.update(status='request_error', error_type=type(exc).__name__)
                 raise RuntimeError('Judge request failed; inspect cache, no automatic request retry') from None
@@ -84,4 +96,10 @@ class Judge:
                 self.record(row)
             if row['status'] == 'ok':
                 return row['prediction']
+            if row['status'] == 'parse_error':
+                parse_errors += 1
+                if parse_errors >= 2:
+                    return None
+            elif number < 3:
+                time.sleep(2 ** (number - 1))
         return None

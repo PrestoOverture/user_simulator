@@ -1,0 +1,46 @@
+{
+  "model": "spark-x2.6",
+  "provider": "spark",
+  "thinking": {
+    "type": "disabled"
+  },
+  "temperature": "omitted; official default 1",
+  "reasoning_tokens": 0,
+  "input_tokens": 20900428,
+  "output_tokens": 1544021,
+  "total_tokens": 22444449,
+  "request_count": 81964,
+  "successful_requests": 81920,
+  "moderated_count": 39,
+  "moderated_dialogue_ids": [
+    820,
+    2069,
+    2222,
+    3757,
+    7176,
+    10076,
+    10633
+  ],
+  "moderated_ratio": 0.00047584767993752973,
+  "planned_user_turns": 81959,
+  "usage_unknown_requests": 44,
+  "dialogues": 9910,
+  "user_turns": 81920,
+  "elapsed_seconds": 19789.22637287504,
+  "request_elapsed_seconds": 157833.71669904876,
+  "check_usage": {
+    "request_count": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "full_projection": {
+    "formula": "known sample replay tokens / planned sample user turns (including moderated) * population user turns; unknown rejected usage excluded",
+    "sample_tokens": 22444449,
+    "sample_user_turns": 81959,
+    "all_csds_user_turns": 87830,
+    "user_role_user_turns": 81959,
+    "all_csds_tokens": 24052221,
+    "user_role_tokens": 22444449
+  },
+  "unreviewed_summaries": 9390
+}

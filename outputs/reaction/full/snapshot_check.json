@@ -1,0 +1,1025 @@
+{
+  "accepted": true,
+  "old_sha256": "a356d6f00de19314e1e34f66e65ff6df5cc0b8885c4097efb3f1104bc3603565",
+  "new_sha256": "a356d6f00de19314e1e34f66e65ff6df5cc0b8885c4097efb3f1104bc3603565",
+  "dependencies": {
+    "proven": false,
+    "method": "git HEAD",
+    "current_sha256": {
+      "data/raw/csds/CSDS/test.json": "7284125cbed0fb5beb7cd4526f3c1fd7b7a14add55862743bbd25d81a8ae86eb",
+      "data/raw/csds/CSDS/train.json": "737f9be2c591b021dbfa1ff177b4ff0e5d8f81f03d3158ab9ea9a2fdaeed8909",
+      "data/raw/csds/CSDS/val.json": "2a2a806146b5b6f39aaa280531ca067a02a98bdb4092f63de4f808024d141c61",
+      "config/summary_overrides.json": "a040886dd3b158e54d30acf9bdbd8262f61fd47039bc622d3816c785a5cf93c0",
+      "config/summary_reviews.json": "ca0df1daeb523fcb9f575b31de67aaaeab2ee5dfc7fa519b57a2aecb141ecd03",
+      "usersim/csds.py": "31b5917509ce3d1d9396d11cbf6467519270537916610344f578361953eadb59",
+      "usersim/replay.py": "25cd3e5bb52009019e0093dc15effb5c64fb7d97aa93535a401c740059f567e6"
+    },
+    "unproven_paths": [
+      "data/raw/csds/CSDS/test.json",
+      "data/raw/csds/CSDS/train.json",
+      "data/raw/csds/CSDS/val.json"
+    ]
+  },
+  "trust_human_inputs": {
+    "decision_by": "Claude",
+    "accepted": true,
+    "failures": [],
+    "raw_files": {
+      "test.json": {
+        "sha256": "7284125cbed0fb5beb7cd4526f3c1fd7b7a14add55862743bbd25d81a8ae86eb",
+        "expected_sha256": "7284125cbed0fb5beb7cd4526f3c1fd7b7a14add55862743bbd25d81a8ae86eb",
+        "mtime": "2021-08-27T09:30:03+00:00"
+      },
+      "train.json": {
+        "sha256": "737f9be2c591b021dbfa1ff177b4ff0e5d8f81f03d3158ab9ea9a2fdaeed8909",
+        "expected_sha256": "737f9be2c591b021dbfa1ff177b4ff0e5d8f81f03d3158ab9ea9a2fdaeed8909",
+        "mtime": "2021-08-27T09:40:39+00:00"
+      },
+      "val.json": {
+        "sha256": "2a2a806146b5b6f39aaa280531ca067a02a98bdb4092f63de4f808024d141c61",
+        "expected_sha256": "2a2a806146b5b6f39aaa280531ca067a02a98bdb4092f63de4f808024d141c61",
+        "mtime": "2021-08-27T09:41:11+00:00"
+      }
+    },
+    "git_status": "",
+    "last_commit": "a13dd2e6c2d32c618582442de1d28f7325f62708",
+    "last_commit_time": "2026-10-25T16:31:47+00:00",
+    "start_time_source": "run.json.started_at",
+    "first_run_time": "2026-10-26T01:06:10+08:00"
+  },
+  "accepted_human": 3000,
+  "mismatch_ids": [],
+  "superseded": [
+    {
+      "id": "simulator:10012:5",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:10027:7",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:10098:10",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:10120:8",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:10188:1",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:10204:11",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:10209:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:10242:8",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:10247:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:10285:6",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:10326:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:10326:8",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:10416:6",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:10418:6",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:10418:7",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:10423:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:10423:7",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:10618:8",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:10628:12",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:10669:8",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:10698:14",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:10698:3",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:1088:5",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:1272:8",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:1305:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:1308:5",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:1360:5",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:137:3",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:1483:8",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:1510:12",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:1530:9",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:1546:7",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:1580:3",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:1580:6",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:1582:13",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:160:3",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:160:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:1618:5",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:1638:8",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:1651:3",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:1861:7",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:1869:11",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:1891:3",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:1891:9",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:1896:8",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:1914:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:1944:5",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:196:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:1974:9",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:2090:3",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:2090:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:2105:9",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:2107:5",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:210:8",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:2164:10",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:2254:3",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:2431:3",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:2431:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:2485:5",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:2527:9",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:2537:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:2559:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:2617:5",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:2731:5",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:2779:3",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:2783:7",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:2795:7",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:2813:10",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:2813:7",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:2987:2",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:3011:5",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:3067:3",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:3076:11",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:3133:5",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:31:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:3287:2",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:334:1",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:3367:7",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:3451:1",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:3455:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:3455:6",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:350:12",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:3541:9",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:3548:14",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:3548:3",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:3557:12",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:3557:15",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:3671:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:3734:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:3753:5",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:3759:6",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:3784:8",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:3902:5",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:3976:10",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:3976:9",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:4131:2",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:4144:5",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:419:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:41:3",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:4316:6",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:4345:6",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:4378:12",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:4378:15",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:4400:6",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:4454:12",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:4454:13",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:4454:8",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:4558:6",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:4617:1",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:4749:3",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:4805:6",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:4805:9",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:4882:11",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:4937:2",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:4937:6",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:5013:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:5018:16",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:5055:6",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:5122:11",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:5122:13",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:5122:6",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:5201:3",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:5210:5",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:5248:5",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:527:6",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:5383:7",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:543:8",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:5447:3",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:5628:6",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:5666:2",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:5689:12",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:5779:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:5801:2",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:5874:7",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:5874:8",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:5886:5",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:5886:7",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:5951:7",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:5988:8",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:6023:10",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:6055:3",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:6055:6",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:6075:7",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:6110:6",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:6137:10",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:6176:7",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:61:7",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:6266:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:6543:5",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:6568:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:6582:7",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:6592:2",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:6674:2",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:6674:3",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:6708:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:6784:6",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:6826:5",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:6843:9",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:6950:11",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:6950:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:6962:5",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:6996:2",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:7002:11",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:7008:14",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:7094:13",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:7119:6",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:7126:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:7189:3",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:722:3",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:725:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:7321:3",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:7355:7",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:7405:6",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:7434:3",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:7442:5",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:7465:3",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:7504:10",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:7571:7",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:7571:8",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:7608:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:7681:7",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:7704:10",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:775:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:7786:3",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:7819:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:7864:2",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:7864:3",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:7918:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:7918:8",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:7948:8",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:7993:5",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:8071:11",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:8071:5",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:8095:9",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:8154:2",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:8227:3",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:8227:6",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:830:10",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:8337:10",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:833:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:8378:9",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:8557:6",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:8583:5",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:8650:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:8730:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:8759:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:8777:7",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:8800:3",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:8800:9",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:8852:12",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:888:10",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:888:2",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:8905:6",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:8956:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:8962:13",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:8984:3",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:912:8",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:9133:5",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:9235:5",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:9256:11",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:9298:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:929:5",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:9345:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:9345:9",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:9357:10",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:9357:3",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:9364:3",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:9374:3",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:9414:13",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:946:11",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:947:7",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:9510:8",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:9548:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:9548:6",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:9591:10",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:9627:8",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:9770:4",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:9770:5",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:9785:5",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:9842:5",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:9853:11",
+      "attempt": 1
+    },
+    {
+      "id": "simulator:994:4",
+      "attempt": 1
+    }
+  ],
+  "superseded_simulator": 241,
+  "superseded_simulator_errors": 1,
+  "superseded_human": 0
+}
