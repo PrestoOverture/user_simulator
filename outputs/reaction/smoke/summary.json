@@ -1,0 +1,83 @@
+{
+  "statistics": {
+    "continue": {
+      "groups": {
+        "negative": {
+          "human": 0.0,
+          "simulator": 1.0,
+          "gap": 1.0,
+          "n": 1,
+          "interval": [
+            1.0,
+            1.0
+          ]
+        },
+        "nonnegative": {
+          "human": 1.0,
+          "simulator": 1.0,
+          "gap": 0.0,
+          "n": 1,
+          "interval": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "interaction": 1.0,
+      "interval": [
+        1.0,
+        1.0
+      ],
+      "bootstrap_valid": [
+        3052,
+        3026
+      ],
+      "interaction_valid": 2000
+    },
+    "emotion": {
+      "groups": {
+        "negative": {
+          "human": 0.0,
+          "simulator": 0.0,
+          "gap": 0.0,
+          "n": 1,
+          "interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "nonnegative": {
+          "human": 0.0,
+          "simulator": 0.0,
+          "gap": 0.0,
+          "n": 1,
+          "interval": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "interaction": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_valid": [
+        3052,
+        3026
+      ],
+      "interaction_valid": 2000
+    },
+    "decision": "限定在被拒之后"
+  },
+  "usage": {
+    "prompt_tokens": 17487,
+    "completion_tokens": 3014,
+    "total_tokens": 20501,
+    "reasoning_tokens": 2812
+  },
+  "skipped": {
+    "missing": 18,
+    "unjudged_or_parse_error": 0
+  }
+}
