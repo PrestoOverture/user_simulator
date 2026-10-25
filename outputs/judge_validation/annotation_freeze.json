@@ -1,0 +1,10 @@
+{
+  "frozen_at": "2026-10-25T16:19:13.948187+00:00",
+  "annotator": "Codex manual-style, item-by-item reading of annotation_view.json only; no source map read; no Gemini calls before freeze",
+  "files": {
+    "standard_set.json": "c4dfb844eddc176757184e504543b3fdf52ad525ef10324afdf7b773f02b815a",
+    "annotation_view.json": "d254d68f37abf02f601bf53c396f1e4ec852ff7d3f5164e215c347ea708d2b4d",
+    "manual_labels.tsv": "0b04f1935c684febf06692514a00b3a346a250914ccc9eb2fcfe4b1779ebb88e",
+    "source_map.json": "b111427cc12bb5663da3b6ab3880c754eb9385899a106581e743b96c08b483f9"
+  }
+}

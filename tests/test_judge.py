@@ -145,6 +145,30 @@ def test_completed_validation_request_limits():
         assert len(counts)==n
         assert all(1<=c<=2 for c in counts.values())
         assert all(r['provider']=='sandbox' and r['model']=='gemini-3.8-flash' for r in rows)
-        assert all(set(('prompt_tokens','completion_tokens','total_tokens'))<=r['usage'].keys() for r in rows)
+        assert all(r['usage'] is None and r['status']=='request_error' and r['error_type']=='ReadTimeout' or r['usage'] is not None and set(('prompt_tokens','completion_tokens','total_tokens'))<=r['usage'].keys() for r in rows)
     pilot=json.loads((OUT/'pilot_check.json').read_text())
     assert pilot['parsed']==5 and len(set(pilot['ids']))==5 and pilot['usage_verified']
+
+
+def test_timeout_resume_is_one_necessary_retry(monkeypatch,tmp_path):
+    monkeypatch.setenv('SANDBOX_API_KEY','mock-secret')
+    monkeypatch.setenv('SANDBOX_BASE_URL','https://mock.invalid')
+    calls=[]
+    def handle(request):
+        calls.append(json.loads(request.content))
+        if len(calls)==1:
+            raise httpx.ReadTimeout('mock timeout',request=request)
+        return httpx.Response(200,json=dict(choices=[dict(message=dict(content='{"topic":"close","emotion":false}'))],usage=dict(prompt_tokens=1,completion_tokens=1,total_tokens=2)))
+    path=tmp_path/'cache.jsonl'
+    c=Judge(path,transport=httpx.MockTransport(handle))
+    item=dict(id='x',goal='',history=[],previous_agent='',text='')
+    try:
+        with pytest.raises(RuntimeError):
+            c.evaluate('fixed',item)
+        rows=cached(path)
+        assert rows[0]['usage'] is None
+        assert c.evaluate('fixed',item,rows)==dict(topic='close',emotion=False)
+        assert calls[0]==calls[1]
+        assert len(cached(path))==2
+    finally:
+        c.close()

@@ -1,0 +1,126 @@
+{
+  "prompt_v1": {
+    "scores": {
+      "topic": {
+        "n": 100,
+        "accuracy": 0.94,
+        "kappa": 0.8399146211312699,
+        "labels": [
+          "close",
+          "continue",
+          "unclear"
+        ],
+        "matrix": [
+          [
+            15,
+            1,
+            0,
+            0
+          ],
+          [
+            3,
+            74,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            5,
+            0
+          ]
+        ]
+      },
+      "emotion": {
+        "n": 100,
+        "accuracy": 0.97,
+        "kappa": 0.8856707317073169,
+        "labels": [
+          false,
+          true
+        ],
+        "matrix": [
+          [
+            83,
+            3,
+            0
+          ],
+          [
+            0,
+            14,
+            0
+          ]
+        ]
+      }
+    },
+    "usage": {
+      "prompt_tokens": 76236,
+      "completion_tokens": 19730,
+      "total_tokens": 95966,
+      "reasoning_tokens": 18826
+    },
+    "usage_missing_requests": 0
+  },
+  "test_v1": {
+    "scores": {
+      "topic": {
+        "n": 200,
+        "accuracy": 0.97,
+        "kappa": 0.9293702177751618,
+        "labels": [
+          "close",
+          "continue",
+          "unclear"
+        ],
+        "matrix": [
+          [
+            36,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            144,
+            1,
+            0
+          ],
+          [
+            2,
+            1,
+            14,
+            0
+          ]
+        ]
+      },
+      "emotion": {
+        "n": 200,
+        "accuracy": 0.97,
+        "kappa": 0.8855617013160403,
+        "labels": [
+          false,
+          true
+        ],
+        "matrix": [
+          [
+            166,
+            5,
+            0
+          ],
+          [
+            1,
+            28,
+            0
+          ]
+        ]
+      }
+    },
+    "usage": {
+      "prompt_tokens": 153273,
+      "completion_tokens": 36335,
+      "total_tokens": 189608,
+      "reasoning_tokens": 34520
+    },
+    "usage_missing_requests": 1
+  }
+}

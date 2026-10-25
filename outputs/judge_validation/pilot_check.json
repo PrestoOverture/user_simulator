@@ -1,0 +1,13 @@
+{
+  "ids": [
+    "J005",
+    "J006",
+    "J015",
+    "J016",
+    "J022"
+  ],
+  "parsed": 5,
+  "usage_verified": true,
+  "model": "gemini-3.8-flash",
+  "checked_at": "2026-10-25T16:22:37.053472+00:00"
+}
