@@ -1,0 +1,436 @@
+{
+  "opening_transfer": {
+    "human": {
+      "false_discovery": {
+        "errors": 0,
+        "denominator": 30,
+        "rate": 0.0,
+        "revised_errors": 0,
+        "examples": [
+          "opening_transfer/human/1/human/3527:1",
+          "opening_transfer/human/1/human/3278:1",
+          "opening_transfer/human/1/human/2152:1"
+        ]
+      },
+      "missed_in_negatives": {
+        "errors": 0,
+        "denominator": 50,
+        "rate": 0.0,
+        "revised_errors": 0,
+        "examples": [
+          "opening_transfer/human/0/human/6217:17",
+          "opening_transfer/human/0/human/7231:5",
+          "opening_transfer/human/0/human/4971:2"
+        ]
+      }
+    },
+    "simulator": {
+      "false_discovery": {
+        "errors": 1,
+        "denominator": 7,
+        "rate": 0.14285714285714285,
+        "revised_errors": 0,
+        "examples": [
+          "opening_transfer/simulator/1/C1/9682:1"
+        ]
+      },
+      "missed_in_negatives": {
+        "errors": 0,
+        "denominator": 50,
+        "rate": 0.0,
+        "revised_errors": 0,
+        "examples": [
+          "opening_transfer/simulator/0/baseline/10431:3",
+          "opening_transfer/simulator/0/C1/9000:6",
+          "opening_transfer/simulator/0/C2/211:3"
+        ]
+      }
+    }
+  },
+  "escalation": {
+    "human": {
+      "false_discovery": {
+        "errors": 9,
+        "denominator": 30,
+        "rate": 0.3,
+        "revised_errors": 5,
+        "examples": [
+          "escalation/human/1/human/8637:7",
+          "escalation/human/1/human/4413:10",
+          "escalation/human/1/human/4197:4"
+        ]
+      },
+      "missed_in_negatives": {
+        "errors": 2,
+        "denominator": 50,
+        "rate": 0.04,
+        "revised_errors": 0,
+        "examples": [
+          "escalation/human/0/human/10227:6",
+          "escalation/human/0/human/3756:2"
+        ]
+      }
+    },
+    "simulator": {
+      "false_discovery": {
+        "errors": 6,
+        "denominator": 30,
+        "rate": 0.2,
+        "revised_errors": 5,
+        "examples": [
+          "escalation/simulator/1/baseline/4413:6",
+          "escalation/simulator/1/baseline/3560:7",
+          "escalation/simulator/1/C2/4413:10"
+        ]
+      },
+      "missed_in_negatives": {
+        "errors": 2,
+        "denominator": 50,
+        "rate": 0.04,
+        "revised_errors": 2,
+        "examples": [
+          "escalation/simulator/0/C2/5773:10",
+          "escalation/simulator/0/C2/3538:11"
+        ]
+      }
+    }
+  },
+  "acceptance": {
+    "human": {
+      "false_discovery": {
+        "errors": 4,
+        "denominator": 30,
+        "rate": 0.13333333333333333,
+        "revised_errors": 1,
+        "examples": [
+          "acceptance/human/1/human/3377:6",
+          "acceptance/human/1/human/1538:3",
+          "acceptance/human/1/human/10341:4"
+        ]
+      },
+      "missed_in_negatives": {
+        "errors": 1,
+        "denominator": 50,
+        "rate": 0.02,
+        "revised_errors": 1,
+        "examples": [
+          "acceptance/human/0/human/6067:6"
+        ]
+      }
+    },
+    "simulator": {
+      "false_discovery": {
+        "errors": 3,
+        "denominator": 13,
+        "rate": 0.23076923076923078,
+        "revised_errors": 0,
+        "examples": [
+          "acceptance/simulator/1/C1/5681:5",
+          "acceptance/simulator/1/baseline/2688:6",
+          "acceptance/simulator/1/C1/1683:4"
+        ]
+      },
+      "missed_in_negatives": {
+        "errors": 1,
+        "denominator": 50,
+        "rate": 0.02,
+        "revised_errors": 0,
+        "examples": [
+          "acceptance/simulator/0/baseline/8645:12"
+        ]
+      }
+    }
+  },
+  "alternative": {
+    "human": {
+      "false_discovery": {
+        "errors": 5,
+        "denominator": 30,
+        "rate": 0.16666666666666666,
+        "revised_errors": 2,
+        "examples": [
+          "alternative/human/1/human/8736:10",
+          "alternative/human/1/human/3761:11",
+          "alternative/human/1/human/7100:7"
+        ]
+      },
+      "missed_in_negatives": {
+        "errors": 1,
+        "denominator": 50,
+        "rate": 0.02,
+        "revised_errors": 0,
+        "examples": [
+          "alternative/human/0/human/359:7"
+        ]
+      }
+    },
+    "simulator": {
+      "false_discovery": {
+        "errors": 8,
+        "denominator": 30,
+        "rate": 0.26666666666666666,
+        "revised_errors": 8,
+        "examples": [
+          "alternative/simulator/1/C1/7921:7",
+          "alternative/simulator/1/C2/9628:7",
+          "alternative/simulator/1/baseline/2639:2"
+        ]
+      },
+      "missed_in_negatives": {
+        "errors": 3,
+        "denominator": 50,
+        "rate": 0.06,
+        "revised_errors": 1,
+        "examples": [
+          "alternative/simulator/0/C2/1595:7",
+          "alternative/simulator/0/C2/10212:16",
+          "alternative/simulator/0/baseline/543:15"
+        ]
+      }
+    }
+  },
+  "emotion": {
+    "human": {
+      "false_discovery": {
+        "errors": 8,
+        "denominator": 30,
+        "rate": 0.26666666666666666,
+        "revised_errors": 2,
+        "examples": [
+          "emotion/human/1/human/5513:2",
+          "emotion/human/1/human/3976:2",
+          "emotion/human/1/human/6372:4"
+        ]
+      },
+      "missed_in_negatives": {
+        "errors": 1,
+        "denominator": 50,
+        "rate": 0.02,
+        "revised_errors": 0,
+        "examples": [
+          "emotion/human/0/human/10017:2"
+        ]
+      }
+    },
+    "simulator": {
+      "false_discovery": {
+        "errors": 5,
+        "denominator": 30,
+        "rate": 0.16666666666666666,
+        "revised_errors": 3,
+        "examples": [
+          "emotion/simulator/1/C2/5674:2",
+          "emotion/simulator/1/baseline/1976:2",
+          "emotion/simulator/1/C1/5513:4"
+        ]
+      },
+      "missed_in_negatives": {
+        "errors": 2,
+        "denominator": 50,
+        "rate": 0.04,
+        "revised_errors": 0,
+        "examples": [
+          "emotion/simulator/0/C2/1138:5",
+          "emotion/simulator/0/C2/1746:6"
+        ]
+      }
+    }
+  },
+  "exclamation": {
+    "human": {
+      "false_discovery": {
+        "errors": 0,
+        "denominator": 30,
+        "rate": 0.0,
+        "revised_errors": 0,
+        "examples": [
+          "exclamation/human/1/human/3538:8",
+          "exclamation/human/1/human/763:11",
+          "exclamation/human/1/human/7036:6"
+        ]
+      },
+      "missed_in_negatives": {
+        "errors": 0,
+        "denominator": 50,
+        "rate": 0.0,
+        "revised_errors": 0,
+        "examples": [
+          "exclamation/human/0/human/5113:1",
+          "exclamation/human/0/human/2198:3",
+          "exclamation/human/0/human/6773:2"
+        ]
+      }
+    },
+    "simulator": {
+      "false_discovery": {
+        "errors": 0,
+        "denominator": 30,
+        "rate": 0.0,
+        "revised_errors": 0,
+        "examples": [
+          "exclamation/simulator/1/C2/8109:8",
+          "exclamation/simulator/1/C1/9451:7",
+          "exclamation/simulator/1/C1/763:13"
+        ]
+      },
+      "missed_in_negatives": {
+        "errors": 0,
+        "denominator": 50,
+        "rate": 0.0,
+        "revised_errors": 0,
+        "examples": [
+          "exclamation/simulator/0/baseline/6270:5",
+          "exclamation/simulator/0/C1/7907:3",
+          "exclamation/simulator/0/C1/7231:6"
+        ]
+      }
+    }
+  },
+  "narrative": {
+    "human": {
+      "false_discovery": {
+        "errors": 8,
+        "denominator": 30,
+        "rate": 0.26666666666666666,
+        "revised_errors": 5,
+        "examples": [
+          "narrative/human/1/human/210:2",
+          "narrative/human/1/human/2732:2",
+          "narrative/human/1/human/0:4"
+        ]
+      },
+      "missed_in_negatives": {
+        "errors": 0,
+        "denominator": 50,
+        "rate": 0.0,
+        "revised_errors": 0,
+        "examples": [
+          "narrative/human/0/human/448:5",
+          "narrative/human/0/human/1976:1",
+          "narrative/human/0/human/83:5"
+        ]
+      }
+    },
+    "simulator": {
+      "false_discovery": {
+        "errors": 3,
+        "denominator": 20,
+        "rate": 0.15,
+        "revised_errors": 0,
+        "examples": [
+          "narrative/simulator/1/C1/2639:5",
+          "narrative/simulator/1/baseline/7787:5",
+          "narrative/simulator/1/C2/8105:5"
+        ]
+      },
+      "missed_in_negatives": {
+        "errors": 0,
+        "denominator": 50,
+        "rate": 0.0,
+        "revised_errors": 0,
+        "examples": [
+          "narrative/simulator/0/baseline/8492:9",
+          "narrative/simulator/0/baseline/5424:1",
+          "narrative/simulator/0/baseline/7468:4"
+        ]
+      }
+    }
+  },
+  "behavioral": {
+    "human": {
+      "false_discovery": {
+        "errors": 8,
+        "denominator": 30,
+        "rate": 0.26666666666666666,
+        "revised_errors": 1,
+        "examples": [
+          "behavioral/human/1/human/3377:3",
+          "behavioral/human/1/human/3371:4",
+          "behavioral/human/1/human/1683:4"
+        ]
+      },
+      "missed_in_negatives": {
+        "errors": 3,
+        "denominator": 50,
+        "rate": 0.06,
+        "revised_errors": 1,
+        "examples": [
+          "behavioral/human/0/human/3090:8",
+          "behavioral/human/0/human/3999:4",
+          "behavioral/human/0/human/3731:4"
+        ]
+      }
+    },
+    "simulator": {
+      "false_discovery": {
+        "errors": 4,
+        "denominator": 26,
+        "rate": 0.15384615384615385,
+        "revised_errors": 2,
+        "examples": [
+          "behavioral/simulator/1/C1/1683:4",
+          "behavioral/simulator/1/baseline/2688:6",
+          "behavioral/simulator/1/C1/5681:5"
+        ]
+      },
+      "missed_in_negatives": {
+        "errors": 3,
+        "denominator": 50,
+        "rate": 0.06,
+        "revised_errors": 3,
+        "examples": [
+          "behavioral/simulator/0/C1/10227:7",
+          "behavioral/simulator/0/baseline/6909:8",
+          "behavioral/simulator/0/C2/4163:3"
+        ]
+      }
+    }
+  },
+  "negative_agent": {
+    "human": {
+      "false_discovery": {
+        "errors": 2,
+        "denominator": 30,
+        "rate": 0.06666666666666667,
+        "revised_errors": 0,
+        "examples": [
+          "negative_agent/human/1/human/2688:3",
+          "negative_agent/human/1/human/7434:3"
+        ]
+      },
+      "missed_in_negatives": {
+        "errors": 2,
+        "denominator": 50,
+        "rate": 0.04,
+        "revised_errors": 0,
+        "examples": [
+          "negative_agent/human/0/human/1982:7",
+          "negative_agent/human/0/human/7870:6"
+        ]
+      }
+    },
+    "simulator": {
+      "false_discovery": {
+        "errors": 2,
+        "denominator": 30,
+        "rate": 0.06666666666666667,
+        "revised_errors": 0,
+        "examples": [
+          "negative_agent/simulator/1/C2/1587:5",
+          "negative_agent/simulator/1/baseline/9962:13"
+        ]
+      },
+      "missed_in_negatives": {
+        "errors": 10,
+        "denominator": 50,
+        "rate": 0.2,
+        "revised_errors": 3,
+        "examples": [
+          "negative_agent/simulator/0/C1/8970:4",
+          "negative_agent/simulator/0/baseline/5245:6",
+          "negative_agent/simulator/0/C1/3976:9"
+        ]
+      }
+    }
+  }
+}

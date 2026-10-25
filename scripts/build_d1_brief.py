@@ -133,6 +133,11 @@ def build():
         direction = f'{sign(small[key])}/{sign(s["gap"])}；'+('一致' if sign(small[key]) == sign(s['gap']) else '不一致')
         lines.append(f"|{label}|{s['human']:.6f}；{s['dialogues']}/500段、{s['turns']}/{s['denominator']}轮|{interval(s)}；{'是' if s['low'] <= 0 <= s['high'] else '否'}|{small[key]:+.6f}|{direction}|待用户判定（阈值未定义）|")
     lines += ['', '测量边界：编号披露仅为占位符/数字外形代理；重复追问为字符相似代理；连发为消息/非空行代理。区间仅反映对话重抽样变异，不包含关键词测量误差或审核剔除偏差。未调用任何模型API，未选定核心指标。']
+    behavior_report = (ROOT/'outputs/behaviors/report.md').read_text()
+    lines += ['', '## 新增四类行为指标', '',
+              '以下来自 outputs/behaviors/report.md；原有指标口径保持不变。']
+    lines += [line if not line.startswith('#') else '##' + line
+              for line in behavior_report.splitlines()[1:]]
     (ROOT/'outputs/d1_brief.md').write_text('\n'.join(lines)+'\n')
     print(f'Wrote outputs/d1_brief.md: {len(LABELS)} metrics; common turns={len(common)}; bootstrap={REPLICATES}, seed={SEED}')
 

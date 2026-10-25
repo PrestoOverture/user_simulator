@@ -1,0 +1,411 @@
+{
+  "seed": 20261025,
+  "replicates": 2000,
+  "dialogues": 500,
+  "common_turns": 4705,
+  "full_csds": {
+    "opening_transfer": {
+      "turn_hits": 733,
+      "turns": 81959,
+      "turn_rate": 0.00894349613831306,
+      "dialogue_hits": 733,
+      "dialogues": 9910
+    },
+    "escalation": {
+      "turn_hits": 231,
+      "turns": 81959,
+      "turn_rate": 0.002818482411937676,
+      "dialogue_hits": 206,
+      "dialogues": 9910
+    },
+    "acceptance": {
+      "turn_hits": 700,
+      "turns": 81959,
+      "turn_rate": 0.008540855793750534,
+      "dialogue_hits": 683,
+      "dialogues": 9910
+    },
+    "alternative": {
+      "turn_hits": 511,
+      "turns": 81959,
+      "turn_rate": 0.006234824729437889,
+      "dialogue_hits": 457,
+      "dialogues": 9910
+    },
+    "emotion": {
+      "turn_hits": 914,
+      "turns": 81959,
+      "turn_rate": 0.011151917422125696,
+      "dialogue_hits": 762,
+      "dialogues": 9910
+    },
+    "exclamation": {
+      "turn_hits": 1492,
+      "turns": 81959,
+      "turn_rate": 0.01820422406325114,
+      "dialogue_hits": 896,
+      "dialogues": 9910
+    },
+    "narrative": {
+      "turn_hits": 226,
+      "turns": 81959,
+      "turn_rate": 0.002757476299125172,
+      "dialogue_hits": 220,
+      "dialogues": 9910
+    },
+    "behavioral": {
+      "turn_hits": 1356,
+      "turns": 81959,
+      "turn_rate": 0.016544857794751035,
+      "dialogue_hits": 1240,
+      "dialogues": 9910
+    },
+    "negative_agent": {
+      "turn_hits": 3832,
+      "turns": 81959,
+      "turn_rate": 0.04675508485950292,
+      "dialogue_hits": 2872,
+      "dialogues": 9910
+    }
+  },
+  "comparisons": {
+    "baseline": {
+      "opening_transfer": {
+        "human": 0.007013815090329437,
+        "simulator": 0.0004250797024442083,
+        "human_hits": 33,
+        "simulator_hits": 2,
+        "denominator": 4705,
+        "gap": -0.006588735387885228,
+        "low": -0.00904694039810499,
+        "high": -0.0042130764494889205
+      },
+      "escalation": {
+        "human": 0.003188097768331562,
+        "simulator": 0.007438894792773645,
+        "human_hits": 15,
+        "simulator_hits": 35,
+        "denominator": 4705,
+        "gap": 0.004250797024442083,
+        "low": 0.0010608336374087707,
+        "high": 0.007955077612640464
+      },
+      "acceptance": {
+        "human": 0.007226354941551541,
+        "simulator": 0.004250797024442083,
+        "human_hits": 34,
+        "simulator_hits": 20,
+        "denominator": 4705,
+        "gap": -0.002975557917109458,
+        "low": -0.005509758726764415,
+        "high": -0.00022052176549142348
+      },
+      "alternative": {
+        "human": 0.008076514346439958,
+        "simulator": 0.019766206163655684,
+        "human_hits": 38,
+        "simulator_hits": 93,
+        "denominator": 4705,
+        "gap": 0.011689691817215728,
+        "low": 0.006604736751083913,
+        "high": 0.017374709413976428
+      },
+      "emotion": {
+        "human": 0.00977683315621679,
+        "simulator": 0.04314558979808714,
+        "human_hits": 46,
+        "simulator_hits": 203,
+        "denominator": 4705,
+        "gap": 0.03336875664187035,
+        "low": 0.02541314368094883,
+        "high": 0.04171965196789463
+      },
+      "exclamation": {
+        "human": 0.016578108395324122,
+        "simulator": 0.05079702444208289,
+        "human_hits": 78,
+        "simulator_hits": 239,
+        "denominator": 4705,
+        "gap": 0.034218916046758766,
+        "low": 0.026620744881450123,
+        "high": 0.04214081034467064
+      },
+      "narrative": {
+        "human": 0.001487778958554729,
+        "simulator": 0.001487778958554729,
+        "human_hits": 7,
+        "simulator_hits": 7,
+        "denominator": 4705,
+        "gap": 0.0,
+        "low": -0.0014893696259502928,
+        "high": 0.0015234032846931443
+      },
+      "behavioral": {
+        "human": 0.014665249734325186,
+        "simulator": 0.006801275239107333,
+        "human_hits": 69,
+        "simulator_hits": 32,
+        "denominator": 4705,
+        "gap": -0.007863974495217854,
+        "low": -0.010878023703113358,
+        "high": -0.004740332151818073
+      },
+      "negative_agent": {
+        "human": 0.04208289054197662,
+        "simulator": 0.04208289054197662,
+        "human_hits": 198,
+        "simulator_hits": 198,
+        "denominator": 4705,
+        "gap": 0.0,
+        "low": 0.0,
+        "high": 0.0
+      }
+    },
+    "C1": {
+      "opening_transfer": {
+        "human": 0.007013815090329437,
+        "simulator": 0.0004250797024442083,
+        "human_hits": 33,
+        "simulator_hits": 2,
+        "denominator": 4705,
+        "gap": -0.006588735387885228,
+        "low": -0.00909879615554137,
+        "high": -0.004302810394197218
+      },
+      "escalation": {
+        "human": 0.003188097768331562,
+        "simulator": 0.008076514346439958,
+        "human_hits": 15,
+        "simulator_hits": 38,
+        "denominator": 4705,
+        "gap": 0.004888416578108395,
+        "low": 0.0019273713983344461,
+        "high": 0.008329996227003419
+      },
+      "acceptance": {
+        "human": 0.007226354941551541,
+        "simulator": 0.003188097768331562,
+        "human_hits": 34,
+        "simulator_hits": 15,
+        "denominator": 4705,
+        "gap": -0.004038257173219979,
+        "low": -0.006687705329697955,
+        "high": -0.0014773621429947147
+      },
+      "alternative": {
+        "human": 0.008076514346439958,
+        "simulator": 0.018278427205100957,
+        "human_hits": 38,
+        "simulator_hits": 86,
+        "denominator": 4705,
+        "gap": 0.010201912858660999,
+        "low": 0.004913799207023506,
+        "high": 0.01570589223535955
+      },
+      "emotion": {
+        "human": 0.00977683315621679,
+        "simulator": 0.04250797024442083,
+        "human_hits": 46,
+        "simulator_hits": 200,
+        "denominator": 4705,
+        "gap": 0.03273113708820404,
+        "low": 0.025063721788923757,
+        "high": 0.04066234283181774
+      },
+      "exclamation": {
+        "human": 0.016578108395324122,
+        "simulator": 0.030818278427205102,
+        "human_hits": 78,
+        "simulator_hits": 145,
+        "denominator": 4705,
+        "gap": 0.014240170031880977,
+        "low": 0.0074290270811111425,
+        "high": 0.020993651905546726
+      },
+      "narrative": {
+        "human": 0.001487778958554729,
+        "simulator": 0.0004250797024442083,
+        "human_hits": 7,
+        "simulator_hits": 2,
+        "denominator": 4705,
+        "gap": -0.0010626992561105207,
+        "low": -0.0023425065024053177,
+        "high": 0.0
+      },
+      "behavioral": {
+        "human": 0.014665249734325186,
+        "simulator": 0.005100956429330499,
+        "human_hits": 69,
+        "simulator_hits": 24,
+        "denominator": 4705,
+        "gap": -0.009564293304994687,
+        "low": -0.01302390376783116,
+        "high": -0.006081490676583304
+      },
+      "negative_agent": {
+        "human": 0.04208289054197662,
+        "simulator": 0.04208289054197662,
+        "human_hits": 198,
+        "simulator_hits": 198,
+        "denominator": 4705,
+        "gap": 0.0,
+        "low": 0.0,
+        "high": 0.0
+      }
+    },
+    "C2": {
+      "opening_transfer": {
+        "human": 0.007013815090329437,
+        "simulator": 0.0004250797024442083,
+        "human_hits": 33,
+        "simulator_hits": 2,
+        "denominator": 4705,
+        "gap": -0.006588735387885228,
+        "low": -0.00904694039810499,
+        "high": -0.0042130764494889205
+      },
+      "escalation": {
+        "human": 0.003188097768331562,
+        "simulator": 0.004675876726886291,
+        "human_hits": 15,
+        "simulator_hits": 22,
+        "denominator": 4705,
+        "gap": 0.001487778958554729,
+        "low": -0.0006349813347901301,
+        "high": 0.003819528279569104
+      },
+      "acceptance": {
+        "human": 0.007226354941551541,
+        "simulator": 0.0025504782146652497,
+        "human_hits": 34,
+        "simulator_hits": 12,
+        "denominator": 4705,
+        "gap": -0.004675876726886291,
+        "low": -0.007057654182589549,
+        "high": -0.002499611801242238
+      },
+      "alternative": {
+        "human": 0.008076514346439958,
+        "simulator": 0.022316684378320937,
+        "human_hits": 38,
+        "simulator_hits": 105,
+        "denominator": 4705,
+        "gap": 0.014240170031880977,
+        "low": 0.008708078029140094,
+        "high": 0.020075829579562932
+      },
+      "emotion": {
+        "human": 0.00977683315621679,
+        "simulator": 0.03974495217853347,
+        "human_hits": 46,
+        "simulator_hits": 187,
+        "denominator": 4705,
+        "gap": 0.029968119022316685,
+        "low": 0.022285203172771904,
+        "high": 0.037359430388498635
+      },
+      "exclamation": {
+        "human": 0.016578108395324122,
+        "simulator": 0.028480340063761954,
+        "human_hits": 78,
+        "simulator_hits": 134,
+        "denominator": 4705,
+        "gap": 0.011902231668437832,
+        "low": 0.0049640919550102405,
+        "high": 0.01844408345765219
+      },
+      "narrative": {
+        "human": 0.001487778958554729,
+        "simulator": 0.0017003188097768332,
+        "human_hits": 7,
+        "simulator_hits": 8,
+        "denominator": 4705,
+        "gap": 0.00021253985122210415,
+        "low": -0.001490320899671725,
+        "high": 0.0020926636967659386
+      },
+      "behavioral": {
+        "human": 0.014665249734325186,
+        "simulator": 0.005526036131774708,
+        "human_hits": 69,
+        "simulator_hits": 26,
+        "denominator": 4705,
+        "gap": -0.009139213602550478,
+        "low": -0.01242661224158477,
+        "high": -0.005899175158812278
+      },
+      "negative_agent": {
+        "human": 0.04208289054197662,
+        "simulator": 0.04208289054197662,
+        "human_hits": 198,
+        "simulator_hits": 198,
+        "denominator": 4705,
+        "gap": 0.0,
+        "low": 0.0,
+        "high": 0.0
+      }
+    }
+  },
+  "conditional": {
+    "human": {
+      "denominator": 198,
+      "emotion": {
+        "hits": 1,
+        "rate": 0.005050505050505051
+      },
+      "narrative": {
+        "hits": 0,
+        "rate": 0.0
+      },
+      "behavioral": {
+        "hits": 69,
+        "rate": 0.3484848484848485
+      }
+    },
+    "baseline": {
+      "denominator": 198,
+      "emotion": {
+        "hits": 9,
+        "rate": 0.045454545454545456
+      },
+      "narrative": {
+        "hits": 0,
+        "rate": 0.0
+      },
+      "behavioral": {
+        "hits": 32,
+        "rate": 0.16161616161616163
+      }
+    },
+    "C1": {
+      "denominator": 198,
+      "emotion": {
+        "hits": 9,
+        "rate": 0.045454545454545456
+      },
+      "narrative": {
+        "hits": 0,
+        "rate": 0.0
+      },
+      "behavioral": {
+        "hits": 24,
+        "rate": 0.12121212121212122
+      }
+    },
+    "C2": {
+      "denominator": 198,
+      "emotion": {
+        "hits": 10,
+        "rate": 0.050505050505050504
+      },
+      "narrative": {
+        "hits": 1,
+        "rate": 0.005050505050505051
+      },
+      "behavioral": {
+        "hits": 26,
+        "rate": 0.13131313131313133
+      }
+    }
+  }
+}

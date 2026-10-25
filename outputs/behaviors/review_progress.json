@@ -1,0 +1,30 @@
+{
+  "reviewed": 1386,
+  "total": 1386,
+  "next_sample_index": 1386,
+  "comparison_computed": true,
+  "findings": [
+    {
+      "sample_id": "opening_transfer/simulator/1/C1/9682:1",
+      "finding": "首轮提及给人工客服备注不是请求转接人工；当前规则误判。",
+      "rule_changed": true
+    }
+  ],
+  "remaining": [
+    "模拟器命中不足30条的合同例外待确认"
+  ],
+  "supplement_note": "初版1332条在差距前判断；最终审计补54条真人命中，补样后未再修规则。",
+  "verification": {
+    "measure_twice": "exit 0; all 8 artifact hashes identical",
+    "pytest": "29 passed",
+    "build_d1_brief": "exit 0; original 11 metrics retained",
+    "check_outputs": "exit 0",
+    "check_correction_pilot": "exit 0"
+  },
+  "scarce_simulator_hit_pools": {
+    "acceptance": 13,
+    "behavioral": 26,
+    "narrative": 20,
+    "opening_transfer": 7
+  }
+}

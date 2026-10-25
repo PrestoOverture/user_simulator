@@ -1,0 +1,176 @@
+[
+  {
+    "key": "version",
+    "before": 1,
+    "after": 2,
+    "evidence": [],
+    "reason": "全部冻结样本逐条判断完成之后、比较差距之前修订。"
+  },
+  {
+    "key": "opening_exclude",
+    "before": null,
+    "after": "给人工客服备注",
+    "evidence": [
+      "opening_transfer/simulator/1/C1/9682:1"
+    ],
+    "reason": "仅备注给人工客服不表示转接请求。"
+  },
+  {
+    "key": "escalation_exclude",
+    "before": null,
+    "after": "(?:是|现在是|是用|是个)人工(?:客服|服务)(?:还是|吗|吧)|(?:差评.{0,12}(?:删除|改|补充)|(?:不小心|点错).{0,8}差评)",
+    "evidence": [
+      "escalation/human/1/human/8637:7",
+      "escalation/human/1/human/4197:4",
+      "escalation/human/1/human/4677:5",
+      "escalation/human/1/human/1542:2",
+      "escalation/simulator/1/baseline/3007:6"
+    ],
+    "reason": "排除身份确认及修改已有评价；排除只针对匹配片段，仍保留其他升级措辞。"
+  },
+  {
+    "key": "escalation",
+    "before": "转人工|人工客服|人工服务|换(?:个|一个)?(?:客服|人)|(?:给我|要求|让|安排).{0,8}(?:回电|专员|上级|主管)|(?:投诉|差评|12315)|(?:找|联系|转给).{0,4}(?:主管|上级)",
+    "after": "转人工|人工客服|人工服务|换(?:个|一个)?(?:客服|人)|(?:给我|要求|让|安排).{0,8}(?:回电|专员|上级|主管)|(?:投诉|差评|12315)|(?:找|联系|转给).{0,4}(?:主管|上级)|转(?:给)?权限.{0,6}客服|(?:你给我|给我).{0,4}打个电话|(?:电话|回电).{0,8}(?:也没人|还没|没收到)|(?:也没人|还没|没收到).{0,8}(?:电话|回电)",
+    "evidence": [
+      "escalation/human/0/human/10227:6",
+      "escalation/human/0/human/3756:2",
+      "alternative/human/0/human/8406:2"
+    ],
+    "reason": "补权限更高客服、直接要求打电话以及追问未履行回电。"
+  },
+  {
+    "key": "negative_agent_exclude",
+    "before": null,
+    "after": "(?:不能.{0,12}|无法.{0,12})[吗?？]|(?:正在|为您|帮您|为亲).{0,12}查询|已.{0,4}收到款项|若不能使用|后期如果不能维修|无法读取",
+    "evidence": [
+      "negative_agent/human/1/human/2688:3",
+      "negative_agent/human/1/human/7434:3",
+      "negative_agent/simulator/1/C2/1587:5",
+      "negative_agent/simulator/1/baseline/9962:13",
+      "acceptance/human/1/human/3377:6",
+      "acceptance/simulator/1/baseline/2688:6",
+      "behavioral/human/1/human/4391:8"
+    ],
+    "reason": "排除故障确认问句、查询过程提示、收款办理、条件性保障及硬盘风险说明。只在整条客服未同时含明确拒绝或结果等待时排除。"
+  },
+  {
+    "key": "negative_agent_strong",
+    "before": null,
+    "after": "不支持|不可以|没办法|没有办法|无法(?:修改|更改|发送|调度|确定|保证|恢复|购买|正常|添加)|不能(?:修改|恢复|确定|保证|删除)|等待.{0,10}(?:审核|退款|返款|回复|结果)|(?:等待|等候).{0,8}(?:回电|联系)",
+    "evidence": [
+      "negative_agent/human/1/human/3538:4",
+      "negative_agent/simulator/1/C1/1169:2"
+    ],
+    "reason": "保留同条消息中的实质拒绝和等待结果，防止查询排除覆盖真实负面。"
+  },
+  {
+    "key": "negative_agent",
+    "before": "无法|不能|不支持|不可以|没办法|没有办法|办不到|无法处理|只能.{0,8}(?:等|等待)|(?:耐心|继续|还请|需要|建议您|麻烦您|请您).{0,5}(?:等待|等候)|(?:联系|咨询).{0,8}(?:商家|厂家|卖家|售后)",
+    "after": "无法|不能|不支持|不可以|没办法|没有办法|办不到|无法处理|只能.{0,8}(?:等|等待)|(?:耐心|继续|还请|需要|建议您|麻烦您|请您).{0,5}(?:等待|等候)|(?:联系|咨询).{0,8}(?:商家|厂家|卖家|售后)|没法|不一定|还不行|也是没有|只能分开|仅支持|没查到.{0,5}申请|等待订单完成|检测都慢",
+    "evidence": [
+      "negative_agent/human/0/human/1982:7",
+      "negative_agent/human/0/human/7870:6",
+      "negative_agent/simulator/0/C1/8970:4",
+      "negative_agent/simulator/0/baseline/5245:6",
+      "negative_agent/simulator/0/C1/3976:9",
+      "negative_agent/simulator/0/baseline/5278:4",
+      "negative_agent/simulator/0/C2/543:9",
+      "negative_agent/simulator/0/C2/2087:9",
+      "negative_agent/simulator/0/C1/7171:6"
+    ],
+    "reason": "补明确无法预约、资格限制、无法查申请、不能保证及等待限制表达。"
+  },
+  {
+    "key": "acceptance_prefix",
+    "before": null,
+    "after": "^(?:好吧|那好吧|那行吧|行吧|那就算了)[，,。！!]|^好的[，,。]?\\[姓名\\]$",
+    "evidence": [
+      "acceptance/human/0/human/6067:6",
+      "acceptance/simulator/0/baseline/8645:12",
+      "alternative/human/0/human/359:7"
+    ],
+    "reason": "好吧后接其他问题仍可表达接受；姓名尾缀不改变接受。"
+  },
+  {
+    "key": "alternative",
+    "before": "(?:那|就|还是|干脆|算了).{0,8}(?:买其他|买别的|换一款|换个|换其他|换别的|不要了|不买了|不退了|不换了|不修了|自己去|自己买|自己处理|自己解决)|^(?:不要了|不用了|不买了|算了|算了吧)$",
+    "after": "(?:那|就|还是|干脆|算了).{0,8}(?:买其他|买别的|换一款|换个(?:手机号|安装点|方式)|换其他|换别的|不要了|不买了|不退了|不换了|不修了|自己去|自己买|自己处理|自己解决)|^(?:不要了|不用了|不买了|算了|算了吧)$|(?:那|就).{0,3}算了|不想买了|(?:那|改为|改成|还是).{0,5}(?:退货|取消订单)|(?:换|改).{0,5}(?:其他|别的)(?:商品|款|安装点)",
+    "evidence": [
+      "alternative/human/0/human/359:7",
+      "alternative/simulator/1/baseline/2639:2",
+      "alternative/simulator/1/C2/774:9",
+      "alternative/simulator/1/C2/4677:7",
+      "alternative/simulator/0/baseline/543:15",
+      "behavioral/human/0/human/3731:4"
+    ],
+    "reason": "排除泛化换个地址/客服，补明确放弃、退货替代及换安装点。"
+  },
+  {
+    "key": "narrative_exclude",
+    "before": null,
+    "after": "配送人员|派送人员|送货人员|出差错|抛弃\\[姓名\\]爸爸",
+    "evidence": [
+      "narrative/human/1/human/2732:2",
+      "narrative/human/1/human/0:4",
+      "narrative/simulator/1/C1/2639:5",
+      "narrative/simulator/1/baseline/7787:5",
+      "narrative/simulator/1/C2/8105:5"
+    ],
+    "reason": "排除字串重合与戏称，不把它们视为家庭赠礼或出差处境。"
+  },
+  {
+    "key": "emotion_exclude",
+    "before": null,
+    "after": "(?:我|并|也)?不着急|信号一直不好|一直显示充电|物流状态一直(?:不变|没有更新)|(?:现在)?还没到货.{0,8}(?:能|可以).{0,4}召回|还没发货.{0,8}(?:改|补差价)",
+    "evidence": [
+      "emotion/human/1/human/5513:2",
+      "emotion/human/1/human/3976:2",
+      "emotion/human/1/human/8021:3",
+      "emotion/simulator/1/C2/5674:2",
+      "emotion/simulator/1/baseline/1976:2",
+      "emotion/simulator/1/C1/5513:4",
+      "emotion/simulator/1/C1/9559:1"
+    ],
+    "reason": "删除明确否定着急和中性技术状态片段，不删除同句其他情绪表达。"
+  },
+  {
+    "key": "emotion",
+    "before": "着急|急用|太慢|等了好久|等这么久|等那么久|无语|生气|失望|不满|烦死|气死|太差|垃圾|坑爹|不耐烦|急死|急着|很急|这么慢|怎么这么慢|拖了|一直没|一直不|还没到|还没发",
+    "after": "着急|急用|太慢|等了好久|等这么久|等那么久|无语|生气|失望|不满|烦死|气死|太差|垃圾|坑爹|不耐烦|急死|急着|很急|这么慢|怎么这么慢|拖了|一直没|一直不|还没到|还没发|太麻烦|好麻烦|怎么还没货|马上.{0,3}出差|太久.{0,5}不要|不合理|不满意|效率.{0,3}低",
+    "evidence": [
+      "emotion/human/1/human/8021:3",
+      "emotion/human/0/human/10017:2",
+      "emotion/simulator/1/C1/9894:9",
+      "emotion/simulator/1/baseline/171:5",
+      "emotion/simulator/0/C2/1138:5",
+      "emotion/simulator/0/C2/1746:6"
+    ],
+    "reason": "补已审查的明确不满和时间急迫表达。"
+  },
+  {
+    "key": "emotion",
+    "before": "着急|急用|太慢|等了好久|等这么久|等那么久|无语|生气|失望|不满|烦死|气死|太差|垃圾|坑爹|不耐烦|急死|急着|很急|这么慢|怎么这么慢|拖了|一直没|一直不|还没到|还没发|太麻烦|好麻烦|怎么还没货|马上.{0,3}出差|太久.{0,5}不要|不合理|不满意|效率.{0,3}低",
+    "after": "着急|急用|太慢|等了好久|等这么久|等那么久|无语|生气|失望|不满|烦死|气死|太差|垃圾|坑爹|不耐烦|急死|急着|很急|这么慢|怎么这么慢|拖了|一直没|一直不|太麻烦|好麻烦|怎么还没货|马上.{0,3}出差|太久.{0,5}不要|不合理|不满意|效率.{0,3}低",
+    "evidence": [
+      "emotion/human/1/human/5513:2",
+      "emotion/human/1/human/6372:4",
+      "emotion/human/1/human/6074:4",
+      "emotion/human/1/human/5513:1",
+      "emotion/human/1/human/10527:2",
+      "emotion/human/1/human/7705:4",
+      "emotion/simulator/1/C1/5513:4",
+      "emotion/simulator/1/baseline/10431:1"
+    ],
+    "reason": "单独未到/未发不能区分中性状态和延误不满；删除裸状态片段，保留等好久等显式陈述。此误判在查看差距前已逐条确认。"
+  },
+  {
+    "key": "alternative_closing_agent",
+    "before": null,
+    "after": "还有.{0,8}(?:帮|问题|咨询)",
+    "evidence": [
+      "alternative/human/1/human/8736:10"
+    ],
+    "reason": "客服询问有无其他问题后单独不用了为正常收尾，不是放弃原诉求。"
+  }
+]
