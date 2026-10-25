@@ -24,6 +24,14 @@
 | 参照模型 | MIMESIS-4B / 9B（Meta 开源） | **待定**（[roadmap.md](roadmap.md) D4） |
 | 判断模型 | **待定**（[roadmap.md](roadmap.md) D5） | 输入文件未给出候选 |
 
+**付费模型（用户提供，2026-10-25 接通）：**
+
+- **凭证：** `SANDBOX_API_KEY`；地址为 `SANDBOX_BASE_URL` 加 `/v1`（OpenAI 兼容，`/v1/chat/completions`）。
+- **可用模型：** `deepseek-v4.1-flash`、`gemini-3.8-flash`、`glm-5.3-flash`。
+- **规则（用户要求）：** 这三个模型按量付费。只在需要它们的地方用（对比模拟器、判断模型），拿到需要的答案后回到 Spark。`SPARK_API_KEY` 只能调 Spark，不能调讯飞平台上的其他模型（那些不免费）。
+- **推理模式实测：** `deepseek-v4.1-flash` 默认不推理。`gemini-3.8-flash` 和 `glm-5.3-flash` 默认推理，每次约多 60–120 个 token；试过 `reasoning_effort: "none"`（Gemini）和 `thinking: {"type": "disabled"}`（GLM）都关不掉。正确的关闭参数待查，查的时候不要靠反复试调。
+- **计划分工（用户 2026-10-25）：** DeepSeek 做对比模拟器（D3）；Gemini Flash 做判断模型（D5），不用 GPT，因为 1,386 条标准集是 Codex（GPT 系）判的；GLM 备用。
+
 **调用参数：**
 - temperature 使用官方默认值，并记录。
 - thinking 关闭（ADR-012）。
