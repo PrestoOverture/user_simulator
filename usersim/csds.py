@@ -53,10 +53,14 @@ def sample(rows, n, seed, excluded=()):
     return (preferred + rest)[:n]
 
 
-def summary_audit(row):
+def summary_audit(row, allow_unreviewed=False):
     reviews = json.loads((Path(__file__).resolve().parents[1] / 'config/summary_reviews.json').read_text())
     rule_goal, removed = clean_summary(row['UserSumm'])
     goal, _ = clean_summary(row['UserSumm'], row['DialogueID'])
+    if allow_unreviewed and str(row['DialogueID']) not in reviews:
+        return dict(dialogue_id=row['DialogueID'], original=row['UserSumm'], rule_goal=rule_goal,
+                    goal=goal, removed=removed, override=goal != rule_goal,
+                    reviewed=False, reviewer=None, review_note=None)
     review = reviews[str(row['DialogueID'])]
     if review['original'] != row['UserSumm']:
         raise ValueError('Summary review does not match source')

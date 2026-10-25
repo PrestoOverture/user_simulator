@@ -42,6 +42,10 @@ def write_reports(out, metrics, pairs, usage, baseline=None):
              '## 2. 真人指标出现次数与稀疏程度', '',
              '这里只报告次数和比例，不人为设置“足够常见”的研究阈值；是否纳入正式实验交由 D1 决定。零命中或少量命中不足以据此给出稳定行为差距结论。', '',
              '|规则|真人命中/分母|比例|', '|---|---:|---:|']
+    if 'unreviewed_summaries' in usage:
+        lines = [line.replace('抽中摘要已逐条人工核对，并使用覆盖表修正规则不适用项',
+                              '摘要使用规则清洗，已有人工核对记录和覆盖表的保留原有处理') for line in lines]
+        lines.insert(4, f"未核对摘要段数：{usage['unreviewed_summaries']}；逐段 reviewed 标记见 summary_audit.json。")
     for k in ['short','politeness','escalation','refusal','urgency','repeated','correction','first_identifier']:
         vals=[int(r[k]) for r in metrics if r['source']=='human' and r[k]!='']
         lines.append(f'|{LABELS[k]}|{sum(vals)}/{len(vals)}|{statistics.mean(vals):.4%}|')

@@ -53,7 +53,23 @@ async def main(args):
     if out.resolve()!=Path('outputs').resolve():
         for name in ['spark_check.md','data_format_notes.md']:
             shutil.copyfile(Path('outputs')/name,out/name)
-    dump(out/'summary_audit.json',[summary_audit(r) for r in chosen])
+    audits=[summary_audit(r, args.allow_unreviewed_summaries) for r in chosen]
+    dump(out/'summary_audit.json',audits)
+    unreviewed=sum(not audit['reviewed'] for audit in audits)
+    if args.dry_run:
+        # Build every actual prompt, without constructing a client or reading generations.
+        with (out/'dry_run_prompts.jsonl').open('w') as f:
+            for row in chosen:
+                for t, turn in enumerate(user_turns(row), 1):
+                    f.write(json.dumps(dict(request_id=f"{row['DialogueID']}:{t}",
+                                            messages=prompt(row, turn)), ensure_ascii=False)+'\n')
+        usage=dict(dry_run=True, dialogues=len(chosen), user_turns=manifest['user_turns'],
+                   unreviewed_summaries=unreviewed, request_count=0,
+                   input_tokens=0, output_tokens=0, total_tokens=0)
+        dump(out/'token_usage.json',usage)
+        (out/'report.md').write_text(f"# Dry run\n\n对话数：{len(chosen)}；用户轮次数：{manifest['user_turns']}；未核对摘要段数：{unreviewed}。\n仅构建 prompt 与清单；请求数：0。\n")
+        print(json.dumps(usage,ensure_ascii=False),flush=True)
+        return
     completed={}
     cache=out/'generations.jsonl'
     if cache.exists():
@@ -140,6 +156,8 @@ async def main(args):
                                     sample_tokens=total,sample_user_turns=len(jobs),all_csds_user_turns=all_turns,
                                     user_role_user_turns=user_count,all_csds_tokens=round(total/len(jobs)*all_turns),
                                     user_role_tokens=round(total/len(jobs)*user_count)))
+    if args.allow_unreviewed_summaries:
+        usage['unreviewed_summaries']=unreviewed
     dump(out/'token_usage.json',usage)
     write_reports(out,metrics,pairs,usage,args.baseline)
     print(json.dumps(usage,ensure_ascii=False),flush=True)
@@ -154,4 +172,6 @@ if __name__=='__main__':
     parser.add_argument('--out',required=True); parser.add_argument('--exclude'); parser.add_argument('--baseline')
     parser.add_argument('--concurrency',type=int,default=4)
     parser.add_argument('--refresh-only',action='store_true',help='Validate cached prompts and rebuild metrics/reports without API calls')
+    parser.add_argument('--allow-unreviewed-summaries',action='store_true',help='Allow rule-cleaned summaries without manual review')
+    parser.add_argument('--dry-run',action='store_true',help='Build prompts and manifests without API calls')
     asyncio.run(main(parser.parse_args()))
