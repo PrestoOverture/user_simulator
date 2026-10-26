@@ -34,6 +34,8 @@
 
 - **实测成本：** DeepSeek 3 段小批（24 轮，开着推理）网关扣费 1.02 美分；500 段按比例约 2 美元（开着推理）。关闭推理后同样 3 段扣费 0.28 美分（含 Claude 1 次测试调用），500 段约 0.55 美元。余额用 `GET {SANDBOX_BASE_URL}/v1/dashboard/billing/usage` 查（`total_usage`，单位美分）。
 
+- **累计花费（截至 2026-10-27）：** 网关 `total_usage` 700.6 美分（约 7.0 美元）。其中 DeepSeek B 全量约 0.59 美元；Gemini 判断模型验证约 0.35 美元；ADR-016 分组测量约 6.05 美元；其余为小批与测试。
+
 **调用参数：**
 - temperature 使用官方默认值，并记录。
 - thinking 关闭（ADR-012）。
