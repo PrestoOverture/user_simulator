@@ -1,0 +1,23 @@
+{
+  "frozen_inputs_match": true,
+  "required_logical_judgments": 21500,
+  "required_unique_inputs": 21392,
+  "successful_unique_requests": 21356,
+  "verified_imports": 36,
+  "duplicate_successful_requests": 0,
+  "request_errors": {
+    "504": 17,
+    "502": 1
+  },
+  "final_predictions_complete": true,
+  "source_blind_fingerprints_verified": true,
+  "all_success_predictions_parse": true,
+  "implementation_hashes_match": true,
+  "dialogues": 500,
+  "paired_turns": 4300,
+  "exclusions": {
+    "no_previous_agent": 405,
+    "moderated_in_any_condition": 5
+  },
+  "api_calls": 0
+}

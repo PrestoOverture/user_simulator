@@ -1,0 +1,17 @@
+{
+  "start_total_usd": 7.006142,
+  "limit_usd": 50,
+  "started_at": "2026-10-26T16:38:34.157891+00:00",
+  "current_total_usd": 27.126994,
+  "spent_usd": 20.120852,
+  "checked_at": "2026-10-27T04:09:46.094669+00:00",
+  "authorization_history": [
+    {
+      "previous_limit_usd": 20,
+      "new_limit_usd": 50,
+      "authorized_at": "2026-10-26T17:27:19.883980+00:00",
+      "user_instruction": "继续, 我又往里冲了50$, 尽情跑吧",
+      "interpretation": "Resume same experiment; conservatively cap total experiment increment at $50, including completed smoke."
+    }
+  ]
+}

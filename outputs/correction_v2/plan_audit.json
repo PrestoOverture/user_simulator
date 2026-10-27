@@ -1,0 +1,7 @@
+{
+  "turns": 4710,
+  "excluded_dialogues": 520,
+  "independent_train_pool": true,
+  "strict_prefix_queries": true,
+  "baseline_prompt_match": true
+}

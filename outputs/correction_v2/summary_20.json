@@ -1,0 +1,227 @@
+{
+  "n_dialogues": 20,
+  "paired_turns": 162,
+  "paired_dialogues": 20,
+  "excluded": {
+    "no_previous_agent": 14
+  },
+  "bootstrap_replicates": 2000,
+  "seed": 20261027,
+  "statistics": {
+    "continue": {
+      "baseline": {
+        "human": 0.47530864197530864,
+        "simulator": 0.6790123456790124,
+        "gap": 0.20370370370370372,
+        "gap_ci95": [
+          0.12066720545977014,
+          0.2987050306015823
+        ],
+        "absolute_gap_reduction": 0.0,
+        "absolute_gap_reduction_ci95": [
+          0.0,
+          0.0
+        ],
+        "relative_gap_reduction": 0.0
+      },
+      "situation": {
+        "human": 0.47530864197530864,
+        "simulator": 0.7098765432098766,
+        "gap": 0.23456790123456794,
+        "gap_ci95": [
+          0.13827957897106832,
+          0.3496590909090909
+        ],
+        "absolute_gap_reduction": -0.030864197530864224,
+        "absolute_gap_reduction_ci95": [
+          -0.12259832081307996,
+          0.05077079487771111
+        ],
+        "relative_gap_reduction": -0.15151515151515163
+      },
+      "structure": {
+        "human": 0.47530864197530864,
+        "simulator": 0.5802469135802469,
+        "gap": 0.1049382716049383,
+        "gap_ci95": [
+          0.004295154185022066,
+          0.22604337899543372
+        ],
+        "absolute_gap_reduction": 0.09876543209876543,
+        "absolute_gap_reduction_ci95": [
+          -0.006539215686274485,
+          0.188173624288425
+        ],
+        "relative_gap_reduction": 0.4848484848484848
+      },
+      "combined": {
+        "human": 0.47530864197530864,
+        "simulator": 0.7160493827160493,
+        "gap": 0.2407407407407407,
+        "gap_ci95": [
+          0.14021462607010177,
+          0.3533924095954171
+        ],
+        "absolute_gap_reduction": -0.03703703703703698,
+        "absolute_gap_reduction_ci95": [
+          -0.1195023917087431,
+          0.04895104895104896
+        ],
+        "relative_gap_reduction": -0.18181818181818152
+      }
+    },
+    "emotion": {
+      "baseline": {
+        "human": 0.06790123456790123,
+        "simulator": 0.12962962962962962,
+        "gap": 0.06172839506172839,
+        "gap_ci95": [
+          -0.013793103448275862,
+          0.15753528435035283
+        ],
+        "absolute_gap_reduction": 0.0,
+        "absolute_gap_reduction_ci95": [
+          0.0,
+          0.0
+        ],
+        "relative_gap_reduction": 0.0
+      },
+      "situation": {
+        "human": 0.06790123456790123,
+        "simulator": 0.14814814814814814,
+        "gap": 0.08024691358024691,
+        "gap_ci95": [
+          0.005987132877102942,
+          0.17514582874752363
+        ],
+        "absolute_gap_reduction": -0.018518518518518517,
+        "absolute_gap_reduction_ci95": [
+          -0.07333333333333332,
+          0.023809523809523808
+        ],
+        "relative_gap_reduction": -0.3
+      },
+      "structure": {
+        "human": 0.06790123456790123,
+        "simulator": 0.1111111111111111,
+        "gap": 0.043209876543209874,
+        "gap_ci95": [
+          -0.0273972602739726,
+          0.1301379995136581
+        ],
+        "absolute_gap_reduction": 0.018518518518518517,
+        "absolute_gap_reduction_ci95": [
+          -0.02598692698030447,
+          0.05442176870748297
+        ],
+        "relative_gap_reduction": 0.3
+      },
+      "combined": {
+        "human": 0.06790123456790123,
+        "simulator": 0.13580246913580246,
+        "gap": 0.06790123456790123,
+        "gap_ci95": [
+          -0.007407407407407404,
+          0.15999999999999998
+        ],
+        "absolute_gap_reduction": -0.006172839506172839,
+        "absolute_gap_reduction_ci95": [
+          -0.05265807135287886,
+          0.037267080745341616
+        ],
+        "relative_gap_reduction": -0.1
+      }
+    }
+  },
+  "joint_counts": {
+    "human": {
+      "close/emotion=False": 45,
+      "close/emotion=True": 0,
+      "continue/emotion=False": 67,
+      "continue/emotion=True": 10,
+      "unclear/emotion=False": 39,
+      "unclear/emotion=True": 1
+    },
+    "baseline": {
+      "close/emotion=False": 32,
+      "close/emotion=True": 0,
+      "continue/emotion=False": 92,
+      "continue/emotion=True": 18,
+      "unclear/emotion=False": 17,
+      "unclear/emotion=True": 3
+    },
+    "situation": {
+      "close/emotion=False": 29,
+      "close/emotion=True": 1,
+      "continue/emotion=False": 94,
+      "continue/emotion=True": 21,
+      "unclear/emotion=False": 15,
+      "unclear/emotion=True": 2
+    },
+    "structure": {
+      "close/emotion=False": 40,
+      "close/emotion=True": 0,
+      "continue/emotion=False": 77,
+      "continue/emotion=True": 17,
+      "unclear/emotion=False": 27,
+      "unclear/emotion=True": 1
+    },
+    "combined": {
+      "close/emotion=False": 21,
+      "close/emotion=True": 1,
+      "continue/emotion=False": 98,
+      "continue/emotion=True": 18,
+      "unclear/emotion=False": 21,
+      "unclear/emotion=True": 3
+    }
+  },
+  "cumulative_run_usage": {
+    "situation": {
+      "requests": 176,
+      "status_counts": {
+        "ok": 176
+      },
+      "input_tokens": 75267,
+      "output_tokens": 2628,
+      "unknown_usage": 0
+    },
+    "structure": {
+      "requests": 176,
+      "status_counts": {
+        "ok": 176
+      },
+      "input_tokens": 51703,
+      "output_tokens": 2271,
+      "unknown_usage": 0
+    },
+    "combined": {
+      "requests": 176,
+      "status_counts": {
+        "ok": 176
+      },
+      "input_tokens": 82220,
+      "output_tokens": 2501,
+      "unknown_usage": 0
+    },
+    "gemini": {
+      "requests": 805,
+      "status_counts": {
+        "ok": 805
+      },
+      "tokens": {
+        "prompt_tokens": 597013,
+        "completion_tokens": 197642,
+        "total_tokens": 794655
+      },
+      "unknown_usage": 0
+    }
+  },
+  "billing_snapshot": {
+    "start_total_usd": 7.006142,
+    "limit_usd": 20,
+    "started_at": "2026-10-26T16:38:34.157891+00:00",
+    "current_total_usd": 8.076172,
+    "spent_usd": 1.07003,
+    "checked_at": "2026-10-26T17:11:51.298086+00:00"
+  }
+}

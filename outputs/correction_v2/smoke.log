@@ -1,0 +1,16 @@
+situation: 100 generated
+structure: 100 generated
+combined: 100 generated
+judge 20: items=810 reused=1 pending_unique=805
+judge 20: 8/805, spent=$0.0094
+judge 20: 88/805, spent=$0.1067
+judge 20: 168/805, spent=$0.1938
+judge 20: 248/805, spent=$0.3099
+judge 20: 328/805, spent=$0.4348
+judge 20: 408/805, spent=$0.5446
+judge 20: 488/805, spent=$0.6427
+judge 20: 568/805, spent=$0.7489
+judge 20: 648/805, spent=$0.8507
+judge 20: 728/805, spent=$0.9728
+judge 20: 805/805, spent=$1.0698
+smoke complete

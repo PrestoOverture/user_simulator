@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_v2.py", line 461, in <module>
+    main()
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_v2.py", line 441, in main
+    full_cost_gate(OUT,chosen,baseline)
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_v2.py", line 318, in full_cost_gate
+    raise RuntimeError('Small-batch projected full cost exceeds $20; stopped before full generation, no automatic downsizing')
+RuntimeError: Small-batch projected full cost exceeds $20; stopped before full generation, no automatic downsizing

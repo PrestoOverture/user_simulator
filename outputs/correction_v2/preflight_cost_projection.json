@@ -1,0 +1,13 @@
+{
+  "stage": "before_full_generation",
+  "eligible_turns_before_new_moderation": 4300,
+  "known_human_baseline_pending_unique": 8239,
+  "unknown_new_condition_inputs": 12414,
+  "projected_pending": 20653,
+  "measured_usd_per_request": 0.001328981366459628,
+  "projected_remaining_usd_with_15pct_margin": 31.564569985714297,
+  "spent_usd": 1.07003,
+  "projected_total_usd": 32.634599985714296,
+  "limit_usd": 50,
+  "assumptions": "new outputs may deduplicate or be moderated; counts conservatively assume unique successful new outputs; same average cost as 20-dialogue smoke plus 15% margin"
+}

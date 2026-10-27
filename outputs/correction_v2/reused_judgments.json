@@ -1,0 +1,326 @@
+{
+  "64d22b569e7de5eb2408723494e6d9debef9435c36702d35869bfb6f71cf057e": {
+    "prediction": {
+      "topic": "continue",
+      "emotion": false
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:3999:5",
+    "attempt": 1
+  },
+  "0029521b5323635381b63ba68990f18550f0b90d4b908bd66d45b807550349d2": {
+    "prediction": {
+      "topic": "continue",
+      "emotion": true
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:667:4",
+    "attempt": 1
+  },
+  "36dc0108babae5b2cff7b4074fd451adc98b7cb0a2c5b98f5c891a35e13d3d27": {
+    "prediction": {
+      "topic": "continue",
+      "emotion": false
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:6074:11",
+    "attempt": 1
+  },
+  "b0714a8a05046ab3999e45055f26c36652ffe1bee977daa251cc2b63f5b1ee49": {
+    "prediction": {
+      "topic": "continue",
+      "emotion": false
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:5245:8",
+    "attempt": 1
+  },
+  "6f0b17c66cb49befd3949a06ef02cdc355f4e267f459dcd12f004cf5229de72f": {
+    "prediction": {
+      "topic": "continue",
+      "emotion": false
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:9150:5",
+    "attempt": 1
+  },
+  "e9ea8b92cfc1796dce397b152e18273d6e29be15bf9bec90ace1d45c56005d7b": {
+    "prediction": {
+      "topic": "continue",
+      "emotion": true
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:7368:9",
+    "attempt": 1
+  },
+  "f117c192b713496fd50ae6370cf4301135d4293cd7fb3d164712e16616d5670e": {
+    "prediction": {
+      "topic": "continue",
+      "emotion": false
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:7275:4",
+    "attempt": 1
+  },
+  "4f997d61cf22a5c4676bb14916c982e2b77550279e461810155a14f1c5939528": {
+    "prediction": {
+      "topic": "continue",
+      "emotion": false
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:3278:9",
+    "attempt": 1
+  },
+  "db0f15a6b610d60299bea2ba7b8f94f1139c09c21c6ce01ac01cebad108ef254": {
+    "prediction": {
+      "topic": "continue",
+      "emotion": true
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:5181:10",
+    "attempt": 1
+  },
+  "503baef0f53db9e11beb2c5970770c33b06082222ba13453eaa9c404b278fcb6": {
+    "prediction": {
+      "topic": "continue",
+      "emotion": false
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:5807:5",
+    "attempt": 1
+  },
+  "f71d13b8fa7b948bb6b01e0c2b82fbeb3df3928b696e40f1c227a3c7faf9490a": {
+    "prediction": {
+      "topic": "continue",
+      "emotion": false
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:4616:4",
+    "attempt": 1
+  },
+  "7fee66325daee2179a5dc332c58836626581da2707ec22d6f53958d9d5556495": {
+    "prediction": {
+      "topic": "close",
+      "emotion": false
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:1517:3",
+    "attempt": 1
+  },
+  "e235dcb7ffd4f64f36ea1ddd400444540c40c22776fb9e0ad58abe94744aca9f": {
+    "prediction": {
+      "topic": "unclear",
+      "emotion": false
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:457:6",
+    "attempt": 1
+  },
+  "0d70e0985cae28a51812025531640057a196619b0208c7335ac3ffc5065c315b": {
+    "prediction": {
+      "topic": "continue",
+      "emotion": false
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:8278:8",
+    "attempt": 1
+  },
+  "d1403ea1c4e2706b47094337854507f34c0e90044853559564d90ff539093ca9": {
+    "prediction": {
+      "topic": "unclear",
+      "emotion": false
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:10269:1",
+    "attempt": 1
+  },
+  "803545572c7a16dae2606aa5474b9ddb312f8af244d1f800931538d254ae98f6": {
+    "prediction": {
+      "topic": "unclear",
+      "emotion": false
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:9897:5",
+    "attempt": 1
+  },
+  "e33c6dc4e532b4f4e7863eb56a90ce03f2159b9b01e176cf501d6f48f9a67e26": {
+    "prediction": {
+      "topic": "close",
+      "emotion": false
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:9000:6",
+    "attempt": 1
+  },
+  "b89c7677b08c44eae923a7bf49031f00c30b548dd42569b3f3f66f5f791ad7e7": {
+    "prediction": {
+      "topic": "close",
+      "emotion": false
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:5745:11",
+    "attempt": 1
+  },
+  "2584dca1f25d41c33e82dfd1a916198a05154c473457db5d6f955e1ae9a2acb3": {
+    "prediction": {
+      "topic": "unclear",
+      "emotion": false
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:6563:6",
+    "attempt": 1
+  },
+  "465959904d4421dbc5018e660ce57e19b53406a88b9ffc50bee3b457dd1cb949": {
+    "prediction": {
+      "topic": "continue",
+      "emotion": false
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:7036:5",
+    "attempt": 1
+  },
+  "6f69a017fa41bc9d102ba7f22c81dd69173029757a71a93caa5167753a5ba7ed": {
+    "prediction": {
+      "topic": "unclear",
+      "emotion": false
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:10299:2",
+    "attempt": 1
+  },
+  "6e8f0b147a57ef1449bc49bac48b949820217d790d6628959b358ca8b6d273ae": {
+    "prediction": {
+      "topic": "close",
+      "emotion": false
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:10399:9",
+    "attempt": 1
+  },
+  "1d3a13156bea1778c64aa0d8b4bdf31a72efc6811321b95a0d238b0378cd42ff": {
+    "prediction": {
+      "topic": "close",
+      "emotion": false
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:2554:6",
+    "attempt": 1
+  },
+  "c47d4814cb1fdbd7bdc4ad52e21310290445ae2bc0b6c2a6add1f86d2c9d4bc9": {
+    "prediction": {
+      "topic": "continue",
+      "emotion": false
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:10388:7",
+    "attempt": 1
+  },
+  "6f386ab4f81d9267f73a84e49af660a2de06651973ebe5ced290f1aad964f375": {
+    "prediction": {
+      "topic": "continue",
+      "emotion": false
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:7301:7",
+    "attempt": 1
+  },
+  "da793b70d43667a36bfa0f386efe2b59ab80933df5f56fb7eebbb28a733d9f89": {
+    "prediction": {
+      "topic": "continue",
+      "emotion": false
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "simulator:5278:4",
+    "attempt": 1
+  },
+  "bb6cb9d5977703fd257da6bd0b9b8e3cba8754161dac3855f7086d1b20053d75": {
+    "prediction": {
+      "topic": "unclear",
+      "emotion": false
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:7933:2",
+    "attempt": 1
+  },
+  "1fceed05d6799ea2c4c27b2a6433b5e182e9a470592e0f53a2bfa96703e2438f": {
+    "prediction": {
+      "topic": "continue",
+      "emotion": true
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "simulator:7466:13",
+    "attempt": 1
+  },
+  "8c8ab97f2b02307c30305353a3a63f2e80e1c1268ba38adee656c486a933383c": {
+    "prediction": {
+      "topic": "unclear",
+      "emotion": false
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:4784:10",
+    "attempt": 1
+  },
+  "31ec02d0e1fd1b84e7db6f05ced65c4fdb7e857c3e9eaf861be354791e391d47": {
+    "prediction": {
+      "topic": "unclear",
+      "emotion": false
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:2385:3",
+    "attempt": 1
+  },
+  "625e4fa65be7f5df28ad985e0469c4be3bab2add01af5666f479c087634f07b8": {
+    "prediction": {
+      "topic": "continue",
+      "emotion": false
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:6722:15",
+    "attempt": 1
+  },
+  "bb255d3f9953b3f77eb1e4129a3f29a3d1f67cf2938892e3194663b9e115a55e": {
+    "prediction": {
+      "topic": "close",
+      "emotion": false
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:1886:9",
+    "attempt": 1
+  },
+  "8b97b4f28c8e545b4045dc8fe0a3c248daba2df5c135b8448436f8efcc94218e": {
+    "prediction": {
+      "topic": "unclear",
+      "emotion": false
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:4442:6",
+    "attempt": 1
+  },
+  "5995320829b8145ae4f1acb718ac3da332d6b8c588359294b48e5ce80ba8622e": {
+    "prediction": {
+      "topic": "close",
+      "emotion": false
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:8645:13",
+    "attempt": 1
+  },
+  "e01a3401bd8a6dfc309c151fa1760ef160b4df5d7d35541e20a53e638b94b6a0": {
+    "prediction": {
+      "topic": "continue",
+      "emotion": false
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:9772:12",
+    "attempt": 1
+  },
+  "0a536eea7e3271dab19a30aca1d5f989d60cc08b551505f507fd84124d56e0ab": {
+    "prediction": {
+      "topic": "unclear",
+      "emotion": false
+    },
+    "cache": "outputs/reaction/full/judgments.jsonl",
+    "id": "human:10289:1",
+    "attempt": 1
+  }
+}

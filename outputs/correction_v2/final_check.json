@@ -1,0 +1,28 @@
+{
+  "full_completed": true,
+  "smoke_completed": true,
+  "n_dialogues": 500,
+  "paired_dialogues": 500,
+  "paired_turns": 4300,
+  "authorized_limit_usd": 50,
+  "spent_usd": 20.120852,
+  "authorization_history": [
+    {
+      "previous_limit_usd": 20,
+      "new_limit_usd": 50,
+      "authorized_at": "2026-10-26T17:27:19.883980+00:00",
+      "user_instruction": "继续, 我又往里冲了50$, 尽情跑吧",
+      "interpretation": "Resume same experiment; conservatively cap total experiment increment at $50, including completed smoke."
+    }
+  ],
+  "model_routes_and_spark_thinking_verified": true,
+  "source_blind_judgments_complete": true,
+  "implementation_hashes_match": true,
+  "offline_rebuild_hashes_match": true,
+  "docs_unchanged": true,
+  "tests_passed": 90,
+  "active_experiment_processes": [],
+  "credential_scan_passed": true,
+  "handoff": "outputs/correction_v2/handoff.md",
+  "completion_audit": "outputs/correction_v2/completion_audit.json"
+}

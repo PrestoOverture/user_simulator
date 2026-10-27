@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "dialogues": 20,
+  "paired_turns": 162,
+  "actual_requests": 805,
+  "cost_usd": 1.0698300000000005,
+  "usd_per_new_judgment": 0.001328981366459628,
+  "criteria": "all planned generations terminal; all eligible five-way judgments parsed; billing measurable; frozen inputs and independent-plan audit passed"
+}

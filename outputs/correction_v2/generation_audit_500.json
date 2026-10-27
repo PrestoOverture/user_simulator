@@ -1,0 +1,40 @@
+{
+  "baseline": {
+    "planned": 4710,
+    "ok": 4705,
+    "moderated": 5,
+    "empty_outside_judge": [],
+    "mean_chars": 28.94877789585547,
+    "mean_messages": 1.106269925611052
+  },
+  "situation": {
+    "planned": 4710,
+    "ok": 4707,
+    "moderated": 3,
+    "empty_outside_judge": [],
+    "mean_chars": 22.823029530486508,
+    "mean_messages": 1.1761206713405565
+  },
+  "structure": {
+    "planned": 4710,
+    "ok": 4706,
+    "moderated": 4,
+    "empty_outside_judge": [
+      "4293:1"
+    ],
+    "mean_chars": 18.735656608584787,
+    "mean_messages": 1.5539736506587336,
+    "exact_message_count_fraction": 0.7845303867403315,
+    "mean_absolute_character_error": 9.70888227794305
+  },
+  "combined": {
+    "planned": 4710,
+    "ok": 4706,
+    "moderated": 4,
+    "empty_outside_judge": [],
+    "mean_chars": 18.739269018274545,
+    "mean_messages": 1.600084997875053,
+    "exact_message_count_fraction": 0.7071823204419889,
+    "mean_absolute_character_error": 11.332129196770081
+  }
+}
