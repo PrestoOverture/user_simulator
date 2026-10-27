@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-10-27T11:19:32.962184+00:00",
+  "authorized_by": "Claude Delta Contract 2026-10-27",
+  "reason": "Gateway ignores thinking disabled alone. Add reasoning_effort none; accept explicit nested zero OR absent completion_tokens_details with absent/empty reasoning_content. Preserve usage and reasoning-content presence for every response.",
+  "previous_stop": {
+    "reason": "First pilot run: explicit reasoning_tokens == 0 check failed (missing or nonzero; original transport did not retain response usage).",
+    "timestamp": "2026-10-27T07:17:47.397657+00:00",
+    "paid_dispatches": 8,
+    "gemini_dispatches": 0,
+    "generations_saved": 0,
+    "instruction": "No further paid calls; Claude must decide how to verify absent/nonzero reasoning usage. request_usage.jsonl defaults are not evidence of zero."
+  },
+  "discarded_paid_requests": 8,
+  "discard_reason": "No usable responses saved; outputs were never inspected. Re-request the same selected turns under the Delta-authorized no-reasoning settings; no result selection.",
+  "payload": {
+    "thinking": {
+      "type": "disabled"
+    },
+    "reasoning_effort": "none"
+  }
+}

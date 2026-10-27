@@ -1,0 +1,14 @@
+[
+  {
+    "command": "git diff --exit-code -- outputs/reaction/full",
+    "exit_code": 0
+  },
+  {
+    "command": "git diff --exit-code -- docs",
+    "exit_code": 0
+  },
+  {
+    "command": "git diff --exit-code -- usersim/judge.py",
+    "exit_code": 0
+  }
+]

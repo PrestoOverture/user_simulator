@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-10-27T18:15:32.379688+00:00",
+  "network_calls_forbidden": true,
+  "credentials_unset": true,
+  "rebuilds": [
+    {
+      "report.md": "8c44c563b259dd02c143a8a1f8dcb091d68295bd3d29f5cf8496518832fd3047",
+      "summary.json": "b4a79214b370343236710fe430b77ec174ff3191541bb42c44d9b376148a73c9"
+    },
+    {
+      "report.md": "8c44c563b259dd02c143a8a1f8dcb091d68295bd3d29f5cf8496518832fd3047",
+      "summary.json": "b4a79214b370343236710fe430b77ec174ff3191541bb42c44d9b376148a73c9"
+    }
+  ],
+  "input_log_sha256_unchanged": {
+    "outputs/model_b/deepseek-v4.1-flash/reaction_full/generations.jsonl": "b92151c24725f0d6202b2ade76285bbd7ef6eb19d7d52b325d10910581120c7d",
+    "outputs/model_b/deepseek-v4.1-flash/reaction_full/request_usage.jsonl": "bb89a4b484d2f25788cb822d7f7df3daec3debee23f0b74fe330329b604bc85b",
+    "outputs/reaction/deepseek/judgments.jsonl": "a05956ccd635f60f701785715c9974f07e1bcbccc1d79be085ee8df90a3c5b2d",
+    "outputs/reaction/deepseek/billing.jsonl": "4dc40dab8dec058d36eb619b6d4858ae9efa47d19594c7a1c615a2e12f73d54e",
+    "outputs/reaction/deepseek/response_diagnostics.jsonl": "a483d09482d768c63ec1dbdfee35339b99e23fef29c72224c9976e1e1780f698"
+  },
+  "deterministic": true
+}

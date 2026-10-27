@@ -1,0 +1,200 @@
+{
+  "statistics": {
+    "spark": {
+      "continue": {
+        "groups": {
+          "negative": {
+            "human": 0.588,
+            "simulator": 0.8373333333333334,
+            "gap": 0.24933333333333332,
+            "n": 1500,
+            "interval": [
+              0.22259566396217684,
+              0.2783792417164979
+            ]
+          },
+          "nonnegative": {
+            "human": 0.4703135423615744,
+            "simulator": 0.742494996664443,
+            "gap": 0.27218145430286855,
+            "n": 1499,
+            "interval": [
+              0.24336556383970176,
+              0.3018367687236253
+            ]
+          }
+        },
+        "interaction": -0.02284812096953523,
+        "interval": [
+          -0.062459411810584224,
+          0.01943689348417918
+        ],
+        "bootstrap_valid": [
+          2000,
+          2000
+        ],
+        "interaction_valid": 2000
+      },
+      "emotion": {
+        "groups": {
+          "negative": {
+            "human": 0.17133333333333334,
+            "simulator": 0.25133333333333335,
+            "gap": 0.08,
+            "n": 1500,
+            "interval": [
+              0.05590021275640005,
+              0.10530420903459557
+            ]
+          },
+          "nonnegative": {
+            "human": 0.10206804536357572,
+            "simulator": 0.13742494996664442,
+            "gap": 0.035356904603068715,
+            "n": 1499,
+            "interval": [
+              0.016565169423022306,
+              0.0543563892405187
+            ]
+          }
+        },
+        "interaction": 0.04464309539693129,
+        "interval": [
+          0.013378294228023441,
+          0.07598215384837229
+        ],
+        "bootstrap_valid": [
+          2000,
+          2000
+        ],
+        "interaction_valid": 2000
+      },
+      "decision": "用普遍定义"
+    },
+    "deepseek": {
+      "continue": {
+        "groups": {
+          "negative": {
+            "human": 0.588,
+            "simulator": 0.8633333333333333,
+            "gap": 0.2753333333333333,
+            "n": 1500,
+            "interval": [
+              0.25015510052815987,
+              0.30192588640840445
+            ]
+          },
+          "nonnegative": {
+            "human": 0.4703135423615744,
+            "simulator": 0.7078052034689793,
+            "gap": 0.23749166110740494,
+            "n": 1499,
+            "interval": [
+              0.20856206754124698,
+              0.2656268072538004
+            ]
+          }
+        },
+        "interaction": 0.03784167222592838,
+        "interval": [
+          -0.0014423669581218655,
+          0.07772358008099998
+        ],
+        "bootstrap_valid": [
+          2000,
+          2000
+        ],
+        "interaction_valid": 2000
+      },
+      "emotion": {
+        "groups": {
+          "negative": {
+            "human": 0.17133333333333334,
+            "simulator": 0.314,
+            "gap": 0.14266666666666666,
+            "n": 1500,
+            "interval": [
+              0.11748440299993364,
+              0.16796875
+            ]
+          },
+          "nonnegative": {
+            "human": 0.10206804536357572,
+            "simulator": 0.17278185456971315,
+            "gap": 0.07071380920613743,
+            "n": 1499,
+            "interval": [
+              0.04894500872642465,
+              0.09311887000966984
+            ]
+          }
+        },
+        "interaction": 0.07195285746052923,
+        "interval": [
+          0.037389126738784355,
+          0.10633018989454214
+        ],
+        "bootstrap_valid": [
+          2000,
+          2000
+        ],
+        "interaction_valid": 2000
+      },
+      "decision": "用普遍定义"
+    }
+  },
+  "selected": {
+    "negative": 1500,
+    "nonnegative": 1500
+  },
+  "common_valid": 2999,
+  "common_by_group": {
+    "negative": 1500,
+    "nonnegative": 1499
+  },
+  "excluded": [
+    {
+      "request_id": "2069:11",
+      "group": "nonnegative",
+      "reason": "spark_moderated"
+    }
+  ],
+  "deepseek_reasoning_tokens": 0,
+  "deepseek_requests": 3011,
+  "gemini_requests": 3003,
+  "cost": {
+    "gateway_start_cents": 2712.6994,
+    "gateway_end_cents": 3296.8976,
+    "gateway_delta_usd": 5.841981999999998,
+    "attribution": "Shared account delta is an upper bound; concurrent task spending may be included.",
+    "pilot": {
+      "turns": 20,
+      "request_ids": [
+        "1436:4",
+        "9103:9",
+        "2633:6",
+        "7647:5",
+        "1673:13",
+        "9392:5",
+        "5559:6",
+        "4625:5",
+        "6153:9",
+        "1159:3",
+        "4421:7",
+        "9900:3",
+        "3787:15",
+        "3828:15",
+        "8055:5",
+        "5027:5",
+        "4610:2",
+        "4366:13",
+        "3965:3",
+        "5968:4"
+      ],
+      "start_cents": 2756.864,
+      "end_cents": 2759.898,
+      "projected_usd": 4.551000000000158,
+      "method": "20 paired generation+judge gateway delta × 3000/20; shared-account upper bound"
+    }
+  }
+}

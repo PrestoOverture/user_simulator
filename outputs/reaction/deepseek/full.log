@@ -1,0 +1,238 @@
+Pilot: {"turns": 20, "request_ids": ["1436:4", "9103:9", "2633:6", "7647:5", "1673:13", "9392:5", "5559:6", "4625:5", "6153:9", "1159:3", "4421:7", "9900:3", "3787:15", "3828:15", "8055:5", "5027:5", "4610:2", "4366:13", "3965:3", "5968:4"], "start_cents": 2756.864, "end_cents": 2759.898, "projected_usd": 4.551000000000158, "method": "20 paired generation+judge gateway delta \u00d7 3000/20; shared-account upper bound"}
+Full generation started
+Generated 40/3000
+Generated 60/3000
+Generated 80/3000
+Generated 100/3000
+Generated 120/3000
+Generated 140/3000
+Generated 160/3000
+Traceback (most recent call last):
+  File "/Users/kwang/projects/user_simulator/scripts/measure_reaction_deepseek.py", line 409, in <module>
+    main()
+  File "/Users/kwang/projects/user_simulator/scripts/measure_reaction_deepseek.py", line 401, in main
+    asyncio.run(generate(plans,guard,args.concurrency))
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/measure_reaction_deepseek.py", line 251, in generate
+    await asyncio.gather(*tasks)
+  File "/Users/kwang/projects/user_simulator/scripts/measure_reaction_deepseek.py", line 240, in one
+    text = await client.generate(p['messages'],rid)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/usersim/spark.py", line 57, in generate
+    response = await self.client.post(self.url, json=payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1859, in post
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1540, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1629, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1657, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1694, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1730, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/measure_reaction_deepseek.py", line 210, in handle_async_request
+    response = await asyncio.to_thread(self.inner.handle_request,request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/measure_reaction_deepseek.py", line 158, in handle_request
+    self.guard.check(model)
+  File "/Users/kwang/projects/user_simulator/scripts/measure_reaction_deepseek.py", line 130, in check
+    raise RuntimeError('Cannot verify billing; stop') from None
+RuntimeError: Cannot verify billing; stop
+Pilot: {"turns": 20, "request_ids": ["1436:4", "9103:9", "2633:6", "7647:5", "1673:13", "9392:5", "5559:6", "4625:5", "6153:9", "1159:3", "4421:7", "9900:3", "3787:15", "3828:15", "8055:5", "5027:5", "4610:2", "4366:13", "3965:3", "5968:4"], "start_cents": 2756.864, "end_cents": 2759.898, "projected_usd": 4.551000000000158, "method": "20 paired generation+judge gateway delta \u00d7 3000/20; shared-account upper bound"}
+Full generation started
+Generated 180/3000
+Generated 200/3000
+Generated 220/3000
+Generated 240/3000
+Generated 260/3000
+Generated 280/3000
+Generated 300/3000
+Generated 320/3000
+Generated 340/3000
+Generated 360/3000
+Generated 380/3000
+Generated 400/3000
+Generated 420/3000
+Generated 440/3000
+Generated 460/3000
+Generated 480/3000
+Generated 500/3000
+Generated 520/3000
+Generated 540/3000
+Generated 560/3000
+Generated 580/3000
+Generated 600/3000
+Generated 620/3000
+Generated 640/3000
+Generated 660/3000
+Generated 680/3000
+Generated 700/3000
+Generated 720/3000
+Generated 740/3000
+Generated 760/3000
+Generated 780/3000
+Generated 800/3000
+Generated 820/3000
+Generated 840/3000
+Generated 860/3000
+Generated 880/3000
+Generated 900/3000
+Generated 920/3000
+Generated 940/3000
+Generated 960/3000
+Generated 980/3000
+Generated 1000/3000
+Generated 1020/3000
+Generated 1040/3000
+Generated 1060/3000
+Generated 1080/3000
+Generated 1100/3000
+Generated 1120/3000
+Generated 1140/3000
+Generated 1160/3000
+Generated 1180/3000
+Generated 1200/3000
+Generated 1220/3000
+Generated 1240/3000
+Generated 1260/3000
+Generated 1280/3000
+Generated 1300/3000
+Generated 1320/3000
+Generated 1340/3000
+Generated 1360/3000
+Generated 1380/3000
+Generated 1400/3000
+Generated 1420/3000
+Generated 1440/3000
+Generated 1460/3000
+Generated 1480/3000
+Generated 1500/3000
+Generated 1520/3000
+Generated 1540/3000
+Generated 1560/3000
+Generated 1580/3000
+Generated 1600/3000
+Generated 1620/3000
+Generated 1640/3000
+Generated 1660/3000
+Generated 1680/3000
+Generated 1700/3000
+Generated 1720/3000
+Generated 1740/3000
+Generated 1760/3000
+Generated 1780/3000
+Generated 1800/3000
+Generated 1820/3000
+Generated 1840/3000
+Generated 1860/3000
+Generated 1880/3000
+Generated 1900/3000
+Generated 1920/3000
+Generated 1940/3000
+Generated 1960/3000
+Generated 1980/3000
+Generated 2000/3000
+Generated 2020/3000
+Generated 2040/3000
+Generated 2060/3000
+Generated 2080/3000
+Generated 2100/3000
+Generated 2120/3000
+Generated 2140/3000
+Generated 2160/3000
+Generated 2180/3000
+Generated 2200/3000
+Generated 2220/3000
+Generated 2240/3000
+Generated 2260/3000
+Generated 2280/3000
+Generated 2300/3000
+Generated 2320/3000
+Generated 2340/3000
+Generated 2360/3000
+Generated 2380/3000
+Generated 2400/3000
+Generated 2420/3000
+Generated 2440/3000
+Generated 2460/3000
+Generated 2480/3000
+Generated 2500/3000
+Generated 2520/3000
+Generated 2540/3000
+Generated 2560/3000
+Generated 2580/3000
+Generated 2600/3000
+Generated 2620/3000
+Generated 2640/3000
+Generated 2660/3000
+Generated 2680/3000
+Generated 2700/3000
+Generated 2720/3000
+Generated 2740/3000
+Generated 2760/3000
+Generated 2780/3000
+Generated 2800/3000
+Generated 2820/3000
+Generated 2840/3000
+Generated 2860/3000
+Generated 2880/3000
+Generated 2900/3000
+Generated 2920/3000
+Generated 2940/3000
+Generated 2960/3000
+Generated 2980/3000
+Generated 3000/3000
+Traceback (most recent call last):
+  File "/Users/kwang/projects/user_simulator/scripts/measure_reaction_deepseek.py", line 421, in <module>
+    main()
+  File "/Users/kwang/projects/user_simulator/scripts/measure_reaction_deepseek.py", line 414, in main
+    judge(plans,jp,by_id,guard,args.concurrency)
+  File "/Users/kwang/projects/user_simulator/scripts/measure_reaction_deepseek.py", line 291, in judge
+    for _ in pool.map(one,plans):
+             ^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/measure_reaction_deepseek.py", line 285, in one
+    value = client.evaluate(jp,item,previous)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/usersim/judge.py", line 94, in evaluate
+    raise RuntimeError('Judge request failed; inspect cache, no automatic request retry') from None
+RuntimeError: Judge request failed; inspect cache, no automatic request retry
+Pilot: {"turns": 20, "request_ids": ["1436:4", "9103:9", "2633:6", "7647:5", "1673:13", "9392:5", "5559:6", "4625:5", "6153:9", "1159:3", "4421:7", "9900:3", "3787:15", "3828:15", "8055:5", "5027:5", "4610:2", "4366:13", "3965:3", "5968:4"], "start_cents": 2756.864, "end_cents": 2759.898, "projected_usd": 4.551000000000158, "method": "20 paired generation+judge gateway delta \u00d7 3000/20; shared-account upper bound"}
+Full generation started
+{"common_valid": 2999, "excluded": 1, "decision": "用普遍定义"}

@@ -1,0 +1,36 @@
+{
+  "pid": 49110,
+  "started_at": "2026-10-27T17:59:11.663060+00:00",
+  "command": [
+    "nohup",
+    "/Users/kwang/projects/user_simulator/.venv/bin/python",
+    "-u",
+    "/Users/kwang/projects/user_simulator/scripts/measure_reaction_deepseek.py",
+    "--concurrency",
+    "8"
+  ],
+  "log_path": "/Users/kwang/projects/user_simulator/outputs/reaction/deepseek/full.log",
+  "generations_at_start": 3000,
+  "judgments_at_start": 2164,
+  "previous_run": {
+    "pid": 97221,
+    "started_at": "2026-10-27T15:41:03.290245+00:00",
+    "command": [
+      "nohup",
+      "/Users/kwang/projects/user_simulator/.venv/bin/python",
+      "-u",
+      "/Users/kwang/projects/user_simulator/scripts/measure_reaction_deepseek.py",
+      "--concurrency",
+      "8"
+    ],
+    "log_path": "/Users/kwang/projects/user_simulator/outputs/reaction/deepseek/full.log",
+    "resume_command": ".venv/bin/python -u scripts/measure_reaction_deepseek.py --concurrency 8",
+    "generations_at_start": 161,
+    "judgments_at_start": 20,
+    "billing_attempts": 6
+  },
+  "status": "completed",
+  "finished_verified_at": "2026-10-27T18:19:33.411361+00:00",
+  "judgments_successful": 3000,
+  "common_valid": 2999
+}

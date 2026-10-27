@@ -1,0 +1,63 @@
+{
+  "checked_at": "2026-10-27T18:15:44.854937+00:00",
+  "generations": 3000,
+  "prompt_manifest_audit": true,
+  "reused_judgments": 5999,
+  "gemini_successes": 3000,
+  "failed_attempts": 4,
+  "failure_rate": 0.0013315579227696406,
+  "all_failures_eventually_succeeded": true,
+  "whitespace_key_responses": 0,
+  "deepseek_zero_reasoning_responses": 3002,
+  "spark_statistics_exactly_match_full": true,
+  "common_valid": 2999,
+  "common_by_group": {
+    "negative": 1500,
+    "nonnegative": 1499
+  },
+  "excluded": [
+    {
+      "request_id": "2069:11",
+      "group": "nonnegative",
+      "reason": "spark_moderated"
+    }
+  ],
+  "deepseek_requests": 3011,
+  "gemini_requests": 3003,
+  "cost": {
+    "gateway_start_cents": 2712.6994,
+    "gateway_end_cents": 3296.8976,
+    "gateway_delta_usd": 5.841981999999998,
+    "attribution": "Shared account delta is an upper bound; concurrent task spending may be included.",
+    "pilot": {
+      "turns": 20,
+      "request_ids": [
+        "1436:4",
+        "9103:9",
+        "2633:6",
+        "7647:5",
+        "1673:13",
+        "9392:5",
+        "5559:6",
+        "4625:5",
+        "6153:9",
+        "1159:3",
+        "4421:7",
+        "9900:3",
+        "3787:15",
+        "3828:15",
+        "8055:5",
+        "5027:5",
+        "4610:2",
+        "4366:13",
+        "3965:3",
+        "5968:4"
+      ],
+      "start_cents": 2756.864,
+      "end_cents": 2759.898,
+      "projected_usd": 4.551000000000158,
+      "method": "20 paired generation+judge gateway delta × 3000/20; shared-account upper bound"
+    }
+  },
+  "decision": "用普遍定义"
+}

@@ -129,3 +129,11 @@
   - Claude 复核：pytest 90 项通过；plan 审计、离线校验通过；离线重建的报告哈希一致；凭证扫描干净。
   - 局限：基线是早先生成的；每轮只生成一次；检索按字面相似；判断器的标准集只有一个标注者。
 - 下一步：等用户决定 P2 怎么继续。
+
+### 2026-10-28 DeepSeek 分组测量（合同 B）
+- 做了什么：用 `deepseek-v4.1-flash` 生成 ADR-016 分组测量中的同一批 3,000 轮，提示词与 Spark 全量基线逐字相同。Gemini 只判 DeepSeek 一侧，真人和 Spark 的判断复用。三方共同有效 2,999 轮。结果在 `outputs/reaction/deepseek/report.md`。
+- 中途问题：网关已不理会 `thinking: disabled`，改为同时加 `reasoning_effort: "none"`（见 [tech_stacks.md](tech_stacks.md) 第 2 节）；3,002 个 DeepSeek 响应逐个核对，推理 token 均为 0。网关偶发超时，加了有限次重试；Gemini 偶尔返回字段名带换行的 JSON，解析时对字段名做 strip。
+- 结果（continue 差距，模拟器 − 真人）：负面组 Spark +24.9、DeepSeek +27.5；非负面组 Spark +27.2、DeepSeek +23.7 个百分点，区间都不含零。DeepSeek 交互项 +3.8 [−0.1, +7.8]，区间含零 → 按预先登记规则同样**用普遍定义**。情绪差距 DeepSeek 更大（负面组 +14.3，非负面组 +7.1），交互项 +7.2 [+3.7, +10.6]，与 Spark 方向一致。
+- 结论：反应方式的失真不是 Spark 特有的。
+- Claude 复核：pytest 195 项通过；full 报告重建后与提交版本一致；DeepSeek 报告两次离线重建哈希一致；凭证扫描干净。花费约 5.8 美元（共享账户的上界）。网关累计约 32.98 美元。
+- 下一步：等合同 A（决策层控制，改为 Spark 判全量 + Gemini 100 段校正）和合同 C（Spark 判断器验证与 PPI 模拟）完成。

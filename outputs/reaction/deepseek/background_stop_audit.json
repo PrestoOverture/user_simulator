@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-10-27T11:24:10.345249+00:00",
+  "pid": 45340,
+  "process_terminal": true,
+  "stop": {
+    "reason": "Cannot verify billing; stop",
+    "timestamp": "2026-10-27T11:23:45.470760+00:00",
+    "instruction": "No further paid calls until Claude reviews the stop evidence."
+  },
+  "generations": 161,
+  "gemini_successes": 20,
+  "client_log_statuses": {
+    "ok": 161,
+    "error": 3,
+    "incomplete": 2839
+  },
+  "paid_prechecks": {
+    "deepseek-v4.1-flash": 172,
+    "gemini-3.8-flash": 20
+  },
+  "billing_readonly_http_status": 200,
+  "billing_readonly_total_usage_cents": 2762.0998
+}

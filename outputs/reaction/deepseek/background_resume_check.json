@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-10-27T15:42:14.344186+00:00",
+  "process": "97221     1 01:11 /opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python -u /Users/kwang/projects/user_simulator/scripts/measure_reaction_deepseek.py --concurrency 8",
+  "pid": 97221,
+  "generations_at_start": 161,
+  "generations_now": 239,
+  "gemini_successes": 20,
+  "deepseek_response_checks": 241,
+  "zero_reasoning_checks_passed": true,
+  "stopped_marker_present": false,
+  "latest_metered_cents": 2774.24,
+  "credential_scan_files": 22,
+  "credential_scan_hits": 0
+}

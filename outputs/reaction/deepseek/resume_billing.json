@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-10-27T15:40:30.332468+00:00",
+  "authorized_by": "Claude billing retry Delta Contract",
+  "reason": "Claude reviewed the evidence: billing intermittently fails or is slow; authorize recovery with at most six billing attempts and exponential delays 2,4,8,16,30 seconds. Keep every-paid-request budget check, 4900-cent threshold and zero-reasoning gate unchanged.",
+  "previous_stop": {
+    "reason": "Cannot verify billing; stop",
+    "timestamp": "2026-10-27T11:23:45.470760+00:00",
+    "instruction": "No further paid calls until Claude reviews the stop evidence."
+  },
+  "previous_background_run": {
+    "pid": 45340,
+    "started_at": "2026-10-27T11:21:44.807892+00:00",
+    "command": [
+      "nohup",
+      "/Users/kwang/projects/user_simulator/.venv/bin/python",
+      "-u",
+      "/Users/kwang/projects/user_simulator/scripts/measure_reaction_deepseek.py",
+      "--concurrency",
+      "8"
+    ],
+    "log_path": "/Users/kwang/projects/user_simulator/outputs/reaction/deepseek/full.log",
+    "resume_command": ".venv/bin/python -u scripts/measure_reaction_deepseek.py --concurrency 8",
+    "generations_at_start": 20
+  },
+  "cached_generations": 161,
+  "cached_judgments": 20,
+  "projected_usd": 4.551000000000158,
+  "retry_attempts": 6,
+  "backoff_seconds": [
+    2,
+    4,
+    8,
+    16,
+    30
+  ]
+}
