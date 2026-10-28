@@ -1,0 +1,30 @@
+{
+  "frozen_sha256": {
+    "docs/tech_stacks.md": "cd52818b5fd8f3e4c82b4339da65d927dcb747c5504608e59994e7fcff22cc45",
+    "outputs/spark_judge_validation/analysis_plan.json": "58d1b027e221e2e7190b7a4338d159c8ac17f8ec8b042eadf04655d072afc7ba",
+    "outputs/spark_judge_validation/preregistration.json": "6838528861dadd27cef3a655fd60a9939c6a32c28f33550c4a125714a416efb4",
+    "outputs/spark_judge_validation/selection.json": "ab682f420de955d9f2a902da544fe6d0ee76e9edff82f19e09deb4e15ad20789",
+    "outputs/spark_judge_validation/test.jsonl": "f53800012f80b23c387b113cfaf5b019758a2dfec342854661f92689e9908b0c",
+    "tests/test_ppi.py": "bdd7aa69f4e0e5b681adbd01e453152d5eaf5e7a6daf95aab007d7a371bf1334",
+    "usersim/judge.py": "944e8a85ab35209ae93d68c42096bf03a0039a8921c560a6a28799bb6ed3ecd1",
+    "usersim/ppi.py": "f08522f4ddc3433de44c514e700a0ae525f940e826330064e6c6565a1b93b2a9",
+    "usersim/spark.py": "31778a2a0e0cff0cbe40799ed4828e172fabb93e0207d365ba39c9f9f423dcc0"
+  },
+  "old_pid": 61703,
+  "old_process_exited": true,
+  "statuses": {
+    "ok": 2523,
+    "request_error": 4
+  },
+  "unresolved_dispatches": [
+    {
+      "attempt": 1,
+      "event": "dispatch",
+      "id": "4e0e2c0b5b7ef2709f84c5f1c997ec6480a1d31c22a21c282c0dc2bc976dc955",
+      "input_sha256": "4e0e2c0b5b7ef2709f84c5f1c997ec6480a1d31c22a21c282c0dc2bc976dc955",
+      "model": "spark-x2.6",
+      "provider": "spark",
+      "thinking": "enabled"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "active_request_processes_observed": 0,
+  "initial_pid": 45709,
+  "interrupted_request": {
+    "attempt": 1,
+    "error_reason": "Request process no longer exists; no response received. Observed after initial nohup launcher exited.",
+    "error_type": "InterruptedProcess",
+    "event": "response",
+    "id": "J246",
+    "input_sha256": "98e735bef1bef9a0a6a2d92dfd58cd6c62671ae05681bf4bebcf887f92860acb",
+    "model": "spark-x2.6",
+    "parser_version": "outer_wrappers_v1",
+    "process_exit_observed": true,
+    "provider": "spark",
+    "status": "request_error",
+    "thinking": "enabled",
+    "usage": null
+  },
+  "recovery": "Remaining original four-attempt transport budget; no content retry; usage unknown."
+}

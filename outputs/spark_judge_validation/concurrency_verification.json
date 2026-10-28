@@ -1,0 +1,149 @@
+{
+  "background_currently_running": false,
+  "blocked_audit": "Three consecutive goal turns confirmed two HTTP429 inputs exhausted four attempts, 2843 successes unchanged, no active request process; requires Claude/user retry-budget decision.",
+  "client_git_diff_exit_code": 0,
+  "compile_check": "passed",
+  "concurrency": 8,
+  "credential_scan": {
+    "files_scanned": 44,
+    "hits": []
+  },
+  "full_goal_complete": false,
+  "goal_status": "blocked",
+  "handoff_written": true,
+  "killed_request_recovery": [
+    {
+      "attempt": 1,
+      "status": "request_error"
+    },
+    {
+      "attempt": 2,
+      "status": "ok"
+    }
+  ],
+  "next_launch_default_concurrency": 4,
+  "offline_checkpoint": {
+    "api_keys_removed": true,
+    "identical": true,
+    "scope": "Final stopped concurrent-run checkpoint; full experiment and PPI incomplete",
+    "sha256": [
+      {
+        "report.md": "4fbdb1f8541ae9a968e2390495598e8945e022947eaf01f0b7b5d1f6ecc36b24",
+        "summary.json": "2c0e06c810ef8c6ef544f10dac92396099711e6755f7562f5a8df865cf4b6aca"
+      },
+      {
+        "report.md": "4fbdb1f8541ae9a968e2390495598e8945e022947eaf01f0b7b5d1f6ecc36b24",
+        "summary.json": "2c0e06c810ef8c6ef544f10dac92396099711e6755f7562f5a8df865cf4b6aca"
+      }
+    ]
+  },
+  "old_pid": 61703,
+  "old_process_exit_confirmed": true,
+  "old_successes": 2523,
+  "old_successes_resent": 0,
+  "preexisting_protected_diff": [
+    "docs/tech_stacks.md"
+  ],
+  "protected_git_diff_exit_code": 1,
+  "pytest": "180 passed in 39.03s",
+  "rate": {
+    "current_completion_estimate": null,
+    "elapsed_seconds": 65.05769920349121,
+    "end_epoch": 1793124168.7894552,
+    "end_terminal_responses": 2632,
+    "estimate_excludes": "offline PPI and final report/check time; future rate limits/timeouts may extend estimate",
+    "estimate_status": "withdrawn: rate limit and exhausted transport retries stopped the process",
+    "http_429_responses": 0,
+    "new_terminal_responses": 65,
+    "remaining_at_measurement": 24571,
+    "responses_per_minute": 59.946786433399005,
+    "start": {
+      "http_429_responses": 0,
+      "observed_epoch": 1793124103.731756,
+      "pid": 49526,
+      "statuses": {
+        "ok": 2567,
+        "request_error": 5
+      },
+      "terminal_responses": 2567
+    },
+    "statuses": {
+      "ok": 2632,
+      "request_error": 5
+    },
+    "superseded_estimated_remaining_request_hours": 6.831336440722148,
+    "superseded_estimated_request_completion_local": "2026-10-28T08:52:41.600642+08:00",
+    "total_unique_inputs": 27203
+  },
+  "rate_limit_stop": {
+    "active_contract_c_request_processes": [],
+    "http_429_responses": 23,
+    "process_exited": true,
+    "process_pid": 49526,
+    "statuses": {
+      "ok": 2843,
+      "request_error": 28
+    },
+    "stop_reason": "HTTP 429; request concurrency automatically dropped to four, then original four-attempt transport budgets exhausted. No automatic budget reset.",
+    "unfinished_transport_inputs": {
+      "24b0b25b9530e4badbbc4470bed8216f1943a50bfa744e511c9cd974006321f5": [
+        {
+          "attempt": 1,
+          "error_type": "HTTPStatusError",
+          "http_status": 429,
+          "status": "request_error"
+        },
+        {
+          "attempt": 2,
+          "error_type": "HTTPStatusError",
+          "http_status": 429,
+          "status": "request_error"
+        },
+        {
+          "attempt": 3,
+          "error_type": "HTTPStatusError",
+          "http_status": 429,
+          "status": "request_error"
+        },
+        {
+          "attempt": 4,
+          "error_type": "HTTPStatusError",
+          "http_status": 429,
+          "status": "request_error"
+        }
+      ],
+      "fbb956b447cd6df6488c9518f72e627ef573223dcd9e53e7baf707bbcb7f9670": [
+        {
+          "attempt": 1,
+          "error_type": "HTTPStatusError",
+          "http_status": 429,
+          "status": "request_error"
+        },
+        {
+          "attempt": 2,
+          "error_type": "HTTPStatusError",
+          "http_status": 429,
+          "status": "request_error"
+        },
+        {
+          "attempt": 3,
+          "error_type": "HTTPStatusError",
+          "http_status": 429,
+          "status": "request_error"
+        },
+        {
+          "attempt": 4,
+          "error_type": "HTTPStatusError",
+          "http_status": 429,
+          "status": "request_error"
+        }
+      ]
+    },
+    "unresolved_dispatch_count": 0
+  },
+  "remaining": "Claude decision on exhausted HTTP429 transport budgets; then resume at concurrency four, full/PPI completion and final checks.",
+  "request_errors_with_later_success_not_resent": 4,
+  "startup_observation": "49526     1 49526 03:39 /bin/zsh /Users/kwang/projects/user_simulator/outputs/spark_judge_validation/run_remaining.sh",
+  "targeted_tests": "37 passed",
+  "test_selection_preregistration_ppi_and_protected_hashes_unchanged": true
+}

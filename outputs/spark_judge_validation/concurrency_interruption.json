@@ -1,0 +1,15 @@
+{
+  "attempt": 1,
+  "error_reason": "PID 61703 stopped with SIGTERM as explicitly required by concurrency Delta; response unavailable.",
+  "error_type": "InterruptedProcess",
+  "event": "response",
+  "id": "4e0e2c0b5b7ef2709f84c5f1c997ec6480a1d31c22a21c282c0dc2bc976dc955",
+  "input_sha256": "4e0e2c0b5b7ef2709f84c5f1c997ec6480a1d31c22a21c282c0dc2bc976dc955",
+  "model": "spark-x2.6",
+  "parser_version": "outer_wrappers_v1",
+  "process_exit_observed": true,
+  "provider": "spark",
+  "status": "request_error",
+  "thinking": "enabled",
+  "usage": null
+}

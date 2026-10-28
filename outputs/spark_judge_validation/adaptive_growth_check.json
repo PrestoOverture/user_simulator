@@ -1,0 +1,116 @@
+{
+  "docs_changed_externally_during_task": [
+    "docs/architecture.md",
+    "docs/history.md",
+    "docs/roadmap.md",
+    "docs/tech_stacks.md"
+  ],
+  "elapsed_seconds": 318.83990001678467,
+  "frozen_inputs_and_ppi_unchanged": true,
+  "new_terminal_results": 188,
+  "observed_terminal_results_per_minute": 35.37825723633142,
+  "original_successes": 2843,
+  "processes": {
+    "54725": "54725     1 54725 05:19 /opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python -u scripts/validate_spark_judge.py --supervise-full --concurrency 8",
+    "54727": "54727 54725 54725 05:19 /opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python -u /Users/kwang/projects/user_simulator/scripts/validate_spark_judge.py --phase full --concurrency 8"
+  },
+  "protected_diff_exit": 0,
+  "public_batch_signature": "(cache, items, concurrency=8, *, prompt=None, thinking='enabled', reuse_caches=(), transport=None, on_result=None, clock=None, sleeper=None, jitter=None)",
+  "reset_input_results": {
+    "24b0b25b9530e4badbbc4470bed8216f1943a50bfa744e511c9cd974006321f5": [
+      {
+        "http_status": 429,
+        "status": "request_error",
+        "transport_attempt": null,
+        "wire_attempt": 1
+      },
+      {
+        "http_status": 429,
+        "status": "request_error",
+        "transport_attempt": null,
+        "wire_attempt": 2
+      },
+      {
+        "http_status": 429,
+        "status": "request_error",
+        "transport_attempt": null,
+        "wire_attempt": 3
+      },
+      {
+        "http_status": 429,
+        "status": "request_error",
+        "transport_attempt": null,
+        "wire_attempt": 4
+      },
+      {
+        "http_status": 200,
+        "status": "ok",
+        "transport_attempt": 1,
+        "wire_attempt": 5
+      }
+    ],
+    "fbb956b447cd6df6488c9518f72e627ef573223dcd9e53e7baf707bbcb7f9670": [
+      {
+        "http_status": 429,
+        "status": "request_error",
+        "transport_attempt": null,
+        "wire_attempt": 1
+      },
+      {
+        "http_status": 429,
+        "status": "request_error",
+        "transport_attempt": null,
+        "wire_attempt": 2
+      },
+      {
+        "http_status": 429,
+        "status": "request_error",
+        "transport_attempt": null,
+        "wire_attempt": 3
+      },
+      {
+        "http_status": 429,
+        "status": "request_error",
+        "transport_attempt": null,
+        "wire_attempt": 4
+      },
+      {
+        "http_status": 200,
+        "status": "ok",
+        "transport_attempt": 1,
+        "wire_attempt": 5
+      }
+    ]
+  },
+  "runtime": {
+    "batch_complete": false,
+    "concurrency": 4,
+    "jitter_seed": 20261027,
+    "last_success_wall_time": 1793126394.638892,
+    "policy": "adaptive_429_v1",
+    "rate_limit_hits": 1,
+    "success_streak": 122
+  },
+  "statuses": {
+    "ok": 3031,
+    "rate_limited": 1,
+    "request_error": 28
+  },
+  "supervisor_state": {
+    "command": [
+      "/Users/kwang/projects/user_simulator/.venv/bin/python",
+      "-u",
+      "/Users/kwang/projects/user_simulator/scripts/validate_spark_judge.py",
+      "--phase",
+      "full",
+      "--concurrency",
+      "8"
+    ],
+    "observed_at": 1793126077.9368792,
+    "restarts": 0,
+    "stage": "running",
+    "started_at": 1793126077.901897,
+    "supervisor_pid": 54725,
+    "worker_pid": 54727
+  }
+}

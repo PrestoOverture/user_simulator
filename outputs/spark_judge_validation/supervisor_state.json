@@ -1,0 +1,30 @@
+{
+  "observed_at": 1793161150.61657,
+  "restarts": 0,
+  "stage": "complete",
+  "started_at": 1793126077.901897,
+  "supervisor_pid": 54725,
+  "verification": {
+    "checks": {
+      "compile": 0,
+      "complete_summary": true,
+      "credential_hits": [],
+      "protected_diff": 0,
+      "pytest": 0,
+      "report_1": 0,
+      "report_2": 0,
+      "report_hashes_identical": true
+    },
+    "passed": true,
+    "sha256": [
+      {
+        "report.md": "c77bbeb906fd7907adaecdaa2177631d41e6bb18486aac88437a527b4f5a2365",
+        "summary.json": "5d173a17c431a478a861af42c3c5f0918b65e8a2c7764a321c2f4bcce643c601"
+      },
+      {
+        "report.md": "c77bbeb906fd7907adaecdaa2177631d41e6bb18486aac88437a527b4f5a2365",
+        "summary.json": "5d173a17c431a478a861af42c3c5f0918b65e8a2c7764a321c2f4bcce643c601"
+      }
+    ]
+  }
+}

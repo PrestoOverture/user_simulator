@@ -1,0 +1,15 @@
+{
+  "api_keys_removed": true,
+  "identical": true,
+  "scope": "Adaptive live-run checkpoint; complete report verification will run automatically after full/PPI",
+  "sha256": [
+    {
+      "report.md": "238e3af87892fa4d533461429fae972347dc80c4fba53e921b1481c504c9eeda",
+      "summary.json": "cd49eef5a8ca5f4b25c6437993fe11003578706d8acfb17fbdbf71c4c4925c22"
+    },
+    {
+      "report.md": "238e3af87892fa4d533461429fae972347dc80c4fba53e921b1481c504c9eeda",
+      "summary.json": "cd49eef5a8ca5f4b25c6437993fe11003578706d8acfb17fbdbf71c4c4925c22"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "dev_disabled.jsonl": {
+    "new_statuses": {
+      "ok": 100
+    },
+    "original_statuses": {
+      "ok": 100
+    },
+    "recovered_errors": 0,
+    "reparsed_responses": 100,
+    "sha256_after": "90cf0e928a85d65e8c2fb351eb852d15ea1167fb0cd114ba6fa396e038339e1b",
+    "sha256_before": "90cf0e928a85d65e8c2fb351eb852d15ea1167fb0cd114ba6fa396e038339e1b"
+  },
+  "dev_enabled.jsonl": {
+    "new_statuses": {
+      "ok": 75
+    },
+    "original_statuses": {
+      "ok": 71,
+      "parse_error": 4
+    },
+    "recovered_errors": 4,
+    "reparsed_responses": 75,
+    "sha256_after": "d6755aed48e6c3f587706f72abfbec8956f2efeb52cb0cd9fec603482dec598f",
+    "sha256_before": "d6755aed48e6c3f587706f72abfbec8956f2efeb52cb0cd9fec603482dec598f"
+  }
+}

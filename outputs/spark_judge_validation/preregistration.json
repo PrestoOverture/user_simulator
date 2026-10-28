@@ -1,0 +1,21 @@
+{
+  "first_cache_birthtime": 1793085760.5170057,
+  "preregistration": {
+    "adoption_n": 100,
+    "bootstrap": "paired dialogue percentile bootstrap; Spark population fixed",
+    "bootstrap_replicates": 2000,
+    "coverage_min": 0.9,
+    "median_width_reduction_min": 0.2,
+    "parse_failure_stop": 0.02,
+    "repetitions": 500,
+    "sample_dialogues": [
+      50,
+      100,
+      200
+    ],
+    "seed": 20261027,
+    "selection": "highest development topic kappa; tie: disabled"
+  },
+  "registration_precedes_requests": true,
+  "summary_birthtime": 1793085760.4752734
+}

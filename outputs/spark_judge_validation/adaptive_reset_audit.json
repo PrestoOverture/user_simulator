@@ -1,0 +1,41 @@
+{
+  "authorized_by": "Latest Claude Delta: historical 429 exempt and exhausted two inputs reset",
+  "initial_cache_bytes": 2525422,
+  "initial_statuses": {
+    "ok": 2843,
+    "request_error": 28
+  },
+  "policy": "adaptive_429_v1",
+  "reset_inputs": {
+    "24b0b25b9530e4badbbc4470bed8216f1943a50bfa744e511c9cd974006321f5": {
+      "charged_non_429_errors": 0,
+      "historical_wire_attempts": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "http_statuses": [
+        429,
+        429,
+        429,
+        429
+      ]
+    },
+    "fbb956b447cd6df6488c9518f72e627ef573223dcd9e53e7baf707bbcb7f9670": {
+      "charged_non_429_errors": 0,
+      "historical_wire_attempts": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "http_statuses": [
+        429,
+        429,
+        429,
+        429
+      ]
+    }
+  }
+}

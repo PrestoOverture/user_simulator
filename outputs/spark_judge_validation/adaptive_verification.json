@@ -1,0 +1,150 @@
+{
+  "automatic_acceptance_outputs": [
+    "automatic_verification.json",
+    "automatic_report_1.log",
+    "automatic_report_2.log",
+    "automatic_pytest.log",
+    "automatic_compile.log",
+    "automatic_protected_diff.log",
+    "final_sha256_1.txt",
+    "final_sha256_2.txt"
+  ],
+  "compile_check": "passed",
+  "credential_scan": {
+    "files_scanned": 55,
+    "hits": []
+  },
+  "docs_changed_by_external_commits": [
+    "docs/architecture.md",
+    "docs/history.md",
+    "docs/roadmap.md",
+    "docs/tech_stacks.md"
+  ],
+  "frozen_prompt_test_selection_preregistration_and_ppi_unchanged": true,
+  "full_goal_complete": false,
+  "goal_status": "active",
+  "handoff_written": true,
+  "observed_at": 1793126823.263875,
+  "prior_successes_resent": 0,
+  "processes": {
+    "54725": "54725     1 54725 12:26 /opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python -u scripts/validate_spark_judge.py --supervise-full --concurrency 8",
+    "54727": "54727 54725 54725 12:26 /opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python -u /Users/kwang/projects/user_simulator/scripts/validate_spark_judge.py --phase full --concurrency 8"
+  },
+  "protected_diff_exit_code": 0,
+  "public_signature": "(cache, items, concurrency=8, *, prompt=None, thinking='enabled', reuse_caches=(), transport=None, on_result=None, clock=None, sleeper=None, jitter=None)",
+  "pytest": "203 passed in 37.85s",
+  "rebuild_checkpoint": {
+    "api_keys_removed": true,
+    "identical": true,
+    "scope": "Adaptive live-run checkpoint; complete report verification will run automatically after full/PPI",
+    "sha256": [
+      {
+        "report.md": "238e3af87892fa4d533461429fae972347dc80c4fba53e921b1481c504c9eeda",
+        "summary.json": "cd49eef5a8ca5f4b25c6437993fe11003578706d8acfb17fbdbf71c4c4925c22"
+      },
+      {
+        "report.md": "238e3af87892fa4d533461429fae972347dc80c4fba53e921b1481c504c9eeda",
+        "summary.json": "cd49eef5a8ca5f4b25c6437993fe11003578706d8acfb17fbdbf71c4c4925c22"
+      }
+    ]
+  },
+  "reset_input_results": {
+    "24b0b25b9530e4badbbc4470bed8216f1943a50bfa744e511c9cd974006321f5": [
+      {
+        "http_status": 429,
+        "status": "request_error",
+        "transport_attempt": null,
+        "wire_attempt": 1
+      },
+      {
+        "http_status": 429,
+        "status": "request_error",
+        "transport_attempt": null,
+        "wire_attempt": 2
+      },
+      {
+        "http_status": 429,
+        "status": "request_error",
+        "transport_attempt": null,
+        "wire_attempt": 3
+      },
+      {
+        "http_status": 429,
+        "status": "request_error",
+        "transport_attempt": null,
+        "wire_attempt": 4
+      },
+      {
+        "http_status": 200,
+        "status": "ok",
+        "transport_attempt": 1,
+        "wire_attempt": 5
+      }
+    ],
+    "fbb956b447cd6df6488c9518f72e627ef573223dcd9e53e7baf707bbcb7f9670": [
+      {
+        "http_status": 429,
+        "status": "request_error",
+        "transport_attempt": null,
+        "wire_attempt": 1
+      },
+      {
+        "http_status": 429,
+        "status": "request_error",
+        "transport_attempt": null,
+        "wire_attempt": 2
+      },
+      {
+        "http_status": 429,
+        "status": "request_error",
+        "transport_attempt": null,
+        "wire_attempt": 3
+      },
+      {
+        "http_status": 429,
+        "status": "request_error",
+        "transport_attempt": null,
+        "wire_attempt": 4
+      },
+      {
+        "http_status": 200,
+        "status": "ok",
+        "transport_attempt": 1,
+        "wire_attempt": 5
+      }
+    ]
+  },
+  "runtime": {
+    "batch_complete": false,
+    "concurrency": 5,
+    "jitter_seed": 20261027,
+    "last_success_wall_time": 1793126822.818942,
+    "policy": "adaptive_429_v1",
+    "rate_limit_hits": 1,
+    "success_streak": 186
+  },
+  "shell_syntax_check": "passed",
+  "statuses": {
+    "ok": 3295,
+    "rate_limited": 1,
+    "request_error": 28
+  },
+  "supervisor": {
+    "command": [
+      "/Users/kwang/projects/user_simulator/.venv/bin/python",
+      "-u",
+      "/Users/kwang/projects/user_simulator/scripts/validate_spark_judge.py",
+      "--phase",
+      "full",
+      "--concurrency",
+      "8"
+    ],
+    "observed_at": 1793126077.9368792,
+    "restarts": 0,
+    "stage": "running",
+    "started_at": 1793126077.901897,
+    "supervisor_pid": 54725,
+    "worker_pid": 54727
+  },
+  "targeted_tests": "45 passed"
+}

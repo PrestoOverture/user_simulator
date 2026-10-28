@@ -1,0 +1,17 @@
+{
+  "api_keys_removed": true,
+  "identical": true,
+  "original_175_response_cache_prefixes_unchanged": true,
+  "protected_files_equal_delta_baseline": true,
+  "scope": "Delta live-run checkpoint after variant selection; final full report must be verified after background completion",
+  "sha256": [
+    {
+      "report.md": "37dc9c3a45ca18795ca7b2bc53030a220c27fdaf73d71e334889d1a08566298f",
+      "summary.json": "f8e8b22b657ecd4f52b8332a4bc3ea16469c09d36fe82dca321fa5427196d2f2"
+    },
+    {
+      "report.md": "37dc9c3a45ca18795ca7b2bc53030a220c27fdaf73d71e334889d1a08566298f",
+      "summary.json": "f8e8b22b657ecd4f52b8332a4bc3ea16469c09d36fe82dca321fa5427196d2f2"
+    }
+  ]
+}

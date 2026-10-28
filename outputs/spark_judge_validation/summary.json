@@ -1,0 +1,2503 @@
+{
+  "adoption_passed": false,
+  "agreement": [
+    {
+      "dataset": "correction_v2",
+      "group": "all",
+      "n_inputs": 4300,
+      "n_moderated": 0,
+      "n_pending": 0,
+      "scores": {
+        "emotion": {
+          "accuracy": 0.9386046511627907,
+          "kappa": 0.7718895231542582,
+          "labels": [
+            false,
+            true
+          ],
+          "matrix": [
+            [
+              3479,
+              149,
+              0
+            ],
+            [
+              115,
+              557,
+              0
+            ]
+          ],
+          "n": 4300
+        },
+        "topic": {
+          "accuracy": 0.8665116279069768,
+          "kappa": 0.6613160400789284,
+          "labels": [
+            "close",
+            "continue",
+            "unclear"
+          ],
+          "matrix": [
+            [
+              596,
+              56,
+              6,
+              0
+            ],
+            [
+              170,
+              2989,
+              27,
+              0
+            ],
+            [
+              34,
+              281,
+              141,
+              0
+            ]
+          ],
+          "n": 4300
+        }
+      },
+      "source": "baseline"
+    },
+    {
+      "dataset": "correction_v2",
+      "group": "all",
+      "n_inputs": 4300,
+      "n_moderated": 0,
+      "n_pending": 0,
+      "scores": {
+        "emotion": {
+          "accuracy": 0.9476744186046512,
+          "kappa": 0.7378486409856784,
+          "labels": [
+            false,
+            true
+          ],
+          "matrix": [
+            [
+              3704,
+              118,
+              0
+            ],
+            [
+              107,
+              371,
+              0
+            ]
+          ],
+          "n": 4300
+        },
+        "topic": {
+          "accuracy": 0.8802325581395349,
+          "kappa": 0.6875305573103107,
+          "labels": [
+            "close",
+            "continue",
+            "unclear"
+          ],
+          "matrix": [
+            [
+              544,
+              50,
+              13,
+              0
+            ],
+            [
+              118,
+              3059,
+              38,
+              0
+            ],
+            [
+              22,
+              274,
+              182,
+              0
+            ]
+          ],
+          "n": 4300
+        }
+      },
+      "source": "combined"
+    },
+    {
+      "dataset": "correction_v2",
+      "group": "all",
+      "n_inputs": 4300,
+      "n_moderated": 0,
+      "n_pending": 0,
+      "scores": {
+        "emotion": {
+          "accuracy": 0.9397674418604651,
+          "kappa": 0.6856636428809321,
+          "labels": [
+            false,
+            true
+          ],
+          "matrix": [
+            [
+              3709,
+              123,
+              0
+            ],
+            [
+              136,
+              332,
+              0
+            ]
+          ],
+          "n": 4300
+        },
+        "topic": {
+          "accuracy": 0.8246511627906977,
+          "kappa": 0.721385393984616,
+          "labels": [
+            "close",
+            "continue",
+            "unclear"
+          ],
+          "matrix": [
+            [
+              1144,
+              39,
+              32,
+              0
+            ],
+            [
+              134,
+              1761,
+              161,
+              0
+            ],
+            [
+              67,
+              321,
+              641,
+              0
+            ]
+          ],
+          "n": 4300
+        }
+      },
+      "source": "human"
+    },
+    {
+      "dataset": "correction_v2",
+      "group": "all",
+      "n_inputs": 4300,
+      "n_moderated": 0,
+      "n_pending": 0,
+      "scores": {
+        "emotion": {
+          "accuracy": 0.9416279069767441,
+          "kappa": 0.7275089475427581,
+          "labels": [
+            false,
+            true
+          ],
+          "matrix": [
+            [
+              3650,
+              139,
+              0
+            ],
+            [
+              112,
+              399,
+              0
+            ]
+          ],
+          "n": 4300
+        },
+        "topic": {
+          "accuracy": 0.8683720930232558,
+          "kappa": 0.6878930911369358,
+          "labels": [
+            "close",
+            "continue",
+            "unclear"
+          ],
+          "matrix": [
+            [
+              660,
+              69,
+              9,
+              0
+            ],
+            [
+              121,
+              2893,
+              51,
+              0
+            ],
+            [
+              22,
+              294,
+              181,
+              0
+            ]
+          ],
+          "n": 4300
+        }
+      },
+      "source": "situation"
+    },
+    {
+      "dataset": "correction_v2",
+      "group": "all",
+      "n_inputs": 4300,
+      "n_moderated": 0,
+      "n_pending": 0,
+      "scores": {
+        "emotion": {
+          "accuracy": 0.94,
+          "kappa": 0.7201412058397503,
+          "labels": [
+            false,
+            true
+          ],
+          "matrix": [
+            [
+              3646,
+              115,
+              0
+            ],
+            [
+              143,
+              396,
+              0
+            ]
+          ],
+          "n": 4300
+        },
+        "topic": {
+          "accuracy": 0.8765116279069768,
+          "kappa": 0.7063241593234846,
+          "labels": [
+            "close",
+            "continue",
+            "unclear"
+          ],
+          "matrix": [
+            [
+              667,
+              48,
+              10,
+              0
+            ],
+            [
+              149,
+              2916,
+              37,
+              0
+            ],
+            [
+              30,
+              257,
+              186,
+              0
+            ]
+          ],
+          "n": 4300
+        }
+      },
+      "source": "structure"
+    },
+    {
+      "dataset": "reaction/full",
+      "group": "negative",
+      "n_inputs": 1500,
+      "n_moderated": 0,
+      "n_pending": 0,
+      "scores": {
+        "emotion": {
+          "accuracy": 0.9486666666666667,
+          "kappa": 0.8200542174305924,
+          "labels": [
+            false,
+            true
+          ],
+          "matrix": [
+            [
+              1203,
+              40,
+              0
+            ],
+            [
+              37,
+              220,
+              0
+            ]
+          ],
+          "n": 1500
+        },
+        "topic": {
+          "accuracy": 0.926,
+          "kappa": 0.8603242992935682,
+          "labels": [
+            "close",
+            "continue",
+            "unclear"
+          ],
+          "matrix": [
+            [
+              482,
+              36,
+              7,
+              0
+            ],
+            [
+              24,
+              835,
+              23,
+              0
+            ],
+            [
+              11,
+              10,
+              72,
+              0
+            ]
+          ],
+          "n": 1500
+        }
+      },
+      "source": "human"
+    },
+    {
+      "dataset": "reaction/full",
+      "group": "nonnegative",
+      "n_inputs": 1500,
+      "n_moderated": 1,
+      "n_pending": 0,
+      "scores": {
+        "emotion": {
+          "accuracy": 0.9539693128752502,
+          "kappa": 0.7496035771263398,
+          "labels": [
+            false,
+            true
+          ],
+          "matrix": [
+            [
+              1311,
+              35,
+              0
+            ],
+            [
+              34,
+              119,
+              0
+            ]
+          ],
+          "n": 1499
+        },
+        "topic": {
+          "accuracy": 0.8258839226150767,
+          "kappa": 0.7237299517634821,
+          "labels": [
+            "close",
+            "continue",
+            "unclear"
+          ],
+          "matrix": [
+            [
+              404,
+              15,
+              17,
+              0
+            ],
+            [
+              36,
+              617,
+              52,
+              0
+            ],
+            [
+              31,
+              110,
+              217,
+              0
+            ]
+          ],
+          "n": 1499
+        }
+      },
+      "source": "human"
+    },
+    {
+      "dataset": "reaction/full",
+      "group": "negative",
+      "n_inputs": 1500,
+      "n_moderated": 0,
+      "n_pending": 0,
+      "scores": {
+        "emotion": {
+          "accuracy": 0.9373333333333334,
+          "kappa": 0.8298823171717513,
+          "labels": [
+            false,
+            true
+          ],
+          "matrix": [
+            [
+              1088,
+              35,
+              0
+            ],
+            [
+              59,
+              318,
+              0
+            ]
+          ],
+          "n": 1500
+        },
+        "topic": {
+          "accuracy": 0.9253333333333333,
+          "kappa": 0.7397301869604824,
+          "labels": [
+            "close",
+            "continue",
+            "unclear"
+          ],
+          "matrix": [
+            [
+              197,
+              35,
+              0,
+              0
+            ],
+            [
+              64,
+              1187,
+              5,
+              0
+            ],
+            [
+              1,
+              7,
+              4,
+              0
+            ]
+          ],
+          "n": 1500
+        }
+      },
+      "source": "simulator"
+    },
+    {
+      "dataset": "reaction/full",
+      "group": "nonnegative",
+      "n_inputs": 1499,
+      "n_moderated": 0,
+      "n_pending": 0,
+      "scores": {
+        "emotion": {
+          "accuracy": 0.9399599733155437,
+          "kappa": 0.755722619965887,
+          "labels": [
+            false,
+            true
+          ],
+          "matrix": [
+            [
+              1239,
+              54,
+              0
+            ],
+            [
+              36,
+              170,
+              0
+            ]
+          ],
+          "n": 1499
+        },
+        "topic": {
+          "accuracy": 0.8659106070713809,
+          "kappa": 0.6517475097494839,
+          "labels": [
+            "close",
+            "continue",
+            "unclear"
+          ],
+          "matrix": [
+            [
+              206,
+              31,
+              0,
+              0
+            ],
+            [
+              54,
+              1050,
+              9,
+              0
+            ],
+            [
+              11,
+              96,
+              42,
+              0
+            ]
+          ],
+          "n": 1499
+        }
+      },
+      "source": "simulator"
+    }
+  ],
+  "development": {
+    "disabled": {
+      "emotion": {
+        "accuracy": 0.93,
+        "kappa": 0.700342465753425,
+        "labels": [
+          false,
+          true
+        ],
+        "matrix": [
+          [
+            83,
+            3,
+            0
+          ],
+          [
+            4,
+            10,
+            0
+          ]
+        ],
+        "n": 100
+      },
+      "topic": {
+        "accuracy": 0.86,
+        "kappa": 0.6682464454976303,
+        "labels": [
+          "close",
+          "continue",
+          "unclear"
+        ],
+        "matrix": [
+          [
+            12,
+            1,
+            3,
+            0
+          ],
+          [
+            8,
+            68,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            6,
+            0
+          ]
+        ],
+        "n": 100
+      }
+    },
+    "enabled": {
+      "emotion": {
+        "accuracy": 0.94,
+        "kappa": 0.788732394366197,
+        "labels": [
+          false,
+          true
+        ],
+        "matrix": [
+          [
+            80,
+            6,
+            0
+          ],
+          [
+            0,
+            14,
+            0
+          ]
+        ],
+        "n": 100
+      },
+      "topic": {
+        "accuracy": 0.92,
+        "kappa": 0.8000499875031243,
+        "labels": [
+          "close",
+          "continue",
+          "unclear"
+        ],
+        "matrix": [
+          [
+            15,
+            1,
+            0,
+            0
+          ],
+          [
+            6,
+            71,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            6,
+            0
+          ]
+        ],
+        "n": 100
+      }
+    }
+  },
+  "development_progress": {
+    "disabled": {
+      "evaluated": 100,
+      "expected": 100,
+      "partial_scores": {
+        "emotion": {
+          "accuracy": 0.93,
+          "kappa": 0.700342465753425,
+          "labels": [
+            false,
+            true
+          ],
+          "matrix": [
+            [
+              83,
+              3,
+              0
+            ],
+            [
+              4,
+              10,
+              0
+            ]
+          ],
+          "n": 100
+        },
+        "topic": {
+          "accuracy": 0.86,
+          "kappa": 0.6682464454976303,
+          "labels": [
+            "close",
+            "continue",
+            "unclear"
+          ],
+          "matrix": [
+            [
+              12,
+              1,
+              3,
+              0
+            ],
+            [
+              8,
+              68,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              6,
+              0
+            ]
+          ],
+          "n": 100
+        }
+      },
+      "statuses": {
+        "ok": 100
+      }
+    },
+    "enabled": {
+      "evaluated": 100,
+      "expected": 100,
+      "partial_scores": {
+        "emotion": {
+          "accuracy": 0.94,
+          "kappa": 0.788732394366197,
+          "labels": [
+            false,
+            true
+          ],
+          "matrix": [
+            [
+              80,
+              6,
+              0
+            ],
+            [
+              0,
+              14,
+              0
+            ]
+          ],
+          "n": 100
+        },
+        "topic": {
+          "accuracy": 0.92,
+          "kappa": 0.8000499875031243,
+          "labels": [
+            "close",
+            "continue",
+            "unclear"
+          ],
+          "matrix": [
+            [
+              15,
+              1,
+              0,
+              0
+            ],
+            [
+              6,
+              71,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              6,
+              0
+            ]
+          ],
+          "n": 100
+        }
+      },
+      "statuses": {
+        "ok": 100
+      }
+    }
+  },
+  "input_counts": {
+    "correction_v2": 21500,
+    "reaction/full": 5999
+  },
+  "moderated_inputs": [
+    {
+      "condition": "human",
+      "dataset": "reaction/full",
+      "dialogue_id": 2069,
+      "turn": 11
+    }
+  ],
+  "paired_support": {
+    "correction_v2": {
+      "excluded_pairs": 0,
+      "original_pairs": 4300
+    },
+    "reaction/full": {
+      "excluded_pairs": 1,
+      "original_pairs": 3000
+    }
+  },
+  "parse_failure_rate": 0.0,
+  "parser": {
+    "cached_responses_reparsed": 175,
+    "original_parse_errors": 4,
+    "recovered_parse_errors": 4,
+    "version": "outer_wrappers_v1"
+  },
+  "ppi": {
+    "ppi_correction_v2_100": {
+      "decision_agreement": null,
+      "excluded_pairs": 0,
+      "full_decision": null,
+      "original_pairs": 4300,
+      "statistics": [
+        {
+          "condition": "baseline",
+          "coverage": 0.968,
+          "gemini_full": 0.2627906976744186,
+          "gemini_only_median_width": 0.08953488372093021,
+          "group": "all",
+          "median_paired_width_reduction": 0.3124999999999999,
+          "median_sampled_turns": 857.0,
+          "median_width_reduction": 0.3116883116883118,
+          "metric": "continue",
+          "n": 100,
+          "paired_turns": 4300,
+          "population_dialogues": 500,
+          "ppi_median_width": 0.06162790697674417,
+          "sampled_turns_range": [
+            770,
+            941
+          ],
+          "spark_full": 0.2802325581395349,
+          "zero_gemini_width": 0
+        },
+        {
+          "condition": "baseline",
+          "coverage": 0.96,
+          "gemini_full": 0.04744186046511628,
+          "gemini_only_median_width": 0.06395348837209303,
+          "group": "all",
+          "median_paired_width_reduction": 0.3272727272727274,
+          "median_sampled_turns": 857.0,
+          "median_width_reduction": 0.32727272727272727,
+          "metric": "emotion",
+          "n": 100,
+          "paired_turns": 4300,
+          "population_dialogues": 500,
+          "ppi_median_width": 0.04302325581395349,
+          "sampled_turns_range": [
+            770,
+            941
+          ],
+          "spark_full": 0.058372093023255814,
+          "zero_gemini_width": 0
+        },
+        {
+          "condition": "situation",
+          "coverage": 0.956,
+          "gemini_full": 0.23465116279069767,
+          "gemini_only_median_width": 0.08372093023255817,
+          "group": "all",
+          "median_paired_width_reduction": 0.26151360835330356,
+          "median_sampled_turns": 857.0,
+          "median_width_reduction": 0.26388888888888906,
+          "metric": "continue",
+          "n": 100,
+          "paired_turns": 4300,
+          "population_dialogues": 500,
+          "ppi_median_width": 0.061627906976744196,
+          "sampled_turns_range": [
+            770,
+            941
+          ],
+          "spark_full": 0.26395348837209304,
+          "zero_gemini_width": 0
+        },
+        {
+          "condition": "situation",
+          "coverage": 0.94,
+          "gemini_full": 0.01,
+          "gemini_only_median_width": 0.06046511627906977,
+          "group": "all",
+          "median_paired_width_reduction": 0.24973958333333474,
+          "median_sampled_turns": 857.0,
+          "median_width_reduction": 0.2687500000000025,
+          "metric": "emotion",
+          "n": 100,
+          "paired_turns": 4300,
+          "population_dialogues": 500,
+          "ppi_median_width": 0.04421511627906961,
+          "sampled_turns_range": [
+            770,
+            941
+          ],
+          "spark_full": 0.019302325581395347,
+          "zero_gemini_width": 0
+        },
+        {
+          "condition": "structure",
+          "coverage": 0.958,
+          "gemini_full": 0.24325581395348836,
+          "gemini_only_median_width": 0.09651162790697673,
+          "group": "all",
+          "median_paired_width_reduction": 0.3569409171731773,
+          "median_sampled_turns": 857.0,
+          "median_width_reduction": 0.36144578313252995,
+          "metric": "continue",
+          "n": 100,
+          "paired_turns": 4300,
+          "population_dialogues": 500,
+          "ppi_median_width": 0.061627906976744196,
+          "sampled_turns_range": [
+            770,
+            941
+          ],
+          "spark_full": 0.2558139534883721,
+          "zero_gemini_width": 0
+        },
+        {
+          "condition": "structure",
+          "coverage": 0.974,
+          "gemini_full": 0.016511627906976745,
+          "gemini_only_median_width": 0.06162790697674418,
+          "group": "all",
+          "median_paired_width_reduction": 0.24074074074074087,
+          "median_sampled_turns": 857.0,
+          "median_width_reduction": 0.24528301886792447,
+          "metric": "emotion",
+          "n": 100,
+          "paired_turns": 4300,
+          "population_dialogues": 500,
+          "ppi_median_width": 0.046511627906976744,
+          "sampled_turns_range": [
+            770,
+            941
+          ],
+          "spark_full": 0.013023255813953489,
+          "zero_gemini_width": 0
+        },
+        {
+          "condition": "combined",
+          "coverage": 0.96,
+          "gemini_full": 0.2695348837209302,
+          "gemini_only_median_width": 0.0941860465116279,
+          "group": "all",
+          "median_paired_width_reduction": 0.38044771847365966,
+          "median_sampled_turns": 857.0,
+          "median_width_reduction": 0.38271604938271575,
+          "metric": "continue",
+          "n": 100,
+          "paired_turns": 4300,
+          "population_dialogues": 500,
+          "ppi_median_width": 0.05813953488372095,
+          "sampled_turns_range": [
+            770,
+            941
+          ],
+          "spark_full": 0.29348837209302325,
+          "zero_gemini_width": 0
+        },
+        {
+          "condition": "combined",
+          "coverage": 0.97,
+          "gemini_full": 0.002325581395348837,
+          "gemini_only_median_width": 0.0627906976744186,
+          "group": "all",
+          "median_paired_width_reduction": 0.2941176470588236,
+          "median_sampled_turns": 857.0,
+          "median_width_reduction": 0.29629629629629617,
+          "metric": "emotion",
+          "n": 100,
+          "paired_turns": 4300,
+          "population_dialogues": 500,
+          "ppi_median_width": 0.044186046511627906,
+          "sampled_turns_range": [
+            770,
+            941
+          ],
+          "spark_full": 0.007906976744186046,
+          "zero_gemini_width": 0
+        }
+      ]
+    },
+    "ppi_correction_v2_200": {
+      "decision_agreement": null,
+      "excluded_pairs": 0,
+      "full_decision": null,
+      "original_pairs": 4300,
+      "statistics": [
+        {
+          "condition": "baseline",
+          "coverage": 0.992,
+          "gemini_full": 0.2627906976744186,
+          "gemini_only_median_width": 0.0633720930232558,
+          "group": "all",
+          "median_paired_width_reduction": 0.3084082868159773,
+          "median_sampled_turns": 1722.0,
+          "median_width_reduction": 0.3114678899082586,
+          "metric": "continue",
+          "n": 200,
+          "paired_turns": 4300,
+          "population_dialogues": 500,
+          "ppi_median_width": 0.04363372093023245,
+          "sampled_turns_range": [
+            1616,
+            1827
+          ],
+          "spark_full": 0.2802325581395349,
+          "zero_gemini_width": 0
+        },
+        {
+          "condition": "baseline",
+          "coverage": 0.996,
+          "gemini_full": 0.04744186046511628,
+          "gemini_only_median_width": 0.04594476744186046,
+          "group": "all",
+          "median_paired_width_reduction": 0.32726438188494494,
+          "median_sampled_turns": 1722.0,
+          "median_width_reduction": 0.32932616260676983,
+          "metric": "emotion",
+          "n": 200,
+          "paired_turns": 4300,
+          "population_dialogues": 500,
+          "ppi_median_width": 0.030813953488372098,
+          "sampled_turns_range": [
+            1616,
+            1827
+          ],
+          "spark_full": 0.058372093023255814,
+          "zero_gemini_width": 0
+        },
+        {
+          "condition": "situation",
+          "coverage": 0.994,
+          "gemini_full": 0.23465116279069767,
+          "gemini_only_median_width": 0.05933139534883711,
+          "group": "all",
+          "median_paired_width_reduction": 0.26015625000000087,
+          "median_sampled_turns": 1722.0,
+          "median_width_reduction": 0.25526702596766204,
+          "metric": "continue",
+          "n": 200,
+          "paired_turns": 4300,
+          "population_dialogues": 500,
+          "ppi_median_width": 0.044186046511627886,
+          "sampled_turns_range": [
+            1616,
+            1827
+          ],
+          "spark_full": 0.26395348837209304,
+          "zero_gemini_width": 0
+        },
+        {
+          "condition": "situation",
+          "coverage": 0.986,
+          "gemini_full": 0.01,
+          "gemini_only_median_width": 0.042441860465116284,
+          "group": "all",
+          "median_paired_width_reduction": 0.24666429460950007,
+          "median_sampled_turns": 1722.0,
+          "median_width_reduction": 0.24657534246575352,
+          "metric": "emotion",
+          "n": 200,
+          "paired_turns": 4300,
+          "population_dialogues": 500,
+          "ppi_median_width": 0.03197674418604651,
+          "sampled_turns_range": [
+            1616,
+            1827
+          ],
+          "spark_full": 0.019302325581395347,
+          "zero_gemini_width": 0
+        },
+        {
+          "condition": "structure",
+          "coverage": 0.986,
+          "gemini_full": 0.24325581395348836,
+          "gemini_only_median_width": 0.06803779069767446,
+          "group": "all",
+          "median_paired_width_reduction": 0.35220293997162894,
+          "median_sampled_turns": 1722.0,
+          "median_width_reduction": 0.3504593035676148,
+          "metric": "continue",
+          "n": 200,
+          "paired_turns": 4300,
+          "population_dialogues": 500,
+          "ppi_median_width": 0.04419331395348833,
+          "sampled_turns_range": [
+            1616,
+            1827
+          ],
+          "spark_full": 0.2558139534883721,
+          "zero_gemini_width": 0
+        },
+        {
+          "condition": "structure",
+          "coverage": 0.99,
+          "gemini_full": 0.016511627906976745,
+          "gemini_only_median_width": 0.04361918604651155,
+          "group": "all",
+          "median_paired_width_reduction": 0.25,
+          "median_sampled_turns": 1722.0,
+          "median_width_reduction": 0.25324891702765806,
+          "metric": "emotion",
+          "n": 200,
+          "paired_turns": 4300,
+          "population_dialogues": 500,
+          "ppi_median_width": 0.032572674418604564,
+          "sampled_turns_range": [
+            1616,
+            1827
+          ],
+          "spark_full": 0.013023255813953489,
+          "zero_gemini_width": 0
+        },
+        {
+          "condition": "combined",
+          "coverage": 0.994,
+          "gemini_full": 0.2695348837209302,
+          "gemini_only_median_width": 0.06687500000000002,
+          "group": "all",
+          "median_paired_width_reduction": 0.3760282064063301,
+          "median_sampled_turns": 1722.0,
+          "median_width_reduction": 0.3740491197565746,
+          "metric": "continue",
+          "n": 200,
+          "paired_turns": 4300,
+          "population_dialogues": 500,
+          "ppi_median_width": 0.04186046511627908,
+          "sampled_turns_range": [
+            1616,
+            1827
+          ],
+          "spark_full": 0.29348837209302325,
+          "zero_gemini_width": 0
+        },
+        {
+          "condition": "combined",
+          "coverage": 0.984,
+          "gemini_full": 0.002325581395348837,
+          "gemini_only_median_width": 0.044186046511627906,
+          "group": "all",
+          "median_paired_width_reduction": 0.2858302035517219,
+          "median_sampled_turns": 1722.0,
+          "median_width_reduction": 0.2894736842105262,
+          "metric": "emotion",
+          "n": 200,
+          "paired_turns": 4300,
+          "population_dialogues": 500,
+          "ppi_median_width": 0.031395348837209305,
+          "sampled_turns_range": [
+            1616,
+            1827
+          ],
+          "spark_full": 0.007906976744186046,
+          "zero_gemini_width": 0
+        }
+      ]
+    },
+    "ppi_correction_v2_50": {
+      "decision_agreement": null,
+      "excluded_pairs": 0,
+      "full_decision": null,
+      "original_pairs": 4300,
+      "statistics": [
+        {
+          "condition": "baseline",
+          "coverage": 0.924,
+          "gemini_full": 0.2627906976744186,
+          "gemini_only_median_width": 0.12325581395348839,
+          "group": "all",
+          "median_paired_width_reduction": 0.30708429765033435,
+          "median_sampled_turns": 429.0,
+          "median_width_reduction": 0.30188679245283034,
+          "metric": "continue",
+          "n": 50,
+          "paired_turns": 4300,
+          "population_dialogues": 500,
+          "ppi_median_width": 0.08604651162790697,
+          "sampled_turns_range": [
+            372,
+            501
+          ],
+          "spark_full": 0.2802325581395349,
+          "zero_gemini_width": 0
+        },
+        {
+          "condition": "baseline",
+          "coverage": 0.944,
+          "gemini_full": 0.04744186046511628,
+          "gemini_only_median_width": 0.08837209302325583,
+          "group": "all",
+          "median_paired_width_reduction": 0.3176274944567627,
+          "median_sampled_turns": 429.0,
+          "median_width_reduction": 0.3157894736842105,
+          "metric": "emotion",
+          "n": 50,
+          "paired_turns": 4300,
+          "population_dialogues": 500,
+          "ppi_median_width": 0.060465116279069774,
+          "sampled_turns_range": [
+            372,
+            501
+          ],
+          "spark_full": 0.058372093023255814,
+          "zero_gemini_width": 0
+        },
+        {
+          "condition": "situation",
+          "coverage": 0.948,
+          "gemini_full": 0.23465116279069767,
+          "gemini_only_median_width": 0.11627906976744187,
+          "group": "all",
+          "median_paired_width_reduction": 0.26638888888888906,
+          "median_sampled_turns": 429.0,
+          "median_width_reduction": 0.26000000000000034,
+          "metric": "continue",
+          "n": 50,
+          "paired_turns": 4300,
+          "population_dialogues": 500,
+          "ppi_median_width": 0.08604651162790694,
+          "sampled_turns_range": [
+            372,
+            501
+          ],
+          "spark_full": 0.26395348837209304,
+          "zero_gemini_width": 0
+        },
+        {
+          "condition": "situation",
+          "coverage": 0.95,
+          "gemini_full": 0.01,
+          "gemini_only_median_width": 0.08258720930232558,
+          "group": "all",
+          "median_paired_width_reduction": 0.23602009938512875,
+          "median_sampled_turns": 429.0,
+          "median_width_reduction": 0.23900035198873637,
+          "metric": "emotion",
+          "n": 50,
+          "paired_turns": 4300,
+          "population_dialogues": 500,
+          "ppi_median_width": 0.06284883720930232,
+          "sampled_turns_range": [
+            372,
+            501
+          ],
+          "spark_full": 0.019302325581395347,
+          "zero_gemini_width": 0
+        },
+        {
+          "condition": "structure",
+          "coverage": 0.924,
+          "gemini_full": 0.24325581395348836,
+          "gemini_only_median_width": 0.13261627906976717,
+          "group": "all",
+          "median_paired_width_reduction": 0.3496031746031746,
+          "median_sampled_turns": 429.0,
+          "median_width_reduction": 0.35116177115300184,
+          "metric": "continue",
+          "n": 50,
+          "paired_turns": 4300,
+          "population_dialogues": 500,
+          "ppi_median_width": 0.08604651162790695,
+          "sampled_turns_range": [
+            372,
+            501
+          ],
+          "spark_full": 0.2558139534883721,
+          "zero_gemini_width": 0
+        },
+        {
+          "condition": "structure",
+          "coverage": 0.94,
+          "gemini_full": 0.016511627906976745,
+          "gemini_only_median_width": 0.08604651162790697,
+          "group": "all",
+          "median_paired_width_reduction": 0.2576727124515983,
+          "median_sampled_turns": 429.0,
+          "median_width_reduction": 0.2695945945945962,
+          "metric": "emotion",
+          "n": 50,
+          "paired_turns": 4300,
+          "population_dialogues": 500,
+          "ppi_median_width": 0.06284883720930218,
+          "sampled_turns_range": [
+            372,
+            501
+          ],
+          "spark_full": 0.013023255813953489,
+          "zero_gemini_width": 0
+        },
+        {
+          "condition": "combined",
+          "coverage": 0.95,
+          "gemini_full": 0.2695348837209302,
+          "gemini_only_median_width": 0.13023255813953488,
+          "group": "all",
+          "median_paired_width_reduction": 0.3820855614973263,
+          "median_sampled_turns": 429.0,
+          "median_width_reduction": 0.375,
+          "metric": "continue",
+          "n": 50,
+          "paired_turns": 4300,
+          "population_dialogues": 500,
+          "ppi_median_width": 0.0813953488372093,
+          "sampled_turns_range": [
+            372,
+            501
+          ],
+          "spark_full": 0.29348837209302325,
+          "zero_gemini_width": 0
+        },
+        {
+          "condition": "combined",
+          "coverage": 0.944,
+          "gemini_full": 0.002325581395348837,
+          "gemini_only_median_width": 0.08837209302325581,
+          "group": "all",
+          "median_paired_width_reduction": 0.28755650725672005,
+          "median_sampled_turns": 429.0,
+          "median_width_reduction": 0.28947368421052644,
+          "metric": "emotion",
+          "n": 50,
+          "paired_turns": 4300,
+          "population_dialogues": 500,
+          "ppi_median_width": 0.0627906976744186,
+          "sampled_turns_range": [
+            372,
+            501
+          ],
+          "spark_full": 0.007906976744186046,
+          "zero_gemini_width": 0
+        }
+      ]
+    },
+    "ppi_reaction_full_100": {
+      "decision_agreement": 0.992,
+      "excluded_pairs": 1,
+      "full_decision": "用普遍定义",
+      "original_full_decision": "用普遍定义",
+      "original_full_decision_agreement": 0.992,
+      "original_pairs": 3000,
+      "statistics": [
+        {
+          "condition": "simulator",
+          "coverage": 0.932,
+          "gemini_full": 0.24933333333333332,
+          "gemini_only_median_width": 0.28276666666666667,
+          "group": "negative",
+          "median_paired_width_reduction": 0.33333333333333326,
+          "median_sampled_turns": 60.0,
+          "median_width_reduction": 0.3529411764705882,
+          "metric": "continue",
+          "n": 100,
+          "paired_turns": 1500,
+          "population_dialogues": 2495,
+          "ppi_median_width": 0.18296666666666667,
+          "sampled_turns_range": [
+            42,
+            77
+          ],
+          "spark_full": 0.232,
+          "zero_gemini_width": 0
+        },
+        {
+          "condition": "simulator",
+          "coverage": 0.914,
+          "gemini_full": 0.08,
+          "gemini_only_median_width": 0.23286666666666667,
+          "group": "negative",
+          "median_paired_width_reduction": 0.32456140350877194,
+          "median_sampled_turns": 60.0,
+          "median_width_reduction": 0.2857142857142857,
+          "metric": "emotion",
+          "n": 100,
+          "paired_turns": 1500,
+          "population_dialogues": 2495,
+          "ppi_median_width": 0.16633333333333333,
+          "sampled_turns_range": [
+            42,
+            77
+          ],
+          "spark_full": 0.062,
+          "zero_gemini_width": 0
+        },
+        {
+          "condition": "simulator",
+          "coverage": 0.93,
+          "gemini_full": 0.27218145430286855,
+          "gemini_only_median_width": 0.299599733155437,
+          "group": "nonnegative",
+          "median_paired_width_reduction": 0.2777777777777778,
+          "median_sampled_turns": 60.0,
+          "median_width_reduction": 0.27638888888888924,
+          "metric": "continue",
+          "n": 100,
+          "paired_turns": 1499,
+          "population_dialogues": 2495,
+          "ppi_median_width": 0.21679369579719804,
+          "sampled_turns_range": [
+            45,
+            80
+          ],
+          "spark_full": 0.2901934623082055,
+          "zero_gemini_width": 0
+        },
+        {
+          "condition": "simulator",
+          "coverage": 0.918,
+          "gemini_full": 0.035356904603068715,
+          "gemini_only_median_width": 0.19973315543695794,
+          "group": "nonnegative",
+          "median_paired_width_reduction": 0.17397231147231307,
+          "median_sampled_turns": 60.0,
+          "median_width_reduction": 0.16666666666666663,
+          "metric": "emotion",
+          "n": 100,
+          "paired_turns": 1499,
+          "population_dialogues": 2495,
+          "ppi_median_width": 0.16644429619746495,
+          "sampled_turns_range": [
+            45,
+            80
+          ],
+          "spark_full": 0.0466977985323549,
+          "zero_gemini_width": 0
+        }
+      ]
+    },
+    "ppi_reaction_full_200": {
+      "decision_agreement": 0.994,
+      "excluded_pairs": 1,
+      "full_decision": "用普遍定义",
+      "original_full_decision": "用普遍定义",
+      "original_full_decision_agreement": 0.994,
+      "original_pairs": 3000,
+      "statistics": [
+        {
+          "condition": "simulator",
+          "coverage": 0.952,
+          "gemini_full": 0.24933333333333332,
+          "gemini_only_median_width": 0.1996,
+          "group": "negative",
+          "median_paired_width_reduction": 0.3333333333333335,
+          "median_sampled_turns": 120.0,
+          "median_width_reduction": 0.33333333333333337,
+          "metric": "continue",
+          "n": 200,
+          "paired_turns": 1500,
+          "population_dialogues": 2495,
+          "ppi_median_width": 0.13306666666666667,
+          "sampled_turns_range": [
+            100,
+            148
+          ],
+          "spark_full": 0.232,
+          "zero_gemini_width": 0
+        },
+        {
+          "condition": "simulator",
+          "coverage": 0.944,
+          "gemini_full": 0.08,
+          "gemini_only_median_width": 0.17465,
+          "group": "negative",
+          "median_paired_width_reduction": 0.33333333333333337,
+          "median_sampled_turns": 120.0,
+          "median_width_reduction": 0.33333333333333337,
+          "metric": "emotion",
+          "n": 200,
+          "paired_turns": 1500,
+          "population_dialogues": 2495,
+          "ppi_median_width": 0.11643333333333333,
+          "sampled_turns_range": [
+            100,
+            148
+          ],
+          "spark_full": 0.062,
+          "zero_gemini_width": 0
+        },
+        {
+          "condition": "simulator",
+          "coverage": 0.936,
+          "gemini_full": 0.27218145430286855,
+          "gemini_only_median_width": 0.21637758505670446,
+          "group": "nonnegative",
+          "median_paired_width_reduction": 0.2799999999999998,
+          "median_sampled_turns": 120.0,
+          "median_width_reduction": 0.2692307692307693,
+          "metric": "continue",
+          "n": 200,
+          "paired_turns": 1499,
+          "population_dialogues": 2495,
+          "ppi_median_width": 0.1581220813875917,
+          "sampled_turns_range": [
+            100,
+            144
+          ],
+          "spark_full": 0.2901934623082055,
+          "zero_gemini_width": 0
+        },
+        {
+          "condition": "simulator",
+          "coverage": 0.946,
+          "gemini_full": 0.035356904603068715,
+          "gemini_only_median_width": 0.13315543695797197,
+          "group": "nonnegative",
+          "median_paired_width_reduction": 0.17647058823529405,
+          "median_sampled_turns": 120.0,
+          "median_width_reduction": 0.125,
+          "metric": "emotion",
+          "n": 200,
+          "paired_turns": 1499,
+          "population_dialogues": 2495,
+          "ppi_median_width": 0.11651100733822548,
+          "sampled_turns_range": [
+            100,
+            144
+          ],
+          "spark_full": 0.0466977985323549,
+          "zero_gemini_width": 0
+        }
+      ]
+    },
+    "ppi_reaction_full_50": {
+      "decision_agreement": 0.982,
+      "excluded_pairs": 1,
+      "full_decision": "用普遍定义",
+      "original_full_decision": "用普遍定义",
+      "original_full_decision_agreement": 0.982,
+      "original_pairs": 3000,
+      "statistics": [
+        {
+          "condition": "simulator",
+          "coverage": 0.83,
+          "gemini_full": 0.24933333333333332,
+          "gemini_only_median_width": 0.3992,
+          "group": "negative",
+          "median_paired_width_reduction": 0.33333333333333337,
+          "median_sampled_turns": 30.0,
+          "median_width_reduction": 0.33333333333333337,
+          "metric": "continue",
+          "n": 50,
+          "paired_turns": 1500,
+          "population_dialogues": 2495,
+          "ppi_median_width": 0.26613333333333333,
+          "sampled_turns_range": [
+            18,
+            44
+          ],
+          "spark_full": 0.232,
+          "zero_gemini_width": 0
+        },
+        {
+          "condition": "simulator",
+          "coverage": 0.814,
+          "gemini_full": 0.08,
+          "gemini_only_median_width": 0.33266666666666667,
+          "group": "negative",
+          "median_paired_width_reduction": 0.33333333333333337,
+          "median_sampled_turns": 30.0,
+          "median_width_reduction": 0.30000000000000004,
+          "metric": "emotion",
+          "n": 50,
+          "paired_turns": 1500,
+          "population_dialogues": 2495,
+          "ppi_median_width": 0.23286666666666667,
+          "sampled_turns_range": [
+            18,
+            44
+          ],
+          "spark_full": 0.062,
+          "zero_gemini_width": 0
+        },
+        {
+          "condition": "simulator",
+          "coverage": 0.918,
+          "gemini_full": 0.27218145430286855,
+          "gemini_only_median_width": 0.4327551701134089,
+          "group": "nonnegative",
+          "median_paired_width_reduction": 0.2857142857142857,
+          "median_sampled_turns": 30.0,
+          "median_width_reduction": 0.23076923076923084,
+          "metric": "continue",
+          "n": 50,
+          "paired_turns": 1499,
+          "population_dialogues": 2495,
+          "ppi_median_width": 0.3328885923949299,
+          "sampled_turns_range": [
+            18,
+            46
+          ],
+          "spark_full": 0.2901934623082055,
+          "zero_gemini_width": 0
+        },
+        {
+          "condition": "simulator",
+          "coverage": 0.816,
+          "gemini_full": 0.035356904603068715,
+          "gemini_only_median_width": 0.26631087391594394,
+          "group": "nonnegative",
+          "median_paired_width_reduction": 0.16666666666666674,
+          "median_sampled_turns": 30.0,
+          "median_width_reduction": 0.1250000000000001,
+          "metric": "emotion",
+          "n": 50,
+          "paired_turns": 1499,
+          "population_dialogues": 2495,
+          "ppi_median_width": 0.23302201467645092,
+          "sampled_turns_range": [
+            18,
+            46
+          ],
+          "spark_full": 0.0466977985323549,
+          "zero_gemini_width": 4
+        }
+      ]
+    }
+  },
+  "preregistration": {
+    "adoption_n": 100,
+    "bootstrap": "paired dialogue percentile bootstrap; Spark population fixed",
+    "bootstrap_replicates": 2000,
+    "coverage_min": 0.9,
+    "median_width_reduction_min": 0.2,
+    "parse_failure_stop": 0.02,
+    "repetitions": 500,
+    "sample_dialogues": [
+      50,
+      100,
+      200
+    ],
+    "seed": 20261027,
+    "selection": "highest development topic kappa; tie: disabled"
+  },
+  "prompt_sha256": "87d1d40d05a09382cc9a1c47e0963e40a8e0cbe7e5c3e5cb9e00ce50eed1ee8d",
+  "reasoning_tokens_missing_responses": 27502,
+  "selection": {
+    "development": {
+      "disabled": {
+        "emotion": {
+          "accuracy": 0.93,
+          "kappa": 0.700342465753425,
+          "labels": [
+            false,
+            true
+          ],
+          "matrix": [
+            [
+              83,
+              3,
+              0
+            ],
+            [
+              4,
+              10,
+              0
+            ]
+          ],
+          "n": 100
+        },
+        "topic": {
+          "accuracy": 0.86,
+          "kappa": 0.6682464454976303,
+          "labels": [
+            "close",
+            "continue",
+            "unclear"
+          ],
+          "matrix": [
+            [
+              12,
+              1,
+              3,
+              0
+            ],
+            [
+              8,
+              68,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              6,
+              0
+            ]
+          ],
+          "n": 100
+        }
+      },
+      "enabled": {
+        "emotion": {
+          "accuracy": 0.94,
+          "kappa": 0.788732394366197,
+          "labels": [
+            false,
+            true
+          ],
+          "matrix": [
+            [
+              80,
+              6,
+              0
+            ],
+            [
+              0,
+              14,
+              0
+            ]
+          ],
+          "n": 100
+        },
+        "topic": {
+          "accuracy": 0.92,
+          "kappa": 0.8000499875031243,
+          "labels": [
+            "close",
+            "continue",
+            "unclear"
+          ],
+          "matrix": [
+            [
+              15,
+              1,
+              0,
+              0
+            ],
+            [
+              6,
+              71,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              6,
+              0
+            ]
+          ],
+          "n": 100
+        }
+      }
+    },
+    "thinking": "enabled"
+  },
+  "status": "complete",
+  "statuses": {
+    "moderated": 1,
+    "ok": 27602,
+    "rate_limited": 1,
+    "request_error": 122
+  },
+  "test": {
+    "all": {
+      "bias_valid_n": 200,
+      "parse_error_n": 0,
+      "scores": {
+        "emotion": {
+          "accuracy": 0.945,
+          "kappa": 0.7983870967741934,
+          "labels": [
+            false,
+            true
+          ],
+          "matrix": [
+            [
+              162,
+              9,
+              0
+            ],
+            [
+              2,
+              27,
+              0
+            ]
+          ],
+          "n": 200
+        },
+        "topic": {
+          "accuracy": 0.905,
+          "kappa": 0.762840916182987,
+          "labels": [
+            "close",
+            "continue",
+            "unclear"
+          ],
+          "matrix": [
+            [
+              36,
+              0,
+              0,
+              0
+            ],
+            [
+              5,
+              141,
+              1,
+              0
+            ],
+            [
+              2,
+              11,
+              4,
+              0
+            ]
+          ],
+          "n": 200
+        }
+      },
+      "self_bias": {
+        "emotion": 0.035,
+        "topic": 0.025
+      }
+    },
+    "deepseek": {
+      "bias_valid_n": 68,
+      "parse_error_n": 0,
+      "scores": {
+        "emotion": {
+          "accuracy": 0.8970588235294118,
+          "kappa": 0.6940874035989718,
+          "labels": [
+            false,
+            true
+          ],
+          "matrix": [
+            [
+              50,
+              5,
+              0
+            ],
+            [
+              2,
+              11,
+              0
+            ]
+          ],
+          "n": 68
+        },
+        "topic": {
+          "accuracy": 0.9117647058823529,
+          "kappa": 0.6277372262773722,
+          "labels": [
+            "close",
+            "continue",
+            "unclear"
+          ],
+          "matrix": [
+            [
+              5,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              56,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              1,
+              0
+            ]
+          ],
+          "n": 68
+        }
+      },
+      "self_bias": {
+        "emotion": 0.04411764705882353,
+        "topic": -0.029411764705882353
+      }
+    },
+    "deepseek/negative=False": {
+      "bias_valid_n": 34,
+      "parse_error_n": 0,
+      "scores": {
+        "emotion": {
+          "accuracy": 0.9705882352941176,
+          "kappa": 0.8411214953271027,
+          "labels": [
+            false,
+            true
+          ],
+          "matrix": [
+            [
+              30,
+              1,
+              0
+            ],
+            [
+              0,
+              3,
+              0
+            ]
+          ],
+          "n": 34
+        },
+        "topic": {
+          "accuracy": 0.9117647058823529,
+          "kappa": 0.6851851851851851,
+          "labels": [
+            "close",
+            "continue",
+            "unclear"
+          ],
+          "matrix": [
+            [
+              4,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              27,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              0
+            ]
+          ],
+          "n": 34
+        }
+      },
+      "self_bias": {
+        "emotion": 0.029411764705882353,
+        "topic": 0.029411764705882353
+      }
+    },
+    "deepseek/negative=True": {
+      "bias_valid_n": 34,
+      "parse_error_n": 0,
+      "scores": {
+        "emotion": {
+          "accuracy": 0.8235294117647058,
+          "kappa": 0.5984251968503935,
+          "labels": [
+            false,
+            true
+          ],
+          "matrix": [
+            [
+              20,
+              4,
+              0
+            ],
+            [
+              2,
+              8,
+              0
+            ]
+          ],
+          "n": 34
+        },
+        "topic": {
+          "accuracy": 0.9117647058823529,
+          "kappa": 0.5426008968609864,
+          "labels": [
+            "close",
+            "continue",
+            "unclear"
+          ],
+          "matrix": [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              29,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ]
+          ],
+          "n": 34
+        }
+      },
+      "self_bias": {
+        "emotion": 0.058823529411764705,
+        "topic": -0.08823529411764706
+      }
+    },
+    "human": {
+      "bias_valid_n": 66,
+      "parse_error_n": 0,
+      "scores": {
+        "emotion": {
+          "accuracy": 0.9848484848484849,
+          "kappa": 0.900900900900901,
+          "labels": [
+            false,
+            true
+          ],
+          "matrix": [
+            [
+              60,
+              1,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ]
+          ],
+          "n": 66
+        },
+        "topic": {
+          "accuracy": 0.8636363636363636,
+          "kappa": 0.7652173913043477,
+          "labels": [
+            "close",
+            "continue",
+            "unclear"
+          ],
+          "matrix": [
+            [
+              22,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              32,
+              1,
+              0
+            ],
+            [
+              2,
+              6,
+              3,
+              0
+            ]
+          ],
+          "n": 66
+        }
+      },
+      "self_bias": {
+        "emotion": 0.015151515151515152,
+        "topic": 0.07575757575757576
+      }
+    },
+    "human/negative=False": {
+      "bias_valid_n": 33,
+      "parse_error_n": 0,
+      "scores": {
+        "emotion": {
+          "accuracy": 1.0,
+          "kappa": null,
+          "labels": [
+            false,
+            true
+          ],
+          "matrix": [
+            [
+              33,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "n": 33
+        },
+        "topic": {
+          "accuracy": 0.7878787878787878,
+          "kappa": 0.6709401709401709,
+          "labels": [
+            "close",
+            "continue",
+            "unclear"
+          ],
+          "matrix": [
+            [
+              13,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              11,
+              0,
+              0
+            ],
+            [
+              1,
+              6,
+              2,
+              0
+            ]
+          ],
+          "n": 33
+        }
+      },
+      "self_bias": {
+        "emotion": 0.0,
+        "topic": 0.18181818181818182
+      }
+    },
+    "human/negative=True": {
+      "bias_valid_n": 33,
+      "parse_error_n": 0,
+      "scores": {
+        "emotion": {
+          "accuracy": 0.9696969696969697,
+          "kappa": 0.8910891089108912,
+          "labels": [
+            false,
+            true
+          ],
+          "matrix": [
+            [
+              27,
+              1,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ]
+          ],
+          "n": 33
+        },
+        "topic": {
+          "accuracy": 0.9393939393939394,
+          "kappa": 0.876172607879925,
+          "labels": [
+            "close",
+            "continue",
+            "unclear"
+          ],
+          "matrix": [
+            [
+              9,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              21,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ]
+          ],
+          "n": 33
+        }
+      },
+      "self_bias": {
+        "emotion": 0.030303030303030304,
+        "topic": -0.030303030303030304
+      }
+    },
+    "negative=False": {
+      "bias_valid_n": 100,
+      "parse_error_n": 0,
+      "scores": {
+        "emotion": {
+          "accuracy": 0.99,
+          "kappa": 0.93573264781491,
+          "labels": [
+            false,
+            true
+          ],
+          "matrix": [
+            [
+              91,
+              1,
+              0
+            ],
+            [
+              0,
+              8,
+              0
+            ]
+          ],
+          "n": 100
+        },
+        "topic": {
+          "accuracy": 0.87,
+          "kappa": 0.7182488079757261,
+          "labels": [
+            "close",
+            "continue",
+            "unclear"
+          ],
+          "matrix": [
+            [
+              21,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              64,
+              0,
+              0
+            ],
+            [
+              1,
+              11,
+              2,
+              0
+            ]
+          ],
+          "n": 100
+        }
+      },
+      "self_bias": {
+        "emotion": 0.01,
+        "topic": 0.1
+      }
+    },
+    "negative=True": {
+      "bias_valid_n": 100,
+      "parse_error_n": 0,
+      "scores": {
+        "emotion": {
+          "accuracy": 0.9,
+          "kappa": 0.7272231314784507,
+          "labels": [
+            false,
+            true
+          ],
+          "matrix": [
+            [
+              71,
+              8,
+              0
+            ],
+            [
+              2,
+              19,
+              0
+            ]
+          ],
+          "n": 100
+        },
+        "topic": {
+          "accuracy": 0.94,
+          "kappa": 0.8223275096239264,
+          "labels": [
+            "close",
+            "continue",
+            "unclear"
+          ],
+          "matrix": [
+            [
+              15,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              77,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              2,
+              0
+            ]
+          ],
+          "n": 100
+        }
+      },
+      "self_bias": {
+        "emotion": 0.06,
+        "topic": -0.05
+      }
+    },
+    "spark": {
+      "bias_valid_n": 66,
+      "parse_error_n": 0,
+      "scores": {
+        "emotion": {
+          "accuracy": 0.9545454545454546,
+          "kappa": 0.8524590163934428,
+          "labels": [
+            false,
+            true
+          ],
+          "matrix": [
+            [
+              52,
+              3,
+              0
+            ],
+            [
+              0,
+              11,
+              0
+            ]
+          ],
+          "n": 66
+        },
+        "topic": {
+          "accuracy": 0.9393939393939394,
+          "kappa": 0.7874396135265703,
+          "labels": [
+            "close",
+            "continue",
+            "unclear"
+          ],
+          "matrix": [
+            [
+              9,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              53,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              0,
+              0
+            ]
+          ],
+          "n": 66
+        }
+      },
+      "self_bias": {
+        "emotion": 0.045454545454545456,
+        "topic": 0.030303030303030304
+      }
+    },
+    "spark/negative=False": {
+      "bias_valid_n": 33,
+      "parse_error_n": 0,
+      "scores": {
+        "emotion": {
+          "accuracy": 1.0,
+          "kappa": 1.0,
+          "labels": [
+            false,
+            true
+          ],
+          "matrix": [
+            [
+              28,
+              0,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ]
+          ],
+          "n": 33
+        },
+        "topic": {
+          "accuracy": 0.9090909090909091,
+          "kappa": 0.689655172413793,
+          "labels": [
+            "close",
+            "continue",
+            "unclear"
+          ],
+          "matrix": [
+            [
+              4,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              26,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              0,
+              0
+            ]
+          ],
+          "n": 33
+        }
+      },
+      "self_bias": {
+        "emotion": 0.0,
+        "topic": 0.09090909090909091
+      }
+    },
+    "spark/negative=True": {
+      "bias_valid_n": 33,
+      "parse_error_n": 0,
+      "scores": {
+        "emotion": {
+          "accuracy": 0.9090909090909091,
+          "kappa": 0.7441860465116279,
+          "labels": [
+            false,
+            true
+          ],
+          "matrix": [
+            [
+              24,
+              3,
+              0
+            ],
+            [
+              0,
+              6,
+              0
+            ]
+          ],
+          "n": 33
+        },
+        "topic": {
+          "accuracy": 0.9696969696969697,
+          "kappa": 0.8910891089108912,
+          "labels": [
+            "close",
+            "continue",
+            "unclear"
+          ],
+          "matrix": [
+            [
+              5,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              27,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "n": 33
+        }
+      },
+      "self_bias": {
+        "emotion": 0.09090909090909091,
+        "topic": -0.030303030303030304
+      }
+    }
+  },
+  "unique_comparison_inputs": 27203,
+  "usage": {
+    "completion_tokens": 13504333,
+    "prompt_tokens": 15044987,
+    "reasoning_tokens": null,
+    "total_tokens": 28549320
+  },
+  "usage_missing": 124
+}

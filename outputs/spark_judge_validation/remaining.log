@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/kwang/projects/user_simulator/scripts/validate_spark_judge.py", line 368, in <module>
+    main()
+  File "/Users/kwang/projects/user_simulator/scripts/validate_spark_judge.py", line 341, in main
+    safety()
+  File "/Users/kwang/projects/user_simulator/scripts/validate_spark_judge.py", line 45, in safety
+    raise RuntimeError(f'Parse failures {failures}/{len(terminal)} exceed 2%; stop')
+RuntimeError: Parse failures 4/175 exceed 2%; stop

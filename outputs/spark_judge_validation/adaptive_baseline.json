@@ -1,0 +1,19 @@
+{
+  "frozen_sha256": {
+    "config/judge_prompt.md": "87d1d40d05a09382cc9a1c47e0963e40a8e0cbe7e5c3e5cb9e00ce50eed1ee8d",
+    "docs/architecture.md": "567ced06e226c0fb27c9fc5456de43b5de96076f46581d03d1df795d26ee4b78",
+    "docs/history.md": "66fba670daf92183ab716bba59fd2f53930d386e7c9f1f8fdd665cd2bd93d852",
+    "docs/prd.md": "efc2e02aec41d92e5dd584e7540382f876df68870019d3493796d30dc64158db",
+    "docs/roadmap.md": "5a9f30523047619b0a6caa3290932a9f0ad826125d09b2db09c72007564c08a2",
+    "docs/tech_stacks.md": "cd52818b5fd8f3e4c82b4339da65d927dcb747c5504608e59994e7fcff22cc45",
+    "outputs/spark_judge_validation/analysis_plan.json": "58d1b027e221e2e7190b7a4338d159c8ac17f8ec8b042eadf04655d072afc7ba",
+    "outputs/spark_judge_validation/preregistration.json": "6838528861dadd27cef3a655fd60a9939c6a32c28f33550c4a125714a416efb4",
+    "outputs/spark_judge_validation/selection.json": "ab682f420de955d9f2a902da544fe6d0ee76e9edff82f19e09deb4e15ad20789",
+    "outputs/spark_judge_validation/test.jsonl": "f53800012f80b23c387b113cfaf5b019758a2dfec342854661f92689e9908b0c",
+    "tests/test_ppi.py": "bdd7aa69f4e0e5b681adbd01e453152d5eaf5e7a6daf95aab007d7a371bf1334",
+    "usersim/judge.py": "944e8a85ab35209ae93d68c42096bf03a0039a8921c560a6a28799bb6ed3ecd1",
+    "usersim/ppi.py": "f08522f4ddc3433de44c514e700a0ae525f940e826330064e6c6565a1b93b2a9",
+    "usersim/spark.py": "31778a2a0e0cff0cbe40799ed4828e172fabb93e0207d365ba39c9f9f423dcc0"
+  },
+  "protected_diff_exit_code": 0
+}

@@ -1,0 +1,23 @@
+{
+  "api_keys_removed_from_child_environment": true,
+  "cache_audit": {
+    "all_attempts_one": true,
+    "all_fingerprints_match": true,
+    "no_test_full_selection_or_ppi": true,
+    "only_development_inputs": true,
+    "only_spark": true,
+    "responses": 175
+  },
+  "identical": true,
+  "scope": "final stopped-run report; full experiment incomplete due contractual stop",
+  "sha256": [
+    {
+      "report.md": "1e8200e399cb35483498816856ada42e789523ed0a1dd9da636a3d90caf31b14",
+      "summary.json": "d5a4c1ab7572dc30f3245da57c3121e0d5d6f1969f05d885014060ce97c56b22"
+    },
+    {
+      "report.md": "1e8200e399cb35483498816856ada42e789523ed0a1dd9da636a3d90caf31b14",
+      "summary.json": "d5a4c1ab7572dc30f3245da57c3121e0d5d6f1969f05d885014060ce97c56b22"
+    }
+  ]
+}

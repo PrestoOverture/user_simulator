@@ -1,0 +1,17 @@
+{
+  "pid": 54725,
+  "pgid": 54725,
+  "command": [
+    "nohup",
+    "/bin/bash",
+    "/Users/kwang/projects/user_simulator/scripts/run_spark_judge_full.sh"
+  ],
+  "started_at": "2026-10-27T18:34:37.787832+00:00",
+  "log": "/Users/kwang/projects/user_simulator/outputs/spark_judge_validation/background.log",
+  "concurrency": 8,
+  "stages": [
+    "supervised full",
+    "offline PPI",
+    "automatic offline acceptance"
+  ]
+}

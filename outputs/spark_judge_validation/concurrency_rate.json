@@ -1,0 +1,29 @@
+{
+  "current_completion_estimate": null,
+  "elapsed_seconds": 65.05769920349121,
+  "end_epoch": 1793124168.7894552,
+  "end_terminal_responses": 2632,
+  "estimate_excludes": "offline PPI and final report/check time; future rate limits/timeouts may extend estimate",
+  "estimate_status": "withdrawn: rate limit and exhausted transport retries stopped the process",
+  "http_429_responses": 0,
+  "new_terminal_responses": 65,
+  "remaining_at_measurement": 24571,
+  "responses_per_minute": 59.946786433399005,
+  "start": {
+    "http_429_responses": 0,
+    "observed_epoch": 1793124103.731756,
+    "pid": 49526,
+    "statuses": {
+      "ok": 2567,
+      "request_error": 5
+    },
+    "terminal_responses": 2567
+  },
+  "statuses": {
+    "ok": 2632,
+    "request_error": 5
+  },
+  "superseded_estimated_remaining_request_hours": 6.831336440722148,
+  "superseded_estimated_request_completion_local": "2026-10-28T08:52:41.600642+08:00",
+  "total_unique_inputs": 27203
+}

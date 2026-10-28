@@ -1,0 +1,66 @@
+{
+  "active_contract_c_request_processes": [],
+  "http_429_responses": 23,
+  "process_exited": true,
+  "process_pid": 49526,
+  "statuses": {
+    "ok": 2843,
+    "request_error": 28
+  },
+  "stop_reason": "HTTP 429; request concurrency automatically dropped to four, then original four-attempt transport budgets exhausted. No automatic budget reset.",
+  "unfinished_transport_inputs": {
+    "24b0b25b9530e4badbbc4470bed8216f1943a50bfa744e511c9cd974006321f5": [
+      {
+        "attempt": 1,
+        "error_type": "HTTPStatusError",
+        "http_status": 429,
+        "status": "request_error"
+      },
+      {
+        "attempt": 2,
+        "error_type": "HTTPStatusError",
+        "http_status": 429,
+        "status": "request_error"
+      },
+      {
+        "attempt": 3,
+        "error_type": "HTTPStatusError",
+        "http_status": 429,
+        "status": "request_error"
+      },
+      {
+        "attempt": 4,
+        "error_type": "HTTPStatusError",
+        "http_status": 429,
+        "status": "request_error"
+      }
+    ],
+    "fbb956b447cd6df6488c9518f72e627ef573223dcd9e53e7baf707bbcb7f9670": [
+      {
+        "attempt": 1,
+        "error_type": "HTTPStatusError",
+        "http_status": 429,
+        "status": "request_error"
+      },
+      {
+        "attempt": 2,
+        "error_type": "HTTPStatusError",
+        "http_status": 429,
+        "status": "request_error"
+      },
+      {
+        "attempt": 3,
+        "error_type": "HTTPStatusError",
+        "http_status": 429,
+        "status": "request_error"
+      },
+      {
+        "attempt": 4,
+        "error_type": "HTTPStatusError",
+        "http_status": 429,
+        "status": "request_error"
+      }
+    ]
+  },
+  "unresolved_dispatch_count": 0
+}

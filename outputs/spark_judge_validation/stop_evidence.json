@@ -1,0 +1,92 @@
+{
+  "development_exit_code": 1,
+  "failures": 4,
+  "full_cache_exists": false,
+  "parse_errors": [
+    {
+      "attempt": 1,
+      "content": "**{\"topic\":\"continue\",\"emotion\":false}**",
+      "id": "J111",
+      "input_sha256": "fc40f7232d2aeebe92d4b5ab9cd132ccafadd59761ad37763957f6d8c0fc4630",
+      "status": "parse_error",
+      "thinking": "enabled",
+      "usage": {
+        "completion_tokens": 241,
+        "prompt_tokens": 587,
+        "prompt_tokens_details": {
+          "cached_tokens": 320
+        },
+        "total_tokens": 828
+      }
+    },
+    {
+      "attempt": 1,
+      "content": "**{\"topic\":\"close\",\"emotion\":false}**",
+      "id": "J171",
+      "input_sha256": "d3175d5f5e9598ecc2203141b5b3441f50670efaa2af0bae747cfc0e094db3fe",
+      "status": "parse_error",
+      "thinking": "enabled",
+      "usage": {
+        "completion_tokens": 195,
+        "prompt_tokens": 596,
+        "prompt_tokens_details": {
+          "cached_tokens": 320
+        },
+        "total_tokens": 791
+      }
+    },
+    {
+      "attempt": 1,
+      "content": "**{\"topic\":\"continue\",\"emotion\":false}**",
+      "id": "J202",
+      "input_sha256": "bf14f0192a7b27dea24418f4f883f439efc22761b3227db4071b92e88c91994e",
+      "status": "parse_error",
+      "thinking": "enabled",
+      "usage": {
+        "completion_tokens": 442,
+        "prompt_tokens": 696,
+        "prompt_tokens_details": {
+          "cached_tokens": 320
+        },
+        "total_tokens": 1138
+      }
+    },
+    {
+      "attempt": 1,
+      "content": "**{\"topic\":\"continue\",\"emotion\":false}**",
+      "id": "J230",
+      "input_sha256": "edcc90a6140b3075d28142fea21cfcc4d0489e581c45e8e6b90b2313b43b3f10",
+      "status": "parse_error",
+      "thinking": "enabled",
+      "usage": {
+        "completion_tokens": 154,
+        "prompt_tokens": 549,
+        "prompt_tokens_details": {
+          "cached_tokens": 320
+        },
+        "total_tokens": 703
+      }
+    }
+  ],
+  "parse_failure_rate": 0.022857142857142857,
+  "per_run": {
+    "dev_disabled": {
+      "responses": 100,
+      "statuses": {
+        "ok": 100
+      }
+    },
+    "dev_enabled": {
+      "responses": 75,
+      "statuses": {
+        "ok": 71,
+        "parse_error": 4
+      }
+    }
+  },
+  "runner_exit_code": 1,
+  "selected_variant": null,
+  "stop_condition": "parse_failure_rate > 0.02",
+  "terminal_responses": 175,
+  "test_cache_exists": false
+}

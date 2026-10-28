@@ -1,0 +1,44 @@
+{
+  "all_protected_hashes_equal_delta_baseline": true,
+  "background_launch": "nohup with start_new_session=True; concurrency=1",
+  "background_process": "47820     1 47820 05:17 /bin/zsh /Users/kwang/projects/user_simulator/outputs/spark_judge_validation/run_remaining.sh",
+  "clients_git_diff_exit_code": 0,
+  "compile_check": "passed",
+  "credential_scan": {
+    "files_scanned": 34,
+    "hits": []
+  },
+  "goal_complete": false,
+  "new_parser_statuses": {
+    "ok": 225,
+    "request_error": 1
+  },
+  "offline_checkpoint_rebuild": {
+    "api_keys_removed": true,
+    "identical": true,
+    "original_175_response_cache_prefixes_unchanged": true,
+    "protected_files_equal_delta_baseline": true,
+    "scope": "Delta live-run checkpoint after variant selection; final full report must be verified after background completion",
+    "sha256": [
+      {
+        "report.md": "37dc9c3a45ca18795ca7b2bc53030a220c27fdaf73d71e334889d1a08566298f",
+        "summary.json": "f8e8b22b657ecd4f52b8332a4bc3ea16469c09d36fe82dca321fa5427196d2f2"
+      },
+      {
+        "report.md": "37dc9c3a45ca18795ca7b2bc53030a220c27fdaf73d71e334889d1a08566298f",
+        "summary.json": "f8e8b22b657ecd4f52b8332a4bc3ea16469c09d36fe82dca321fa5427196d2f2"
+      }
+    ]
+  },
+  "parser_reparse_audit": "175 responses; 4 recovered; original cache prefixes unchanged",
+  "pending": "test metrics, full comparison and PPI results, final full report/hash verification; handed to Claude per Delta Contract",
+  "pipeline_complete": false,
+  "preexisting_protected_diff": [
+    "docs/tech_stacks.md"
+  ],
+  "preregistration_and_ppi_unchanged": true,
+  "protected_git_diff_exit_code": 1,
+  "pytest": "151 passed in 42.22s",
+  "selected_variant": "enabled",
+  "targeted_tests": "33 passed"
+}

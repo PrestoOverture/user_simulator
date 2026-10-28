@@ -1,0 +1,11 @@
+{
+  "seed": 20261027,
+  "sample_dialogues": [50,100,200],
+  "repetitions": 500,
+  "bootstrap_replicates": 2000,
+  "sampling": "Uniform without replacement from dataset dialogue population; same sampled dialogues across conditions and metrics",
+  "estimator": "Horvitz-Thompson paired residual correction using known full paired turn denominator; exact design-unbiased under unequal dialogue lengths",
+  "interval": "Percentile paired dialogue bootstrap with replacement from sampled dialogues; Spark full population fixed; no finite population correction",
+  "adoption": "At n=100 every dataset/condition/group/metric must have coverage >=0.90 and reduction in median interval width >=0.20",
+  "reaction_decision": "ADR-016; use existing Gemini full report decision as original reference; also report recomputed common-support reference if moderation removes turns"
+}
