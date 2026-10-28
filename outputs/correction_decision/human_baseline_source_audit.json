@@ -1,0 +1,10 @@
+{
+  "verified": true,
+  "logical_human_baseline_inputs": 8600,
+  "unique_input_fingerprints": 8597,
+  "source_caches": [
+    "outputs/correction_v2/judgments.jsonl",
+    "outputs/reaction/full/judgments.jsonl"
+  ],
+  "api_calls": 0
+}

@@ -1,0 +1,709 @@
+Spark response counts: {'ok': 1779, 'parse_error': 1}
+Spark response counts: {'ok': 1799, 'parse_error': 1}
+Spark response counts: {'ok': 1819, 'parse_error': 1}
+Spark response counts: {'ok': 1839, 'parse_error': 1}
+Spark response counts: {'ok': 1859, 'parse_error': 1}
+Spark response counts: {'ok': 1879, 'parse_error': 1}
+Spark response counts: {'ok': 1899, 'parse_error': 1}
+Spark response counts: {'ok': 1919, 'parse_error': 1}
+Spark response counts: {'ok': 1939, 'parse_error': 1}
+Spark response counts: {'ok': 1959, 'parse_error': 1}
+Spark response counts: {'ok': 1979, 'parse_error': 1}
+Spark response counts: {'ok': 1999, 'parse_error': 1}
+Spark response counts: {'ok': 2019, 'parse_error': 1}
+Spark 200 consecutive successes: concurrency=5
+Spark response counts: {'ok': 2039, 'parse_error': 1}
+Spark response counts: {'ok': 2059, 'parse_error': 1}
+Spark response counts: {'ok': 2079, 'parse_error': 1}
+Spark response counts: {'ok': 2099, 'parse_error': 1}
+Spark response counts: {'ok': 2119, 'parse_error': 1}
+Spark response counts: {'ok': 2139, 'parse_error': 1}
+Spark response counts: {'ok': 2159, 'parse_error': 1}
+Spark response counts: {'ok': 2179, 'parse_error': 1}
+Spark response counts: {'ok': 2199, 'parse_error': 1}
+Spark response counts: {'ok': 2219, 'parse_error': 1}
+Spark 200 consecutive successes: concurrency=6
+Spark response counts: {'ok': 2239, 'parse_error': 1}
+Spark response counts: {'ok': 2259, 'parse_error': 1}
+Spark response counts: {'ok': 2279, 'parse_error': 1}
+Spark response counts: {'ok': 2299, 'parse_error': 1}
+Spark response counts: {'ok': 2319, 'parse_error': 1}
+Spark response counts: {'ok': 2339, 'parse_error': 1}
+Spark response counts: {'ok': 2359, 'parse_error': 1}
+Spark response counts: {'ok': 2379, 'parse_error': 1}
+Spark response counts: {'ok': 2399, 'parse_error': 1}
+Spark response counts: {'ok': 2419, 'parse_error': 1}
+Spark 200 consecutive successes: concurrency=7
+Spark response counts: {'ok': 2439, 'parse_error': 1}
+Spark response counts: {'ok': 2459, 'parse_error': 1}
+Spark response counts: {'ok': 2479, 'parse_error': 1}
+Spark response counts: {'ok': 2499, 'parse_error': 1}
+Spark response counts: {'ok': 2519, 'parse_error': 1}
+Spark response counts: {'ok': 2539, 'parse_error': 1}
+Spark response counts: {'ok': 2559, 'parse_error': 1}
+Spark response counts: {'ok': 2579, 'parse_error': 1}
+Spark response counts: {'ok': 2599, 'parse_error': 1}
+Spark response counts: {'ok': 2619, 'parse_error': 1}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 2639, 'parse_error': 1}
+Spark response counts: {'ok': 2659, 'parse_error': 1}
+Spark response counts: {'ok': 2679, 'parse_error': 1}
+Spark response counts: {'ok': 2699, 'parse_error': 1}
+Spark response counts: {'ok': 2719, 'parse_error': 1}
+Spark response counts: {'ok': 2739, 'parse_error': 1}
+Spark response counts: {'ok': 2759, 'parse_error': 1}
+Spark response counts: {'ok': 2779, 'parse_error': 1}
+Spark response counts: {'ok': 2799, 'parse_error': 1}
+Spark response counts: {'ok': 2819, 'parse_error': 1}
+Spark response counts: {'ok': 2839, 'parse_error': 1}
+Spark response counts: {'ok': 2859, 'parse_error': 1}
+Spark response counts: {'ok': 2879, 'parse_error': 1}
+Spark response counts: {'ok': 2899, 'parse_error': 1}
+Spark response counts: {'ok': 2919, 'parse_error': 1}
+Spark response counts: {'ok': 2939, 'parse_error': 1}
+Spark response counts: {'ok': 2959, 'parse_error': 1}
+Spark response counts: {'ok': 2979, 'parse_error': 1}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 2999, 'parse_error': 1}
+Spark response counts: {'ok': 3019, 'parse_error': 1}
+Spark response counts: {'ok': 3039, 'parse_error': 1}
+Spark response counts: {'ok': 3059, 'parse_error': 1}
+Spark response counts: {'ok': 3079, 'parse_error': 1}
+Spark response counts: {'ok': 3099, 'parse_error': 1}
+Spark response counts: {'ok': 3119, 'parse_error': 1}
+Spark response counts: {'ok': 3139, 'parse_error': 1}
+Spark response counts: {'ok': 3159, 'parse_error': 1}
+Spark response counts: {'ok': 3179, 'parse_error': 1}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 3199, 'parse_error': 1}
+Spark response counts: {'ok': 3219, 'parse_error': 1}
+Spark response counts: {'ok': 3239, 'parse_error': 1}
+Spark response counts: {'ok': 3259, 'parse_error': 1}
+Spark response counts: {'ok': 3279, 'parse_error': 1}
+Spark response counts: {'ok': 3299, 'parse_error': 1}
+Spark response counts: {'ok': 3319, 'parse_error': 1}
+Spark response counts: {'ok': 3339, 'parse_error': 1}
+Spark response counts: {'ok': 3359, 'parse_error': 1}
+Spark response counts: {'ok': 3379, 'parse_error': 1}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 3399, 'parse_error': 1}
+Spark response counts: {'ok': 3419, 'parse_error': 1}
+Spark response counts: {'ok': 3439, 'parse_error': 1}
+Spark response counts: {'ok': 3459, 'parse_error': 1}
+Spark response counts: {'ok': 3479, 'parse_error': 1}
+Spark response counts: {'ok': 3499, 'parse_error': 1}
+Spark response counts: {'ok': 3519, 'parse_error': 1}
+Spark response counts: {'ok': 3539, 'parse_error': 1}
+Spark response counts: {'ok': 3559, 'parse_error': 1}
+Spark response counts: {'ok': 3579, 'parse_error': 1}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 3599, 'parse_error': 1}
+Spark response counts: {'ok': 3619, 'parse_error': 1}
+Spark response counts: {'ok': 3639, 'parse_error': 1}
+Spark response counts: {'ok': 3659, 'parse_error': 1}
+Spark response counts: {'ok': 3679, 'parse_error': 1}
+Spark response counts: {'ok': 3699, 'parse_error': 1}
+Spark response counts: {'ok': 3719, 'parse_error': 1}
+Spark response counts: {'ok': 3739, 'parse_error': 1}
+Spark response counts: {'ok': 3759, 'parse_error': 1}
+Spark response counts: {'ok': 3779, 'parse_error': 1}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 3799, 'parse_error': 1}
+Spark response counts: {'ok': 3819, 'parse_error': 1}
+Spark response counts: {'ok': 3839, 'parse_error': 1}
+Spark response counts: {'ok': 3859, 'parse_error': 1}
+Spark response counts: {'ok': 3879, 'parse_error': 1}
+Spark response counts: {'ok': 3899, 'parse_error': 1}
+Spark response counts: {'ok': 3919, 'parse_error': 1}
+Spark response counts: {'ok': 3939, 'parse_error': 1}
+Spark response counts: {'ok': 3959, 'parse_error': 1}
+Spark response counts: {'ok': 3979, 'parse_error': 1}
+Spark response counts: {'ok': 3999, 'parse_error': 1}
+Spark response counts: {'ok': 4019, 'parse_error': 1}
+Spark response counts: {'ok': 4039, 'parse_error': 1}
+Spark response counts: {'ok': 4059, 'parse_error': 1}
+Spark response counts: {'ok': 4079, 'parse_error': 1}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 4099, 'parse_error': 1}
+Spark response counts: {'ok': 4119, 'parse_error': 1}
+Spark response counts: {'ok': 4139, 'parse_error': 1}
+Spark response counts: {'ok': 4159, 'parse_error': 1}
+Spark response counts: {'ok': 4179, 'parse_error': 1}
+Spark response counts: {'ok': 4199, 'parse_error': 1}
+Spark response counts: {'ok': 4219, 'parse_error': 1}
+Spark response counts: {'ok': 4239, 'parse_error': 1}
+Spark response counts: {'ok': 4259, 'parse_error': 1}
+Spark response counts: {'ok': 4279, 'parse_error': 1}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 4299, 'parse_error': 1}
+Spark response counts: {'ok': 4319, 'parse_error': 1}
+Spark response counts: {'ok': 4339, 'parse_error': 1}
+Spark response counts: {'ok': 4359, 'parse_error': 1}
+Spark response counts: {'ok': 4379, 'parse_error': 1}
+Spark response counts: {'ok': 4399, 'parse_error': 1}
+Spark response counts: {'ok': 4419, 'parse_error': 1}
+Spark response counts: {'ok': 4439, 'parse_error': 1}
+Spark response counts: {'ok': 4459, 'parse_error': 1}
+Spark response counts: {'ok': 4479, 'parse_error': 1}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 4499, 'parse_error': 1}
+Spark response counts: {'ok': 4519, 'parse_error': 1}
+Spark response counts: {'ok': 4539, 'parse_error': 1}
+Spark response counts: {'ok': 4559, 'parse_error': 1}
+Spark response counts: {'ok': 4579, 'parse_error': 1}
+Spark response counts: {'ok': 4599, 'parse_error': 1}
+Spark response counts: {'ok': 4619, 'parse_error': 1}
+Spark response counts: {'ok': 4639, 'parse_error': 1}
+Spark response counts: {'ok': 4659, 'parse_error': 1}
+Spark response counts: {'ok': 4679, 'parse_error': 1}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 4699, 'parse_error': 1}
+Spark response counts: {'ok': 4719, 'parse_error': 1}
+Spark response counts: {'ok': 4739, 'parse_error': 1}
+Spark response counts: {'ok': 4759, 'parse_error': 1}
+Spark response counts: {'ok': 4779, 'parse_error': 1}
+Spark response counts: {'ok': 4799, 'parse_error': 1}
+Spark response counts: {'ok': 4819, 'parse_error': 1}
+Spark response counts: {'ok': 4839, 'parse_error': 1}
+Spark response counts: {'ok': 4859, 'parse_error': 1}
+Spark response counts: {'ok': 4879, 'parse_error': 1}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 4899, 'parse_error': 1}
+Spark response counts: {'ok': 4919, 'parse_error': 1}
+Spark response counts: {'ok': 4939, 'parse_error': 1}
+Spark response counts: {'ok': 4959, 'parse_error': 1}
+Spark response counts: {'ok': 4979, 'parse_error': 1}
+Spark response counts: {'ok': 4999, 'parse_error': 1}
+Spark response counts: {'ok': 5019, 'parse_error': 1}
+Spark response counts: {'ok': 5039, 'parse_error': 1}
+Spark response counts: {'ok': 5059, 'parse_error': 1}
+Spark response counts: {'ok': 5079, 'parse_error': 1}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 5099, 'parse_error': 1}
+Spark response counts: {'ok': 5119, 'parse_error': 1}
+Spark response counts: {'ok': 5139, 'parse_error': 1}
+Spark response counts: {'ok': 5159, 'parse_error': 1}
+Spark response counts: {'ok': 5179, 'parse_error': 1}
+Spark response counts: {'ok': 5199, 'parse_error': 1}
+Spark response counts: {'ok': 5219, 'parse_error': 1}
+Spark response counts: {'ok': 5239, 'parse_error': 1}
+Spark response counts: {'ok': 5259, 'parse_error': 1}
+Spark response counts: {'ok': 5279, 'parse_error': 1}
+Spark response counts: {'ok': 5299, 'parse_error': 1}
+Spark response counts: {'ok': 5319, 'parse_error': 1}
+Spark response counts: {'ok': 5339, 'parse_error': 1}
+Spark response counts: {'ok': 5359, 'parse_error': 1}
+Spark response counts: {'ok': 5379, 'parse_error': 1}
+Spark response counts: {'ok': 5399, 'parse_error': 1}
+Spark response counts: {'ok': 5419, 'parse_error': 1}
+Spark response counts: {'ok': 5439, 'parse_error': 1}
+Spark response counts: {'ok': 5459, 'parse_error': 1}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 5479, 'parse_error': 1}
+Spark response counts: {'ok': 5499, 'parse_error': 1}
+Spark response counts: {'ok': 5519, 'parse_error': 1}
+Spark response counts: {'ok': 5539, 'parse_error': 1}
+Spark response counts: {'ok': 5559, 'parse_error': 1}
+Spark response counts: {'ok': 5579, 'parse_error': 1}
+Spark response counts: {'ok': 5599, 'parse_error': 1}
+Spark response counts: {'ok': 5619, 'parse_error': 1}
+Spark response counts: {'ok': 5639, 'parse_error': 1}
+Spark response counts: {'ok': 5659, 'parse_error': 1}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 5679, 'parse_error': 1}
+Spark response counts: {'ok': 5699, 'parse_error': 1}
+Spark response counts: {'ok': 5719, 'parse_error': 1}
+Spark response counts: {'ok': 5739, 'parse_error': 1}
+Spark response counts: {'ok': 5759, 'parse_error': 1}
+Spark response counts: {'ok': 5779, 'parse_error': 1}
+Spark response counts: {'ok': 5799, 'parse_error': 1}
+Spark response counts: {'ok': 5819, 'parse_error': 1}
+Spark response counts: {'ok': 5839, 'parse_error': 1}
+Spark response counts: {'ok': 5859, 'parse_error': 1}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 5879, 'parse_error': 1}
+Spark response counts: {'ok': 5899, 'parse_error': 1}
+Spark response counts: {'ok': 5919, 'parse_error': 1}
+Spark response counts: {'ok': 5939, 'parse_error': 1}
+Spark response counts: {'ok': 5959, 'parse_error': 1}
+Spark response counts: {'ok': 5979, 'parse_error': 1}
+Spark response counts: {'ok': 5999, 'parse_error': 1}
+Spark response counts: {'ok': 6019, 'parse_error': 1}
+Spark response counts: {'ok': 6039, 'parse_error': 1}
+Spark response counts: {'ok': 6059, 'parse_error': 1}
+Spark response counts: {'ok': 6079, 'parse_error': 1}
+Spark response counts: {'ok': 6099, 'parse_error': 1}
+Spark response counts: {'ok': 6119, 'parse_error': 1}
+Spark response counts: {'ok': 6139, 'parse_error': 1}
+Spark response counts: {'ok': 6159, 'parse_error': 1}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 6179, 'parse_error': 1}
+Spark response counts: {'ok': 6199, 'parse_error': 1}
+Spark response counts: {'ok': 6219, 'parse_error': 1}
+Spark response counts: {'ok': 6239, 'parse_error': 1}
+Spark response counts: {'ok': 6259, 'parse_error': 1}
+Spark response counts: {'ok': 6279, 'parse_error': 1}
+Spark response counts: {'ok': 6299, 'parse_error': 1}
+Spark response counts: {'ok': 6319, 'parse_error': 1}
+Spark response counts: {'ok': 6339, 'parse_error': 1}
+Spark response counts: {'ok': 6359, 'parse_error': 1}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 6379, 'parse_error': 1}
+Spark response counts: {'ok': 6399, 'parse_error': 1}
+Spark response counts: {'ok': 6419, 'parse_error': 1}
+Spark response counts: {'ok': 6439, 'parse_error': 1}
+Spark response counts: {'ok': 6459, 'parse_error': 1}
+Spark response counts: {'ok': 6479, 'parse_error': 1}
+Spark response counts: {'ok': 6499, 'parse_error': 1}
+Spark response counts: {'ok': 6519, 'parse_error': 1}
+Spark response counts: {'ok': 6539, 'parse_error': 1}
+Spark response counts: {'ok': 6559, 'parse_error': 1}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 6579, 'parse_error': 1}
+Spark response counts: {'ok': 6599, 'parse_error': 1}
+Spark response counts: {'ok': 6619, 'parse_error': 1}
+Spark response counts: {'ok': 6639, 'parse_error': 1}
+Spark response counts: {'ok': 6659, 'parse_error': 1}
+Spark response counts: {'ok': 6679, 'parse_error': 1}
+Spark response counts: {'ok': 6699, 'parse_error': 1}
+Spark response counts: {'ok': 6719, 'parse_error': 1}
+Spark response counts: {'ok': 6739, 'parse_error': 1}
+Spark response counts: {'ok': 6759, 'parse_error': 1}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 6779, 'parse_error': 1}
+Spark response counts: {'ok': 6799, 'parse_error': 1}
+Spark response counts: {'ok': 6819, 'parse_error': 1}
+Spark response counts: {'ok': 6839, 'parse_error': 1}
+Spark response counts: {'ok': 6859, 'parse_error': 1}
+Spark response counts: {'ok': 6879, 'parse_error': 1}
+Spark response counts: {'ok': 6899, 'parse_error': 1}
+Spark response counts: {'ok': 6919, 'parse_error': 1}
+Spark response counts: {'ok': 6939, 'parse_error': 1}
+Spark response counts: {'ok': 6959, 'parse_error': 1}
+Spark response counts: {'ok': 6979, 'parse_error': 1}
+Spark response counts: {'ok': 6999, 'parse_error': 1}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 7019, 'parse_error': 1}
+Spark response counts: {'ok': 7039, 'parse_error': 1}
+Spark response counts: {'ok': 7059, 'parse_error': 1}
+Spark response counts: {'ok': 7079, 'parse_error': 1}
+Spark response counts: {'ok': 7099, 'parse_error': 1}
+Spark response counts: {'ok': 7119, 'parse_error': 1}
+Spark response counts: {'ok': 7139, 'parse_error': 1}
+Spark response counts: {'ok': 7159, 'parse_error': 1}
+Spark response counts: {'ok': 7179, 'parse_error': 1}
+Spark response counts: {'ok': 7199, 'parse_error': 1}
+Spark response counts: {'ok': 7219, 'parse_error': 1}
+Spark response counts: {'ok': 7239, 'parse_error': 1}
+Spark response counts: {'ok': 7259, 'parse_error': 1}
+Spark response counts: {'ok': 7279, 'parse_error': 1}
+Spark response counts: {'ok': 7299, 'parse_error': 1}
+Spark response counts: {'ok': 7319, 'parse_error': 1}
+Spark response counts: {'ok': 7339, 'parse_error': 1}
+Spark response counts: {'ok': 7359, 'parse_error': 1}
+Spark response counts: {'ok': 7379, 'parse_error': 1}
+Spark response counts: {'ok': 7399, 'parse_error': 1}
+Spark response counts: {'ok': 7419, 'parse_error': 1}
+Spark response counts: {'ok': 7438, 'parse_error': 2}
+Spark response counts: {'ok': 7458, 'parse_error': 2}
+Spark response counts: {'ok': 7478, 'parse_error': 2}
+Spark response counts: {'ok': 7498, 'parse_error': 2}
+Spark response counts: {'ok': 7518, 'parse_error': 2}
+Spark response counts: {'ok': 7538, 'parse_error': 2}
+Spark response counts: {'ok': 7558, 'parse_error': 2}
+Spark response counts: {'ok': 7578, 'parse_error': 2}
+Spark response counts: {'ok': 7598, 'parse_error': 2}
+Spark response counts: {'ok': 7618, 'parse_error': 2}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 7638, 'parse_error': 2}
+Spark response counts: {'ok': 7658, 'parse_error': 2}
+Spark response counts: {'ok': 7678, 'parse_error': 2}
+Spark response counts: {'ok': 7698, 'parse_error': 2}
+Spark response counts: {'ok': 7718, 'parse_error': 2}
+Spark response counts: {'ok': 7738, 'parse_error': 2}
+Spark response counts: {'ok': 7758, 'parse_error': 2}
+Spark response counts: {'ok': 7778, 'parse_error': 2}
+Spark response counts: {'ok': 7798, 'parse_error': 2}
+Spark response counts: {'ok': 7818, 'parse_error': 2}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 7838, 'parse_error': 2}
+Spark response counts: {'ok': 7858, 'parse_error': 2}
+Spark response counts: {'ok': 7878, 'parse_error': 2}
+Spark response counts: {'ok': 7898, 'parse_error': 2}
+Spark response counts: {'ok': 7918, 'parse_error': 2}
+Spark response counts: {'ok': 7938, 'parse_error': 2}
+Spark response counts: {'ok': 7958, 'parse_error': 2}
+Spark response counts: {'ok': 7978, 'parse_error': 2}
+Spark response counts: {'ok': 7998, 'parse_error': 2}
+Spark response counts: {'ok': 8018, 'parse_error': 2}
+Spark response counts: {'ok': 8038, 'parse_error': 2}
+Spark response counts: {'ok': 8058, 'parse_error': 2}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 8078, 'parse_error': 2}
+Spark response counts: {'ok': 8098, 'parse_error': 2}
+Spark response counts: {'ok': 8118, 'parse_error': 2}
+Spark response counts: {'ok': 8138, 'parse_error': 2}
+Spark response counts: {'ok': 8158, 'parse_error': 2}
+Spark response counts: {'ok': 8178, 'parse_error': 2}
+Spark response counts: {'ok': 8198, 'parse_error': 2}
+Spark response counts: {'ok': 8218, 'parse_error': 2}
+Spark response counts: {'ok': 8238, 'parse_error': 2}
+Spark response counts: {'ok': 8258, 'parse_error': 2}
+Spark response counts: {'ok': 8278, 'parse_error': 2}
+Spark response counts: {'ok': 8298, 'parse_error': 2}
+Spark response counts: {'ok': 8318, 'parse_error': 2}
+Spark response counts: {'ok': 8338, 'parse_error': 2}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 8358, 'parse_error': 2}
+Spark response counts: {'ok': 8378, 'parse_error': 2}
+Spark response counts: {'ok': 8398, 'parse_error': 2}
+Spark response counts: {'ok': 8418, 'parse_error': 2}
+Spark response counts: {'ok': 8438, 'parse_error': 2}
+Spark response counts: {'ok': 8458, 'parse_error': 2}
+Spark response counts: {'ok': 8478, 'parse_error': 2}
+Spark response counts: {'ok': 8498, 'parse_error': 2}
+Spark response counts: {'ok': 8518, 'parse_error': 2}
+Spark response counts: {'ok': 8538, 'parse_error': 2}
+Spark response counts: {'ok': 8558, 'parse_error': 2}
+Spark response counts: {'ok': 8578, 'parse_error': 2}
+Spark response counts: {'ok': 8598, 'parse_error': 2}
+Spark response counts: {'ok': 8618, 'parse_error': 2}
+Spark response counts: {'ok': 8638, 'parse_error': 2}
+Spark response counts: {'ok': 8658, 'parse_error': 2}
+Spark response counts: {'ok': 8678, 'parse_error': 2}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 8698, 'parse_error': 2}
+Spark response counts: {'ok': 8718, 'parse_error': 2}
+Spark response counts: {'ok': 8738, 'parse_error': 2}
+Spark response counts: {'ok': 8758, 'parse_error': 2}
+Spark response counts: {'ok': 8778, 'parse_error': 2}
+Spark response counts: {'ok': 8798, 'parse_error': 2}
+Spark response counts: {'ok': 8818, 'parse_error': 2}
+Spark response counts: {'ok': 8838, 'parse_error': 2}
+Spark response counts: {'ok': 8858, 'parse_error': 2}
+Spark response counts: {'ok': 8878, 'parse_error': 2}
+Spark response counts: {'ok': 8898, 'parse_error': 2}
+Spark response counts: {'ok': 8918, 'parse_error': 2}
+Spark response counts: {'ok': 8938, 'parse_error': 2}
+Spark response counts: {'ok': 8958, 'parse_error': 2}
+Spark response counts: {'ok': 8978, 'parse_error': 2}
+Spark response counts: {'ok': 8998, 'parse_error': 2}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 9018, 'parse_error': 2}
+Spark response counts: {'ok': 9038, 'parse_error': 2}
+Spark response counts: {'ok': 9058, 'parse_error': 2}
+Spark response counts: {'ok': 9078, 'parse_error': 2}
+Spark response counts: {'ok': 9098, 'parse_error': 2}
+Spark response counts: {'ok': 9118, 'parse_error': 2}
+Spark response counts: {'ok': 9138, 'parse_error': 2}
+Spark response counts: {'ok': 9158, 'parse_error': 2}
+Spark response counts: {'ok': 9178, 'parse_error': 2}
+Spark response counts: {'ok': 9198, 'parse_error': 2}
+Spark response counts: {'ok': 9218, 'parse_error': 2}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 9238, 'parse_error': 2}
+Spark response counts: {'ok': 9258, 'parse_error': 2}
+Spark response counts: {'ok': 9278, 'parse_error': 2}
+Spark response counts: {'ok': 9298, 'parse_error': 2}
+Spark response counts: {'ok': 9318, 'parse_error': 2}
+Spark response counts: {'ok': 9338, 'parse_error': 2}
+Spark response counts: {'ok': 9358, 'parse_error': 2}
+Spark response counts: {'ok': 9378, 'parse_error': 2}
+Spark response counts: {'ok': 9398, 'parse_error': 2}
+Spark response counts: {'ok': 9418, 'parse_error': 2}
+Spark response counts: {'ok': 9438, 'parse_error': 2}
+Spark response counts: {'ok': 9458, 'parse_error': 2}
+Spark response counts: {'ok': 9478, 'parse_error': 2}
+Spark response counts: {'ok': 9498, 'parse_error': 2}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 9518, 'parse_error': 2}
+Spark response counts: {'ok': 9538, 'parse_error': 2}
+Spark response counts: {'ok': 9558, 'parse_error': 2}
+Spark response counts: {'ok': 9578, 'parse_error': 2}
+Spark response counts: {'ok': 9598, 'parse_error': 2}
+Spark response counts: {'ok': 9618, 'parse_error': 2}
+Spark response counts: {'ok': 9638, 'parse_error': 2}
+Spark response counts: {'ok': 9658, 'parse_error': 2}
+Spark response counts: {'ok': 9678, 'parse_error': 2}
+Spark response counts: {'ok': 9698, 'parse_error': 2}
+Spark response counts: {'ok': 9718, 'parse_error': 2}
+Spark response counts: {'ok': 9738, 'parse_error': 2}
+Spark response counts: {'ok': 9758, 'parse_error': 2}
+Spark response counts: {'ok': 9778, 'parse_error': 2}
+Spark response counts: {'ok': 9798, 'parse_error': 2}
+Spark response counts: {'ok': 9818, 'parse_error': 2}
+Spark response counts: {'ok': 9838, 'parse_error': 2}
+Spark response counts: {'ok': 9858, 'parse_error': 2}
+Spark response counts: {'ok': 9878, 'parse_error': 2}
+Spark response counts: {'ok': 9898, 'parse_error': 2}
+Spark response counts: {'ok': 9918, 'parse_error': 2}
+Spark response counts: {'ok': 9938, 'parse_error': 2}
+Spark response counts: {'ok': 9958, 'parse_error': 2}
+Spark response counts: {'ok': 9978, 'parse_error': 2}
+Spark response counts: {'ok': 9998, 'parse_error': 2}
+Spark response counts: {'ok': 10018, 'parse_error': 2}
+Spark response counts: {'ok': 10038, 'parse_error': 2}
+Spark response counts: {'ok': 10058, 'parse_error': 2}
+Spark response counts: {'ok': 10078, 'parse_error': 2}
+Spark response counts: {'ok': 10098, 'parse_error': 2}
+Spark response counts: {'ok': 10118, 'parse_error': 2}
+Spark response counts: {'ok': 10138, 'parse_error': 2}
+Spark response counts: {'ok': 10158, 'parse_error': 2}
+Spark response counts: {'ok': 10178, 'parse_error': 2}
+Spark response counts: {'ok': 10198, 'parse_error': 2}
+Spark response counts: {'ok': 10218, 'parse_error': 2}
+Spark response counts: {'ok': 10238, 'parse_error': 2}
+Spark response counts: {'ok': 10258, 'parse_error': 2}
+Spark response counts: {'ok': 10278, 'parse_error': 2}
+Spark response counts: {'ok': 10298, 'parse_error': 2}
+Spark response counts: {'ok': 10318, 'parse_error': 2}
+Spark response counts: {'ok': 10338, 'parse_error': 2}
+Spark response counts: {'ok': 10358, 'parse_error': 2}
+Spark response counts: {'ok': 10378, 'parse_error': 2}
+Spark response counts: {'ok': 10398, 'parse_error': 2}
+Spark response counts: {'ok': 10418, 'parse_error': 2}
+Spark response counts: {'ok': 10438, 'parse_error': 2}
+Spark response counts: {'ok': 10458, 'parse_error': 2}
+Spark response counts: {'ok': 10478, 'parse_error': 2}
+Spark response counts: {'ok': 10498, 'parse_error': 2}
+Spark response counts: {'ok': 10518, 'parse_error': 2}
+Spark response counts: {'ok': 10538, 'parse_error': 2}
+Spark response counts: {'ok': 10558, 'parse_error': 2}
+Spark response counts: {'ok': 10578, 'parse_error': 2}
+Spark response counts: {'ok': 10598, 'parse_error': 2}
+Spark response counts: {'ok': 10618, 'parse_error': 2}
+Spark response counts: {'ok': 10638, 'parse_error': 2}
+Spark response counts: {'ok': 10658, 'parse_error': 2}
+Spark response counts: {'ok': 10678, 'parse_error': 2}
+Spark response counts: {'ok': 10698, 'parse_error': 2}
+Spark response counts: {'ok': 10718, 'parse_error': 2}
+Spark response counts: {'ok': 10738, 'parse_error': 2}
+Spark response counts: {'ok': 10758, 'parse_error': 2}
+Spark response counts: {'ok': 10778, 'parse_error': 2}
+Spark response counts: {'ok': 10798, 'parse_error': 2}
+Spark response counts: {'ok': 10818, 'parse_error': 2}
+Spark response counts: {'ok': 10838, 'parse_error': 2}
+Spark response counts: {'ok': 10858, 'parse_error': 2}
+Spark response counts: {'ok': 10878, 'parse_error': 2}
+Spark response counts: {'ok': 10898, 'parse_error': 2}
+Spark response counts: {'ok': 10918, 'parse_error': 2}
+Spark response counts: {'ok': 10938, 'parse_error': 2}
+Spark response counts: {'ok': 10958, 'parse_error': 2}
+Spark response counts: {'ok': 10978, 'parse_error': 2}
+Spark response counts: {'ok': 10998, 'parse_error': 2}
+Spark response counts: {'ok': 11018, 'parse_error': 2}
+Spark response counts: {'ok': 11038, 'parse_error': 2}
+Spark response counts: {'ok': 11058, 'parse_error': 2}
+Spark response counts: {'ok': 11078, 'parse_error': 2}
+Spark response counts: {'ok': 11098, 'parse_error': 2}
+Spark response counts: {'ok': 11118, 'parse_error': 2}
+Spark response counts: {'ok': 11138, 'parse_error': 2}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 11158, 'parse_error': 2}
+Spark response counts: {'ok': 11178, 'parse_error': 2}
+Spark response counts: {'ok': 11198, 'parse_error': 2}
+Spark response counts: {'ok': 11218, 'parse_error': 2}
+Spark response counts: {'ok': 11238, 'parse_error': 2}
+Spark response counts: {'ok': 11258, 'parse_error': 2}
+Spark response counts: {'ok': 11278, 'parse_error': 2}
+Spark response counts: {'ok': 11298, 'parse_error': 2}
+Spark response counts: {'ok': 11318, 'parse_error': 2}
+Spark response counts: {'ok': 11338, 'parse_error': 2}
+Spark response counts: {'ok': 11358, 'parse_error': 2}
+Spark response counts: {'ok': 11378, 'parse_error': 2}
+Spark response counts: {'ok': 11398, 'parse_error': 2}
+Spark response counts: {'ok': 11418, 'parse_error': 2}
+Spark response counts: {'ok': 11438, 'parse_error': 2}
+Spark response counts: {'ok': 11458, 'parse_error': 2}
+Spark response counts: {'ok': 11478, 'parse_error': 2}
+Spark response counts: {'ok': 11498, 'parse_error': 2}
+Spark response counts: {'ok': 11518, 'parse_error': 2}
+Spark response counts: {'ok': 11538, 'parse_error': 2}
+Spark response counts: {'ok': 11558, 'parse_error': 2}
+Spark response counts: {'ok': 11578, 'parse_error': 2}
+Spark response counts: {'ok': 11598, 'parse_error': 2}
+Spark response counts: {'ok': 11618, 'parse_error': 2}
+Spark response counts: {'ok': 11638, 'parse_error': 2}
+Spark response counts: {'ok': 11658, 'parse_error': 2}
+Spark response counts: {'ok': 11678, 'parse_error': 2}
+Spark response counts: {'ok': 11698, 'parse_error': 2}
+Spark response counts: {'ok': 11718, 'parse_error': 2}
+Spark response counts: {'ok': 11738, 'parse_error': 2}
+Spark response counts: {'ok': 11758, 'parse_error': 2}
+Spark response counts: {'ok': 11778, 'parse_error': 2}
+Spark response counts: {'ok': 11798, 'parse_error': 2}
+Spark response counts: {'ok': 11818, 'parse_error': 2}
+Spark response counts: {'ok': 11838, 'parse_error': 2}
+Spark response counts: {'ok': 11858, 'parse_error': 2}
+Spark response counts: {'ok': 11878, 'parse_error': 2}
+Spark response counts: {'ok': 11898, 'parse_error': 2}
+Spark response counts: {'ok': 11918, 'parse_error': 2}
+Spark response counts: {'ok': 11938, 'parse_error': 2}
+Spark response counts: {'ok': 11958, 'parse_error': 2}
+Spark response counts: {'ok': 11978, 'parse_error': 2}
+Spark response counts: {'ok': 11998, 'parse_error': 2}
+Spark response counts: {'ok': 12018, 'parse_error': 2}
+Spark response counts: {'ok': 12038, 'parse_error': 2}
+Spark response counts: {'ok': 12058, 'parse_error': 2}
+Spark response counts: {'ok': 12078, 'parse_error': 2}
+Spark response counts: {'ok': 12098, 'parse_error': 2}
+Spark response counts: {'ok': 12118, 'parse_error': 2}
+Spark response counts: {'ok': 12138, 'parse_error': 2}
+Spark response counts: {'ok': 12158, 'parse_error': 2}
+Spark response counts: {'ok': 12178, 'parse_error': 2}
+Spark response counts: {'ok': 12198, 'parse_error': 2}
+Spark response counts: {'ok': 12218, 'parse_error': 2}
+Spark response counts: {'ok': 12238, 'parse_error': 2}
+Spark response counts: {'ok': 12258, 'parse_error': 2}
+Spark response counts: {'ok': 12278, 'parse_error': 2}
+Spark response counts: {'ok': 12298, 'parse_error': 2}
+Spark response counts: {'ok': 12318, 'parse_error': 2}
+Spark response counts: {'ok': 12338, 'parse_error': 2}
+Spark response counts: {'ok': 12358, 'parse_error': 2}
+Spark response counts: {'ok': 12378, 'parse_error': 2}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 12398, 'parse_error': 2}
+Spark response counts: {'ok': 12418, 'parse_error': 2}
+Spark response counts: {'ok': 12438, 'parse_error': 2}
+Spark response counts: {'ok': 12458, 'parse_error': 2}
+Spark response counts: {'ok': 12478, 'parse_error': 2}
+Spark response counts: {'ok': 12498, 'parse_error': 2}
+Spark response counts: {'ok': 12518, 'parse_error': 2}
+Spark response counts: {'ok': 12538, 'parse_error': 2}
+Spark response counts: {'ok': 12558, 'parse_error': 2}
+Spark response counts: {'ok': 12578, 'parse_error': 2}
+Spark response counts: {'ok': 12598, 'parse_error': 2}
+Spark response counts: {'ok': 12618, 'parse_error': 2}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 12638, 'parse_error': 2}
+Spark response counts: {'ok': 12658, 'parse_error': 2}
+Spark response counts: {'ok': 12678, 'parse_error': 2}
+Spark response counts: {'ok': 12698, 'parse_error': 2}
+Spark response counts: {'ok': 12718, 'parse_error': 2}
+Spark response counts: {'ok': 12738, 'parse_error': 2}
+Spark response counts: {'ok': 12758, 'parse_error': 2}
+Spark response counts: {'ok': 12778, 'parse_error': 2}
+Spark response counts: {'ok': 12798, 'parse_error': 2}
+Spark response counts: {'ok': 12818, 'parse_error': 2}
+Spark response counts: {'ok': 12838, 'parse_error': 2}
+Spark response counts: {'ok': 12858, 'parse_error': 2}
+Spark response counts: {'ok': 12878, 'parse_error': 2}
+Spark response counts: {'ok': 12898, 'parse_error': 2}
+Spark response counts: {'ok': 12918, 'parse_error': 2}
+Spark response counts: {'ok': 12938, 'parse_error': 2}
+Spark response counts: {'ok': 12958, 'parse_error': 2}
+Spark response counts: {'ok': 12978, 'parse_error': 2}
+Spark response counts: {'ok': 12998, 'parse_error': 2}
+Spark response counts: {'ok': 13018, 'parse_error': 2}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 13038, 'parse_error': 2}
+Spark response counts: {'ok': 13058, 'parse_error': 2}
+Spark response counts: {'ok': 13078, 'parse_error': 2}
+Spark response counts: {'ok': 13098, 'parse_error': 2}
+Spark response counts: {'ok': 13118, 'parse_error': 2}
+Spark response counts: {'ok': 13138, 'parse_error': 2}
+Spark response counts: {'ok': 13158, 'parse_error': 2}
+Spark response counts: {'ok': 13178, 'parse_error': 2}
+Spark response counts: {'ok': 13198, 'parse_error': 2}
+Spark response counts: {'ok': 13218, 'parse_error': 2}
+Spark response counts: {'ok': 13238, 'parse_error': 2}
+Spark response counts: {'ok': 13258, 'parse_error': 2}
+Spark response counts: {'ok': 13278, 'parse_error': 2}
+Spark response counts: {'ok': 13298, 'parse_error': 2}
+Spark response counts: {'ok': 13318, 'parse_error': 2}
+Spark response counts: {'ok': 13338, 'parse_error': 2}
+Spark response counts: {'ok': 13358, 'parse_error': 2}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 13378, 'parse_error': 2}
+Spark response counts: {'ok': 13398, 'parse_error': 2}
+Spark response counts: {'ok': 13418, 'parse_error': 2}
+Spark response counts: {'ok': 13438, 'parse_error': 2}
+Spark response counts: {'ok': 13458, 'parse_error': 2}
+Spark response counts: {'ok': 13478, 'parse_error': 2}
+Spark response counts: {'ok': 13498, 'parse_error': 2}
+Spark response counts: {'ok': 13518, 'parse_error': 2}
+Spark response counts: {'ok': 13538, 'parse_error': 2}
+Spark response counts: {'ok': 13558, 'parse_error': 2}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 13578, 'parse_error': 2}
+Spark response counts: {'ok': 13598, 'parse_error': 2}
+Spark response counts: {'ok': 13618, 'parse_error': 2}
+Spark response counts: {'ok': 13638, 'parse_error': 2}
+Spark response counts: {'ok': 13658, 'parse_error': 2}
+Spark response counts: {'ok': 13678, 'parse_error': 2}
+Spark response counts: {'ok': 13698, 'parse_error': 2}
+Spark response counts: {'ok': 13718, 'parse_error': 2}
+Spark response counts: {'ok': 13738, 'parse_error': 2}
+Spark response counts: {'ok': 13758, 'parse_error': 2}
+Spark 200 consecutive successes: concurrency=8
+Spark response counts: {'ok': 13778, 'parse_error': 2}
+Spark response counts: {'ok': 13798, 'parse_error': 2}
+Spark response counts: {'ok': 13818, 'parse_error': 2}
+Spark response counts: {'ok': 13838, 'parse_error': 2}
+Spark response counts: {'ok': 13858, 'parse_error': 2}
+Spark response counts: {'ok': 13878, 'parse_error': 2}
+Spark response counts: {'ok': 13898, 'parse_error': 2}
+Spark response counts: {'ok': 13918, 'parse_error': 2}
+Spark response counts: {'ok': 13938, 'parse_error': 2}
+Spark response counts: {'ok': 13958, 'parse_error': 2}
+Spark response counts: {'ok': 13978, 'parse_error': 2}
+Spark response counts: {'ok': 13998, 'parse_error': 2}
+Spark response counts: {'ok': 14018, 'parse_error': 2}
+Spark response counts: {'ok': 14038, 'parse_error': 2}
+Spark response counts: {'ok': 14058, 'parse_error': 2}
+Spark response counts: {'ok': 14078, 'parse_error': 2}
+Spark response counts: {'ok': 14097, 'parse_error': 3}
+Spark response counts: {'ok': 14117, 'parse_error': 3}
+Spark response counts: {'ok': 14137, 'parse_error': 3}
+Spark response counts: {'ok': 14157, 'parse_error': 3}
+Spark response counts: {'ok': 14177, 'parse_error': 3}
+Spark complete: paired=4296, moderated_pairs=0, parse_missing_pairs=3
+Traceback (most recent call last):
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision.py", line 448, in <module>
+    try: main()
+         ^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision.py", line 418, in main
+    run_phase(args.phase,args.concurrency)
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision_ppi.py", line 337, in run_phase
+    if phase in ('gemini-sample','ppi-full'):gemini_stage(concurrency);report()
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision_ppi.py", line 190, in gemini_stage
+    adoption_gate()
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision_ppi.py", line 133, in adoption_gate
+    raise RuntimeError('C preregistered adoption not verified; no new paid sample requests')
+RuntimeError: C preregistered adoption not verified; no new paid sample requests
+Spark complete: paired=4296, moderated_pairs=0, parse_missing_pairs=3
+Gemini sample: 20/693
+Gemini sample: 40/693
+Gemini sample: 60/693
+Gemini sample: 80/693
+Gemini sample: 100/693
+Gemini sample: 120/693
+Gemini sample: 140/693
+Gemini sample: 160/693
+Gemini sample: 180/693
+Gemini sample: 200/693
+Gemini sample: 220/693
+Gemini sample: 240/693
+Gemini sample: 260/693
+Gemini sample: 280/693
+Gemini sample: 300/693
+Gemini sample: 320/693
+Gemini sample: 340/693
+Gemini sample: 360/693
+Gemini sample: 380/693
+Gemini sample: 400/693
+Gemini sample: 420/693
+Gemini sample: 440/693
+Gemini sample: 460/693
+Gemini sample: 480/693
+Gemini sample: 500/693
+Gemini sample: 520/693
+Gemini sample: 540/693
+Gemini sample: 560/693
+Gemini sample: 580/693
+Gemini sample: 600/693
+Gemini sample: 620/693
+Gemini sample: 640/693
+Gemini sample: 660/693
+Gemini sample: 680/693

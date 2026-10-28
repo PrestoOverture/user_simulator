@@ -1,0 +1,17 @@
+{
+  "pid": 53594,
+  "command": [
+    "nohup",
+    "/Users/kwang/projects/user_simulator/.venv/bin/python",
+    "-u",
+    "scripts/run_correction_decision.py",
+    "--phase",
+    "ppi-full",
+    "--concurrency",
+    "4"
+  ],
+  "started_at": "2026-10-27T18:27:59.123451+00:00",
+  "log": "/Users/kwang/projects/user_simulator/outputs/correction_decision/ppi_background.log",
+  "paid_gate": "C summary.status=complete and adoption_passed=true, matching preregistration",
+  "concurrency": 4
+}

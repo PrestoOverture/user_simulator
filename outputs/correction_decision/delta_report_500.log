@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision.py", line 438, in <module>
+    try: main()
+         ^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision.py", line 419, in main
+    print(json.dumps(report(OUT,chosen,baseline,args.report_n),ensure_ascii=False)); return
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision.py", line 314, in report
+    result = statistical_report(out,chosen,baseline,n)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision.py", line 254, in statistical_report
+    raise RuntimeError('Judgments incomplete; refuse complete report')
+RuntimeError: Judgments incomplete; refuse complete report

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "nohup",
+    ".venv/bin/python",
+    "-u",
+    "scripts/supervise_correction_decision.py",
+    "--concurrency",
+    "8",
+    "--wait-pid",
+    "14686"
+  ],
+  "pid": 15465,
+  "sample_pid": 14686,
+  "launched_at": 1793163514.2142148
+}

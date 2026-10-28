@@ -1,0 +1,14 @@
+{
+  "decision": {
+    "ok": 4299,
+    "moderated": 1,
+    "mean_chars": 26.051174691788788,
+    "mean_messages": 1.107932077227262
+  },
+  "oracle": {
+    "ok": 4300,
+    "moderated": 0,
+    "mean_chars": 26.342093023255813,
+    "mean_messages": 1.1004651162790697
+  }
+}

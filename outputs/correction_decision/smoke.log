@@ -1,0 +1,72 @@
+judge 20: logical=648 pending_unique=319
+judge 20: 8/319, spent=$0.0180
+judge 20: 16/319, spent=$0.0284
+judge 20: 24/319, spent=$0.0343
+judge 20: 32/319, spent=$0.0502
+judge 20: 40/319, spent=$0.0606
+judge 20: 48/319, spent=$0.0722
+judge 20: 56/319, spent=$0.0797
+judge 20: 64/319, spent=$0.0894
+judge 20: 72/319, spent=$0.1038
+judge 20: 80/319, spent=$0.1183
+judge 20: 88/319, spent=$0.1293
+judge 20: 96/319, spent=$0.1404
+judge 20: 104/319, spent=$0.1519
+judge 20: 112/319, spent=$0.1616
+judge 20: 120/319, spent=$0.1721
+judge 20: 128/319, spent=$0.1842
+judge 20: 136/319, spent=$0.1937
+judge 20: 144/319, spent=$0.2023
+judge 20: 152/319, spent=$0.2141
+judge 20: 160/319, spent=$0.2233
+judge 20: 168/319, spent=$0.2415
+judge 20: 176/319, spent=$0.2486
+judge 20: 184/319, spent=$0.2572
+judge 20: 192/319, spent=$0.2679
+judge 20: 200/319, spent=$0.2751
+judge 20: 208/319, spent=$0.2862
+judge 20: 216/319, spent=$0.2973
+judge 20: 224/319, spent=$0.3051
+judge 20: 232/319, spent=$0.3162
+judge 20: 240/319, spent=$0.3231
+judge 20: 248/319, spent=$0.3314
+judge 20: 256/319, spent=$0.3499
+judge 20: 264/319, spent=$0.3576
+judge 20: 272/319, spent=$0.3811
+judge 20: 280/319, spent=$0.3909
+judge 20: 288/319, spent=$0.4069
+judge 20: 296/319, spent=$0.4115
+judge 20: 304/319, spent=$0.4220
+judge 20: 312/319, spent=$0.4320
+Traceback (most recent call last):
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision.py", line 393, in <module>
+    full_cost_gate(OUT,chosen,plans)
+     ^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision.py", line 380, in main
+    v2.credentials(); meter(OUT)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision.py", line 212, in judge_stage
+    try:
+         
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_v2.py", line 302, in evaluate_metered
+    if future.result() is None:
+       ^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/usersim/judge.py", line 70, in evaluate
+    self.record(dict(id=item['id'], attempt=attempt, event='dispatch', model=MODEL, provider=PROVIDER, input_sha256=input_sha256(prompt, item)))
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision.py", line 180, in record
+    super().__init__(out/'judgments.jsonl')
+            ^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision.py", line 161, in meter
+    with BUDGET_LOCK:
+            ^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_v2.py", line 70, in billing
+    raise RuntimeError('Cannot verify gateway billing; stop') from None
+RuntimeError: Cannot verify gateway billing; stop

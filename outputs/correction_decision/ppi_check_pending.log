@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "/Users/kwang/projects/user_simulator/scripts/check_correction_decision.py", line 107, in <module>
+    print(json.dumps(verify(ap.parse_args().n),ensure_ascii=False))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/check_correction_decision.py", line 19, in verify
+    return verify_ppi()
+           ^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/check_correction_decision_ppi.py", line 15, in verify
+    return _verify()
+           ^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/check_correction_decision_ppi.py", line 24, in _verify
+    support,spark=p.support_and_spark(todo,prompt)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision_ppi.py", line 94, in support_and_spark
+    support=a.read(OUT/'ppi_support.json')['items']
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_v2.py", line 32, in read
+    return json.loads(Path(path).read_text())
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/kwang/projects/user_simulator/outputs/correction_decision/ppi_support.json'

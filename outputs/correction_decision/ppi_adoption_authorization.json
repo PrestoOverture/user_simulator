@@ -1,0 +1,9 @@
+{
+  "decision": "adopt_ppi_post_hoc",
+  "decided_by": "user",
+  "recorded_by": "Claude",
+  "date": "2026-10-28",
+  "adr": "docs/architecture.md ADR-018",
+  "c_preregistered_result": "not met (coverage passed in all cells; width reduction 16.7% < 20% in reaction/full nonnegative emotion)",
+  "scope": "Contract A may send the preregistered 100-dialogue Gemini sample and report PPI estimates; report must state the post-hoc adoption."
+}

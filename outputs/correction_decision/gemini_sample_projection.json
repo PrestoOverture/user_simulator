@@ -1,0 +1,8 @@
+{
+  "registered_dialogues": 100,
+  "logical_inputs": 1654,
+  "pending_unique": 693,
+  "reused_logical": 960,
+  "projected_new_usd": 0.9517953103448252,
+  "historical_out_of_sample": "retained for provenance, never requested again"
+}

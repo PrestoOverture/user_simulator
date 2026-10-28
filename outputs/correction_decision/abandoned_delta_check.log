@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/Users/kwang/projects/user_simulator/scripts/check_correction_decision.py", line 107, in <module>
+    print(json.dumps(verify(ap.parse_args().n),ensure_ascii=False))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/check_correction_decision.py", line 19, in verify
+    return verify_ppi()
+           ^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/check_correction_decision_ppi.py", line 15, in verify
+    return _verify()
+           ^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/check_correction_decision_ppi.py", line 60, in _verify
+    assert Counter(dispatch.keys())==Counter((r['id'],r['attempt']) for r in responses)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

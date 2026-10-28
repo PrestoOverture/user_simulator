@@ -1,0 +1,13 @@
+{
+  "start_total_usd": 27.127588,
+  "limit_usd": 14,
+  "current_total_usd": 34.762072,
+  "spent_usd": 7.634484000000004,
+  "requests": 2555,
+  "checked_at": "2026-10-28T06:18:27.564327+00:00",
+  "account_limit_cents": 4900,
+  "request_limit": 10000,
+  "in_flight_reserve_usd": 4.0,
+  "max_in_flight": 8,
+  "per_request_reserve_usd": 0.5
+}

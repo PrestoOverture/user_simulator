@@ -1,0 +1,15 @@
+{
+  "responses": 398,
+  "successful_responses": 392,
+  "dispatches": 398,
+  "generations": {
+    "decision": 4300,
+    "oracle": 4300
+  },
+  "protected_sha256": {
+    "docs/tech_stacks.md": "cd52818b5fd8f3e4c82b4339da65d927dcb747c5504608e59994e7fcff22cc45",
+    "scripts/run_correction_v2.py": "098fdcd77c5ae30ef8aa9e973644f8a29d28db8734d6625c57a158af076aefe2",
+    "usersim/correction_v2.py": "b3ca9cc4aa38496245527552b2dbdabf69f84756fa66d1a6a179270cdc0e925d",
+    "scripts/measure_reaction.py": "8cde8418bc64f1b1a2f002cb80979f4c072258c0e54ac48a542b86b25420b523"
+  }
+}

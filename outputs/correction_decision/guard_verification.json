@@ -1,0 +1,74 @@
+{
+  "passed": true,
+  "commands": [
+    {
+      "name": "report_1",
+      "command": [
+        "/Users/kwang/projects/user_simulator/.venv/bin/python",
+        "scripts/run_correction_decision.py",
+        "--phase",
+        "report",
+        "--report-n",
+        "500"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "report_2",
+      "command": [
+        "/Users/kwang/projects/user_simulator/.venv/bin/python",
+        "scripts/run_correction_decision.py",
+        "--phase",
+        "report",
+        "--report-n",
+        "500"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "check_500",
+      "command": [
+        "/Users/kwang/projects/user_simulator/.venv/bin/python",
+        "scripts/check_correction_decision.py",
+        "--n",
+        "500"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "pytest",
+      "command": [
+        "/Users/kwang/projects/user_simulator/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "protected_diff",
+      "command": [
+        "git",
+        "diff",
+        "--exit-code",
+        "--",
+        "docs",
+        "usersim/correction_v2.py",
+        "scripts/measure_reaction.py",
+        "outputs/correction_v2"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "rebuild_hashes": [
+    {
+      "report_500.md": "f7d81b3b937cbffbe7c619253e5e90ba38e768896d77872f007cf44d42448cf8",
+      "summary_500.json": "6b1decdd408a57c3c0310be842a168903fd5d21fa65abb4b61a71d4110408996"
+    },
+    {
+      "report_500.md": "f7d81b3b937cbffbe7c619253e5e90ba38e768896d77872f007cf44d42448cf8",
+      "summary_500.json": "6b1decdd408a57c3c0310be842a168903fd5d21fa65abb4b61a71d4110408996"
+    }
+  ],
+  "api_calls": 0
+}

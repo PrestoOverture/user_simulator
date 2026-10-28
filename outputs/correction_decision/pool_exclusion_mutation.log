@@ -1,0 +1,22 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+______________________ test_pool_excludes_all_500_and_20 _______________________
+
+    def test_pool_excludes_all_500_and_20():
+        root=Path(__file__).resolve().parents[1]
+        ids=json.loads((root/'outputs/extended/sampled_ids.json').read_text())['ids']
+        pilot=json.loads((root/'outputs/sampled_ids.json').read_text())['ids']
+        excluded=set(ids)|set(pilot)
+        assert len(ids)==500 and len(pilot)==20
+        items=[dict(dialogue_id=i,turn=1,group=g,topic='continue') for i in excluded for g in ('negative','nonnegative')]
+        items += [dict(dialogue_id=-1,turn=1,group=g,topic='close') for g in ('negative','nonnegative')]
+        pool=DecisionPool(items,excluded)
+>       assert len(pool.items)==2
+E       AssertionError: assert 1042 == 2
+E        +  where 1042 = len([{'dialogue_id': -1, 'turn': 1, 'group': 'negative', 'topic': 'close'}, {'dialogue_id': -1, 'turn': 1, 'group': 'nonne...p': 'negative', 'topic': 'continue'}, {'dialogue_id': 40, 'turn': 1, 'group': 'nonnegative', 'topic': 'continue'}, ...])
+E        +    where [{'dialogue_id': -1, 'turn': 1, 'group': 'negative', 'topic': 'close'}, {'dialogue_id': -1, 'turn': 1, 'group': 'nonne...p': 'negative', 'topic': 'continue'}, {'dialogue_id': 40, 'turn': 1, 'group': 'nonnegative', 'topic': 'continue'}, ...] = <usersim.correction_decision.DecisionPool object at 0x1069da900>.items
+
+tests/test_correction_decision.py:28: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_correction_decision.py::test_pool_excludes_all_500_and_20
+1 failed in 0.08s

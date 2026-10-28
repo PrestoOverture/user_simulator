@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/kwang/projects/user_simulator/scripts/check_correction_decision.py", line 104, in <module>
+    print(json.dumps(verify(ap.parse_args().n),ensure_ascii=False))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/check_correction_decision.py", line 49, in verify
+    pred.update(predictions(cached(out/'judgments.jsonl',allow_request_errors=True)))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/validate_judge.py", line 41, in cached
+    raise RuntimeError('Unresolved dispatch; do not resend automatically')
+RuntimeError: Unresolved dispatch; do not resend automatically

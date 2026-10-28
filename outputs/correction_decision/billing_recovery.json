@@ -1,0 +1,16 @@
+{
+  "terminal_session": 61910,
+  "reason": "Pre-dispatch billing read failed; no final paid dispatch was recorded",
+  "fresh_check": {
+    "start_total_usd": 27.127588,
+    "limit_usd": 14,
+    "current_total_usd": 27.564924,
+    "spent_usd": 0.43733600000000195,
+    "requests": 318,
+    "checked_at": "2026-10-27T07:34:12.538970+00:00",
+    "account_limit_cents": 4900,
+    "request_limit": 10000
+  },
+  "successful_responses": 318,
+  "action": "Resume only uncached inputs after fresh below-cap billing verification; never regenerate successful outputs"
+}

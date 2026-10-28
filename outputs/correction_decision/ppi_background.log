@@ -1,0 +1,27 @@
+Spark HTTP 429: concurrency=4; retry with existing backoff
+Spark HTTP 429: concurrency=4; retry with existing backoff
+Spark HTTP 429: concurrency=4; retry with existing backoff
+Spark HTTP 429: concurrency=4; retry with existing backoff
+Spark HTTP 429: concurrency=4; retry with existing backoff
+Spark HTTP 429: concurrency=4; retry with existing backoff
+Spark HTTP 429: concurrency=4; retry with existing backoff
+Spark HTTP 429: concurrency=4; retry with existing backoff
+Spark HTTP 429: concurrency=4; retry with existing backoff
+Traceback (most recent call last):
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision.py", line 448, in <module>
+    try: main()
+         ^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision.py", line 418, in main
+    run_phase(args.phase,args.concurrency)
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision_ppi.py", line 309, in run_phase
+    if phase in ('spark','ppi-full'):spark_stage(concurrency)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision_ppi.py", line 79, in spark_stage
+    records=judge_batch(OUT/'spark_judgments.jsonl',todo,concurrency,prompt=prompt,
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/usersim/judge_spark.py", line 263, in judge_batch
+    digest = input_sha256(prompt,item)
+                            ^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision_ppi.py", line 78, in completed
+    raise RuntimeError('Spark judgment parse failure; stop')
+RuntimeError: Spark judgment parse failure; stop

@@ -1,0 +1,8 @@
+{
+  "registered_dialogues": 100,
+  "sample_turns": 827,
+  "logical_new_condition_inputs": 1654,
+  "pending_unique": 1398,
+  "projected_new_usd": 1.9200719247648856,
+  "assumptions": "historical measured smoke USD/request; before extra Spark moderation; shared-account difference is not exact model attribution; cached fingerprints reused"
+}

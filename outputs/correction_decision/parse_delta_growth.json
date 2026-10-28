@@ -1,0 +1,32 @@
+{
+  "before": {
+    "ok": 1776,
+    "parse_error": 1
+  },
+  "after": {
+    "ok": 1828,
+    "parse_error": 1
+  },
+  "parse_failed_dispatches": {
+    "6982dbf197e399bd8b0bf1c5909bb7ddaa59b41d9d748e7e4bd1bd888dfe0da7": 1
+  },
+  "supervisor": {
+    "stage": "running",
+    "supervisor_pid": 80050,
+    "observed_at": 1793141759.740127,
+    "restarts": 0,
+    "worker_pid": 80051,
+    "command": [
+      "/Users/kwang/projects/user_simulator/.venv/bin/python",
+      "-u",
+      "scripts/run_correction_decision.py",
+      "--phase",
+      "ppi-full",
+      "--concurrency",
+      "4"
+    ]
+  },
+  "new_gemini_rows": 0,
+  "protected_files_unchanged": true,
+  "old_gemini_unchanged": true
+}

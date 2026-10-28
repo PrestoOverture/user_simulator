@@ -1,0 +1,4376 @@
+[
+  {
+    "request_id": "1610:1",
+    "dialogue_id": 1610,
+    "turn": 1,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "unclear",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "1610:2",
+    "dialogue_id": 1610,
+    "turn": 2,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "1610:3",
+    "dialogue_id": 1610,
+    "turn": 3,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "1610:4",
+    "dialogue_id": 1610,
+    "turn": 4,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "1610:5",
+    "dialogue_id": 1610,
+    "turn": 5,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "1610:6",
+    "dialogue_id": 1610,
+    "turn": 6,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "1610:7",
+    "dialogue_id": 1610,
+    "turn": 7,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "1610:8",
+    "dialogue_id": 1610,
+    "turn": 8,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "close",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "6114:2",
+    "dialogue_id": 6114,
+    "turn": 2,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "6114:3",
+    "dialogue_id": 6114,
+    "turn": 3,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "6114:4",
+    "dialogue_id": 6114,
+    "turn": 4,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "6114:5",
+    "dialogue_id": 6114,
+    "turn": 5,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "6114:6",
+    "dialogue_id": 6114,
+    "turn": 6,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "6114:7",
+    "dialogue_id": 6114,
+    "turn": 7,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "6114:8",
+    "dialogue_id": 6114,
+    "turn": 8,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "6114:9",
+    "dialogue_id": 6114,
+    "turn": 9,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "4970:1",
+    "dialogue_id": 4970,
+    "turn": 1,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "4970:2",
+    "dialogue_id": 4970,
+    "turn": 2,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "unclear",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "4970:3",
+    "dialogue_id": 4970,
+    "turn": 3,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "4970:4",
+    "dialogue_id": 4970,
+    "turn": 4,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "4970:5",
+    "dialogue_id": 4970,
+    "turn": 5,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": true
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "4970:6",
+    "dialogue_id": 4970,
+    "turn": 6,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "4970:7",
+    "dialogue_id": 4970,
+    "turn": 7,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "unclear",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "4161:2",
+    "dialogue_id": 4161,
+    "turn": 2,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "4161:3",
+    "dialogue_id": 4161,
+    "turn": 3,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "4161:4",
+    "dialogue_id": 4161,
+    "turn": 4,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": true
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "4161:5",
+    "dialogue_id": 4161,
+    "turn": 5,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "close",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "4161:6",
+    "dialogue_id": 4161,
+    "turn": 6,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "close",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "4161:7",
+    "dialogue_id": 4161,
+    "turn": 7,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "close",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "4161:8",
+    "dialogue_id": 4161,
+    "turn": 8,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "close",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "1633:2",
+    "dialogue_id": 1633,
+    "turn": 2,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "1633:3",
+    "dialogue_id": 1633,
+    "turn": 3,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "1633:4",
+    "dialogue_id": 1633,
+    "turn": 4,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "unclear",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "1633:5",
+    "dialogue_id": 1633,
+    "turn": 5,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "1633:6",
+    "dialogue_id": 1633,
+    "turn": 6,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "close",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "2909:2",
+    "dialogue_id": 2909,
+    "turn": 2,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "2909:3",
+    "dialogue_id": 2909,
+    "turn": 3,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "2909:4",
+    "dialogue_id": 2909,
+    "turn": 4,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "2909:5",
+    "dialogue_id": 2909,
+    "turn": 5,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "2909:6",
+    "dialogue_id": 2909,
+    "turn": 6,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": true
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "2909:7",
+    "dialogue_id": 2909,
+    "turn": 7,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "2909:8",
+    "dialogue_id": 2909,
+    "turn": 8,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "2909:9",
+    "dialogue_id": 2909,
+    "turn": 9,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "9089:1",
+    "dialogue_id": 9089,
+    "turn": 1,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "unclear",
+        "emotion": true
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "oracle": {
+        "topic": "unclear",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "9089:2",
+    "dialogue_id": 9089,
+    "turn": 2,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "unclear",
+        "emotion": true
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "oracle": {
+        "topic": "unclear",
+        "emotion": true
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "9089:3",
+    "dialogue_id": 9089,
+    "turn": 3,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": true
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "9089:4",
+    "dialogue_id": 9089,
+    "turn": 4,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": true
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "9089:5",
+    "dialogue_id": 9089,
+    "turn": 5,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": true
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "9089:6",
+    "dialogue_id": 9089,
+    "turn": 6,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": true
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "9089:7",
+    "dialogue_id": 9089,
+    "turn": 7,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": true
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "9089:8",
+    "dialogue_id": 9089,
+    "turn": 8,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": true
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "9089:9",
+    "dialogue_id": 9089,
+    "turn": 9,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": true
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "9089:10",
+    "dialogue_id": 9089,
+    "turn": 10,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": true
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "9089:11",
+    "dialogue_id": 9089,
+    "turn": 11,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": true
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "3697:2",
+    "dialogue_id": 3697,
+    "turn": 2,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "unclear",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "3697:3",
+    "dialogue_id": 3697,
+    "turn": 3,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "3697:4",
+    "dialogue_id": 3697,
+    "turn": 4,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "close",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "3697:5",
+    "dialogue_id": 3697,
+    "turn": 5,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "3697:6",
+    "dialogue_id": 3697,
+    "turn": 6,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "4968:2",
+    "dialogue_id": 4968,
+    "turn": 2,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": true
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "4968:3",
+    "dialogue_id": 4968,
+    "turn": 3,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": true
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "4968:4",
+    "dialogue_id": 4968,
+    "turn": 4,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "4968:5",
+    "dialogue_id": 4968,
+    "turn": 5,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "4968:6",
+    "dialogue_id": 4968,
+    "turn": 6,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "4968:7",
+    "dialogue_id": 4968,
+    "turn": 7,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "9906:2",
+    "dialogue_id": 9906,
+    "turn": 2,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "unclear",
+        "emotion": true
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "9906:3",
+    "dialogue_id": 9906,
+    "turn": 3,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "close",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "9906:4",
+    "dialogue_id": 9906,
+    "turn": 4,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "unclear",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "9906:5",
+    "dialogue_id": 9906,
+    "turn": 5,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "9906:6",
+    "dialogue_id": 9906,
+    "turn": 6,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "9906:7",
+    "dialogue_id": 9906,
+    "turn": 7,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "9906:8",
+    "dialogue_id": 9906,
+    "turn": 8,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": true
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "9906:9",
+    "dialogue_id": 9906,
+    "turn": 9,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "10410:2",
+    "dialogue_id": 10410,
+    "turn": 2,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "unclear",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "10410:3",
+    "dialogue_id": 10410,
+    "turn": 3,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "unclear",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "10410:4",
+    "dialogue_id": 10410,
+    "turn": 4,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "10410:5",
+    "dialogue_id": 10410,
+    "turn": 5,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "10410:6",
+    "dialogue_id": 10410,
+    "turn": 6,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "10410:7",
+    "dialogue_id": 10410,
+    "turn": 7,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "10410:8",
+    "dialogue_id": 10410,
+    "turn": 8,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "10410:9",
+    "dialogue_id": 10410,
+    "turn": 9,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "close",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "7171:1",
+    "dialogue_id": 7171,
+    "turn": 1,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "unclear",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "7171:2",
+    "dialogue_id": 7171,
+    "turn": 2,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "unclear",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "7171:3",
+    "dialogue_id": 7171,
+    "turn": 3,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "7171:4",
+    "dialogue_id": 7171,
+    "turn": 4,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "7171:5",
+    "dialogue_id": 7171,
+    "turn": 5,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "unclear",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "7171:6",
+    "dialogue_id": 7171,
+    "turn": 6,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "close",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "4349:2",
+    "dialogue_id": 4349,
+    "turn": 2,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "unclear",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "4349:3",
+    "dialogue_id": 4349,
+    "turn": 3,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "close",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "4349:4",
+    "dialogue_id": 4349,
+    "turn": 4,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "4349:5",
+    "dialogue_id": 4349,
+    "turn": 5,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "unclear",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "4349:6",
+    "dialogue_id": 4349,
+    "turn": 6,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": true
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "4349:7",
+    "dialogue_id": 4349,
+    "turn": 7,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "close",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "4349:8",
+    "dialogue_id": 4349,
+    "turn": 8,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "close",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "8894:2",
+    "dialogue_id": 8894,
+    "turn": 2,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "unclear",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "8894:3",
+    "dialogue_id": 8894,
+    "turn": 3,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "unclear",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "8894:4",
+    "dialogue_id": 8894,
+    "turn": 4,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "8894:5",
+    "dialogue_id": 8894,
+    "turn": 5,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "8894:6",
+    "dialogue_id": 8894,
+    "turn": 6,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "8894:7",
+    "dialogue_id": 8894,
+    "turn": 7,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "8894:8",
+    "dialogue_id": 8894,
+    "turn": 8,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "close",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "8894:9",
+    "dialogue_id": 8894,
+    "turn": 9,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "close",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "7106:2",
+    "dialogue_id": 7106,
+    "turn": 2,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "7106:3",
+    "dialogue_id": 7106,
+    "turn": 3,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": true
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "7106:4",
+    "dialogue_id": 7106,
+    "turn": 4,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "7106:5",
+    "dialogue_id": 7106,
+    "turn": 5,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "7106:6",
+    "dialogue_id": 7106,
+    "turn": 6,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "7106:7",
+    "dialogue_id": 7106,
+    "turn": 7,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "7106:8",
+    "dialogue_id": 7106,
+    "turn": 8,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "7106:9",
+    "dialogue_id": 7106,
+    "turn": 9,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "close",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "7106:10",
+    "dialogue_id": 7106,
+    "turn": 10,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "close",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "7106:11",
+    "dialogue_id": 7106,
+    "turn": 11,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "close",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "7106:12",
+    "dialogue_id": 7106,
+    "turn": 12,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "7106:13",
+    "dialogue_id": 7106,
+    "turn": 13,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "7106:14",
+    "dialogue_id": 7106,
+    "turn": 14,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "7106:15",
+    "dialogue_id": 7106,
+    "turn": 15,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "7106:16",
+    "dialogue_id": 7106,
+    "turn": 16,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "close",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "7106:17",
+    "dialogue_id": 7106,
+    "turn": 17,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "7106:18",
+    "dialogue_id": 7106,
+    "turn": 18,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "7106:19",
+    "dialogue_id": 7106,
+    "turn": 19,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "7106:20",
+    "dialogue_id": 7106,
+    "turn": 20,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "close",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "7106:21",
+    "dialogue_id": 7106,
+    "turn": 21,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "close",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "7106:22",
+    "dialogue_id": 7106,
+    "turn": 22,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "7106:23",
+    "dialogue_id": 7106,
+    "turn": 23,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "close",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "7106:24",
+    "dialogue_id": 7106,
+    "turn": 24,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "2403:2",
+    "dialogue_id": 2403,
+    "turn": 2,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "unclear",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "2403:3",
+    "dialogue_id": 2403,
+    "turn": 3,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "2403:4",
+    "dialogue_id": 2403,
+    "turn": 4,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": true
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "2403:5",
+    "dialogue_id": 2403,
+    "turn": 5,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "baseline": {
+        "topic": "close",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "2403:6",
+    "dialogue_id": 2403,
+    "turn": 6,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "2403:7",
+    "dialogue_id": 2403,
+    "turn": 7,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "2403:8",
+    "dialogue_id": 2403,
+    "turn": 8,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "close",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "2543:1",
+    "dialogue_id": 2543,
+    "turn": 1,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "2543:2",
+    "dialogue_id": 2543,
+    "turn": 2,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": true
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "2543:3",
+    "dialogue_id": 2543,
+    "turn": 3,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "2543:4",
+    "dialogue_id": 2543,
+    "turn": 4,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "2543:5",
+    "dialogue_id": 2543,
+    "turn": 5,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "close",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "2543:6",
+    "dialogue_id": 2543,
+    "turn": 6,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "close",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "2732:2",
+    "dialogue_id": 2732,
+    "turn": 2,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": true
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "2732:3",
+    "dialogue_id": 2732,
+    "turn": 3,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": true
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": true
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "2732:4",
+    "dialogue_id": 2732,
+    "turn": 4,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": true
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "2732:5",
+    "dialogue_id": 2732,
+    "turn": 5,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "2732:6",
+    "dialogue_id": 2732,
+    "turn": 6,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "close",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "3999:1",
+    "dialogue_id": 3999,
+    "turn": 1,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "3999:2",
+    "dialogue_id": 3999,
+    "turn": 2,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "3999:3",
+    "dialogue_id": 3999,
+    "turn": 3,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": true
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "3999:4",
+    "dialogue_id": 3999,
+    "turn": 4,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "3999:5",
+    "dialogue_id": 3999,
+    "turn": 5,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": true
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "3999:6",
+    "dialogue_id": 3999,
+    "turn": 6,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "3999:7",
+    "dialogue_id": 3999,
+    "turn": 7,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "3999:8",
+    "dialogue_id": 3999,
+    "turn": 8,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "3999:9",
+    "dialogue_id": 3999,
+    "turn": 9,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "close",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "3999:10",
+    "dialogue_id": 3999,
+    "turn": 10,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "close",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "5670:2",
+    "dialogue_id": 5670,
+    "turn": 2,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "unclear",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "5670:3",
+    "dialogue_id": 5670,
+    "turn": 3,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "5670:4",
+    "dialogue_id": 5670,
+    "turn": 4,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "5670:5",
+    "dialogue_id": 5670,
+    "turn": 5,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "5670:6",
+    "dialogue_id": 5670,
+    "turn": 6,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "close",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "5670:7",
+    "dialogue_id": 5670,
+    "turn": 7,
+    "predictions": {
+      "human": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "unclear",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "unclear",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "unclear"
+    }
+  },
+  {
+    "request_id": "5670:8",
+    "dialogue_id": 5670,
+    "turn": 8,
+    "predictions": {
+      "human": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "close",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "continue",
+        "emotion": true
+      },
+      "oracle": {
+        "topic": "continue",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "continue",
+      "oracle": "continue"
+    }
+  },
+  {
+    "request_id": "5670:9",
+    "dialogue_id": 5670,
+    "turn": 9,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "continue",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "unclear",
+      "oracle": "close"
+    }
+  },
+  {
+    "request_id": "5670:10",
+    "dialogue_id": 5670,
+    "turn": 10,
+    "predictions": {
+      "human": {
+        "topic": "close",
+        "emotion": false
+      },
+      "baseline": {
+        "topic": "close",
+        "emotion": false
+      },
+      "decision": {
+        "topic": "close",
+        "emotion": false
+      },
+      "oracle": {
+        "topic": "close",
+        "emotion": false
+      }
+    },
+    "targets": {
+      "decision": "close",
+      "oracle": "close"
+    }
+  }
+]

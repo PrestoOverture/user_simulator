@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision.py", line 448, in <module>
+    try: main()
+         ^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision.py", line 422, in main
+    print(json.dumps(ppi_report(),ensure_ascii=False))
+                     ^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision_ppi.py", line 297, in report
+    reg,pairs=paired_data();result=compute(reg,pairs)
+              ^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision_ppi.py", line 241, in paired_data
+    if sha not in g:raise RuntimeError('Registered Gemini sample incomplete; refuse full PPI report')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Registered Gemini sample incomplete; refuse full PPI report

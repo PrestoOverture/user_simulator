@@ -1,0 +1,41 @@
+judge 500: logical=17196 pending_unique=8203
+judge 500: 8/8203, spent=$0.5048
+judge 500: 16/8203, spent=$0.5163
+judge 500: 24/8203, spent=$0.5271
+judge 500: 32/8203, spent=$0.5424
+judge 500: 40/8203, spent=$0.5509
+judge 500: 48/8203, spent=$0.5632
+judge 500: 56/8203, spent=$0.5756
+judge 500: 64/8203, spent=$0.5872
+Traceback (most recent call last):
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision.py", line 418, in <module>
+    try: main()
+         ^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision.py", line 405, in main
+    judge_stage(OUT,chosen,baseline,n,args.concurrency)
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision.py", line 217, in judge_stage
+    v2.evaluate_metered(client,text,list(pending.values()),previous,out,concurrency,n)
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_v2.py", line 302, in evaluate_metered
+    if future.result() is None:
+       ^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/usersim/judge.py", line 70, in evaluate
+    self.record(dict(id=item['id'], attempt=attempt, event='dispatch', model=MODEL, provider=PROVIDER, input_sha256=input_sha256(prompt, item)))
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision.py", line 185, in record
+    meter(self.out)
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision.py", line 162, in meter
+    return _meter(out)
+           ^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision.py", line 166, in _meter
+    value = v2.billing()
+            ^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_v2.py", line 70, in billing
+    raise RuntimeError('Cannot verify gateway billing; stop') from None
+RuntimeError: Cannot verify gateway billing; stop

@@ -1,0 +1,18 @@
+{
+  "counts": {
+    "ok": 1776,
+    "parse_error": 1
+  },
+  "parse_failed_fingerprints": [
+    "6982dbf197e399bd8b0bf1c5909bb7ddaa59b41d9d748e7e4bd1bd888dfe0da7"
+  ],
+  "failed_dispatches": {
+    "6982dbf197e399bd8b0bf1c5909bb7ddaa59b41d9d748e7e4bd1bd888dfe0da7": 1
+  },
+  "old_gemini_sha256": "965fb5fca9cfc14bf44d7cd85212afcdaa17b071ef830239e476cf99d6dde5a0",
+  "protected_sha256": {
+    "/Users/kwang/projects/user_simulator/usersim/judge.py": "944e8a85ab35209ae93d68c42096bf03a0039a8921c560a6a28799bb6ed3ecd1",
+    "/Users/kwang/projects/user_simulator/usersim/judge_spark.py": "6888c9ed4f03154f6ae373ef829606948b965383584ea9e2e2f47444ceaccb5e",
+    "/Users/kwang/projects/user_simulator/usersim/ppi.py": "f08522f4ddc3433de44c514e700a0ae525f940e826330064e6c6565a1b93b2a9"
+  }
+}

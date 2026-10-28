@@ -1,0 +1,118 @@
+judge 500: logical=17196 pending_unique=8130
+judge 500: 8/8130, spent=$0.6351
+judge 500: 16/8130, spent=$0.6492
+judge 500: 24/8130, spent=$0.6654
+judge 500: 32/8130, spent=$0.6783
+judge 500: 40/8130, spent=$0.6869
+judge 500: 48/8130, spent=$0.6992
+judge 500: 56/8130, spent=$0.7129
+judge 500: 64/8130, spent=$0.7330
+judge 500: 72/8130, spent=$0.7460
+judge 500: 80/8130, spent=$0.7585
+judge 500: 88/8130, spent=$0.7753
+judge 500: 96/8130, spent=$0.7877
+judge 500: 104/8130, spent=$0.8041
+judge 500: 112/8130, spent=$0.8230
+judge 500: 120/8130, spent=$0.8420
+judge 500: 128/8130, spent=$0.8479
+judge 500: 136/8130, spent=$0.8653
+judge 500: 144/8130, spent=$0.8754
+judge 500: 152/8130, spent=$0.8911
+judge 500: 160/8130, spent=$0.9012
+judge 500: 168/8130, spent=$0.9166
+judge 500: 176/8130, spent=$0.9300
+judge 500: 184/8130, spent=$0.9420
+judge 500: 192/8130, spent=$0.9512
+judge 500: 200/8130, spent=$0.9624
+judge 500: 208/8130, spent=$0.9862
+judge 500: 216/8130, spent=$1.0042
+judge 500: 224/8130, spent=$1.0213
+judge 500: 232/8130, spent=$1.0336
+judge 500: 240/8130, spent=$1.0517
+judge 500: 248/8130, spent=$1.0655
+judge 500: 256/8130, spent=$1.0775
+judge 500: 264/8130, spent=$1.0879
+judge 500: 272/8130, spent=$1.0991
+judge 500: 280/8130, spent=$1.1152
+judge 500: 288/8130, spent=$1.1255
+judge 500: 296/8130, spent=$1.1466
+judge 500: 304/8130, spent=$1.1566
+judge 500: 312/8130, spent=$1.1649
+judge 500: 320/8130, spent=$1.1795
+judge 500: 328/8130, spent=$1.1943
+judge 500: 336/8130, spent=$1.2037
+judge 500: 344/8130, spent=$1.2159
+judge 500: 352/8130, spent=$1.2227
+judge 500: 360/8130, spent=$1.2433
+judge 500: 368/8130, spent=$1.2502
+judge 500: 376/8130, spent=$1.2632
+judge 500: 384/8130, spent=$1.2792
+judge 500: 392/8130, spent=$1.2934
+judge 500: 400/8130, spent=$1.3116
+judge 500: 408/8130, spent=$1.3224
+judge 500: 416/8130, spent=$1.3364
+judge 500: 424/8130, spent=$1.3478
+judge 500: 432/8130, spent=$1.3534
+judge 500: 440/8130, spent=$1.3670
+judge 500: 448/8130, spent=$1.3789
+judge 500: 456/8130, spent=$1.3902
+judge 500: 464/8130, spent=$1.4046
+judge 500: 472/8130, spent=$1.4164
+judge 500: 480/8130, spent=$1.4245
+judge 500: 488/8130, spent=$1.4385
+judge 500: 496/8130, spent=$1.4557
+judge 500: 504/8130, spent=$1.4622
+judge 500: 512/8130, spent=$1.4786
+judge 500: 520/8130, spent=$1.4887
+judge 500: 528/8130, spent=$1.4977
+judge 500: 536/8130, spent=$1.5167
+judge 500: 544/8130, spent=$1.5285
+judge 500: 552/8130, spent=$1.5367
+judge 500: 560/8130, spent=$1.5520
+judge 500: 568/8130, spent=$1.5580
+judge 500: 576/8130, spent=$1.5679
+judge 500: 584/8130, spent=$1.5894
+judge 500: 592/8130, spent=$1.5970
+judge 500: 600/8130, spent=$1.6091
+judge 500: 608/8130, spent=$1.6196
+judge 500: 616/8130, spent=$1.6291
+judge 500: 624/8130, spent=$1.6500
+judge 500: 632/8130, spent=$1.6613
+judge 500: 640/8130, spent=$1.6690
+judge 500: 648/8130, spent=$1.6802
+judge 500: 656/8130, spent=$1.6907
+judge 500: 664/8130, spent=$1.7031
+judge 500: 672/8130, spent=$1.7105
+judge 500: 680/8130, spent=$1.7186
+judge 500: 688/8130, spent=$1.7310
+judge 500: 696/8130, spent=$1.7418
+judge 500: 704/8130, spent=$1.7537
+judge 500: 712/8130, spent=$1.7626
+judge 500: 720/8130, spent=$1.7682
+judge 500: 728/8130, spent=$1.7842
+judge 500: 736/8130, spent=$1.7969
+judge 500: 744/8130, spent=$1.8029
+Traceback (most recent call last):
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision.py", line 438, in <module>
+    try: main()
+         ^^^^^^
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision.py", line 425, in main
+    judge_stage(OUT,chosen,baseline,n,args.concurrency)
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision.py", line 237, in judge_stage
+    v2.evaluate_metered(client,text,list(pending.values()),previous,out,concurrency,n)
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_v2.py", line 302, in evaluate_metered
+    if future.result() is None:
+       ^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/usersim/judge.py", line 96, in evaluate
+    self.record(row)
+  File "/Users/kwang/projects/user_simulator/scripts/run_correction_decision.py", line 210, in record
+    raise RuntimeError('Judgment parse failure; stop immediately')
+RuntimeError: Judgment parse failure; stop immediately

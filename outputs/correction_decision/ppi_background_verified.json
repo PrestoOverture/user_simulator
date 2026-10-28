@@ -1,0 +1,22 @@
+{
+  "pid": 53594,
+  "spark_events": {
+    "reuse": 257,
+    "dispatch": 129,
+    "response": 125
+  },
+  "spark_statuses": {
+    "ok": 125
+  },
+  "new_gemini_rows": 0,
+  "old_gemini_unchanged": true,
+  "generations_unchanged": true,
+  "shared_source_external_updates": {
+    "/Users/kwang/projects/user_simulator/usersim/judge_spark.py": {
+      "loaded_at_launch_sha256": "caee27e7ed00a5343e542e671b3a3d0a9295bd0321e58b2a6cbbed23e84e51ee",
+      "current_sha256": "88888c03aeba25046ff671b54ea3a0364e8fcad5dc61607f8ba90b0a2ea23f3a"
+    }
+  },
+  "recovered": 8,
+  "registered_dialogues": 100
+}

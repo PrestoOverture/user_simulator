@@ -1,0 +1,15 @@
+{
+  "old_gemini_sha256": "965fb5fca9cfc14bf44d7cd85212afcdaa17b071ef830239e476cf99d6dde5a0",
+  "generation_sha256": {
+    "decision": "27d0cf4cd6e4f7b937417af3b47fce1edac9671e26fb4135eeba3c333d2aa285",
+    "oracle": "38e8793688ca2da1ba953186bce5e7d50431d8fb97dc51839158beaf8226a4da"
+  },
+  "protected_sha256": {
+    "/Users/kwang/projects/user_simulator/usersim/judge.py": "944e8a85ab35209ae93d68c42096bf03a0039a8921c560a6a28799bb6ed3ecd1",
+    "/Users/kwang/projects/user_simulator/usersim/judge_spark.py": "caee27e7ed00a5343e542e671b3a3d0a9295bd0321e58b2a6cbbed23e84e51ee",
+    "/Users/kwang/projects/user_simulator/usersim/ppi.py": "f08522f4ddc3433de44c514e700a0ae525f940e826330064e6c6565a1b93b2a9",
+    "/Users/kwang/projects/user_simulator/scripts/run_correction_v2.py": "098fdcd77c5ae30ef8aa9e973644f8a29d28db8734d6625c57a158af076aefe2"
+  },
+  "spark_rows": 0,
+  "new_gemini_rows": 0
+}

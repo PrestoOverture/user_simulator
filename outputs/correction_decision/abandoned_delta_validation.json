@@ -1,0 +1,76 @@
+[
+  {
+    "name": "check",
+    "command": [
+      ".venv/bin/python",
+      "scripts/check_correction_decision.py",
+      "--n",
+      "500"
+    ],
+    "exit_code": 1
+  },
+  {
+    "name": "report_1",
+    "command": [
+      ".venv/bin/python",
+      "scripts/run_correction_decision.py",
+      "--phase",
+      "report",
+      "--report-n",
+      "500"
+    ],
+    "exit_code": 1
+  },
+  {
+    "name": "report_2",
+    "command": [
+      ".venv/bin/python",
+      "scripts/run_correction_decision.py",
+      "--phase",
+      "report",
+      "--report-n",
+      "500"
+    ],
+    "exit_code": 1
+  },
+  {
+    "name": "protected_diff",
+    "command": [
+      "git",
+      "diff",
+      "--exit-code",
+      "--",
+      "docs",
+      "usersim/correction_v2.py",
+      "scripts/measure_reaction.py",
+      "outputs/correction_v2",
+      "usersim/judge.py",
+      "usersim/judge_spark.py",
+      "usersim/ppi.py",
+      "scripts/run_correction_v2.py"
+    ],
+    "exit_code": 0
+  },
+  {
+    "name": "compile",
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "py_compile",
+      "scripts/run_correction_decision_ppi.py",
+      "scripts/check_correction_decision_ppi.py",
+      "scripts/supervise_correction_decision.py",
+      "tests/test_correction_decision.py"
+    ],
+    "exit_code": 0
+  },
+  {
+    "name": "diff_check",
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "exit_code": 0
+  }
+]
