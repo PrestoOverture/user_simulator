@@ -20,7 +20,7 @@
 | 角色 | 模型 | 状态 |
 |---|---|---|
 | 模拟器（主力） | 讯飞星辰 Spark X2.6（模型 ID `spark-x2.6`） | 已定。10 亿 token 免费额度；用户已确认条款，不再查（2026-10-25） |
-| 对比模型（一两个低价模型，小样本） | **待定**（[roadmap.md](roadmap.md) D3） | Gemini 报告提到的候选（**未核实**）：DeepSeek-V3.2、Qwen3.5、GPT-4o-mini |
+| 对比模型（一两个低价模型，小样本） | `deepseek-v4.1-flash`（D3，已定），关闭推理 | 已用于 500 段规则指标和 ADR-016 分组测量 |
 | 参照模型 | MIMESIS-4B / 9B（Meta 开源） | **待定**（[roadmap.md](roadmap.md) D4） |
 | 判断模型 | `gemini-3.8-flash`（D5）；自 2026-10-28 起 Spark 判全量、Gemini 抽样校正（[architecture.md](architecture.md) ADR-018） | Spark 判断用 thinking enabled（ADR-012 的例外） |
 
@@ -29,12 +29,13 @@
 - **凭证：** `SANDBOX_API_KEY`；地址为 `SANDBOX_BASE_URL` 加 `/v1`（OpenAI 兼容，`/v1/chat/completions`）。
 - **可用模型：** `deepseek-v4.1-flash`、`gemini-3.8-flash`、`glm-5.3-flash`。
 - **规则（用户要求）：** 这三个模型按量付费。只在需要它们的地方用（对比模拟器、判断模型），拿到需要的答案后回到 Spark。`SPARK_API_KEY` 只能调 Spark，不能调讯飞平台上的其他模型（那些不免费）。
-- **推理模式实测：** `deepseek-v4.1-flash` 对"你好"不推理，但在真实重放 prompt 上默认推理（3 段小批中 89% 的输出 token 是推理）；请求体加 `"thinking": {"type": "disabled"}` 可关闭（实测 reasoning_tokens=0）。**2026-10-27 复测：网关已不再理会这个参数**（reasoning_tokens 85–200，`enable_thinking: false` 也无效）。现在要同时加 `"reasoning_effort": "none"` 才能关闭（响应中没有 reasoning_tokens 字段，也没有 reasoning_content）。每次运行都要逐个响应核对。`gemini-3.8-flash` 和 `glm-5.3-flash` 默认推理，每次约多 60–120 个 token；按网关文档（https://ai.sandboxai.top/docs ，new-api 网关）和各家常见写法逐一试过，均关不掉：Gemini 的 `reasoning_effort` 为 `none`/`minimal`、`google.thinking_config.thinking_budget: 0`；GLM 的 `thinking: {"type": "disabled"}`、`enable_thinking: false`。网关文档中的 `-nothinking`/`-thinking-{budget}` 模型名后缀，本网关未开启（返回 model_not_available）；`/v1/models` 中也没有不推理的版本（2026-10-25）。结论：用 Gemini 当判断模型时，接受每次约 100 个推理 token 的成本，不再试调。
+- **推理模式实测：** `deepseek-v4.1-flash` 对"你好"不推理，但在真实重放 prompt 上默认推理（3 段小批中 89% 的输出 token 是推理）；请求体加 `"thinking": {"type": "disabled"}` 可关闭（实测 reasoning_tokens=0）。**2026-10-27 复测：网关已不再理会这个参数**（reasoning_tokens 85–200，`enable_thinking: false` 也无效）。现在要同时加 `"reasoning_effort": "none"` 才能关闭（响应中没有 reasoning_tokens 字段，也没有 reasoning_content）。每次运行都要逐个响应核对。`gemini-3.8-flash` 和 `glm-5.3-flash` 默认推理，每次约多 60–120 个 token；按网关文档（https://ai.sandboxai.top/docs ，new-api 网关）和各家常见写法逐一试过，均关不掉：Gemini 的 `reasoning_effort` 为 `none`/`minimal`、`google.thinking_config.thinking_budget: 0`；GLM 的 `thinking: {"type": "disabled"}`、`enable_thinking: false`。网关文档中的 `-nothinking`/`-thinking-{budget}` 模型名后缀，本网关未开启（返回 model_not_available）；`/v1/models` 中也没有不推理的版本（2026-10-25）。结论：用 Gemini 当判断模型时，接受每次约 100 个推理 token 的成本，不再试调。补充（2026-10-27/28）：Gemini 的推理是自适应的，P2 v2 中约 78% 的响应 reasoning_tokens 为 0；偶尔返回字段名带换行的 JSON（如 `{"topic\n":"close"}`），解析时对字段名做 strip。网关偶发 504、ReadTimeout、ProxyError，billing 接口偶尔失败，脚本都需要有限次重试。
 - **计划分工（用户 2026-10-25）：** DeepSeek 做对比模拟器（D3）；Gemini Flash 做判断模型（D5），不用 GPT，因为 1,386 条标准集是 Codex（GPT 系）判的；GLM 备用。
 
 - **实测成本：** DeepSeek 3 段小批（24 轮，开着推理）网关扣费 1.02 美分；500 段按比例约 2 美元（开着推理）。关闭推理后同样 3 段扣费 0.28 美分（含 Claude 1 次测试调用），500 段约 0.55 美元。余额用 `GET {SANDBOX_BASE_URL}/v1/dashboard/billing/usage` 查（`total_usage`，单位美分）。
 
-- **累计花费（截至 2026-10-28 14:20）：** 网关约 34.76 美元；DeepSeek 分组测量约 5.8 美元；决策层控制（合同 A）约 7.6 美元。此前截至 2026-10-27 中午约 27.13 美元。P2 v2 新增 20.12 美元（Gemini 判断约 2.1 万次；快照见 `outputs/correction_v2/budget.json`）。此前 7.0 美元中， DeepSeek B 全量约 0.59 美元；Gemini 判断模型验证约 0.35 美元；ADR-016 分组测量约 6.05 美元；其余为小批与测试。
+- **累计花费（截至 2026-10-28）：** 网关 `total_usage` 约 34.76 美元。明细：至 2026-10-27 session 开始前 7.0 美元（DeepSeek 500 段约 0.59、判断模型验证约 0.35、ADR-016 分组测量约 6.05、其余小批）；P2 v2 约 20.12 美元（快照见 `outputs/correction_v2/budget.json`）；DeepSeek 分组测量约 5.8 美元；决策层控制约 7.6 美元（其中 PPI 校正样本 1.78 美元，其余是改方案前的 Gemini 全量判断）。后两项是共享账户差额，为上界。
+- **省钱规则（用户 2026-10-27）：** 付费 token 能省则省；Spark 和 Codex 额度放开用。判断按 ADR-018。
 
 **调用参数：**
 - temperature 使用官方默认值，并记录。

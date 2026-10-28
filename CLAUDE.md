@@ -31,6 +31,7 @@
 - Spark token 不设上限，放手用。
 - 一直往前推进，只在必须由用户决定时停下（roadmap 第 3 节决策点）。
 - Codex 模型：gpt-6.1-sol，reasoning effort low。
+- Codex 任务有 30 分钟硬上限，超时会杀掉它启动的后台进程。长任务让 Codex 写代码、跑小批，再由 Claude 在自己的 shell 里用 nohup 启动和监控（2026-10-28 经验）。
 
 Goal Contract 中要写明：
 - 目标、产出文件、验证方法。
