@@ -1,0 +1,12 @@
+{
+  "all_prefixes_verified": true,
+  "api_requests": 0,
+  "counts": {
+    "continue": 2000,
+    "leave": 2000
+  },
+  "manifest_sha256": "c30a82d9ce940a1c68336c435c99a2d115f5ee2df35507f14981aeb91e86859f",
+  "paired_dialogues": 2000,
+  "points": 4000,
+  "reproducible": true
+}

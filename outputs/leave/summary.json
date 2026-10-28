@@ -1,0 +1,195 @@
+{
+  "attempts": 20,
+  "bootstrap_replicates": 2000,
+  "groups": {
+    "continue/all": {
+      "leave": {
+        "high": 0.0,
+        "hits": 0,
+        "low": 0.0,
+        "n": 10,
+        "rate": 0.0
+      },
+      "mixed": {
+        "high": 0.0,
+        "hits": 0,
+        "low": 0.0,
+        "n": 10,
+        "rate": 0.0
+      }
+    },
+    "continue/closing": {
+      "leave": {
+        "high": null,
+        "hits": 0,
+        "low": null,
+        "n": 0,
+        "rate": null
+      },
+      "mixed": {
+        "high": null,
+        "hits": 0,
+        "low": null,
+        "n": 0,
+        "rate": null
+      }
+    },
+    "continue/negative": {
+      "leave": {
+        "high": null,
+        "hits": 0,
+        "low": null,
+        "n": 0,
+        "rate": null
+      },
+      "mixed": {
+        "high": null,
+        "hits": 0,
+        "low": null,
+        "n": 0,
+        "rate": null
+      }
+    },
+    "continue/nonclosing": {
+      "leave": {
+        "high": 0.0,
+        "hits": 0,
+        "low": 0.0,
+        "n": 10,
+        "rate": 0.0
+      },
+      "mixed": {
+        "high": 0.0,
+        "hits": 0,
+        "low": 0.0,
+        "n": 10,
+        "rate": 0.0
+      }
+    },
+    "continue/nonnegative": {
+      "leave": {
+        "high": 0.0,
+        "hits": 0,
+        "low": 0.0,
+        "n": 10,
+        "rate": 0.0
+      },
+      "mixed": {
+        "high": 0.0,
+        "hits": 0,
+        "low": 0.0,
+        "n": 10,
+        "rate": 0.0
+      }
+    },
+    "leave/all": {
+      "leave": {
+        "high": 0.7,
+        "hits": 4,
+        "low": 0.1,
+        "n": 10,
+        "rate": 0.4
+      },
+      "mixed": {
+        "high": 0.0,
+        "hits": 0,
+        "low": 0.0,
+        "n": 10,
+        "rate": 0.0
+      }
+    },
+    "leave/closing": {
+      "leave": {
+        "high": 0.0,
+        "hits": 0,
+        "low": 0.0,
+        "n": 1,
+        "rate": 0.0
+      },
+      "mixed": {
+        "high": 0.0,
+        "hits": 0,
+        "low": 0.0,
+        "n": 1,
+        "rate": 0.0
+      }
+    },
+    "leave/negative": {
+      "leave": {
+        "high": null,
+        "hits": 0,
+        "low": null,
+        "n": 0,
+        "rate": null
+      },
+      "mixed": {
+        "high": null,
+        "hits": 0,
+        "low": null,
+        "n": 0,
+        "rate": null
+      }
+    },
+    "leave/nonclosing": {
+      "leave": {
+        "high": 0.7777777777777778,
+        "hits": 4,
+        "low": 0.1111111111111111,
+        "n": 9,
+        "rate": 0.4444444444444444
+      },
+      "mixed": {
+        "high": 0.0,
+        "hits": 0,
+        "low": 0.0,
+        "n": 9,
+        "rate": 0.0
+      }
+    },
+    "leave/nonnegative": {
+      "leave": {
+        "high": 0.7,
+        "hits": 4,
+        "low": 0.1,
+        "n": 10,
+        "rate": 0.4
+      },
+      "mixed": {
+        "high": 0.0,
+        "hits": 0,
+        "low": 0.0,
+        "n": 10,
+        "rate": 0.0
+      }
+    }
+  },
+  "moderated_count": 0,
+  "moderated_ids": [],
+  "moderated_rate": 0.0,
+  "phase": "pilot",
+  "planned": 20,
+  "population": {
+    "all_dialogues": 10701,
+    "all_endings": {
+      "A": 9651,
+      "Q": 1050
+    },
+    "continue_dialogues": 8917,
+    "continue_positions": 65637,
+    "leave_points": 8917,
+    "no_continue_dialogues": 0,
+    "user_dialogues": 9910,
+    "user_endings": {
+      "A": 8917,
+      "Q": 993
+    }
+  },
+  "seed": 20261028,
+  "unknown_usage": 0,
+  "unreviewed_summaries": 10,
+  "usage": {
+    "completion_tokens": 292,
+    "prompt_tokens": 7109,
+    "total_tokens": 7401
+  }
+}

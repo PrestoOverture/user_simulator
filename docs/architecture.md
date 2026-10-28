@@ -155,7 +155,7 @@
 
 ## 项目结构
 
-2026-10-27 的结构。数据集适配和指标是分开的，第一阶段换数据集或第二阶段换 WildChat 时，只需新增一个适配模块（ADR-005）。
+2026-10-28 的结构。数据集适配和指标是分开的，第一阶段换数据集或第二阶段换 WildChat 时，只需新增一个适配模块（ADR-005）。
 
 ```
 usersim/            可复用的核心库
@@ -167,6 +167,11 @@ usersim/            可复用的核心库
   metrics.py        规则指标（关键词在 config/keywords.json）
   report.py         汇总表和 report.md
   anchors.py        修正方法：真实原话示例池与抽取（ADR-007，探索性）
+  correction_v2.py  修正 v2：情境检索示例、轮次结构抽样
+  correction_decision.py  决策层控制：目标反应抽样、oracle 诊断
+  judge_spark.py    Spark 判断器（ADR-018）：冻结 prompt、并发批量判断、429 自适应、缓存复用
+  ppi.py            PPI 估计与按对话 bootstrap（ADR-018）
+  leave.py          直接离开：离开点/继续点抽样与离开选项（ADR-019）
 config/
   keywords.json           关键词规则（已经过审查修订）
   summary_overrides.json  逐段摘要清洗覆盖
@@ -183,9 +188,14 @@ scripts/
   build_standard_set.py, validate_judge.py   判断模型标准集与验证
   measure_behaviors.py    规则版行为指标
   measure_reaction.py     ADR-016 分组测量（抽样、判断、bootstrap、预先登记判定）
+  measure_reaction_deepseek.py  DeepSeek 上的同一分组测量
+  run_correction_v2.py, run_correction_decision.py（含 _ppi）  P2 修正实验；supervise_correction_decision.py 守护续跑
+  validate_spark_judge.py, run_spark_judge_full.sh   Spark 判断器验证与 PPI 模拟
+  run_leave.py            直接离开测量
   其余                    审查与敏感性分析的一次性脚本
 tests/              pytest
-outputs/            试跑 20 段；extended/ 500 段；correction_pilot/；behaviors/；ablation_a_full/；model_b/；decision_ab/；judge_validation/；full_csds/spark/ 全量基线；reaction/full/ 分组测量；archive/v1_segmented/ 首版
+paper/              第一阶段成果初稿（phase1_draft.md）
+outputs/            试跑 20 段；extended/ 500 段；correction_pilot/；behaviors/；ablation_a_full/；model_b/；decision_ab/；judge_validation/；full_csds/spark/ 全量基线；reaction/full/ 与 reaction/deepseek/ 分组测量；correction_v2/、correction_decision/ 修正；spark_judge_validation/；leave/；archive/v1_segmented/ 首版
 data/raw/           原始数据（不进 git）
 ```
 

@@ -1,0 +1,20 @@
+{"id": "train:10073:leave:46", "input_sha256": "bb59a0cde878c8cafe011d1a640426fcfe437051dd8f0d2b4fff2756599deb5f", "status": "ok", "text": "[离开]"}
+{"id": "train:3987:leave:22", "input_sha256": "4caba12a93154614b729d95b1115cdf2c6f7354539283c127ae2d0883fd89597", "status": "ok", "text": "没有了，谢谢你。"}
+{"id": "test:8202:leave:14", "input_sha256": "5e54359b03937c6395d9913790c9e02a6d91e06349b00c1bcb28e6974fde0fbd", "status": "ok", "text": "[离开]"}
+{"id": "train:9930:leave:29", "input_sha256": "757ca62cc1cc9a592ce258b739b9f43a711fddfb8aa00e259f51b6f121b42a00", "status": "ok", "text": "[离开]"}
+{"id": "val:9240:leave:35", "input_sha256": "b9d8a43108a6fe8469fbc18881f2dd0708047eb1f11d144eb60dbeccf66ae0be", "status": "ok", "text": "谢谢，知道了"}
+{"id": "train:2494:leave:48", "input_sha256": "4e8e4b99d17c1bd5a06098b85181e8c145c9d1ce2359b0ff4ec5e0d12b9d6549", "status": "ok", "text": "那麻烦你赶快帮我处理一下发票修改的事情吧，万分感谢！"}
+{"id": "train:5024:leave:23", "input_sha256": "4cf09a0cba88fa20cfcc53cc066e655d901de5e41bc316c303104a81e0107d19", "status": "ok", "text": "好的，辛苦了，麻烦尽快让配送员联系一下吧，谢谢。"}
+{"id": "test:2110:leave:31", "input_sha256": "e32c39a6c8dcbd241920c8f0cc889964ff4a40b7d0fff30a965e5c61a5b61e5d", "status": "ok", "text": "好的，非常感谢！那就麻烦你们了。不用了，再见。"}
+{"id": "train:9117:leave:41", "input_sha256": "5946581954df08ebc6d298414b09c640405baeaca5f15fa36782a7a55786d33c", "status": "ok", "text": "好的，谢谢你的帮忙，希望你们快点处理。"}
+{"id": "train:441:leave:42", "input_sha256": "46ab5ef344150cbf36d30ff282ee6690134661bf08d63caee853a5fb777c5131", "status": "ok", "text": "[离开]"}
+{"id": "test:2110:continue:9", "input_sha256": "4e3450a0603664759ba35e42f837638a7cb9a06acf77785e1c5c80e7af30feee", "status": "ok", "text": "啊？这么慢啊，我[数字]号就要离开收货地了，能不能帮我加急处理一下？如果到时候真送不到，我可能就要申请退货了，麻烦帮我催一下快递吧！"}
+{"id": "test:8202:continue:12", "input_sha256": "c5f793fc90c142c2cd8216090fc37ed13dbe7ee3f77b2317085ddd20d2e46d01", "status": "ok", "text": "就只有一个硬盘啊，那不能带走托盘了啊。"}
+{"id": "train:10073:continue:29", "input_sha256": "4611bacc276e80070de8e38cf19e527dde79318fbac6c6e443b1aaad39992b00", "status": "ok", "text": "是的，麻烦你快点帮我弄吧"}
+{"id": "train:2494:continue:24", "input_sha256": "c2c272d5fdc81374528c4fa3695af3f9f56f06d1d776882927d154c0bdf133d0", "status": "ok", "text": "那有没有办法可以催一下他们快点发货啊？我真的很着急用这个灯的。还有，能不能给我提供一下配送员的联系方式呢？"}
+{"id": "train:3987:continue:3", "input_sha256": "52881ec423a2a183c5620679ee228f0f82fb39cedb2132dd75b933ec9001e231", "status": "ok", "text": "我收到的东西没有送齐，为什么订单显示已经完成了呢？"}
+{"id": "train:441:continue:6", "input_sha256": "1f10078ec6b51f76beeb716b5f21567ca578598f5921093f99bb34d61161b1a0", "status": "ok", "text": "不是啊，我写的是我家地址，怎么会跑到重庆门店去了呢，我要改成正确的收货地址，快点帮我改一下，不然轮胎送错了我还怎么用啊。"}
+{"id": "train:5024:continue:11", "input_sha256": "69b5be48c29307e250e1dfd65849986efddf5bcbfb0b4a8b53d4505e86ad9f60", "status": "ok", "text": "我就想知道，你们公司的配送员为啥不接电话？这是你们公司的规定吗"}
+{"id": "train:9117:continue:10", "input_sha256": "5e220640715fffbcec5ccf7a5bc95ba8b5018905bca3ef76f1ad020c3b74dba6", "status": "ok", "text": "我记着呢，[手机号后四位]，你再查一下。"}
+{"id": "train:9930:continue:11", "input_sha256": "5daea6ee651c0db1bbf6be5db357c235fa8c5f4c65c7328a463dc9034db12485", "status": "ok", "text": "好的 已经下好了"}
+{"id": "val:9240:continue:23", "input_sha256": "f2bc6b1c45dd1cc47028d4ca282e53aa6f74507f9d3db05f48a879b4e6003828", "status": "ok", "text": "那如果是需要重新配送的话，费用是怎么回事？还有二次送货需要额外收费吗？"}

@@ -1,0 +1,9 @@
+{
+  "batch_complete": true,
+  "concurrency": 4,
+  "jitter_seed": 20261027,
+  "last_success_wall_time": 1793169154.0537758,
+  "policy": "adaptive_429_v1",
+  "rate_limit_hits": 0,
+  "success_streak": 20
+}

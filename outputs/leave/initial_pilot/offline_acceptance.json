@@ -1,0 +1,11 @@
+{
+  "first": {
+    "report.md": "3015e3ed170e1997c272f8366f37f251ffbaae89f57a9a6fa2f9ef5109b8b7d0",
+    "summary.json": "24f27c2d21b09c78654450da5923f5d11dd33b857e30abe3d358d1e68114484b"
+  },
+  "identical": true,
+  "second": {
+    "report.md": "3015e3ed170e1997c272f8366f37f251ffbaae89f57a9a6fa2f9ef5109b8b7d0",
+    "summary.json": "24f27c2d21b09c78654450da5923f5d11dd33b857e30abe3d358d1e68114484b"
+  }
+}
