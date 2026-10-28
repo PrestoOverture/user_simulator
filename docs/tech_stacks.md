@@ -22,7 +22,7 @@
 | 模拟器（主力） | 讯飞星辰 Spark X2.6（模型 ID `spark-x2.6`） | 已定。10 亿 token 免费额度；用户已确认条款，不再查（2026-10-25） |
 | 对比模型（一两个低价模型，小样本） | **待定**（[roadmap.md](roadmap.md) D3） | Gemini 报告提到的候选（**未核实**）：DeepSeek-V3.2、Qwen3.5、GPT-4o-mini |
 | 参照模型 | MIMESIS-4B / 9B（Meta 开源） | **待定**（[roadmap.md](roadmap.md) D4） |
-| 判断模型 | **待定**（[roadmap.md](roadmap.md) D5） | 输入文件未给出候选 |
+| 判断模型 | `gemini-3.8-flash`（D5）；自 2026-10-28 起 Spark 判全量、Gemini 抽样校正（[architecture.md](architecture.md) ADR-018） | Spark 判断用 thinking enabled（ADR-012 的例外） |
 
 **付费模型（用户提供，2026-10-25 接通）：**
 
