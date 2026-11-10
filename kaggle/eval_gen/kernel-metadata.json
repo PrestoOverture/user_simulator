@@ -1,0 +1,15 @@
+{
+  "id": "prestooverture/csds-qwen35-lora-eval",
+  "title": "CSDS Qwen3.5 LoRA evaluation",
+  "code_file": "gen.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "prestooverture/csds-usersim-eval"
+  ],
+  "competition_sources": [],
+  "kernel_sources": []
+}

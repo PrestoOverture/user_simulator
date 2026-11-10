@@ -1,0 +1,5 @@
+{
+  "message": "Spark exhausted four non-429 transport attempts",
+  "observed_at": 1794257361.8150542,
+  "reason": "transport_budget_exhausted"
+}

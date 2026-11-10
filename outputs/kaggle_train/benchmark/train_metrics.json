@@ -1,0 +1,1307 @@
+{
+  "schema_version": 2,
+  "mode": "cuda_fp16",
+  "model_id": "Qwen/Qwen3.5-4B",
+  "environment": {
+    "python": "3.13.16",
+    "torch": "2.11.0+cu130",
+    "transformers": "5.3.0",
+    "peft": "0.18.1",
+    "accelerate": "1.12.0",
+    "cuda": "13.0",
+    "gpu_name": "Tesla T4",
+    "visible_gpu_count": 2,
+    "gpu_total_memory_bytes": [
+      15636037632,
+      15636037632
+    ],
+    "torch_installation": {
+      "before": "2.11.0+cu130",
+      "after": "2.11.0+cu130"
+    },
+    "optional_kernels": {
+      "requested": true,
+      "installed": false,
+      "reason": "TimeoutExpired: ) (4.2.0)\nRequirement already satisfied: pygments<3.0.0,>=2.13.0 in /usr/local/lib/python3.13/dist-packages (from rich>=13.8.0->typer->transformers<6,>=5.6.2->flash-linear-attention) (2.21.0)\nRequirement already satisfied: mdurl~=0.1 in /usr/local/lib/python3.13/dist-packages (from markdown-it-py>=2.2.0->rich>=13.8.0->typer->transformers<6,>=5.6.2->flash-linear-attention) (0.1.2)\nDownloading flash_linear_attention-0.6.0-py3-none-any.whl (403 kB)\nDownloading fla_core-0.6.0-py3-none-any.whl (1.1 MB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 38.2 MB/s  0:00:00\nDownloading transformers-5.22.2-py3-none-any.whl (13.1 MB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.1/13.1 MB 155.6 MB/s  0:00:00\nDownloading tokenizers-0.23.3-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.4 MB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 104.4 MB/s  0:00:00\nBuilding wheels for collected packages: causal-conv1d\n  Building wheel for causal-conv1d (pyproject.toml): started\n",
+      "versions": {
+        "flash-linear-attention": null,
+        "fla-core": null,
+        "causal-conv1d": null
+      },
+      "import_fallback": "ModuleNotFoundError: No module named 'causal_conv1d'"
+    }
+  },
+  "seed": 20261109,
+  "train_samples": 7983,
+  "train_sha256": "9f1f2cf86323b3fd6c2210cbd07a4fb0b0a6290a9a6e84380ab79b5761d1c6ea",
+  "train_token_counts": {
+    "total": 1790425,
+    "target": 80700
+  },
+  "steps": [],
+  "benchmarks": [
+    {
+      "configuration": "eager_single",
+      "requested": {
+        "attention": "eager",
+        "fast_kernels": false,
+        "token_budget": 0,
+        "world_size": 1
+      },
+      "actual": {
+        "attention": "eager",
+        "fast_kernels": false,
+        "token_budget": 0,
+        "world_size": 1
+      },
+      "steps": [
+        {
+          "step": 1,
+          "loss": 5.1088291291267645,
+          "nonfinite": true,
+          "seconds": 79.83128356933594,
+          "input_tokens": 1350,
+          "target_tokens": 124,
+          "samples": 16,
+          "microbatches": 16,
+          "tokens_per_second": 16.910663835531132,
+          "peak_memory_bytes": 8912324096,
+          "learning_rate": 0.0001,
+          "actual": {
+            "attention": "eager",
+            "fast_kernels": false,
+            "token_budget": 0,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 2,
+          "loss": 4.662118587853773,
+          "nonfinite": true,
+          "seconds": 76.53467559814453,
+          "input_tokens": 1593,
+          "target_tokens": 159,
+          "samples": 16,
+          "microbatches": 16,
+          "tokens_per_second": 20.814094886404927,
+          "peak_memory_bytes": 8951919104,
+          "learning_rate": 0.0001,
+          "actual": {
+            "attention": "eager",
+            "fast_kernels": false,
+            "token_budget": 0,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 3,
+          "loss": 4.273517844460227,
+          "nonfinite": true,
+          "seconds": 73.5282974243164,
+          "input_tokens": 1756,
+          "target_tokens": 275,
+          "samples": 16,
+          "microbatches": 16,
+          "tokens_per_second": 23.881961931832745,
+          "peak_memory_bytes": 8971697664,
+          "learning_rate": 0.0001,
+          "actual": {
+            "attention": "eager",
+            "fast_kernels": false,
+            "token_budget": 0,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 4,
+          "loss": 4.307654050317141,
+          "nonfinite": true,
+          "seconds": 74.2975845336914,
+          "input_tokens": 1979,
+          "target_tokens": 202,
+          "samples": 16,
+          "microbatches": 16,
+          "tokens_per_second": 26.63612838049387,
+          "peak_memory_bytes": 8981098496,
+          "learning_rate": 0.0001,
+          "actual": {
+            "attention": "eager",
+            "fast_kernels": false,
+            "token_budget": 0,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 5,
+          "loss": 4.405125916234315,
+          "nonfinite": true,
+          "seconds": 83.11479187011719,
+          "input_tokens": 2272,
+          "target_tokens": 259,
+          "samples": 16,
+          "microbatches": 16,
+          "tokens_per_second": 27.335687774450978,
+          "peak_memory_bytes": 9014215168,
+          "learning_rate": 0.0001,
+          "actual": {
+            "attention": "eager",
+            "fast_kernels": false,
+            "token_budget": 0,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 6,
+          "loss": 4.149988043798159,
+          "nonfinite": true,
+          "seconds": 80.01319122314453,
+          "input_tokens": 2514,
+          "target_tokens": 146,
+          "samples": 16,
+          "microbatches": 16,
+          "tokens_per_second": 31.419819176925955,
+          "peak_memory_bytes": 8959346688,
+          "learning_rate": 0.0001,
+          "actual": {
+            "attention": "eager",
+            "fast_kernels": false,
+            "token_budget": 0,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 7,
+          "loss": 3.507101162997159,
+          "nonfinite": false,
+          "seconds": 77.75357818603516,
+          "input_tokens": 2770,
+          "target_tokens": 220,
+          "samples": 16,
+          "microbatches": 16,
+          "tokens_per_second": 35.62537010672909,
+          "peak_memory_bytes": 9180445184,
+          "learning_rate": 0.0001,
+          "actual": {
+            "attention": "eager",
+            "fast_kernels": false,
+            "token_budget": 0,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 8,
+          "loss": 3.419441505714699,
+          "nonfinite": false,
+          "seconds": 76.76233673095703,
+          "input_tokens": 3062,
+          "target_tokens": 162,
+          "samples": 16,
+          "microbatches": 16,
+          "tokens_per_second": 39.88935369088555,
+          "peak_memory_bytes": 9301625856,
+          "learning_rate": 9.931806517013612e-05,
+          "actual": {
+            "attention": "eager",
+            "fast_kernels": false,
+            "token_budget": 0,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 9,
+          "loss": 4.077212935643838,
+          "nonfinite": false,
+          "seconds": 78.20594024658203,
+          "input_tokens": 3314,
+          "target_tokens": 141,
+          "samples": 16,
+          "microbatches": 16,
+          "tokens_per_second": 42.37529770182435,
+          "peak_memory_bytes": 9278742016,
+          "learning_rate": 9.729086208503174e-05,
+          "actual": {
+            "attention": "eager",
+            "fast_kernels": false,
+            "token_budget": 0,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 10,
+          "loss": 3.0701680787852115,
+          "nonfinite": true,
+          "seconds": 80.31306457519531,
+          "input_tokens": 3572,
+          "target_tokens": 142,
+          "samples": 16,
+          "microbatches": 16,
+          "tokens_per_second": 44.47595193750348,
+          "peak_memory_bytes": 9289121792,
+          "learning_rate": 9.729086208503174e-05,
+          "actual": {
+            "attention": "eager",
+            "fast_kernels": false,
+            "token_budget": 0,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 11,
+          "loss": 3.0707712877516777,
+          "nonfinite": true,
+          "seconds": 81.55958557128906,
+          "input_tokens": 3818,
+          "target_tokens": 149,
+          "samples": 16,
+          "microbatches": 16,
+          "tokens_per_second": 46.81240069155069,
+          "peak_memory_bytes": 9299056128,
+          "learning_rate": 9.729086208503174e-05,
+          "actual": {
+            "attention": "eager",
+            "fast_kernels": false,
+            "token_budget": 0,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 12,
+          "loss": 3.9188325899141327,
+          "nonfinite": false,
+          "seconds": 79.73297882080078,
+          "input_tokens": 4115,
+          "target_tokens": 111,
+          "samples": 16,
+          "microbatches": 16,
+          "tokens_per_second": 51.60976124131056,
+          "peak_memory_bytes": 9339252224,
+          "learning_rate": 9.397368756032445e-05,
+          "actual": {
+            "attention": "eager",
+            "fast_kernels": false,
+            "token_budget": 0,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 13,
+          "loss": 4.082764338925888,
+          "nonfinite": false,
+          "seconds": 81.15026092529297,
+          "input_tokens": 4506,
+          "target_tokens": 183,
+          "samples": 16,
+          "microbatches": 16,
+          "tokens_per_second": 55.52662368083116,
+          "peak_memory_bytes": 9351153152,
+          "learning_rate": 8.945702546981969e-05,
+          "actual": {
+            "attention": "eager",
+            "fast_kernels": false,
+            "token_budget": 0,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 14,
+          "loss": 3.6523171957437093,
+          "nonfinite": false,
+          "seconds": 79.3807601928711,
+          "input_tokens": 4940,
+          "target_tokens": 154,
+          "samples": 16,
+          "microbatches": 16,
+          "tokens_per_second": 62.23170435754587,
+          "peak_memory_bytes": 9402602496,
+          "learning_rate": 8.386407858128706e-05,
+          "actual": {
+            "attention": "eager",
+            "fast_kernels": false,
+            "token_budget": 0,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 15,
+          "loss": 3.862998699319774,
+          "nonfinite": false,
+          "seconds": 65.13362884521484,
+          "input_tokens": 5586,
+          "target_tokens": 232,
+          "samples": 16,
+          "microbatches": 16,
+          "tokens_per_second": 85.76214927736804,
+          "peak_memory_bytes": 9503930368,
+          "learning_rate": 7.734740790612135e-05,
+          "actual": {
+            "attention": "eager",
+            "fast_kernels": false,
+            "token_budget": 0,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 16,
+          "loss": 4.057483843177747,
+          "nonfinite": false,
+          "seconds": 45.6943359375,
+          "input_tokens": 7325,
+          "target_tokens": 157,
+          "samples": 16,
+          "microbatches": 16,
+          "tokens_per_second": 160.3043320296638,
+          "peak_memory_bytes": 9656625152,
+          "learning_rate": 7.008477123264848e-05,
+          "actual": {
+            "attention": "eager",
+            "fast_kernels": false,
+            "token_budget": 0,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 17,
+          "loss": 3.7353480412409854,
+          "nonfinite": false,
+          "seconds": 42.656917572021484,
+          "input_tokens": 1322,
+          "target_tokens": 78,
+          "samples": 16,
+          "microbatches": 16,
+          "tokens_per_second": 30.991456374407488,
+          "peak_memory_bytes": 9179501568,
+          "learning_rate": 6.227427435703997e-05,
+          "actual": {
+            "attention": "eager",
+            "fast_kernels": false,
+            "token_budget": 0,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 18,
+          "loss": 3.2144323855030295,
+          "nonfinite": false,
+          "seconds": 34.263458251953125,
+          "input_tokens": 1685,
+          "target_tokens": 196,
+          "samples": 16,
+          "microbatches": 16,
+          "tokens_per_second": 49.17775630263328,
+          "peak_memory_bytes": 9228750848,
+          "learning_rate": 5.4128967273616625e-05,
+          "actual": {
+            "attention": "eager",
+            "fast_kernels": false,
+            "token_budget": 0,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 19,
+          "loss": 2.9092413719664227,
+          "nonfinite": false,
+          "seconds": 34.81806564331055,
+          "input_tokens": 1910,
+          "target_tokens": 141,
+          "samples": 16,
+          "microbatches": 16,
+          "tokens_per_second": 54.85657990213367,
+          "peak_memory_bytes": 9217041920,
+          "learning_rate": 4.5871032726383386e-05,
+          "actual": {
+            "attention": "eager",
+            "fast_kernels": false,
+            "token_budget": 0,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 20,
+          "loss": 3.5294438622863997,
+          "nonfinite": false,
+          "seconds": 33.65361022949219,
+          "input_tokens": 2104,
+          "target_tokens": 267,
+          "samples": 16,
+          "microbatches": 16,
+          "tokens_per_second": 62.5192954233531,
+          "peak_memory_bytes": 9263074304,
+          "learning_rate": 3.7725725642960056e-05,
+          "actual": {
+            "attention": "eager",
+            "fast_kernels": false,
+            "token_budget": 0,
+            "world_size": 1
+          }
+        }
+      ],
+      "completed_steps": 20,
+      "requested_steps": 20,
+      "tokens_per_second": 45.268753590183785,
+      "peak_memory_bytes": 9656625152,
+      "overflowed": true,
+      "overflow_steps": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11
+      ],
+      "stop_reason": "epoch_complete"
+    },
+    {
+      "configuration": "sdpa_grouped",
+      "requested": {
+        "attention": "sdpa",
+        "fast_kernels": false,
+        "token_budget": 4096,
+        "world_size": 1
+      },
+      "actual": {
+        "attention": "sdpa",
+        "fast_kernels": false,
+        "token_budget": 4096,
+        "world_size": 1
+      },
+      "steps": [
+        {
+          "step": 1,
+          "loss": 5.109248991935484,
+          "nonfinite": true,
+          "seconds": 6.585136413574219,
+          "input_tokens": 1350,
+          "target_tokens": 124,
+          "samples": 16,
+          "microbatches": 1,
+          "tokens_per_second": 205.0071426337028,
+          "peak_memory_bytes": 10255782400,
+          "learning_rate": 0.0001,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 2,
+          "loss": 4.661583474597091,
+          "nonfinite": true,
+          "seconds": 6.917387008666992,
+          "input_tokens": 1593,
+          "target_tokens": 159,
+          "samples": 16,
+          "microbatches": 1,
+          "tokens_per_second": 230.28926934463615,
+          "peak_memory_bytes": 10623903232,
+          "learning_rate": 0.0001,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 3,
+          "loss": 4.273922230113636,
+          "nonfinite": true,
+          "seconds": 7.39933443069458,
+          "input_tokens": 1756,
+          "target_tokens": 275,
+          "samples": 16,
+          "microbatches": 1,
+          "tokens_per_second": 237.31864216267937,
+          "peak_memory_bytes": 10931209216,
+          "learning_rate": 0.0001,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 4,
+          "loss": 4.307212602974165,
+          "nonfinite": true,
+          "seconds": 9.608979225158691,
+          "input_tokens": 1979,
+          "target_tokens": 202,
+          "samples": 16,
+          "microbatches": 1,
+          "tokens_per_second": 205.9531979024876,
+          "peak_memory_bytes": 11599434752,
+          "learning_rate": 0.0001,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 5,
+          "loss": 4.404762533180502,
+          "nonfinite": true,
+          "seconds": 9.94083023071289,
+          "input_tokens": 2272,
+          "target_tokens": 259,
+          "samples": 16,
+          "microbatches": 1,
+          "tokens_per_second": 228.5523389163711,
+          "peak_memory_bytes": 11708905472,
+          "learning_rate": 0.0001,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 6,
+          "loss": 4.149215071168665,
+          "nonfinite": true,
+          "seconds": 10.481866836547852,
+          "input_tokens": 2514,
+          "target_tokens": 146,
+          "samples": 16,
+          "microbatches": 1,
+          "tokens_per_second": 239.84277220869302,
+          "peak_memory_bytes": 11308054016,
+          "learning_rate": 0.0001,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 7,
+          "loss": 3.5077928022904827,
+          "nonfinite": false,
+          "seconds": 11.037639617919922,
+          "input_tokens": 2770,
+          "target_tokens": 220,
+          "samples": 16,
+          "microbatches": 1,
+          "tokens_per_second": 250.95945291625813,
+          "peak_memory_bytes": 11503841280,
+          "learning_rate": 0.0001,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 8,
+          "loss": 3.4182984151957947,
+          "nonfinite": false,
+          "seconds": 13.364579200744629,
+          "input_tokens": 3062,
+          "target_tokens": 162,
+          "samples": 16,
+          "microbatches": 1,
+          "tokens_per_second": 229.11308721410367,
+          "peak_memory_bytes": 12373384704,
+          "learning_rate": 9.931806517013612e-05,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 9,
+          "loss": 4.076929403535018,
+          "nonfinite": false,
+          "seconds": 13.960684776306152,
+          "input_tokens": 3314,
+          "target_tokens": 141,
+          "samples": 16,
+          "microbatches": 1,
+          "tokens_per_second": 237.3809059584575,
+          "peak_memory_bytes": 12439120896,
+          "learning_rate": 9.729086208503174e-05,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 10,
+          "loss": 3.070860956756162,
+          "nonfinite": true,
+          "seconds": 14.788908958435059,
+          "input_tokens": 3572,
+          "target_tokens": 142,
+          "samples": 16,
+          "microbatches": 1,
+          "tokens_per_second": 241.53235441771116,
+          "peak_memory_bytes": 12579612672,
+          "learning_rate": 9.729086208503174e-05,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 11,
+          "loss": 3.0731262616663173,
+          "nonfinite": true,
+          "seconds": 15.483319282531738,
+          "input_tokens": 3818,
+          "target_tokens": 149,
+          "samples": 16,
+          "microbatches": 1,
+          "tokens_per_second": 246.58795251399764,
+          "peak_memory_bytes": 12757826048,
+          "learning_rate": 9.729086208503174e-05,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 12,
+          "loss": 3.9207095584353886,
+          "nonfinite": false,
+          "seconds": 18.925952911376953,
+          "input_tokens": 4115,
+          "target_tokens": 111,
+          "samples": 16,
+          "microbatches": 2,
+          "tokens_per_second": 217.42630446503705,
+          "peak_memory_bytes": 13076117504,
+          "learning_rate": 9.397368756032445e-05,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 13,
+          "loss": 4.083352677809085,
+          "nonfinite": false,
+          "seconds": 18.95256996154785,
+          "input_tokens": 4506,
+          "target_tokens": 183,
+          "samples": 16,
+          "microbatches": 2,
+          "tokens_per_second": 237.75139778626604,
+          "peak_memory_bytes": 12981832704,
+          "learning_rate": 8.945702546981969e-05,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 14,
+          "loss": 3.655268285181615,
+          "nonfinite": false,
+          "seconds": 20.270572662353516,
+          "input_tokens": 4940,
+          "target_tokens": 154,
+          "samples": 16,
+          "microbatches": 2,
+          "tokens_per_second": 243.7030311025481,
+          "peak_memory_bytes": 12560343040,
+          "learning_rate": 8.386407858128706e-05,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 15,
+          "loss": 3.862836114291487,
+          "nonfinite": false,
+          "seconds": 23.21261215209961,
+          "input_tokens": 5586,
+          "target_tokens": 232,
+          "samples": 16,
+          "microbatches": 2,
+          "tokens_per_second": 240.6450408682135,
+          "peak_memory_bytes": 12807628288,
+          "learning_rate": 7.734740790612135e-05,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 16,
+          "loss": 4.056081200860868,
+          "nonfinite": false,
+          "seconds": 32.69066619873047,
+          "input_tokens": 7325,
+          "target_tokens": 157,
+          "samples": 16,
+          "microbatches": 3,
+          "tokens_per_second": 224.07007417562093,
+          "peak_memory_bytes": 12745512960,
+          "learning_rate": 7.008477123264848e-05,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 17,
+          "loss": 3.7338272485977564,
+          "nonfinite": false,
+          "seconds": 6.273541450500488,
+          "input_tokens": 1322,
+          "target_tokens": 78,
+          "samples": 16,
+          "microbatches": 1,
+          "tokens_per_second": 210.72627166503125,
+          "peak_memory_bytes": 10521801216,
+          "learning_rate": 6.227427435703997e-05,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 18,
+          "loss": 3.2131322743941326,
+          "nonfinite": false,
+          "seconds": 7.2859015464782715,
+          "input_tokens": 1685,
+          "target_tokens": 196,
+          "samples": 16,
+          "microbatches": 1,
+          "tokens_per_second": 231.26856563337245,
+          "peak_memory_bytes": 11138587648,
+          "learning_rate": 5.4128967273616625e-05,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 19,
+          "loss": 2.910045434397163,
+          "nonfinite": false,
+          "seconds": 7.525496482849121,
+          "input_tokens": 1910,
+          "target_tokens": 141,
+          "samples": 16,
+          "microbatches": 1,
+          "tokens_per_second": 253.8038525900529,
+          "peak_memory_bytes": 11416087040,
+          "learning_rate": 4.5871032726383386e-05,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 20,
+          "loss": 3.5297321219569286,
+          "nonfinite": false,
+          "seconds": 9.655037879943848,
+          "input_tokens": 2104,
+          "target_tokens": 267,
+          "samples": 16,
+          "microbatches": 1,
+          "tokens_per_second": 217.91732214438878,
+          "peak_memory_bytes": 11783358464,
+          "learning_rate": 3.7725725642960056e-05,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        }
+      ],
+      "completed_steps": 20,
+      "requested_steps": 20,
+      "tokens_per_second": 232.60993865505267,
+      "peak_memory_bytes": 13076117504,
+      "overflowed": true,
+      "overflow_steps": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11
+      ],
+      "stop_reason": "epoch_complete"
+    },
+    {
+      "configuration": "sdpa_fast_grouped",
+      "requested": {
+        "attention": "sdpa",
+        "fast_kernels": true,
+        "token_budget": 4096,
+        "world_size": 1
+      },
+      "actual": {
+        "attention": "sdpa",
+        "fast_kernels": false,
+        "token_budget": 4096,
+        "world_size": 1
+      },
+      "steps": [
+        {
+          "step": 1,
+          "loss": 5.109248991935484,
+          "nonfinite": true,
+          "seconds": 6.035600662231445,
+          "input_tokens": 1350,
+          "target_tokens": 124,
+          "samples": 16,
+          "microbatches": 1,
+          "tokens_per_second": 223.6728497376906,
+          "peak_memory_bytes": 10255782400,
+          "learning_rate": 0.0001,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 2,
+          "loss": 4.661583474597091,
+          "nonfinite": true,
+          "seconds": 6.61018180847168,
+          "input_tokens": 1593,
+          "target_tokens": 159,
+          "samples": 16,
+          "microbatches": 1,
+          "tokens_per_second": 240.99185864425002,
+          "peak_memory_bytes": 10624198144,
+          "learning_rate": 0.0001,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 3,
+          "loss": 4.273922230113636,
+          "nonfinite": true,
+          "seconds": 7.026294231414795,
+          "input_tokens": 1756,
+          "target_tokens": 275,
+          "samples": 16,
+          "microbatches": 1,
+          "tokens_per_second": 249.91836979283698,
+          "peak_memory_bytes": 10931209216,
+          "learning_rate": 0.0001,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 4,
+          "loss": 4.307212602974165,
+          "nonfinite": true,
+          "seconds": 9.576807975769043,
+          "input_tokens": 1979,
+          "target_tokens": 202,
+          "samples": 16,
+          "microbatches": 1,
+          "tokens_per_second": 206.64505386421106,
+          "peak_memory_bytes": 11599434752,
+          "learning_rate": 0.0001,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 5,
+          "loss": 4.404762533180502,
+          "nonfinite": true,
+          "seconds": 10.098738670349121,
+          "input_tokens": 2272,
+          "target_tokens": 259,
+          "samples": 16,
+          "microbatches": 1,
+          "tokens_per_second": 224.9785913037648,
+          "peak_memory_bytes": 11708905472,
+          "learning_rate": 0.0001,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 6,
+          "loss": 4.149215071168665,
+          "nonfinite": true,
+          "seconds": 10.66147232055664,
+          "input_tokens": 2514,
+          "target_tokens": 146,
+          "samples": 16,
+          "microbatches": 1,
+          "tokens_per_second": 235.8023286476762,
+          "peak_memory_bytes": 11308054016,
+          "learning_rate": 0.0001,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 7,
+          "loss": 3.5077928022904827,
+          "nonfinite": false,
+          "seconds": 11.176828384399414,
+          "input_tokens": 2770,
+          "target_tokens": 220,
+          "samples": 16,
+          "microbatches": 1,
+          "tokens_per_second": 247.83417126332174,
+          "peak_memory_bytes": 11503841280,
+          "learning_rate": 0.0001,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 8,
+          "loss": 3.4182984151957947,
+          "nonfinite": false,
+          "seconds": 13.410360336303711,
+          "input_tokens": 3062,
+          "target_tokens": 162,
+          "samples": 16,
+          "microbatches": 1,
+          "tokens_per_second": 228.33092647859283,
+          "peak_memory_bytes": 12373384704,
+          "learning_rate": 9.931806517013612e-05,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 9,
+          "loss": 4.076929403535018,
+          "nonfinite": false,
+          "seconds": 13.808906555175781,
+          "input_tokens": 3314,
+          "target_tokens": 141,
+          "samples": 16,
+          "microbatches": 1,
+          "tokens_per_second": 239.99003735439604,
+          "peak_memory_bytes": 12439120896,
+          "learning_rate": 9.729086208503174e-05,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 10,
+          "loss": 3.070860956756162,
+          "nonfinite": true,
+          "seconds": 14.616040229797363,
+          "input_tokens": 3572,
+          "target_tokens": 142,
+          "samples": 16,
+          "microbatches": 1,
+          "tokens_per_second": 244.38903723854366,
+          "peak_memory_bytes": 12579612672,
+          "learning_rate": 9.729086208503174e-05,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 11,
+          "loss": 3.0731262616663173,
+          "nonfinite": true,
+          "seconds": 15.413864135742188,
+          "input_tokens": 3818,
+          "target_tokens": 149,
+          "samples": 16,
+          "microbatches": 1,
+          "tokens_per_second": 247.69908222732371,
+          "peak_memory_bytes": 12757826048,
+          "learning_rate": 9.729086208503174e-05,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 12,
+          "loss": 3.9207095584353886,
+          "nonfinite": false,
+          "seconds": 19.113542556762695,
+          "input_tokens": 4115,
+          "target_tokens": 111,
+          "samples": 16,
+          "microbatches": 2,
+          "tokens_per_second": 215.29237648015402,
+          "peak_memory_bytes": 13076117504,
+          "learning_rate": 9.397368756032445e-05,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 13,
+          "loss": 4.083352677809085,
+          "nonfinite": false,
+          "seconds": 18.770254135131836,
+          "input_tokens": 4506,
+          "target_tokens": 183,
+          "samples": 16,
+          "microbatches": 2,
+          "tokens_per_second": 240.06068152088721,
+          "peak_memory_bytes": 12981832704,
+          "learning_rate": 8.945702546981969e-05,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 14,
+          "loss": 3.6553915444906657,
+          "nonfinite": false,
+          "seconds": 19.92584228515625,
+          "input_tokens": 4940,
+          "target_tokens": 154,
+          "samples": 16,
+          "microbatches": 2,
+          "tokens_per_second": 247.91925627555787,
+          "peak_memory_bytes": 12560343040,
+          "learning_rate": 8.386407858128706e-05,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 15,
+          "loss": 3.862516732051455,
+          "nonfinite": false,
+          "seconds": 23.11550521850586,
+          "input_tokens": 5586,
+          "target_tokens": 232,
+          "samples": 16,
+          "microbatches": 2,
+          "tokens_per_second": 241.65597711132648,
+          "peak_memory_bytes": 12807294464,
+          "learning_rate": 7.734740790612135e-05,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 16,
+          "loss": 4.056035716062898,
+          "nonfinite": false,
+          "seconds": 32.769920349121094,
+          "input_tokens": 7325,
+          "target_tokens": 157,
+          "samples": 16,
+          "microbatches": 3,
+          "tokens_per_second": 223.52816003095535,
+          "peak_memory_bytes": 12745512960,
+          "learning_rate": 7.008477123264848e-05,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 17,
+          "loss": 3.734753730969551,
+          "nonfinite": false,
+          "seconds": 6.2845354080200195,
+          "input_tokens": 1322,
+          "target_tokens": 78,
+          "samples": 16,
+          "microbatches": 1,
+          "tokens_per_second": 210.3576341240639,
+          "peak_memory_bytes": 10521801216,
+          "learning_rate": 6.227427435703997e-05,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 18,
+          "loss": 3.2122049137037627,
+          "nonfinite": false,
+          "seconds": 7.304159164428711,
+          "input_tokens": 1685,
+          "target_tokens": 196,
+          "samples": 16,
+          "microbatches": 1,
+          "tokens_per_second": 230.69048224003083,
+          "peak_memory_bytes": 11138587648,
+          "learning_rate": 5.4128967273616625e-05,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 19,
+          "loss": 2.909419499390514,
+          "nonfinite": false,
+          "seconds": 7.531701564788818,
+          "input_tokens": 1910,
+          "target_tokens": 141,
+          "samples": 16,
+          "microbatches": 1,
+          "tokens_per_second": 253.5947532665621,
+          "peak_memory_bytes": 11416087040,
+          "learning_rate": 4.5871032726383386e-05,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        },
+        {
+          "step": 20,
+          "loss": 3.529630396696512,
+          "nonfinite": false,
+          "seconds": 9.648606300354004,
+          "input_tokens": 2104,
+          "target_tokens": 267,
+          "samples": 16,
+          "microbatches": 1,
+          "tokens_per_second": 218.06258173502272,
+          "peak_memory_bytes": 11783358464,
+          "learning_rate": 3.7725725642960056e-05,
+          "actual": {
+            "attention": "sdpa",
+            "fast_kernels": false,
+            "token_budget": 4096,
+            "world_size": 1
+          }
+        }
+      ],
+      "completed_steps": 20,
+      "requested_steps": 20,
+      "tokens_per_second": 233.90336988441155,
+      "peak_memory_bytes": 13076117504,
+      "overflowed": true,
+      "overflow_steps": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11
+      ],
+      "stop_reason": "epoch_complete"
+    }
+  ],
+  "overflow_steps": [],
+  "completed_steps": 0,
+  "fallbacks": [
+    "sdpa_fast_grouped: fast kernel unavailable; using torch fallback"
+  ],
+  "settings": {
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "learning_rate": 0.0001,
+    "warmup_ratio": 0.03,
+    "scheduler": "cosine",
+    "effective_batch": 16,
+    "epochs": 1,
+    "dtype": "fp16",
+    "world_size": 1
+  },
+  "stop_reason": "epoch_complete",
+  "actual": {
+    "attention": "sdpa",
+    "fast_kernels": false,
+    "token_budget": 4096,
+    "world_size": 1
+  }
+}

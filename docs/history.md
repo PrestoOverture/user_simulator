@@ -175,3 +175,57 @@
   1. **用户决定是否把模型训练（小规模 LoRA）纳入项目范围。** 需要改 PRD 5.2；P2 是否继续取决于此。
   2. 若不训练：P3，按 `paper/phase1_draft.md` 完善，先定 D6（博客还是 arXiv），再逐条核实文献。
   3. 其余待定：P1/P2 完成标志、修正成功阈值、D4（MIMESIS）、D7、D8、MobileCS 是否申请。
+
+### 2026-10-28 D9：暂不做模型训练
+- 做了什么：调研 LoRA 训练要用多大的模型、免费 Colab 能不能跑、付费 GPU 要花多少。估算记在 [tech_stacks.md](tech_stacks.md) 2.1。
+- 结果：用 Qwen3.5-4B 就够。免费 Colab 能跑但不稳定。AutoDL 只做 4B 约 ¥50–80，加 9B 约 ¥100–150。用户认为太贵，决定除非不得不走训练这条路，否则暂不考虑（ADR-020）。
+- 下一步：P3。先由用户定 D6（技术博客还是 arXiv 短文），再完善 `paper/phase1_draft.md`，逐条核实文献。
+
+### 2026-10-30 README 初稿
+- 做了什么：写了中文 `README.md`：一句话结论、主要发现、方法、目录、运行方法、文档链接。数字取自 `paper/phase1_draft.md`。
+- 结果：README 中四条从缓存重建报告的命令，在没有凭证的环境下都能跑通，已提交的报告没有改动（`measure_reaction.py` 必须加 `--out outputs/reaction/full`，否则会写到 `outputs/reaction/`）。
+- 下一步：用户审阅 README。待确认三处：结论措辞、是否列出花费、网关是否写具体服务商。
+
+### 2026-10-31 session 结束
+- 做了什么：本 session 汇报了进度；调研了 LoRA 成本（[tech_stacks.md](tech_stacks.md) 2.1）；用户定了 D9：暂不训练（ADR-020）；写了 README 初稿。没有在跑的后台任务或 Codex 任务，没有新增花费。docs 和 README 的改动尚未提交。
+- 用户的问题与澄清：D6 中"技术博客"不是事先选定的，原计划两种形式都可以。
+- 下一步（新 session 从这里接）：
+  1. 用户审阅 README。
+  2. 用户决定第一阶段终点是否改为"测量 + 修正失败的证据"（改 [prd.md](prd.md) 第 6 节，须用户同意）。
+  3. 用户定 D6（博客还是 arXiv 短文），然后完善 `paper/phase1_draft.md`，逐条核实文献。
+  4. 其余待定：P1/P2 完成标志、D4、D7、D8、MobileCS 是否申请。
+
+### 2026-11-09 D9 重开：Kaggle 可行性小试
+- 做了什么：用户发现 Kaggle 免费 GPU（T4×2 每张约 15GB，或 P100 16GB；每周 30 小时），要求重新考虑微调。用户决定：先做可行性小试再定是否纳入范围；模型先做 Qwen3.5-4B，9B 视情况；由 Claude 用 Kaggle API 推送和监控（用户提供 `~/.kaggle/kaggle.json`）。
+- 已知限制（推断，待小试验证）：T4/P100 不支持 bf16，只能 fp16 训练；9B 单卡放不下；Kaggle 页面上的 AI 额度只能用于 Kaggle Benchmarks，不能用于判断。
+- 下一步：Codex 写训练数据构建和 Kaggle 小试 notebook；用户放好 Kaggle 凭证并完成手机验证后，Claude 推送运行。
+- 进展（同日）：Codex 写完小试代码（`scripts/build_sft_data.py`、`kaggle/pilot/`、`scripts/project_kaggle_cost.py`、`tests/test_sft.py`；交接见 `kaggle/HANDOFF.md`）。训练数据：CSDS train 7,983 段、65,698 轮，排除 500 段评估对话；用真实 tokenizer 数约 1,632 万 token，其中目标约 70 万。模型 `Qwen/Qwen3.5-4B`（官方模型卡核实），LoRA r=8，batch 1，fp16。Claude 复核：数据重建哈希一致；pytest 236 项通过；CPU smoke 训练、续跑、生成通过。已上传私有数据集 `prestooverture/csds-usersim-sft`，推送 kernel `prestooverture/csds-qwen3-5-fp16-lora-pilot`，未指定加速卡（用 Kaggle 默认）。
+- 进展（同日）：kernel 第 1 版约 4.5 分钟失败：脚本重装 torch==2.10.0，与 Kaggle 预装的 torchvision 不配套，导入 peft/transformers 时报错。Codex 修复：保留镜像预装的 torch，只装 transformers/peft/accelerate（用约束文件锁住 torch），装后 torch 版本变了就退出；日志和 metrics 记录 GPU 型号、显存和各库版本。Claude 复核：pytest 238 项通过，CPU smoke 和续跑通过。第 2 版已推送，指定 `--accelerator NvidiaTeslaT4`。
+- 小试结果（同日，第 2 版，`outputs/kaggle_pilot/v2/`；checkpoint 权重未下载）：
+  - **能跑。** Tesla T4（可见 2 张，只用 1 张），torch 2.11.0+cu130，峰值显存约 10.0GB。fp16 溢出只出现在前 15 步中的 11 步（GradScaler 校准缩放，梯度溢出、loss 正常），之后无溢出。
+  - **太慢。** batch 1、eager attention，约 92 token/s。全量 1 个 epoch（1,632 万 token，96% 是重复的对话历史）推算约 49 小时，超过每周 30 小时；评估生成基座 3.0 小时、LoRA 0.8 小时。
+  - **生成：** 200 步（不到 0.3% 个 epoch）后 LoRA 50 条里 34 条只输出"好的"，属于训练太少时退化到最常见回复，不能据此判断效果。基座回复明显更长。
+  - **数据问题：** 38% 的训练目标保留了标点两侧的分词空格（如"好的 ， 谢谢"）。`usersim/replay.py` 的 `unsegment` 只去汉字之间的空格（ADR-014），不处理汉字与标点之间。训练会让模型学会这个伪影，正式训练前要清洗目标。
+- 下一步：用户决定是否继续，以及怎样把训练压进额度（见对话中的选项）。
+- 用户决定（同日）：D9 改定，纳入小规模 LoRA 修正（ADR-021，取代 ADR-020；[prd.md](prd.md) 5.2 加例外）。并行派出两份合同：T（`78bdfec3`，抽样数据 v2 + 提速训练 kernel + benchmark）和 E（`552b7d90`，500 段评估输入、Kaggle 生成 kernel、ADR-018 判断与对照报告）。
+- 进展（同日）：合同 T、E 交付，Claude 复核通过（两份数据重建哈希一致、v1 未变；pytest 249 项通过；训练 kernel 的成批训练、续跑、benchmark、墙钟退出 CPU smoke 通过；生成 kernel 的 base/lora、分片、续跑 smoke 通过；判断计划：复用 827 条 Gemini 真人判断，新判至多 1,654 条，预计约 2.3 美元，含重试上限约 6.8 美元）。交接见 `kaggle/TRAIN_HANDOFF.md`、`kaggle/EVAL_HANDOFF.md`。v2 训练数据 7,983 条、约 179 万 token（小试速度下约 5.4 小时，已在额度内）；标点旁空格 41.3% → 0。已上传私有数据集 `csds-usersim-sft-v2`、`csds-usersim-eval`，推送 benchmark kernel（3 种单卡配置各 20 步）和基座评估生成 kernel（4,710 轮），均指定 T4。`outputs/lora_eval/` 当前是 mock 报告，不是实验结果。
+- 测速结果（同日，`outputs/kaggle_train/benchmark/`，T4 单卡，各 20 步）：eager batch1 45 token/s（1 epoch 约 11.0 小时）；sdpa + 按长度成批 233 token/s（约 2.1 小时），峰值显存 13.1GB；加速核没装上（缺 flash-linear-attention / causal-conv1d，回退 torch 实现），与不装时速度相同。前 11 步中有 8 步 GradScaler 校准溢出（跳过优化步），属正常。正式训练选 sdpa + 成批（token 预算 4096）、不装加速核，已推送 `csds-qwen35-lora-train`。
+- 用户授权（2026-11-09 21:30）：LoRA 评估的 Gemini 判断直接跑，不再逐次确认。按 `scripts/judge_lora_eval.py --max-paid-usd 7` 的上限执行。
+- 基座生成完成（同日 22:02，`outputs/lora_eval/gen_base/`）：4,710 条，T4，输入指纹与本地 `kaggle/eval_data/eval_turns.jsonl` 一致；空输出 0，未见思考标记，触到 256 token 上限 1 条，中位长度 38 字。训练 kernel 随后开始排队/运行。
+
+### 2026-11-10 LoRA 训练完成，LoRA 生成中
+- 训练（`outputs/kaggle_train/train/`，kernel `csds-qwen35-lora-train`）：7,983 条，1 个 epoch，499 次优化步，正常结束（epoch_complete），T4，约 4.4 小时。第 105 步 sdpa 成批时显存不足（OOM），脚本在同一步用原权重和 RNG 重试，之后改为 eager 一次 1 条；训练数学不变（有效 batch 16、只在目标 token 上算 loss），只是变慢。溢出跳步：1–6、11、15、93。训练 loss 由约 3.39 降到 2.6–2.8。
+- adapter（约 130MB）已作为私有数据集 `csds-qwen35-lora-adapter` 上传，推送 LoRA 生成 kernel `csds-qwen35-eval-lora`（T4）。
+- 下一步：LoRA 生成完成后，跑 `scripts/judge_lora_eval.py`（Spark 全量 + Gemini PPI，用户已授权，上限 7 美元）。
+- LoRA 生成完成（04:48，`outputs/lora_eval/gen_lora/`）：4,710 条，adapter 哈希与本地一致；空输出 0，触到 256 上限 17 条；中位长度 6 字（基座 38 字）。最常见输出："好的" 495、"好的，谢谢" 239、"你好" 134、"[订单编号]" 104（学到了数据集的脱敏占位符）。之前的 mock 报告移到 `outputs/lora_eval/mock/`。判断已在后台运行（日志 `outputs/lora_eval/judge_run.log`）。
+- **停在停止条件（04:49）：Spark API 无法调用。** 判断开始几秒后 Spark 全部返回 HTTP 403，错误码 11200："no valid authorization: the account lacks an active order, has insufficient quota, or the order is invalid"。`scripts/spark_check.py` 复现同样错误。Gemini 只做了预检（新判 1,602 条，预计 2.2 美元），没有发出付费请求。按 [roadmap.md](roadmap.md) 4.1 停下，等用户决定。
+- 恢复（同日）：用户更换了 `SPARK_API_KEY`（旧 key 额度用完）。`spark_check.py` 全部 200。停止记录存为 `outputs/lora_eval/spark_stop_20261110_0449_key_expired.json`，判断重新启动。
+- 第二次启动立即停止：`spark_judgments.jsonl.runtime.json` 里保存的上次成功时间是 04:49，启动时距今超过 60 分钟，触发 `no_success_60_minutes`。这是续跑状态过期，不是 Spark 故障。把过期的 runtime 和 stop 文件改名存档（`spark_runtime_stale_0449.json`、`spark_stop_20261110_stale_runtime.json`）后第三次启动。待改进：`usersim/judge_spark.py` 续跑时应重置"上次成功时间"。
+- 第三次启动仍立即停止：缓存 `spark_judgments.jsonl` 里有 04:49 那次留下的 32 条 403 失败记录（8 个条目各 4 次），续跑时计入"每条最多 4 次失败"，直接判定耗尽。处理：把这 64 行（dispatch + 403 response）移到 `outputs/lora_eval/spark_failed_rows_key_expired.jsonl` 存档，缓存只留 4,312 条复用的 P2 判断；清掉 stop/runtime 后第四次启动，已开始发出新请求。待改进：key 失效导致的 403 不应计入传输失败预算。
+- 第四次启动跑了约 50 分钟：Spark 新判 1,097 条成功、6 条解析失败；1 个条目连续 4 次 ReadTimeout（120 秒，判断开思考），整批停下。按现有逻辑，重启后这个条目会让整批再次立即停止。Claude 决定的修法（交 Codex 合同 E 的 Delta，任务 `72aadcec`）：鉴权错误（401/403、11200）单独以 auth_failed 停下，不计入传输失败预算；续跑时重置 60 分钟计时；单条耗尽 4 次传输失败记为 transport_failed，与真人侧一起剔除并在报告中计数（同 ADR-013 的做法），累计超过 1% 或 50 条才整批停。已判的 1,097 条保留在缓存中，续跑时复用。
+- 进展（同日）：Delta `72aadcec` 交付。Claude 复核：pytest 262 项通过；leave 报告离线重建，git 无差异。续跑判断约 2 分钟后，按用户要求暂停（SIGTERM）。Gemini 尚未开始调用，未产生 Gemini 花费。缓存保留，下次用同一命令续跑（旧停止文件已归档为 `spark_stop_20261110_transport_budget.json`）。
+- **session 结束（2026-11-10）。下一 session 从这里继续：**
+  1. 续跑判断（先 `set -a; . ./.env; set +a`，用 nohup 后台跑）：`.venv/bin/python scripts/judge_lora_eval.py --base outputs/lora_eval/gen_base/generations_base.jsonl --lora outputs/lora_eval/gen_lora/generations_lora.jsonl --output outputs/lora_eval --run-spark --allow-paid --max-paid-usd 7`。Spark 跑完会自动做 Gemini PPI（预计约 2.2 美元，7 美元封顶）并生成报告。注意：SIGINT 停不下这个进程，要用 SIGTERM。
+  2. 向用户报告：基座 Qwen、LoRA、Spark 基线、P2 各修正之间的继续比例差和情绪表达差。更新 history、roadmap 和 `paper/phase1_draft.md`。
+  3. 待用户决定：是否试 9B；是否清掉训练目标里的 "[订单编号]" 这类脱敏占位符后重训；是否提交未提交的改动（docs、README、kaggle/、scripts、tests）。
+  4. 更早留下的 P3 事项：README 审阅、第一阶段的终点、D6。

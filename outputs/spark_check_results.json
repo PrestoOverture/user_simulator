@@ -1,0 +1,67 @@
+[
+  {
+    "concurrency": 1,
+    "requests": 1,
+    "seconds": 1.3251614170148969,
+    "requests_per_minute": 45.27750297405883,
+    "errors": 0,
+    "statuses": [
+      200
+    ]
+  },
+  {
+    "concurrency": 2,
+    "requests": 4,
+    "seconds": 3.31262370798504,
+    "requests_per_minute": 72.45012448032745,
+    "errors": 0,
+    "statuses": [
+      200,
+      200,
+      200,
+      200
+    ]
+  },
+  {
+    "concurrency": 4,
+    "requests": 8,
+    "seconds": 3.3546777910087258,
+    "requests_per_minute": 143.08378625407948,
+    "errors": 0,
+    "statuses": [
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200
+    ]
+  },
+  {
+    "concurrency": 8,
+    "requests": 16,
+    "seconds": 4.023020582972094,
+    "requests_per_minute": 238.6266687432106,
+    "errors": 0,
+    "statuses": [
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200
+    ]
+  }
+]

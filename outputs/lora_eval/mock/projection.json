@@ -1,0 +1,9 @@
+{
+  "logical_inputs": 2481,
+  "reusable_unique": 858,
+  "new_unique": 768,
+  "estimated_usd": 1.0548034608150445,
+  "retry_inclusive_estimated_upper_usd": 3.1644103824451335,
+  "cost_basis": "P2 measured USD/judgment; 3 transient attempts; estimate, not a tariff guarantee",
+  "billing_stop_usd": 7.0
+}

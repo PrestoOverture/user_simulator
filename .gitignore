@@ -5,3 +5,9 @@ data/
 __pycache__/
 *.pyc
 .DS_Store
+# Kaggle: rebuildable data copies and large model files (adapter is in Kaggle dataset csds-qwen35-lora-adapter)
+kaggle/sft_data/
+kaggle/sft_data_v2/
+kaggle/eval_data/
+outputs/kaggle_train/*/adapter/
+*.lock

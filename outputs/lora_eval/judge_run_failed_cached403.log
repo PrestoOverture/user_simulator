@@ -1,0 +1,71 @@
+Gemini preflight: {"logical_inputs": 2481, "reusable_unique": 842, "new_unique": 1602, "estimated_usd": 2.2002540940438817, "retry_inclusive_estimated_upper_usd": 6.600762282131646, "cost_basis": "P2 measured USD/judgment; 3 transient attempts; estimate, not a tariff guarantee", "billing_stop_usd": 7.0}
+Traceback (most recent call last):
+  File "/Users/kwang/projects/user_simulator/scripts/judge_lora_eval.py", line 222, in <module>
+    main()
+  File "/Users/kwang/projects/user_simulator/scripts/judge_lora_eval.py", line 218, in main
+    run(p.parse_args())
+  File "/Users/kwang/projects/user_simulator/scripts/judge_lora_eval.py", line 154, in run
+    spark = judge_batch(out/'spark_judgments.jsonl',items,prompt=prompt,thinking='enabled',
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/usersim/judge_spark.py", line 346, in judge_batch
+    return _judge_batch_locked(cache,items,concurrency,prompt=prompt,thinking=thinking,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/usersim/judge_spark.py", line 427, in _judge_batch_locked
+    client.ensure_progress()
+  File "/Users/kwang/projects/user_simulator/usersim/judge_spark.py", line 200, in ensure_progress
+    raise self._stopped
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/usersim/judge_spark.py", line 277, in evaluate
+    self.ensure_progress()
+  File "/Users/kwang/projects/user_simulator/usersim/judge_spark.py", line 200, in ensure_progress
+    raise self._stopped
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/usersim/judge_spark.py", line 277, in evaluate
+    self.ensure_progress()
+  File "/Users/kwang/projects/user_simulator/usersim/judge_spark.py", line 200, in ensure_progress
+    raise self._stopped
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/usersim/judge_spark.py", line 277, in evaluate
+    self.ensure_progress()
+  File "/Users/kwang/projects/user_simulator/usersim/judge_spark.py", line 200, in ensure_progress
+    raise self._stopped
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/usersim/judge_spark.py", line 277, in evaluate
+    self.ensure_progress()
+  File "/Users/kwang/projects/user_simulator/usersim/judge_spark.py", line 200, in ensure_progress
+    raise self._stopped
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/usersim/judge_spark.py", line 277, in evaluate
+    self.ensure_progress()
+  File "/Users/kwang/projects/user_simulator/usersim/judge_spark.py", line 200, in ensure_progress
+    raise self._stopped
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/usersim/judge_spark.py", line 277, in evaluate
+    self.ensure_progress()
+  File "/Users/kwang/projects/user_simulator/usersim/judge_spark.py", line 200, in ensure_progress
+    raise self._stopped
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/usersim/judge_spark.py", line 277, in evaluate
+    self.ensure_progress()
+  File "/Users/kwang/projects/user_simulator/usersim/judge_spark.py", line 200, in ensure_progress
+    raise self._stopped
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kwang/projects/user_simulator/usersim/judge_spark.py", line 279, in evaluate
+    raise self.stop('transport_budget_exhausted','Spark exhausted four non-429 transport attempts')
+usersim.judge_spark.JudgeStopped: Spark exhausted four non-429 transport attempts

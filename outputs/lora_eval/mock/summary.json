@@ -1,0 +1,178 @@
+{
+  "mock": true,
+  "results": {
+    "base": {
+      "ppi": {
+        "continue": {
+          "human": 0.0,
+          "simulator": 0.0,
+          "gap": 0.0,
+          "gap_ci95": [
+            0.0,
+            0.0
+          ],
+          "absolute_gap_reduction": 0.0,
+          "absolute_gap_reduction_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "emotion": {
+          "human": 0.0,
+          "simulator": 0.0,
+          "gap": 0.0,
+          "gap_ci95": [
+            0.0,
+            0.0
+          ],
+          "absolute_gap_reduction": 0.0,
+          "absolute_gap_reduction_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "gemini_only": {
+        "continue": {
+          "human": 0.0,
+          "simulator": 0.0,
+          "gap": 0.0,
+          "gap_ci95": [
+            0.0,
+            0.0
+          ],
+          "absolute_gap_reduction": 0.0,
+          "absolute_gap_reduction_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "emotion": {
+          "human": 0.0,
+          "simulator": 0.0,
+          "gap": 0.0,
+          "gap_ci95": [
+            0.0,
+            0.0
+          ],
+          "absolute_gap_reduction": 0.0,
+          "absolute_gap_reduction_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "spark_only": {
+        "continue": {
+          "human": 0.0,
+          "simulator": 0.0,
+          "gap": 0.0,
+          "gap_ci95": null,
+          "absolute_gap_reduction": 0.0,
+          "absolute_gap_reduction_ci95": null
+        },
+        "emotion": {
+          "human": 0.0,
+          "simulator": 0.0,
+          "gap": 0.0,
+          "gap_ci95": null,
+          "absolute_gap_reduction": 0.0,
+          "absolute_gap_reduction_ci95": null
+        }
+      }
+    },
+    "lora": {
+      "ppi": {
+        "continue": {
+          "human": 0.0,
+          "simulator": 0.0,
+          "gap": 0.0,
+          "gap_ci95": [
+            0.0,
+            0.0
+          ],
+          "absolute_gap_reduction": 0.0,
+          "absolute_gap_reduction_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "emotion": {
+          "human": 0.0,
+          "simulator": 0.0,
+          "gap": 0.0,
+          "gap_ci95": [
+            0.0,
+            0.0
+          ],
+          "absolute_gap_reduction": 0.0,
+          "absolute_gap_reduction_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "gemini_only": {
+        "continue": {
+          "human": 0.0,
+          "simulator": 0.0,
+          "gap": 0.0,
+          "gap_ci95": [
+            0.0,
+            0.0
+          ],
+          "absolute_gap_reduction": 0.0,
+          "absolute_gap_reduction_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "emotion": {
+          "human": 0.0,
+          "simulator": 0.0,
+          "gap": 0.0,
+          "gap_ci95": [
+            0.0,
+            0.0
+          ],
+          "absolute_gap_reduction": 0.0,
+          "absolute_gap_reduction_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "spark_only": {
+        "continue": {
+          "human": 0.0,
+          "simulator": 0.0,
+          "gap": 0.0,
+          "gap_ci95": null,
+          "absolute_gap_reduction": 0.0,
+          "absolute_gap_reduction_ci95": null
+        },
+        "emotion": {
+          "human": 0.0,
+          "simulator": 0.0,
+          "gap": 0.0,
+          "gap_ci95": null,
+          "absolute_gap_reduction": 0.0,
+          "absolute_gap_reduction_ci95": null
+        }
+      }
+    }
+  },
+  "paired_turns": 4299,
+  "excluded": {
+    "inherited_P2_ineligible": 411
+  },
+  "projection": {
+    "logical_inputs": 2481,
+    "reusable_unique": 858,
+    "new_unique": 768,
+    "estimated_usd": 1.0548034608150445,
+    "retry_inclusive_estimated_upper_usd": 3.1644103824451335,
+    "cost_basis": "P2 measured USD/judgment; 3 transient attempts; estimate, not a tariff guarantee",
+    "billing_stop_usd": 7.0
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "prestooverture/csds-qwen35-lora-train",
+  "title": "CSDS Qwen3.5 fp16 LoRA training",
+  "code_file": "train.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": ["prestooverture/csds-usersim-sft-v2"],
+  "competition_sources": [],
+  "kernel_sources": []
+}

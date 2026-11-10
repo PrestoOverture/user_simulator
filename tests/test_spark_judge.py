@@ -454,14 +454,140 @@ def test_supervisor_does_not_restart_terminal_stop(tmp_path,monkeypatch):
     assert json.loads((tmp_path/'supervisor_state.json').read_text())['stage']=='stopped'
 
 
-def test_no_success_watchdog_is_not_reset_by_process_restart(tmp_path,monkeypatch):
+def test_no_success_watchdog_resets_on_process_restart(tmp_path,monkeypatch):
     import time
-    from usersim.judge_spark import judge_batch,JudgeStopped,RETRY_POLICY
+    from usersim.judge_spark import judge_batch,RETRY_POLICY
     path=tmp_path/'restart-stall.jsonl'
     Path(str(path)+'.runtime.json').write_text(json.dumps(dict(policy=RETRY_POLICY,
         concurrency=1,success_streak=0,last_success_wall_time=time.time()-3601,batch_complete=False)))
-    monkeypatch.delenv('SPARK_API_KEY',raising=False)
+    Path(str(path)+'.stop.json').write_text(json.dumps(dict(reason='no_success_60_minutes',message='old stop')))
+    monkeypatch.setenv('SPARK_API_KEY','test-secret')
     item=dict(id='a',goal='g',history=[],previous_agent='a',text='t')
-    with pytest.raises(JudgeStopped,match='60 minutes'):
-        judge_batch(path,[item],8,prompt='prompt',clock=SimulatedClock())
-    assert not path.exists()  # Stop occurred before credentials/client/dispatch.
+    result=judge_batch(path,[item],8,prompt='prompt',clock=SimulatedClock(),
+                       transport=httpx.MockTransport(lambda request:ok_response()))
+    assert result['a']['status']=='ok'
+
+
+def ok_response():
+    return httpx.Response(200,json=dict(usage=dict(prompt_tokens=1,completion_tokens=1,total_tokens=2),
+        choices=[dict(message=dict(content='{"topic":"close","emotion":false}'))]))
+
+
+@pytest.mark.parametrize('status,code',[(401,None),(403,11200),(200,11200),(400,'11200')])
+def test_auth_stops_immediately_without_consuming_budget(tmp_path,monkeypatch,status,code):
+    from usersim.judge_spark import JudgeStopped
+    monkeypatch.setenv('SPARK_API_KEY','test-secret')
+    path=tmp_path/'auth.jsonl'
+    item=dict(id='a',goal='g',history=[],previous_agent='a',text='t')
+    calls=[]
+    def handler(request):
+        calls.append(request)
+        return httpx.Response(status,json={'error':{'code':code}})
+    judge=SparkJudge(path,'enabled',httpx.MockTransport(handler))
+    try:
+        with pytest.raises(JudgeStopped) as exc:judge.evaluate('prompt',item)
+        assert exc.value.reason=='auth_failed'
+    finally:judge.close()
+    assert len(calls)==1
+    assert read_cache(path)[-1]['status']=='auth_failed'
+    assert read_cache(path)[-1]['budget_consumed'] is False
+    # A replaced key can resume without deleting the auth stop or cache rows.
+    monkeypatch.setenv('SPARK_API_KEY','replacement-secret')
+    again=SparkJudge(path,'enabled',httpx.MockTransport(lambda request:ok_response()))
+    try:
+        result=again.evaluate('prompt',item,read_cache(path))
+        assert result['status']=='ok' and result['transport_attempt']==1
+    finally:again.close()
+
+
+def legacy_errors(path,item,statuses):
+    from usersim.judge import input_sha256
+    rows=[]
+    for attempt,status in enumerate(statuses,1):
+        base=dict(id=item['id'],attempt=attempt,thinking='enabled',model='spark-x2.6',provider='spark',
+                  input_sha256=input_sha256('prompt',item))
+        rows += [dict(base,event='dispatch'),dict(base,event='response',status='request_error',
+                    http_status=status,error_type='ReadTimeout' if status is None else 'HTTPStatusError',usage=None)]
+    with path.open('a') as f:
+        f.write(''.join(json.dumps(r)+'\n' for r in rows))
+
+
+def test_four_historical_auth_errors_do_not_exhaust_budget(tmp_path,monkeypatch):
+    from usersim.judge_spark import judge_batch
+    monkeypatch.setenv('SPARK_API_KEY','replacement-secret')
+    path=tmp_path/'old-auth.jsonl'
+    item=dict(id='a',goal='g',history=[],previous_agent='a',text='t')
+    legacy_errors(path,item,[403]*4)
+    before=path.read_bytes()
+    Path(str(path)+'.stop.json').write_text(json.dumps(dict(reason='transport_budget_exhausted',message='old stop')))
+    result=judge_batch(path,[item],prompt='prompt',transport=httpx.MockTransport(lambda request:ok_response()))
+    assert result['a']['status']=='ok' and result['a']['transport_attempt']==1
+    assert result['a']['attempt']==5
+    assert path.read_bytes().startswith(before)
+
+
+def test_exhausted_item_is_terminal_and_other_items_continue(tmp_path,monkeypatch):
+    from usersim.judge_spark import judge_batch
+    monkeypatch.setenv('SPARK_API_KEY','test-secret')
+    items=[dict(id=str(i),goal='g',history=[],previous_agent='a',text=str(i)) for i in range(100)]
+    path=tmp_path/'timeouts.jsonl';calls=[]
+    def handler(request):
+        text=json.loads(json.loads(request.content)['messages'][1]['content'])['text']
+        calls.append(text)
+        if text=='0':raise httpx.ReadTimeout('mock timeout',request=request)
+        return ok_response()
+    clock=SimulatedClock()
+    result=judge_batch(path,items,prompt='prompt',transport=httpx.MockTransport(handler),
+                       clock=clock,sleeper=clock.sleep)
+    assert result['0']['status']=='transport_failed'
+    assert calls.count('0')==4 and len(calls)==103
+    assert all(result[str(i)]['status']=='ok' for i in range(1,100))
+    before=path.read_bytes()
+    monkeypatch.delenv('SPARK_API_KEY')
+    again=judge_batch(path,items,prompt='prompt')
+    assert again['0']['status']=='transport_failed' and path.read_bytes()==before
+
+
+def test_legacy_exhaustion_terminalized_without_request(tmp_path,monkeypatch):
+    from usersim.judge_spark import judge_batch
+    items=[dict(id=str(i),goal='g',history=[],previous_agent='a',text=str(i)) for i in range(100)]
+    path=tmp_path/'legacy-timeout.jsonl'
+    legacy_errors(path,items[0],[None]*4)
+    before=path.read_bytes();monkeypatch.setenv('SPARK_API_KEY','test-secret')
+    calls=[]
+    def handler(request):calls.append(request);return ok_response()
+    result=judge_batch(path,items,prompt='prompt',transport=httpx.MockTransport(handler))
+    assert result['0']['status']=='transport_failed' and len(calls)==99
+    assert path.read_bytes().startswith(before)
+    assert sum(r.get('event')=='terminal' for r in read_cache(path))==1
+
+
+@pytest.mark.parametrize('failed,population,stops',[(1,100,False),(2,100,True),(50,5000,False),(51,6000,True)])
+def test_transport_failure_rate_and_absolute_limit(tmp_path,failed,population,stops):
+    from usersim.judge_spark import enforce_transport_limit,JudgeStopped
+    terminal={str(i):dict(status='transport_failed') for i in range(failed)}
+    if stops:
+        with pytest.raises(JudgeStopped) as exc:enforce_transport_limit(tmp_path/'cache',terminal,population)
+        assert exc.value.reason=='transport_failure_rate'
+    else:enforce_transport_limit(tmp_path/'cache',terminal,population)
+
+
+def test_existing_p2_reports_rebuild_with_same_hash(tmp_path,monkeypatch):
+    import contextlib,hashlib,io,shutil,sys
+    from scripts import run_correction_decision as decision
+    from scripts import run_correction_decision_ppi as ppi_run
+    from scripts import run_correction_v2 as v2
+    def forbidden(*args,**kwargs):raise AssertionError('Offline rebuild must not create HTTP clients')
+    monkeypatch.setattr(httpx,'Client',forbidden)
+    for name,run in [('correction_decision',decision),('correction_v2',v2)]:
+        source=ROOT/'outputs'/name
+        dest=tmp_path/name
+        shutil.copytree(source,dest)
+        monkeypatch.setattr(run,'OUT',dest)
+        if run is decision:monkeypatch.setattr(ppi_run,'OUT',dest)
+        expected={n:hashlib.sha256((source/n).read_bytes()).hexdigest() for n in ('report_500.md','summary_500.json')}
+        monkeypatch.setattr(sys,'argv',[run.__file__,'--phase','report','--report-n','500'])
+        for _ in range(2):
+            with contextlib.redirect_stdout(io.StringIO()):run.main()
+            actual={n:hashlib.sha256((dest/n).read_bytes()).hexdigest() for n in expected}
+            assert actual==expected

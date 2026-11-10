@@ -1,0 +1,5 @@
+{
+  "message": "No successful Spark response for 60 minutes",
+  "observed_at": 1794288391.988988,
+  "reason": "no_success_60_minutes"
+}

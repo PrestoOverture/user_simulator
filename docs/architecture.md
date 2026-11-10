@@ -154,6 +154,20 @@
 - **放弃的替代方案：** Spark 扮演客服的自由对话（客服一侧有混杂）。
 - **局限：** 显式选项对模拟器有利，真人离开往往只是不再回复。这个方法只能测"在真人离开的地方，模拟器愿不愿意离开"，测不到整段对话中途放弃。
 
+### ADR-020 暂不做模型训练（D9）（已被 ADR-021 取代）
+
+- **决定（用户 2026-10-28）：** 暂不把 LoRA 等模型训练纳入项目。只有在不得不走训练这条路时才重新考虑。[prd.md](prd.md) 5.2 不变。
+- **理由：** 用户认为成本太高（估算见 [tech_stacks.md](tech_stacks.md) 2.1）。
+- **放弃的替代方案：** 用 Qwen3.5-4B（可选 9B）做 LoRA，与未训练的基座对比。
+- **影响：** P2 只保留免训练修正的结果，第一阶段的结论是"免训练的提示词修正压不住反应方式的失真"。下一步进入 P3。
+
+### ADR-021 用 Kaggle 免费 GPU 做小规模 LoRA 修正（D9，取代 ADR-020）
+
+- **决定（用户 2026-11-09）：** 把小规模 LoRA 微调纳入第一阶段，作为修正方法之一。模型 `Qwen/Qwen3.5-4B`，Kaggle T4，fp16 LoRA；9B 视 4B 结果再定。训练集从 CSDS train 中每段对话抽 1 个用户轮次（排除 500 段评估对话），目标文本额外去掉汉字与标点之间的分词空格；输入 prompt 与 `usersim/replay.py` 完全一致。评估与免训练修正同口径：同一批 500 段，ADR-016 两个指标，按 ADR-018 判断，并与未训练的 Qwen 基座对比。
+- **理由：** 免训练修正都压不住"继续要求"的差距（ADR-020 的背景）；Kaggle 每周 30 小时免费 GPU 消除了成本顾虑。小试（[history.md](history.md) 2026-11-09）显示 4B 能在 T4 上跑，但全量逐轮训练约 49 小时，超出额度，所以抽样。
+- **放弃的替代方案：** 维持不训练（ADR-020）；全量逐轮训练（超出额度）；付费 GPU（AutoDL）。
+- **影响：** [prd.md](prd.md) 5.2 加了例外。Spark 无法微调，所以比较的是"Qwen 基座 vs Qwen+LoRA"，与 Spark 基线的差距只作参照。
+
 ## 项目结构
 
 2026-10-28 的结构。数据集适配和指标是分开的，第一阶段换数据集或第二阶段换 WildChat 时，只需新增一个适配模块（ADR-005）。
@@ -196,6 +210,7 @@ scripts/
   其余                    审查与敏感性分析的一次性脚本
 tests/              pytest
 paper/              第一阶段成果初稿（phase1_draft.md）
+README.md           项目简介、主要发现、运行方法（中文，2026-10-30 初稿）
 outputs/            试跑 20 段；extended/ 500 段；correction_pilot/；behaviors/；ablation_a_full/；model_b/；decision_ab/；judge_validation/；full_csds/spark/ 全量基线；reaction/full/ 与 reaction/deepseek/ 分组测量；correction_v2/、correction_decision/ 修正；spark_judge_validation/；leave/；archive/v1_segmented/ 首版
 data/raw/           原始数据（不进 git）
 ```

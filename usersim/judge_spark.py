@@ -78,6 +78,32 @@ RETRY_POLICY = 'adaptive_429_v1'
 NO_SUCCESS_SECONDS = 3600
 
 
+def auth_failed(row):
+    return (row.get('status') == 'auth_failed' or row.get('http_status') in (401,403)
+            or str(row.get('error_code')) == '11200')
+
+
+def transport_failures(rows):
+    return sum(r.get('status') == 'request_error' and r.get('http_status') != 429
+               and not auth_failed(r) for r in rows if r.get('event') == 'response')
+
+
+def transport_terminal(cache, row):
+    terminal = {k:row[k] for k in ('id','input_sha256','thinking','attempt','model','provider')}
+    terminal.update(event='terminal',status='transport_failed',usage=None,
+                    budget_consumed=False,retry_policy=RETRY_POLICY)
+    _append(cache,terminal)
+    return terminal
+
+
+def enforce_transport_limit(cache, terminal, population):
+    count = sum(r.get('status') == 'transport_failed' for r in terminal.values())
+    if count > 50 or (population and count/population > .01):
+        message = f'Spark transport_failed {count}/{population} exceeds 1% or 50 items'
+        write_stop(cache,'transport_failure_rate',message)
+        raise JudgeStopped('transport_failure_rate',message)
+
+
 class JudgeStopped(RuntimeError):
     def __init__(self, reason, message=None):
         self.reason = reason
@@ -166,14 +192,13 @@ class SparkJudge:
         stop = Path(str(path)+'.stop.json')
         if stop.exists():
             state = json.loads(stop.read_text())
-            raise JudgeStopped(state['reason'],state['message'])
+            if state['reason'] not in ('auth_failed','no_success_60_minutes','transport_budget_exhausted'):
+                raise JudgeStopped(state['reason'],state['message'])
         if self._runtime_path.exists():
             state = json.loads(self._runtime_path.read_text())
             if state.get('policy')==RETRY_POLICY and not state.get('batch_complete'):
                 self.concurrency = min(8,max(1,state['concurrency']))
                 self._success_streak = state.get('success_streak',0)
-                self._last_success_wall = state['last_success_wall_time']
-                self._last_success -= max(0,time.time()-self._last_success_wall)
         self.ensure_progress()
         self.secret = os.environ['SPARK_API_KEY']
         self.client = httpx.Client(timeout=120,transport=transport,
@@ -265,18 +290,18 @@ class SparkJudge:
         for row in old:
             if row['input_sha256']!=digest or row['thinking']!=self.thinking:
                 raise RuntimeError('Cached input or variant changed')
-        responses = [r for r in old if r['event']=='response']
+        responses = [r for r in old if r['event'] in ('response','terminal')]
         for row in responses:
-            if row['status'] in ('ok','moderated','parse_error'):
+            if row['status'] in ('ok','moderated','parse_error','transport_failed'):
                 return row
         # Legacy HTTP429 records are retroactively exempt; their bytes stay intact.
-        failures = sum(r['status']=='request_error' and r.get('http_status')!=429 for r in responses)
+        failures = transport_failures(responses)
         sequence = max((r['attempt'] for r in responses),default=0)
         rate_retries = 0
         while True:
             self.ensure_progress()
             if failures >= 4:
-                raise self.stop('transport_budget_exhausted','Spark exhausted four non-429 transport attempts')
+                return transport_terminal(self.path,responses[-1])
             sequence += 1
             base = dict(id=item['id'],input_sha256=digest,thinking=self.thinking,
                 attempt=sequence,transport_attempt=failures+1,model=MODEL,provider='spark',retry_policy=RETRY_POLICY)
@@ -288,6 +313,15 @@ class SparkJudge:
                 response = self.post(dict(model=MODEL,messages=messages(prompt,item),stream=False,
                                           thinking={'type':self.thinking}))
                 row['http_status'] = response.status_code
+                try:
+                    error = response.json().get('error',{})
+                except (ValueError,AttributeError):
+                    error = {}
+                if isinstance(error,dict) and 'code' in error:
+                    row['error_code'] = str(error['code'])
+                if auth_failed(row):
+                    row['status'] = 'auth_failed'
+                    raise self.stop('auth_failed','Spark authorization failed; replace credentials before resuming')
                 if response.status_code==429:
                     backoff = min(300,5*2**min(rate_retries,6))
                     delay = (self._jitter(backoff) if self._jitter else
@@ -324,8 +358,10 @@ class SparkJudge:
                 self._failure()
             finally:
                 self.record(row)
-            if row['status'] in ('ok','moderated','parse_error'):
+            if row['status'] in ('ok','moderated','parse_error','transport_failed'):
                 return row
+            if failures >= 4:
+                return transport_terminal(self.path,row)
             if row['status']=='rate_limited':
                 self._wait(delay)
             elif failures < 4:
@@ -339,8 +375,7 @@ def judge_batch(cache, items, concurrency=8, *, prompt=None, thinking='enabled',
     Concurrency starts at the supplied value (1..8), halves on HTTP429, and rises
     by one after 200 consecutive successful new judgments, up to eight. HTTP429
     never spends the four-error transport budget; it backs off 5..300 seconds with
-    deterministic seeded jitter. A shared 60-minute no-success watchdog persists
-    across restarts. Input-fingerprint reuse and donor-cache immutability remain.
+    deterministic seeded jitter. The 60-minute no-success watchdog starts anew in each process. Input-fingerprint reuse and donor-cache immutability remain.
     """
     with cache_writer(cache):
         return _judge_batch_locked(cache,items,concurrency,prompt=prompt,thinking=thinking,
@@ -373,7 +408,7 @@ def _judge_batch_locked(cache, items, concurrency=8, *, prompt=None, thinking='e
             continue
         digest = row['input_sha256']
         histories.setdefault(digest, []).append(row)
-        if row.get('status') in ('ok','moderated','parse_error'):
+        if row.get('status') in ('ok','moderated','parse_error','transport_failed'):
             terminal[digest] = row
     donors = {}
     for path in reuse_caches:
@@ -383,6 +418,10 @@ def _judge_batch_locked(cache, items, concurrency=8, *, prompt=None, thinking='e
                 donors.setdefault(row['input_sha256'], (str(path), row))
     fingerprints = {item['id']:input_sha256(prompt,item) for item in items}
     unique = {fingerprints[item['id']]:item for item in items}
+    for digest,history in histories.items():
+        if digest not in terminal and transport_failures(history) >= 4:
+            terminal[digest] = transport_terminal(cache,history[-1])
+    enforce_transport_limit(cache,terminal,len(unique))
     pending = []
     client = None
     try:
@@ -430,6 +469,7 @@ def _judge_batch_locked(cache, items, concurrency=8, *, prompt=None, thinking='e
                             digest = active.pop(future)
                             row = future.result()
                             terminal[digest] = row
+                            enforce_transport_limit(cache,terminal,len(unique))
                             if on_result is not None:
                                 on_result(row)
                         for _ in done:

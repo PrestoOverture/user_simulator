@@ -1,0 +1,101 @@
+[{"stream_name":"stdout","time":9.106237739,"data":"torch before install: 2.11.0+cu130\n"}
+,{"stream_name":"stdout","time":10.275430184,"data":"Collecting transformers==5.3.0\n"}
+,{"stream_name":"stdout","time":10.387713839,"data":"  Downloading transformers-5.3.0-py3-none-any.whl.metadata (32 kB)\n"}
+,{"stream_name":"stdout","time":10.498032987,"data":"Collecting peft==0.18.1\n"}
+,{"stream_name":"stdout","time":10.512373167,"data":"  Downloading peft-0.18.1-py3-none-any.whl.metadata (14 kB)\n"}
+,{"stream_name":"stdout","time":10.577886884,"data":"Collecting accelerate==1.12.0\n"}
+,{"stream_name":"stdout","time":10.5927512,"data":"  Downloading accelerate-1.12.0-py3-none-any.whl.metadata (19 kB)\n"}
+,{"stream_name":"stdout","time":10.616886567,"data":"Requirement already satisfied: huggingface-hub\u003c2.0,\u003e=1.3.0 in /usr/local/lib/python3.13/dist-packages (from transformers==5.3.0) (1.33.0)\n"}
+,{"stream_name":"stdout","time":10.617615194999999,"data":"Requirement already satisfied: numpy\u003e=1.17 in /usr/local/lib/python3.13/dist-packages (from transformers==5.3.0) (2.1.3)\n"}
+,{"stream_name":"stdout","time":10.618242522,"data":"Requirement already satisfied: packaging\u003e=20.0 in /usr/local/lib/python3.13/dist-packages (from transformers==5.3.0) (26.3)\n"}
+,{"stream_name":"stdout","time":10.618896557,"data":"Requirement already satisfied: pyyaml\u003e=5.1 in /usr/local/lib/python3.13/dist-packages (from transformers==5.3.0) (6.0.3)\n"}
+,{"stream_name":"stdout","time":10.619532257,"data":"Requirement already satisfied: regex!=2019.12.17 in /usr/local/lib/python3.13/dist-packages (from transformers==5.3.0) (2025.11.3)\n"}
+,{"stream_name":"stdout","time":10.974768993,"data":"Collecting tokenizers\u003c=0.23.0,\u003e=0.22.0 (from transformers==5.3.0)\n"}
+,{"stream_name":"stdout","time":10.988229515,"data":"  Downloading tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.3 kB)\n"}
+,{"stream_name":"stdout","time":11.012855783,"data":"Requirement already satisfied: typer in /usr/local/lib/python3.13/dist-packages (from transformers==5.3.0) (0.27.3)\n"}
+,{"stream_name":"stdout","time":11.013930465,"data":"Requirement already satisfied: safetensors\u003e=0.4.3 in /usr/local/lib/python3.13/dist-packages (from transformers==5.3.0) (0.8.0)\n"}
+,{"stream_name":"stdout","time":11.015082938,"data":"Requirement already satisfied: tqdm\u003e=4.27 in /usr/local/lib/python3.13/dist-packages (from transformers==5.3.0) (4.67.3)\n"}
+,{"stream_name":"stdout","time":11.02095541,"data":"Requirement already satisfied: psutil in /usr/local/lib/python3.13/dist-packages (from peft==0.18.1) (5.9.5)\n"}
+,{"stream_name":"stdout","time":11.021965286,"data":"Requirement already satisfied: torch\u003e=1.13.0 in /usr/local/lib/python3.13/dist-packages (from peft==0.18.1) (2.11.0+cu130)\n"}
+,{"stream_name":"stdout","time":11.031284072,"data":"Requirement already satisfied: click\u003c9.0.0,\u003e=8.4.2 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub\u003c2.0,\u003e=1.3.0-\u003etransformers==5.3.0) (8.5.0)\n"}
+,{"stream_name":"stdout","time":11.032334451,"data":"Requirement already satisfied: filelock\u003e=3.10.0 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub\u003c2.0,\u003e=1.3.0-\u003etransformers==5.3.0) (4.2.4)\n"}
+,{"stream_name":"stdout","time":11.03327224,"data":"Requirement already satisfied: fsspec\u003e=2023.5.0 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub\u003c2.0,\u003e=1.3.0-\u003etransformers==5.3.0) (2025.12.0)\n"}
+,{"stream_name":"stdout","time":11.034949381,"data":"Requirement already satisfied: hf-xet\u003c2.0.0,\u003e=1.6.0 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub\u003c2.0,\u003e=1.3.0-\u003etransformers==5.3.0) (1.7.0)\n"}
+,{"stream_name":"stdout","time":11.036387016,"data":"Requirement already satisfied: httpx\u003c1,\u003e=0.23.0 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub\u003c2.0,\u003e=1.3.0-\u003etransformers==5.3.0) (0.28.1)\n"}
+,{"stream_name":"stdout","time":11.037962104,"data":"Requirement already satisfied: typing-extensions\u003e=4.1.0 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub\u003c2.0,\u003e=1.3.0-\u003etransformers==5.3.0) (4.16.0)\n"}
+,{"stream_name":"stdout","time":11.054623842,"data":"Requirement already satisfied: anyio in /usr/local/lib/python3.13/dist-packages (from httpx\u003c1,\u003e=0.23.0-\u003ehuggingface-hub\u003c2.0,\u003e=1.3.0-\u003etransformers==5.3.0) (4.15.1)\n"}
+,{"stream_name":"stdout","time":11.05530012,"data":"Requirement already satisfied: certifi in /usr/local/lib/python3.13/dist-packages (from httpx\u003c1,\u003e=0.23.0-\u003ehuggingface-hub\u003c2.0,\u003e=1.3.0-\u003etransformers==5.3.0) (2026.10.23)\n"}
+,{"stream_name":"stdout","time":11.055999095,"data":"Requirement already satisfied: httpcore==1.* in /usr/local/lib/python3.13/dist-packages (from httpx\u003c1,\u003e=0.23.0-\u003ehuggingface-hub\u003c2.0,\u003e=1.3.0-\u003etransformers==5.3.0) (1.0.9)\n"}
+,{"stream_name":"stdout","time":11.057538392,"data":"Requirement already satisfied: idna in /usr/local/lib/python3.13/dist-packages (from httpx\u003c1,\u003e=0.23.0-\u003ehuggingface-hub\u003c2.0,\u003e=1.3.0-\u003etransformers==5.3.0) (3.20)\n"}
+,{"stream_name":"stdout","time":11.060474558,"data":"Requirement already satisfied: h11\u003e=0.16 in /usr/local/lib/python3.13/dist-packages (from httpcore==1.*-\u003ehttpx\u003c1,\u003e=0.23.0-\u003ehuggingface-hub\u003c2.0,\u003e=1.3.0-\u003etransformers==5.3.0) (0.16.0)\n"}
+,{"stream_name":"stdout","time":11.095601374,"data":"Requirement already satisfied: setuptools\u003c82 in /usr/local/lib/python3.13/dist-packages (from torch\u003e=1.13.0-\u003epeft==0.18.1) (81.0.0)\n"}
+,{"stream_name":"stdout","time":11.096387997,"data":"Requirement already satisfied: sympy\u003e=1.13.3 in /usr/local/lib/python3.13/dist-packages (from torch\u003e=1.13.0-\u003epeft==0.18.1) (1.14.0)\n"}
+,{"stream_name":"stdout","time":11.097086125,"data":"Requirement already satisfied: networkx\u003e=2.5.1 in /usr/local/lib/python3.13/dist-packages (from torch\u003e=1.13.0-\u003epeft==0.18.1) (3.7)\n"}
+,{"stream_name":"stdout","time":11.097785522,"data":"Requirement already satisfied: jinja2 in /usr/local/lib/python3.13/dist-packages (from torch\u003e=1.13.0-\u003epeft==0.18.1) (3.1.6)\n"}
+,{"stream_name":"stdout","time":11.09904588,"data":"Requirement already satisfied: cuda-toolkit==13.0.2 in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"-\u003etorch\u003e=1.13.0-\u003epeft==0.18.1) (13.0.2)\n"}
+,{"stream_name":"stdout","time":11.100131677,"data":"Requirement already satisfied: cuda-bindings\u003c14,\u003e=13.0.3 in /usr/local/lib/python3.13/dist-packages (from torch\u003e=1.13.0-\u003epeft==0.18.1) (13.0.3)\n"}
+,{"stream_name":"stdout","time":11.100962453,"data":"Requirement already satisfied: nvidia-cudnn-cu13==9.19.0.56 in /usr/local/lib/python3.13/dist-packages (from torch\u003e=1.13.0-\u003epeft==0.18.1) (9.19.0.56)\n"}
+,{"stream_name":"stdout","time":11.101770419,"data":"Requirement already satisfied: nvidia-cusparselt-cu13==0.8.0 in /usr/local/lib/python3.13/dist-packages (from torch\u003e=1.13.0-\u003epeft==0.18.1) (0.8.0)\n"}
+,{"stream_name":"stdout","time":11.102636484,"data":"Requirement already satisfied: nvidia-nccl-cu13==2.28.9 in /usr/local/lib/python3.13/dist-packages (from torch\u003e=1.13.0-\u003epeft==0.18.1) (2.28.9)\n"}
+,{"stream_name":"stdout","time":11.103452128,"data":"Requirement already satisfied: nvidia-nvshmem-cu13==3.4.5 in /usr/local/lib/python3.13/dist-packages (from torch\u003e=1.13.0-\u003epeft==0.18.1) (3.4.5)\n"}
+,{"stream_name":"stdout","time":11.104231156,"data":"Requirement already satisfied: triton==3.6.0 in /usr/local/lib/python3.13/dist-packages (from torch\u003e=1.13.0-\u003epeft==0.18.1) (3.6.0)\n"}
+,{"stream_name":"stdout","time":11.114708756,"data":"Requirement already satisfied: nvidia-cublas==13.1.0.3.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"-\u003etorch\u003e=1.13.0-\u003epeft==0.18.1) (13.1.0.3)\n"}
+,{"stream_name":"stdout","time":11.115707631,"data":"Requirement already satisfied: nvidia-cuda-runtime==13.0.96.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"-\u003etorch\u003e=1.13.0-\u003epeft==0.18.1) (13.0.96)\n"}
+,{"stream_name":"stdout","time":11.116709246,"data":"Requirement already satisfied: nvidia-cufft==12.0.0.61.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"-\u003etorch\u003e=1.13.0-\u003epeft==0.18.1) (12.0.0.61)\n"}
+,{"stream_name":"stdout","time":11.117786776,"data":"Requirement already satisfied: nvidia-cufile==1.15.1.6.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"-\u003etorch\u003e=1.13.0-\u003epeft==0.18.1) (1.15.1.6)\n"}
+,{"stream_name":"stdout","time":11.118939724,"data":"Requirement already satisfied: nvidia-cuda-cupti==13.0.85.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"-\u003etorch\u003e=1.13.0-\u003epeft==0.18.1) (13.0.85)\n"}
+,{"stream_name":"stdout","time":11.120081094,"data":"Requirement already satisfied: nvidia-curand==10.4.0.35.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"-\u003etorch\u003e=1.13.0-\u003epeft==0.18.1) (10.4.0.35)\n"}
+,{"stream_name":"stdout","time":11.121046351,"data":"Requirement already satisfied: nvidia-cusolver==12.0.4.66.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"-\u003etorch\u003e=1.13.0-\u003epeft==0.18.1) (12.0.4.66)\n"}
+,{"stream_name":"stdout","time":11.122126217,"data":"Requirement already satisfied: nvidia-cusparse==12.6.3.3.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"-\u003etorch\u003e=1.13.0-\u003epeft==0.18.1) (12.6.3.3)\n"}
+,{"stream_name":"stdout","time":11.123388543,"data":"Requirement already satisfied: nvidia-nvjitlink==13.0.88.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"-\u003etorch\u003e=1.13.0-\u003epeft==0.18.1) (13.0.88)\n"}
+,{"stream_name":"stdout","time":11.124622289,"data":"Requirement already satisfied: nvidia-cuda-nvrtc==13.0.88.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"-\u003etorch\u003e=1.13.0-\u003epeft==0.18.1) (13.0.88)\n"}
+,{"stream_name":"stdout","time":11.125686114,"data":"Requirement already satisfied: nvidia-nvtx==13.0.85.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"-\u003etorch\u003e=1.13.0-\u003epeft==0.18.1) (13.0.85)\n"}
+,{"stream_name":"stdout","time":11.137594822,"data":"Requirement already satisfied: cuda-pathfinder~=1.1 in /usr/local/lib/python3.13/dist-packages (from cuda-bindings\u003c14,\u003e=13.0.3-\u003etorch\u003e=1.13.0-\u003epeft==0.18.1) (1.8.4)\n"}
+,{"stream_name":"stdout","time":11.169342758,"data":"Requirement already satisfied: mpmath\u003c1.4,\u003e=1.1.0 in /usr/local/lib/python3.13/dist-packages (from sympy\u003e=1.13.3-\u003etorch\u003e=1.13.0-\u003epeft==0.18.1) (1.3.0)\n"}
+,{"stream_name":"stdout","time":11.183926436,"data":"Requirement already satisfied: MarkupSafe\u003e=2.0 in /usr/local/lib/python3.13/dist-packages (from jinja2-\u003etorch\u003e=1.13.0-\u003epeft==0.18.1) (3.0.4)\n"}
+,{"stream_name":"stdout","time":11.190729073,"data":"Requirement already satisfied: shellingham\u003e=1.3.0 in /usr/local/lib/python3.13/dist-packages (from typer-\u003etransformers==5.3.0) (1.5.4)\n"}
+,{"stream_name":"stdout","time":11.191333261,"data":"Requirement already satisfied: rich\u003e=13.8.0 in /usr/local/lib/python3.13/dist-packages (from typer-\u003etransformers==5.3.0) (13.9.4)\n"}
+,{"stream_name":"stdout","time":11.192073009,"data":"Requirement already satisfied: annotated-doc\u003e=0.0.2 in /usr/local/lib/python3.13/dist-packages (from typer-\u003etransformers==5.3.0) (0.0.5)\n"}
+,{"stream_name":"stdout","time":11.196604884,"data":"Requirement already satisfied: markdown-it-py\u003e=2.2.0 in /usr/local/lib/python3.13/dist-packages (from rich\u003e=13.8.0-\u003etyper-\u003etransformers==5.3.0) (4.2.0)\n"}
+,{"stream_name":"stdout","time":11.197357548,"data":"Requirement already satisfied: pygments\u003c3.0.0,\u003e=2.13.0 in /usr/local/lib/python3.13/dist-packages (from rich\u003e=13.8.0-\u003etyper-\u003etransformers==5.3.0) (2.21.0)\n"}
+,{"stream_name":"stdout","time":11.201714805,"data":"Requirement already satisfied: mdurl~=0.1 in /usr/local/lib/python3.13/dist-packages (from markdown-it-py\u003e=2.2.0-\u003erich\u003e=13.8.0-\u003etyper-\u003etransformers==5.3.0) (0.1.2)\n"}
+,{"stream_name":"stdout","time":11.226099885,"data":"Downloading transformers-5.3.0-py3-none-any.whl (10.7 MB)\n"}
+,{"stream_name":"stdout","time":11.366848237,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.7/10.7 MB 89.0 MB/s  0:00:00\n"}
+,{"stream_name":"stdout","time":11.381734938,"data":"Downloading peft-0.18.1-py3-none-any.whl (556 kB)\n"}
+,{"stream_name":"stdout","time":11.402428462,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 557.0/557.0 kB 16.2 MB/s  0:00:00\n"}
+,{"stream_name":"stdout","time":11.41544586,"data":"Downloading accelerate-1.12.0-py3-none-any.whl (380 kB)\n"}
+,{"stream_name":"stdout","time":11.449583108,"data":"Downloading tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)\n"}
+,{"stream_name":"stdout","time":11.489267823,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 81.2 MB/s  0:00:00\n"}
+,{"stream_name":"stdout","time":13.281186835,"data":"Installing collected packages: tokenizers, transformers, accelerate, peft\n"}
+,{"stream_name":"stdout","time":13.28193338,"data":"  Attempting uninstall: tokenizers\n"}
+,{"stream_name":"stdout","time":13.294796701,"data":"    Found existing installation: tokenizers 0.23.3\n"}
+,{"stream_name":"stdout","time":13.304645986,"data":"    Uninstalling tokenizers-0.23.3:\n"}
+,{"stream_name":"stdout","time":13.38237524,"data":"      Successfully uninstalled tokenizers-0.23.3\n"}
+,{"stream_name":"stdout","time":13.466421242,"data":"  Attempting uninstall: transformers\n"}
+,{"stream_name":"stdout","time":13.488440482,"data":"    Found existing installation: transformers 5.20.2\n"}
+,{"stream_name":"stdout","time":14.02885602,"data":"    Uninstalling transformers-5.20.2:\n"}
+,{"stream_name":"stdout","time":16.57065079,"data":"      Successfully uninstalled transformers-5.20.2\n"}
+,{"stream_name":"stdout","time":23.341918094,"data":"  Attempting uninstall: accelerate\n"}
+,{"stream_name":"stdout","time":23.361996267,"data":"    Found existing installation: accelerate 1.15.0\n"}
+,{"stream_name":"stdout","time":23.376070973,"data":"    Uninstalling accelerate-1.15.0:\n"}
+,{"stream_name":"stdout","time":23.501110247,"data":"      Successfully uninstalled accelerate-1.15.0\n"}
+,{"stream_name":"stdout","time":23.747370117,"data":"  Attempting uninstall: peft\n"}
+,{"stream_name":"stdout","time":23.767183112,"data":"    Found existing installation: peft 0.21.2\n"}
+,{"stream_name":"stdout","time":23.815930838,"data":"    Uninstalling peft-0.21.2:\n"}
+,{"stream_name":"stdout","time":24.045056098,"data":"      Successfully uninstalled peft-0.21.2\n"}
+,{"stream_name":"stdout","time":24.408105062,"data":"\n"}
+,{"stream_name":"stdout","time":24.479046025,"data":"Successfully installed accelerate-1.12.0 peft-0.18.1 tokenizers-0.22.2 transformers-5.3.0\n"}
+,{"stream_name":"stdout","time":29.248617109,"data":"torch after install: 2.11.0+cu130\n"}
+,{"stream_name":"stdout","time":29.535426903,"data":"{\"python\": \"3.13.16\", \"torch\": \"2.11.0+cu130\", \"transformers\": \"5.3.0\", \"peft\": \"0.18.1\", \"accelerate\": \"1.12.0\", \"cuda\": \"13.0\", \"gpu_name\": \"Tesla T4\", \"visible_gpu_count\": 2, \"gpu_total_memory_bytes\": [15636037632, 15636037632], \"torch_installation\": {\"before\": \"2.11.0+cu130\", \"after\": \"2.11.0+cu130\"}}\n"}
+,{"stream_name":"stderr","time":51.280692453,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":104.206220194,"data":"\rFetching 2 files:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rFetching 2 files:  50%|█████     | 1/2 [00:42\u003c00:42, 42.05s/it]\rFetching 2 files: 100%|██████████| 2/2 [00:49\u003c00:00, 21.50s/it]\rFetching 2 files: 100%|██████████| 2/2 [00:49\u003c00:00, 24.58s/it]\n"}
+,{"stream_name":"stderr","time":104.263775236,"data":"The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d\n"}
+,{"stream_name":"stderr","time":108.759160185,"data":"\rLoading weights:   0%|          | 0/426 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 1/426 [00:02\u003c14:51,  2.10s/it]\rLoading weights:  47%|████▋     | 201/426 [00:02\u003c00:01, 126.95it/s]\rLoading weights:  72%|███████▏  | 306/426 [00:03\u003c00:01, 116.43it/s]\rLoading weights:  86%|████████▋ | 368/426 [00:03\u003c00:00, 114.31it/s]\rLoading weights:  96%|█████████▌| 410/426 [00:04\u003c00:00, 117.78it/s]\rLoading weights: 100%|██████████| 426/426 [00:04\u003c00:00, 100.33it/s]\n"}
+,{"stream_name":"stdout","time":4447.612727891,"data":"/kaggle/working/generations_base.jsonl: 4710 records\n"}
+,{"stream_name":"stderr","time":4456.698743093,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":4456.69877606,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":4456.997801264,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":4456.99782656,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":4457.776277575,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":4458.865664603,"data":"[NbConvertApp] Writing 332061 bytes to __results__.html\n"}
+]

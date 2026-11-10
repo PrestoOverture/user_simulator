@@ -1,0 +1,37 @@
+{
+  "config": {
+    "adapter_sha256": {
+      "adapter_config.json": "7f5e3c52493cbb376b16893526e89a48ae5fc426abe9374c1f7604fe9e85917d",
+      "adapter_model.safetensors": "42729e73942e1c33b3c4949fac3408b746e4b7c8f9371562576b98d7b7f8054d"
+    },
+    "input_sha256": "bea09128fce6e1833950033250449bdac4b874556ab6e5cf3384f221a43c0d1c",
+    "variant": "lora",
+    "adapter": "/kaggle/input/datasets/prestooverture/csds-qwen35-lora-adapter",
+    "smoke": false,
+    "shard": "0/1",
+    "seed": 20261109,
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "max_new_tokens": 256,
+    "enable_thinking": false
+  },
+  "environment": {
+    "python": "3.13.16",
+    "torch": "2.11.0+cu130",
+    "transformers": "5.3.0",
+    "peft": "0.18.1",
+    "accelerate": "1.12.0",
+    "cuda": "13.0",
+    "gpu_name": "Tesla T4",
+    "visible_gpu_count": 2,
+    "gpu_total_memory_bytes": [
+      15636037632,
+      15636037632
+    ],
+    "torch_installation": {
+      "before": "2.11.0+cu130",
+      "after": "2.11.0+cu130"
+    }
+  }
+}
